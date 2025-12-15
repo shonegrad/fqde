@@ -109,11 +109,32 @@ const ORG_ADJECTIVES_EN = ['National', 'Regional', 'Community', 'Innovative', 'S
 
 const ROLES = ['Director', 'Admin Team', 'Event Organizer', 'Association Rep', 'Teacher Leader', 'Principal', 'Researcher', 'Coordinator', 'Board Member', 'Program Lead'];
 
-const EXPERTISE_TAGS = [
-    'STEM', 'Literacy', 'Special Education', 'Early Childhood', 'Secondary Education',
-    'Technology Integration', 'Curriculum Development', 'Assessment', 'Leadership',
-    'Professional Development', 'Inclusion', 'Bilingual Education', 'Arts', 'Sports'
-];
+// Expanded tag taxonomy for richer graph clustering
+const TAG_CATEGORIES = {
+    // Pedagogical Approaches
+    pedagogy: ['Project-Based Learning', 'Inquiry-Based Learning', 'Differentiated Instruction', 'Collaborative Learning', 'Flipped Classroom', 'Experiential Learning'],
+
+    // Subject Areas
+    subjects: ['STEM', 'Mathematics', 'Science', 'Literacy', 'French Language', 'English Language', 'Social Studies', 'Arts', 'Music', 'Physical Education', 'History'],
+
+    // Technology & Innovation
+    technology: ['EdTech', 'Digital Literacy', 'AI in Education', 'Coding & Robotics', 'Blended Learning', 'LMS Integration', 'Game-Based Learning'],
+
+    // Student Support
+    support: ['Special Education', 'Gifted Education', 'ESL/ELL', 'Social-Emotional Learning', 'Mental Health', 'Accessibility', 'Behavioral Support'],
+
+    // Administration & Leadership
+    admin: ['Leadership', 'Curriculum Development', 'Assessment & Evaluation', 'Professional Development', 'School Finance', 'Policy & Advocacy', 'School Safety'],
+
+    // Grade Levels
+    levels: ['Early Childhood', 'Elementary', 'Secondary', 'Post-Secondary', 'Adult Education', 'Vocational Training'],
+
+    // Special Themes
+    themes: ['Equity & Inclusion', 'Indigenous Education', 'Environmental Education', 'Global Citizenship', 'Community Engagement', 'Bilingual Education', 'Rural Education']
+};
+
+// Flatten all tags for easy access
+const ALL_TAGS = Object.values(TAG_CATEGORIES).flat();
 
 const EVENT_TYPES = ['Conference', 'Workshop', 'Seminar', 'Summit', 'Forum', 'Symposium', 'Training', 'Networking Event'];
 
@@ -200,29 +221,57 @@ function generateOrganizations(count, associations) {
     console.log(`🏫 Generating ${count} organizations...`);
     const organizations = [];
 
+    // Create hub organizations (larger, more central orgs)
+    const numHubs = Math.min(10, Math.floor(count * 0.03));
+    const hubIndices = new Set();
+    while (hubIndices.size < numHubs) {
+        hubIndices.add(rng.nextInt(0, count - 1));
+    }
+
     for (let i = 0; i < count; i++) {
         const id = `org${i + 1}`;
+        const isHub = hubIndices.has(i);
         const adjective = rng.choice(ORG_ADJECTIVES_EN);
         const type = rng.choice(ORG_TYPES);
         const city = rng.choice(QUEBEC_CITIES);
 
-        const name = `${city.name} ${adjective} ${type}`;
+        const name = isHub
+            ? `${city.region} ${adjective} ${type}` // Hub orgs named after regions
+            : `${city.name} ${adjective} ${type}`;
 
-        // Each org belongs to 0-3 associations
-        const numAssociations = rng.nextInt(0, 3);
+        // FIXED: Ensure 80%+ of orgs have at least 1 association (was 0%)
+        // Hub orgs belong to 2-4 associations, regular orgs 0-3 with 75% having at least 1
+        let numAssociations;
+        if (isHub) {
+            numAssociations = rng.nextInt(2, 4);
+        } else {
+            numAssociations = rng.next() > 0.25 ? rng.nextInt(1, 3) : 0;
+        }
+
         const associationIds = [];
+        // Prefer associations in same region for clustering
+        const regionalAssocs = associations.filter(a => a.region === city.region);
+        const assocPool = regionalAssocs.length > 0 && rng.next() > 0.3
+            ? regionalAssocs
+            : associations;
+
         for (let j = 0; j < numAssociations; j++) {
-            const assoc = rng.choice(associations);
+            const assoc = rng.choice(assocPool);
             if (!associationIds.includes(assoc.id)) {
                 associationIds.push(assoc.id);
             }
         }
 
-        // Generate tags
-        const numTags = rng.nextInt(2, 5);
+        // Generate tags - pick from 1-2 related categories for coherent profiles
+        const categoryKeys = Object.keys(TAG_CATEGORIES);
+        const primaryCategory = rng.choice(categoryKeys);
+        const secondaryCategory = rng.next() > 0.5 ? rng.choice(categoryKeys) : primaryCategory;
+
+        const numTags = isHub ? rng.nextInt(4, 6) : rng.nextInt(2, 4);
         const tags = [];
         for (let j = 0; j < numTags; j++) {
-            const tag = rng.choice(EXPERTISE_TAGS);
+            const category = j < 2 ? primaryCategory : secondaryCategory;
+            const tag = rng.choice(TAG_CATEGORIES[category]);
             if (!tags.includes(tag)) {
                 tags.push(tag);
             }
@@ -232,6 +281,7 @@ function generateOrganizations(count, associations) {
             id,
             name,
             type,
+            isHub, // Mark hub orgs for special treatment
             description: `${name} is a leading educational institution committed to excellence in teaching and learning.`,
             website: `https://www.${id}.qc.ca`,
             contactEmail: `contact@${id}.qc.ca`,
@@ -265,11 +315,16 @@ function generatePeople(count, organizations, associations) {
         const city = rng.choice(QUEBEC_CITIES);
         const title = rng.choice(ROLES);
 
-        // Generate tags
-        const numTags = rng.nextInt(2, 4);
+        // Generate coherent tag profiles from 1-2 related categories
+        const categoryKeys = Object.keys(TAG_CATEGORIES);
+        const primaryCategory = rng.choice(categoryKeys);
+        const secondaryCategory = rng.next() > 0.4 ? rng.choice(categoryKeys) : primaryCategory;
+
+        const numTags = rng.nextInt(2, 5);
         const tags = [];
         for (let j = 0; j < numTags; j++) {
-            const tag = rng.choice(EXPERTISE_TAGS);
+            const category = j < 2 ? primaryCategory : secondaryCategory;
+            const tag = rng.choice(TAG_CATEGORIES[category]);
             if (!tags.includes(tag)) {
                 tags.push(tag);
             }
@@ -288,6 +343,7 @@ function generatePeople(count, organizations, associations) {
             region: city.region,
             avatarPath: `/assets/avatars/${id}.svg`,
             tags,
+            primaryExpertise: primaryCategory, // Track for clustering
             lastActivityAt: generateRecentDate()
         });
     }
@@ -300,16 +356,39 @@ function generateMemberships(people, organizations, associations) {
     const memberships = [];
     let id = 1;
 
-    // Each person belongs to 1-8 organizations/associations
+    // Build indices for clustering
+    const orgsByRegion = {};
+    const hubOrgs = organizations.filter(o => o.isHub);
+    organizations.forEach(org => {
+        if (!orgsByRegion[org.region]) orgsByRegion[org.region] = [];
+        orgsByRegion[org.region].push(org);
+    });
+
+    const assocsByRegion = {};
+    associations.forEach(assoc => {
+        if (!assocsByRegion[assoc.region]) assocsByRegion[assoc.region] = [];
+        assocsByRegion[assoc.region].push(assoc);
+    });
+
+    // Each person belongs to 1-6 organizations/associations with regional preference
     for (const person of people) {
-        const numMemberships = rng.nextInt(1, 8);
+        const numMemberships = rng.nextInt(2, 6); // Increased minimum from 1 to 2
         const usedEntities = new Set();
+        const personRegion = person.region;
+
+        // Get regional pools with fallbacks
+        const regionalOrgs = orgsByRegion[personRegion] || [];
+        const regionalAssocs = assocsByRegion[personRegion] || [];
 
         for (let i = 0; i < numMemberships; i++) {
-            const useAssociation = rng.next() > 0.7; // 30% chance of association membership
+            // 50% chance of association membership (increased from 30%)
+            const useAssociation = rng.next() > 0.5;
 
             if (useAssociation && associations.length > 0) {
-                const assoc = rng.choice(associations);
+                // 70% chance to pick regional association for clustering
+                const useRegional = regionalAssocs.length > 0 && rng.next() > 0.3;
+                const assocPool = useRegional ? regionalAssocs : associations;
+                const assoc = rng.choice(assocPool);
                 const key = `association:${assoc.id}`;
                 if (!usedEntities.has(key)) {
                     memberships.push({
@@ -324,7 +403,17 @@ function generateMemberships(people, organizations, associations) {
                     usedEntities.add(key);
                 }
             } else {
-                const org = rng.choice(organizations);
+                // 30% chance to join hub org, 50% regional org, 20% any org
+                const roll = rng.next();
+                let org;
+                if (roll < 0.3 && hubOrgs.length > 0) {
+                    org = rng.choice(hubOrgs);
+                } else if (roll < 0.8 && regionalOrgs.length > 0) {
+                    org = rng.choice(regionalOrgs);
+                } else {
+                    org = rng.choice(organizations);
+                }
+
                 const key = `org:${org.id}`;
                 if (!usedEntities.has(key)) {
                     memberships.push({
@@ -353,7 +442,7 @@ function generateEvents(count, organizations, associations) {
     for (let i = 0; i < count; i++) {
         const id = `evt${i + 1}`;
         const eventType = rng.choice(EVENT_TYPES);
-        const topic = rng.choice(EXPERTISE_TAGS);
+        const topic = rng.choice(ALL_TAGS);
 
         const title = `${topic} ${eventType}`;
 
@@ -372,7 +461,7 @@ function generateEvents(count, organizations, associations) {
         const numTags = rng.nextInt(2, 4);
         const tags = [];
         for (let j = 0; j < numTags; j++) {
-            const tag = rng.choice(EXPERTISE_TAGS);
+            const tag = rng.choice(ALL_TAGS);
             if (!tags.includes(tag)) {
                 tags.push(tag);
             }
@@ -417,7 +506,7 @@ function generateSessions(events, people) {
 
             for (let i = 0; i < sessionsPerDay; i++) {
                 const id = `sess${sessionId++}`;
-                const topic = rng.choice(EXPERTISE_TAGS);
+                const topic = rng.choice(ALL_TAGS);
 
                 const sessionTypes = ['Workshop', 'Panel', 'Presentation', 'Discussion', 'Lecture'];
                 const sessionType = rng.choice(sessionTypes);
@@ -477,7 +566,7 @@ function generateResources(count, organizations, people) {
     for (let i = 0; i < count; i++) {
         const id = `res${i + 1}`;
         const type = rng.choice(RESOURCE_TYPES);
-        const topic = rng.choice(EXPERTISE_TAGS);
+        const topic = rng.choice(ALL_TAGS);
         const prefix = rng.choice(resourcePrefixes);
 
         const title = `${prefix} ${topic}`;
@@ -492,7 +581,7 @@ function generateResources(count, organizations, people) {
         const numTags = rng.nextInt(2, 4);
         const tags = [];
         for (let j = 0; j < numTags; j++) {
-            const tag = rng.choice(EXPERTISE_TAGS);
+            const tag = rng.choice(ALL_TAGS);
             if (!tags.includes(tag)) {
                 tags.push(tag);
             }
