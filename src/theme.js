@@ -65,7 +65,6 @@ const getTheme = (mode = 'dark') => {
             h1: {
                 fontFamily: '"Source Serif 4", Georgia, serif',
                 fontWeight: 800,
-                color: isDark ? '#f8fafc' : '#0f172a',
                 fontSize: '3.5rem',
                 lineHeight: 1.1,
                 letterSpacing: '-0.02em',
@@ -73,7 +72,6 @@ const getTheme = (mode = 'dark') => {
             h2: {
                 fontFamily: '"Source Serif 4", Georgia, serif',
                 fontWeight: 700,
-                color: isDark ? '#f8fafc' : '#0f172a',
                 fontSize: '2.5rem',
                 lineHeight: 1.2,
                 letterSpacing: '-0.01em',
@@ -81,26 +79,22 @@ const getTheme = (mode = 'dark') => {
             h3: {
                 fontFamily: '"Source Serif 4", Georgia, serif',
                 fontWeight: 700,
-                color: isDark ? '#f8fafc' : '#0f172a',
                 fontSize: '2rem',
                 lineHeight: 1.2,
             },
             h4: {
                 fontFamily: '"Source Serif 4", Georgia, serif',
                 fontWeight: 600,
-                color: isDark ? '#f1f5f9' : '#0f172a',
                 fontSize: '1.5rem',
             },
             h5: {
                 fontFamily: '"Source Serif 4", Georgia, serif',
                 fontWeight: 600,
-                color: isDark ? '#f1f5f9' : '#0f172a',
                 fontSize: '1.25rem',
             },
             h6: {
                 fontFamily: '"Source Serif 4", Georgia, serif',
                 fontWeight: 600,
-                color: isDark ? '#f1f5f9' : '#0f172a',
                 fontSize: '1.125rem',
             },
             button: {
@@ -126,6 +120,7 @@ const getTheme = (mode = 'dark') => {
                 styleOverrides: {
                     body: {
                         backgroundColor: palette.background.default,
+                        color: palette.text.primary,
                         scrollbarColor: isDark ? '#475569 #0f172a' : '#94a3b8 #e2e8f0',
                         position: 'relative',
                         '&::before': {
