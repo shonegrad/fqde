@@ -186,51 +186,6 @@ const NetworkMap = ({
             .text(d => { const w = d.x1 - d.x0; if (w < 40) return ''; const n = d.data.name; const maxC = Math.floor(w / 6); return n.length > maxC ? n.slice(0, maxC - 1) + '…' : n; });
     }, [hierarchyData, colorScale, onNodeClick]);
 
-    // Render Sunburst view
-    const renderSunburstView = useCallback((g, width, height) => {
-        const radius = Math.min(width, height) / 2 - 20;
-        const root = d3.hierarchy(hierarchyData.hierarchy)
-            .sum(d => d.type === 'org' ? (d.memberCount || 1) + 5 : 0)
-            .sort((a, b) => b.value - a.value);
-
-        d3.partition().size([2 * Math.PI, radius])(root);
-
-        const arc = d3.arc()
-            .startAngle(d => d.x0)
-            .endAngle(d => d.x1)
-            .innerRadius(d => d.y0)
-            .outerRadius(d => d.y1 - 1);
-
-        const nodes = g.selectAll('path.node').data(root.descendants().filter(d => d.data.type !== 'root'), d => d.data.id || d.data.name);
-        nodes.exit().transition().duration(400).style('opacity', 0).remove();
-
-        const enter = nodes.enter().append('path').attr('class', 'node').style('opacity', 0);
-
-        const all = enter.merge(nodes);
-        all.on('mouseover', (e, d) => setHoveredNode(d.data))
-            .on('mouseout', () => setHoveredNode(null))
-            .on('click', (e, d) => { if (d.data.type === 'org') { const org = hierarchyData.orgMap.get(d.data.id); if (org && onNodeClick) onNodeClick({ ...org, group: 'org' }); } })
-            .style('cursor', d => d.data.type === 'org' ? 'pointer' : 'default')
-            .transition().duration(600).ease(d3.easeCubicInOut)
-            .style('opacity', 1)
-            .attr('d', arc)
-            .attr('fill', d => d.data.type === 'group' ? colorScale(d.data.name) : d3.color(colorScale(d.data.groupName))?.darker(0.2))
-            .attr('fill-opacity', d => d.data.type === 'group' ? 0.7 : 0.9)
-            .attr('stroke', '#fff').attr('stroke-width', 0.5);
-
-        // Labels for groups
-        g.selectAll('text.sunburst-label').remove();
-        root.descendants().filter(d => d.data.type === 'group' && d.y1 - d.y0 > 30).forEach(d => {
-            const angle = (d.x0 + d.x1) / 2;
-            const r = (d.y0 + d.y1) / 2;
-            g.append('text').attr('class', 'sunburst-label')
-                .attr('transform', `rotate(${angle * 180 / Math.PI - 90}) translate(${r}, 0) rotate(${angle > Math.PI ? 180 : 0})`)
-                .attr('text-anchor', 'middle').attr('dy', '0.35em').attr('font-size', '9px').attr('font-weight', 600)
-                .attr('fill', '#333').style('pointer-events', 'none')
-                .text(d.data.name.length > 10 ? d.data.name.slice(0, 8) + '…' : d.data.name);
-        });
-    }, [hierarchyData, colorScale, onNodeClick]);
-
     // Render Force view
     const renderForceView = useCallback((g, width, height) => {
         // Stop existing simulation
@@ -315,10 +270,9 @@ const NetworkMap = ({
         // Render based on view type
         if (viewType === 'pack') renderPackView(g, width, height);
         else if (viewType === 'treemap') renderTreemapView(g, width, height);
-        else if (viewType === 'sunburst') renderSunburstView(g, width, height);
         else if (viewType === 'force') renderForceView(g, width, height);
 
-    }, [dimensions, hierarchyData, viewType, renderPackView, renderTreemapView, renderSunburstView, renderForceView]);
+    }, [dimensions, hierarchyData, viewType, renderPackView, renderTreemapView, renderForceView]);
 
     // Cleanup simulation on unmount
     useEffect(() => { return () => { if (simulationRef.current) simulationRef.current.stop(); }; }, []);
@@ -330,8 +284,8 @@ const NetworkMap = ({
     const legendItems = useMemo(() => hierarchyData.groupNames.slice(0, 5).map(name => ({ name, color: colorScale(name) })), [hierarchyData.groupNames, colorScale]);
 
     return (
-        <Box ref={containerRef} sx={{ position: 'relative', height: '100%', minHeight: 300, bgcolor: '#f8fafc', borderRadius: 2, overflow: 'hidden' }}>
-            <svg ref={svgRef} width={dimensions.width} height={dimensions.height} style={{ display: 'block' }} />
+        <Box ref={containerRef} sx={{ position: 'relative', height: '100%', minHeight: 300, bgcolor: 'transparent', borderRadius: 2, overflow: 'hidden' }}>
+            <svg ref={svgRef} width={dimensions.width} height={dimensions.height} style={{ display: 'block', background: 'transparent' }} />
 
             {/* Zoom Controls */}
             <Box sx={{ position: 'absolute', top: 12, right: 12, zIndex: 10, bgcolor: 'rgba(255,255,255,0.9)', backdropFilter: 'blur(6px)', borderRadius: '10px', p: 0.5, boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}>

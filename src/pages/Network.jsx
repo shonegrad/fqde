@@ -21,7 +21,6 @@ import CategoryIcon from '@mui/icons-material/Category';
 import GroupWorkIcon from '@mui/icons-material/GroupWork';
 import BubbleChartIcon from '@mui/icons-material/BubbleChart';
 import GridViewIcon from '@mui/icons-material/GridView';
-import DonutLargeIcon from '@mui/icons-material/DonutLarge';
 import HubIcon from '@mui/icons-material/Hub';
 
 const GROUPING_OPTIONS = [
@@ -34,7 +33,6 @@ const GROUPING_OPTIONS = [
 const VIEW_OPTIONS = [
     { value: 'pack', label: 'Bubble', icon: BubbleChartIcon },
     { value: 'treemap', label: 'Treemap', icon: GridViewIcon },
-    { value: 'sunburst', label: 'Sunburst', icon: DonutLargeIcon },
     { value: 'force', label: 'Force', icon: HubIcon }
 ];
 
