@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { Outlet, NavLink as RouterLink, useLocation } from 'react-router-dom';
+import { Outlet, Link as RouterLink, useLocation } from 'react-router-dom';
 import { useApp } from '../../context/AppContext';
 import {
     AppBar,
