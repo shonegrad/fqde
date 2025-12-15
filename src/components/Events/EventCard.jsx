@@ -20,7 +20,7 @@ const EventCard = ({ event }) => {
     const eventType = event.type || (event.tags?.[0]) || 'Event';
 
     return (
-        <Card variant="outlined" sx={{ height: '100%', display: 'flex', flexDirection: 'column', transition: 'all 0.2s', '&:hover': { borderColor: 'primary.main' } }}>
+        <Card elevation={2} sx={{ height: '100%', display: 'flex', flexDirection: 'column', transition: 'all 0.2s', '&:hover': { transform: 'translateY(-4px)' } }}>
             <CardContent sx={{ flexGrow: 1 }}>
                 <Stack direction="row" justifyContent="space-between" alignItems="flex-start" sx={{ mb: 2 }}>
                     <Box sx={{ minWidth: 0, flex: 1, pr: 1 }}>

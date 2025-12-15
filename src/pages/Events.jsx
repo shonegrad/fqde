@@ -1,11 +1,11 @@
 import React, { useState, useMemo } from 'react';
 import { useApp } from '../context/AppContext';
 import EventCard from '../components/Events/EventCard';
+import LazyList from '../components/common/LazyList';
 import {
     Container,
     Box,
     Typography,
-    Grid,
     TextField,
     InputAdornment,
     FormControl,
@@ -53,6 +53,10 @@ const Events = () => {
         return events.filter(e => new Date(e.startDateTime) > new Date()).length;
     }, [events]);
 
+    const renderEventCard = (event) => (
+        <EventCard event={event} />
+    );
+
     if (dataLoading) {
         return (
             <Container maxWidth="lg">
@@ -72,23 +76,45 @@ const Events = () => {
                 </Typography>
             </Box>
 
-            <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} sx={{ mb: 4 }}>
-                <TextField
-                    placeholder="Search events..."
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    InputProps={{ startAdornment: <InputAdornment position="start"><SearchIcon /></InputAdornment> }}
-                    size="small"
-                    sx={{ flexGrow: 1 }}
-                />
-                <FormControl size="small" sx={{ minWidth: 150 }}>
-                    <InputLabel>City</InputLabel>
-                    <Select value={cityFilter} label="City" onChange={(e) => setCityFilter(e.target.value)}>
-                        <MenuItem value="all">All Cities</MenuItem>
-                        {cities.map(city => <MenuItem key={city} value={city}>{city}</MenuItem>)}
-                    </Select>
-                </FormControl>
-            </Stack>
+            <Box
+                sx={{
+                    p: 2,
+                    mb: 4,
+                    borderRadius: 3,
+                    bgcolor: 'rgba(255,255,255,0.5)',
+                    backdropFilter: 'blur(8px)',
+                    border: '1px solid',
+                    borderColor: 'rgba(0,0,0,0.04)'
+                }}
+            >
+                <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} alignItems="center">
+                    <TextField
+                        fullWidth
+                        placeholder="Search events..."
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        InputProps={{
+                            startAdornment: <InputAdornment position="start"><SearchIcon color="primary" /></InputAdornment>,
+                            disableUnderline: true
+                        }}
+                        variant="standard"
+                        sx={{ flexGrow: 1 }}
+                    />
+                    <FormControl size="small" variant="standard" sx={{ minWidth: 150 }}>
+                        <InputLabel>City</InputLabel>
+                        <Select
+                            value={cityFilter}
+                            label="City"
+                            onChange={(e) => setCityFilter(e.target.value)}
+                            disableUnderline
+                            sx={{ fontWeight: 600, color: 'primary.main' }}
+                        >
+                            <MenuItem value="all">All Cities</MenuItem>
+                            {cities.map(city => <MenuItem key={city} value={city}>{city}</MenuItem>)}
+                        </Select>
+                    </FormControl>
+                </Stack>
+            </Box>
 
             {(searchQuery || cityFilter !== 'all') && (
                 <Box sx={{ mb: 2 }}>
@@ -99,19 +125,15 @@ const Events = () => {
                 </Box>
             )}
 
-            <Grid container spacing={3}>
-                {filteredEvents.length > 0 ? filteredEvents.map(event => (
-                    <Grid size={{ xs: 12, md: 6 }} key={event.id}>
-                        <EventCard event={event} />
-                    </Grid>
-                )) : (
-                    <Grid size={12}>
-                        <Typography color="text.secondary" sx={{ textAlign: 'center', py: 4 }}>
-                            No events found matching your criteria.
-                        </Typography>
-                    </Grid>
-                )}
-            </Grid>
+            <LazyList
+                items={filteredEvents}
+                renderItem={renderEventCard}
+                batchSize={12}
+                gridColumns={{ xs: 12, md: 6, lg: 6 }}
+                gridSpacing={3}
+                emptyMessage="No events found matching your criteria."
+                loadingMessage="Loading more events..."
+            />
         </Container>
     );
 };

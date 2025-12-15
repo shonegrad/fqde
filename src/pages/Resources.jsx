@@ -79,20 +79,39 @@ const Resources = () => {
                 )}
             </Stack>
 
-            <Paper variant="outlined" sx={{ p: 2, mb: 4 }}>
+            <Box
+                sx={{
+                    p: 2,
+                    mb: 4,
+                    borderRadius: 3,
+                    bgcolor: 'rgba(255,255,255,0.5)',
+                    backdropFilter: 'blur(8px)',
+                    border: '1px solid',
+                    borderColor: 'rgba(0,0,0,0.04)'
+                }}
+            >
                 <Stack direction={{ xs: 'column', md: 'row' }} spacing={2} alignItems="center">
                     <TextField
                         fullWidth
                         placeholder="Search by title, description, or tag..."
                         value={searchTerm}
                         onChange={e => setSearchTerm(e.target.value)}
-                        InputProps={{ startAdornment: <InputAdornment position="start"><SearchIcon /></InputAdornment> }}
-                        size="small"
+                        InputProps={{
+                            startAdornment: <InputAdornment position="start"><SearchIcon color="primary" /></InputAdornment>,
+                            disableUnderline: true
+                        }}
+                        variant="standard"
                         sx={{ flex: 1 }}
                     />
-                    <FormControl size="small" sx={{ minWidth: 120 }}>
+                    <FormControl size="small" variant="standard" sx={{ minWidth: 120 }}>
                         <InputLabel>Type</InputLabel>
-                        <Select value={typeFilter} label="Type" onChange={(e) => setTypeFilter(e.target.value)}>
+                        <Select
+                            value={typeFilter}
+                            label="Type"
+                            onChange={(e) => setTypeFilter(e.target.value)}
+                            disableUnderline
+                            sx={{ fontWeight: 600, color: 'primary.main' }}
+                        >
                             <MenuItem value="All">All Types</MenuItem>
                             {resourceTypes.map(type => <MenuItem key={type} value={type}>{type}</MenuItem>)}
                         </Select>
@@ -107,11 +126,12 @@ const Resources = () => {
                                 color={visibilityFilter === f ? "primary" : "default"}
                                 variant={visibilityFilter === f ? "filled" : "outlined"}
                                 clickable
+                                sx={{ border: 'none', fontWeight: 500 }}
                             />
                         ))}
                     </Stack>
                 </Stack>
-            </Paper>
+            </Box>
 
             {(searchTerm || visibilityFilter !== 'All' || typeFilter !== 'All') && (
                 <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>

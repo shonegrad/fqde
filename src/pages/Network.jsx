@@ -4,17 +4,18 @@ import NetworkMap from '../components/Network/NetworkMap';
 import OrgCard from '../components/Network/OrgCard';
 import MemberCard from '../components/Network/MemberCard';
 import OrgProfileModal from '../components/Network/OrgProfileModal';
+import LazyList from '../components/common/LazyList';
 import {
     Container,
     Box,
     Typography,
     ToggleButton,
     ToggleButtonGroup,
-    Grid,
     Stack,
     Paper,
     TextField,
-    InputAdornment
+    InputAdornment,
+    Fade
 } from '@mui/material';
 import MapIcon from '@mui/icons-material/Map';
 import ListIcon from '@mui/icons-material/List';
@@ -53,6 +54,14 @@ const Network = () => {
         );
     }, [people, searchQuery]);
 
+    const renderOrgCard = (org) => (
+        <OrgCard org={org} onClick={setSelectedNode} />
+    );
+
+    const renderMemberCard = (member) => (
+        <MemberCard member={member} onClick={setSelectedNode} />
+    );
+
     if (dataLoading) {
         return (
             <Container maxWidth="xl" sx={{ py: 4, textAlign: 'center' }}>
@@ -62,83 +71,122 @@ const Network = () => {
     }
 
     return (
-        <Container maxWidth="xl" sx={{ height: 'calc(100vh - 80px)', display: 'flex', flexDirection: 'column', pb: 2 }}>
+        <Container maxWidth="xl" sx={{
+            // Only fix height if map view is active to allow efficient scrolling for list
+            height: view === 'map' ? 'calc(100vh - 80px)' : 'auto',
+            display: 'flex',
+            flexDirection: 'column',
+            pb: 2
+        }}>
             <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{ mb: 3 }}>
                 <Box>
-                    <Typography variant="h4" component="h1" gutterBottom>Network Directory</Typography>
-                    <Typography variant="body1" color="text.secondary">
-                        Connecting {organizations.length} institutions and {people.length.toLocaleString()} educators across Quebec.
+                    <Typography variant="h3" component="h1" gutterBottom sx={{ fontWeight: 800, color: 'primary.main', mb: 1 }}>
+                        Network Directory
+                    </Typography>
+                    <Typography variant="h6" color="text.secondary" fontWeight={400}>
+                        Connecting {organizations.length} institutions and {people.length.toLocaleString()} educators.
                     </Typography>
                 </Box>
 
-                <Stack direction="row" spacing={2}>
-                    <Paper variant="outlined" sx={{ borderRadius: 2 }}>
-                        <ToggleButtonGroup value={contentType} exclusive onChange={(e, v) => v && setContentType(v)} size="small" color="primary">
-                            <ToggleButton value="orgs"><BusinessIcon sx={{ mr: 1, fontSize: 18 }} /> Orgs</ToggleButton>
-                            <ToggleButton value="members"><PeopleIcon sx={{ mr: 1, fontSize: 18 }} /> Members</ToggleButton>
+                <Stack direction="row" spacing={2} alignItems="center">
+                    <Box sx={{ borderRadius: 3, p: 0.5 }}>
+                        <ToggleButtonGroup
+                            value={contentType}
+                            exclusive
+                            onChange={(e, v) => v && setContentType(v)}
+                            size="medium"
+                            color="primary"
+                            sx={{
+                                bgcolor: 'rgba(255,255,255,0.5)',
+                                backdropFilter: 'blur(8px)',
+                                '& .MuiToggleButton-root': { border: 'none', borderRadius: 2, px: 2 }
+                            }}
+                        >
+                            <ToggleButton value="orgs"><BusinessIcon sx={{ mr: 1 }} /> Organizations</ToggleButton>
+                            <ToggleButton value="members"><PeopleIcon sx={{ mr: 1 }} /> Members</ToggleButton>
                         </ToggleButtonGroup>
-                    </Paper>
-                    <Paper variant="outlined" sx={{ borderRadius: 2 }}>
-                        <ToggleButtonGroup value={view} exclusive onChange={(e, v) => v && setView(v)} size="small" color="primary">
-                            <ToggleButton value="map" disabled={contentType === 'members'}><MapIcon sx={{ mr: 1, fontSize: 18 }} /> Map</ToggleButton>
-                            <ToggleButton value="list"><ListIcon sx={{ mr: 1, fontSize: 18 }} /> List</ToggleButton>
+                    </Box>
+                    <Box sx={{ borderRadius: 3, p: 0.5 }}>
+                        <ToggleButtonGroup
+                            value={view}
+                            exclusive
+                            onChange={(e, v) => v && setView(v)}
+                            size="medium"
+                            color="primary"
+                            sx={{
+                                bgcolor: 'rgba(255,255,255,0.5)',
+                                backdropFilter: 'blur(8px)',
+                                '& .MuiToggleButton-root': { border: 'none', borderRadius: 2, px: 2 }
+                            }}
+                        >
+                            <ToggleButton value="map" disabled={contentType === 'members'}><MapIcon sx={{ mr: 1 }} /> Map</ToggleButton>
+                            <ToggleButton value="list"><ListIcon sx={{ mr: 1 }} /> List</ToggleButton>
                         </ToggleButtonGroup>
-                    </Paper>
+                    </Box>
                 </Stack>
             </Stack>
 
-            <TextField
-                fullWidth
-                placeholder={`Search ${contentType === 'orgs' ? 'organizations' : 'people'} by name, location, or expertise...`}
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                InputProps={{ startAdornment: <InputAdornment position="start"><SearchIcon /></InputAdornment> }}
-                size="small"
-                sx={{ mb: 2 }}
-            />
+            <Paper
+                component={Fade} in={true}
+                elevation={0}
+                sx={{
+                    p: 2,
+                    mb: 4,
+                    borderRadius: 3,
+                    bgcolor: 'background.paper',
+                    border: '1px solid',
+                    borderColor: 'divider',
+                    display: 'flex',
+                    alignItems: 'center'
+                }}
+            >
+                <TextField
+                    fullWidth
+                    placeholder={`Search ${contentType === 'orgs' ? 'organizations' : 'people'} by name, location, or expertise...`}
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    InputProps={{
+                        startAdornment: <InputAdornment position="start"><SearchIcon color="primary" /></InputAdornment>,
+                        disableUnderline: true,
+                        sx: { fontSize: '1.1rem' }
+                    }}
+                    variant="standard"
+                />
+            </Paper>
+
             {searchQuery && (
-                <Typography variant="caption" color="text.secondary" sx={{ mb: 1, display: 'block' }}>
-                    Found {contentType === 'orgs' ? filteredOrganizations.length : filteredPeople.length} results
+                <Typography variant="body2" color="text.secondary" sx={{ mb: 2, display: 'block' }}>
+                    Found <strong>{contentType === 'orgs' ? filteredOrganizations.length : filteredPeople.length}</strong> results matching "{searchQuery}"
                 </Typography>
             )}
 
-            <Paper variant="outlined" sx={{ flexGrow: 1, minHeight: 0, overflow: 'hidden', borderRadius: 2 }}>
+            <Box sx={{ flexGrow: 1, minHeight: 0 }}>
                 {view === 'map' && contentType === 'orgs' ? (
-                    <Box sx={{ height: '100%' }}>
+                    <Paper elevation={0} sx={{ height: '100%', borderRadius: 4, overflow: 'hidden', border: '1px solid', borderColor: 'divider' }}>
                         <NetworkMap onNodeClick={setSelectedNode} organizations={organizations} />
-                    </Box>
+                    </Paper>
                 ) : (
-                    <Box sx={{ height: '100%', overflowY: 'auto', p: 3 }}>
-                        <Grid container spacing={2}>
-                            {contentType === 'orgs' ? (
-                                filteredOrganizations.length > 0 ? filteredOrganizations.map(org => (
-                                    <Grid size={{ xs: 12, md: 6, lg: 4 }} key={org.id}>
-                                        <OrgCard org={org} onClick={setSelectedNode} />
-                                    </Grid>
-                                )) : (
-                                    <Grid size={12}>
-                                        <Typography color="text.secondary" sx={{ textAlign: 'center', py: 4 }}>
-                                            No organizations found matching "{searchQuery}"
-                                        </Typography>
-                                    </Grid>
-                                )
-                            ) : (
-                                filteredPeople.length > 0 ? filteredPeople.map(member => (
-                                    <Grid size={{ xs: 12, md: 6, lg: 4 }} key={member.id}>
-                                        <MemberCard member={member} onClick={setSelectedNode} />
-                                    </Grid>
-                                )) : (
-                                    <Grid size={12}>
-                                        <Typography color="text.secondary" sx={{ textAlign: 'center', py: 4 }}>
-                                            No people found matching "{searchQuery}"
-                                        </Typography>
-                                    </Grid>
-                                )
-                            )}
-                        </Grid>
+                    <Box sx={{ pb: 4 }}>
+                        {contentType === 'orgs' ? (
+                            <LazyList
+                                items={filteredOrganizations}
+                                renderItem={renderOrgCard}
+                                batchSize={24}
+                                emptyMessage={`No organizations found matching "${searchQuery}"`}
+                                loadingMessage="Loading more organizations..."
+                            />
+                        ) : (
+                            <LazyList
+                                items={filteredPeople}
+                                renderItem={renderMemberCard}
+                                batchSize={30}
+                                emptyMessage={`No people found matching "${searchQuery}"`}
+                                loadingMessage="Loading more people..."
+                            />
+                        )}
                     </Box>
                 )}
-            </Paper>
+            </Box>
 
             {selectedNode && <OrgProfileModal node={selectedNode} onClose={() => setSelectedNode(null)} />}
         </Container>

@@ -9,7 +9,7 @@ const OrgCard = ({ org, onClick }) => {
     const tags = org.tags || [];
 
     return (
-        <Card variant="outlined" onClick={() => onClick(org)} sx={{ height: '100%', cursor: 'pointer', transition: 'all 0.2s', '&:hover': { borderColor: 'primary.main', transform: 'translateY(-2px)' } }}>
+        <Card elevation={2} onClick={() => onClick(org)} sx={{ height: '100%', cursor: 'pointer', transition: 'all 0.2s', '&:hover': { transform: 'translateY(-4px)' } }}>
             <CardContent>
                 <Stack direction="row" justifyContent="space-between" alignItems="flex-start" sx={{ mb: 2 }}>
                     {logoPath ? (

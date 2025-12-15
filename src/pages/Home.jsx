@@ -96,7 +96,7 @@ const Home = () => {
                     </Grid>
 
                     {/* Upcoming Events */}
-                    <Card variant="outlined" sx={{ mb: 3 }}>
+                    <Card elevation={2} sx={{ mb: 3 }}>
                         <CardContent>
                             <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{ mb: 2 }}>
                                 <Typography variant="h6">Upcoming Events</Typography>
@@ -124,7 +124,7 @@ const Home = () => {
                     </Card>
 
                     {/* Recent Resources */}
-                    <Card variant="outlined">
+                    <Card elevation={2}>
                         <CardContent>
                             <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{ mb: 2 }}>
                                 <Typography variant="h6">Recent Resources</Typography>
@@ -155,7 +155,7 @@ const Home = () => {
                         <QuickActions />
 
                         {currentUser && (
-                            <Card variant="outlined">
+                            <Card elevation={2}>
                                 <CardContent>
                                     <Stack direction="row" spacing={2} alignItems="center" sx={{ mb: 2 }}>
                                         <Avatar

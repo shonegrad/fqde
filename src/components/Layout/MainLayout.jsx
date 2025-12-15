@@ -70,24 +70,58 @@ const MainLayout = () => {
 
     return (
         <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', bgcolor: 'background.default' }}>
-            <AppBar position="sticky" color="default" elevation={0} sx={{ bgcolor: 'background.paper', borderBottom: 1, borderColor: 'divider' }}>
+            <AppBar
+                position="sticky"
+                color="inherit"
+                elevation={0}
+                sx={{
+                    bgcolor: 'rgba(241, 245, 249, 0.9)',
+                    backdropFilter: 'blur(16px)',
+                    borderBottom: '1px solid',
+                    borderColor: 'rgba(0,0,0,0.06)',
+                    py: 1
+                }}
+            >
                 <Container maxWidth="xl">
                     <Toolbar disableGutters sx={{ justifyContent: 'space-between' }}>
-                        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                            <DashboardIcon color="primary" />
-                            <Typography
-                                variant="h6"
+                        <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+                            <Box
                                 component={RouterLink}
                                 to="/"
-                                color="primary"
-                                sx={{ textDecoration: 'none', fontWeight: 700 }}
+                                sx={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    gap: 1.5,
+                                    textDecoration: 'none',
+                                    color: 'primary.main',
+                                    transition: 'opacity 0.2s',
+                                    '&:hover': { opacity: 0.8 }
+                                }}
                             >
-                                FQDE Network
-                            </Typography>
-                            <Chip label={`v${APP_VERSION}`} size="small" variant="outlined" />
+                                <DashboardIcon sx={{ fontSize: 32 }} />
+                                <Box>
+                                    <Typography variant="h6" sx={{ fontWeight: 800, lineHeight: 1.1, letterSpacing: '-0.02em', color: 'text.primary' }}>
+                                        FQDE Network
+                                    </Typography>
+                                    <Typography variant="caption" sx={{ color: 'text.secondary', display: 'block' }}>
+                                        v{APP_VERSION}
+                                    </Typography>
+                                </Box>
+                            </Box>
                         </Box>
 
-                        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, gap: 0.5, ml: 4 }}>
+                        <Box sx={{
+                            display: { xs: 'none', md: 'flex' },
+                            gap: 1,
+                            position: 'absolute',
+                            left: '50%',
+                            transform: 'translateX(-50%)',
+                            bgcolor: 'rgba(255,255,255,0.5)',
+                            p: 0.5,
+                            borderRadius: 4,
+                            border: '1px solid',
+                            borderColor: 'divider'
+                        }}>
                             {[
                                 { name: 'Home', path: '/' },
                                 { name: 'Events', path: '/events' },
@@ -100,7 +134,14 @@ const MainLayout = () => {
                                     to={page.path}
                                     color={isActive(page.path) ? "primary" : "inherit"}
                                     variant={isActive(page.path) ? "contained" : "text"}
-                                    size="small"
+                                    size="medium"
+                                    disableElevation
+                                    sx={{
+                                        borderRadius: 3,
+                                        px: 3,
+                                        fontWeight: 600,
+                                        minWidth: 'auto'
+                                    }}
                                 >
                                     {page.name}
                                 </Button>
@@ -109,24 +150,36 @@ const MainLayout = () => {
 
                         <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
                             {dataLoading ? (
-                                <CircularProgress size={20} color="primary" />
+                                <CircularProgress size={24} color="primary" />
                             ) : (
                                 <>
-                                    <FormControl size="small" variant="outlined" sx={{ minWidth: 160, display: { xs: 'none', sm: 'flex' } }}>
-                                        <InputLabel>Viewing as</InputLabel>
+                                    <Box sx={{ display: { xs: 'none', sm: 'flex' }, alignItems: 'center', gap: 1, color: 'text.secondary' }}>
+                                        <Typography variant="body2" fontWeight={500}>Viewing as</Typography>
                                         <Select
                                             value={currentUser?.id || ''}
                                             onChange={(e) => switchRole(e.target.value)}
-                                            label="Viewing as"
+                                            variant="standard"
+                                            disableUnderline
+                                            sx={{
+                                                fontWeight: 700,
+                                                color: 'primary.main',
+                                                fontSize: '0.9rem',
+                                                '& .MuiSelect-select': { py: 0 }
+                                            }}
                                         >
                                             {roleUsers.map(u => (
                                                 <MenuItem key={u.id} value={u.id}>{getUserRole(u)}</MenuItem>
                                             ))}
                                         </Select>
-                                    </FormControl>
+                                    </Box>
                                     <Avatar
                                         src={currentUser?.avatarPath ? `/fqde${currentUser.avatarPath}` : undefined}
-                                        sx={{ width: 36, height: 36 }}
+                                        sx={{
+                                            width: 40,
+                                            height: 40,
+                                            boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+                                            border: '2px solid white'
+                                        }}
                                     >
                                         {getUserInitials(currentUser)}
                                     </Avatar>
@@ -137,13 +190,16 @@ const MainLayout = () => {
                 </Container>
             </AppBar>
 
-            <Box component="main" sx={{ flexGrow: 1, py: 4 }}>
+            <Box component="main" sx={{ flexGrow: 1, py: 6, display: 'flex', flexDirection: 'column' }}>
                 <Outlet />
             </Box>
 
-            <Box component="footer" sx={{ py: 3, px: 2, borderTop: 1, borderColor: 'divider', textAlign: 'center', bgcolor: 'background.paper' }}>
+            <Box component="footer" sx={{ py: 6, px: 2, borderTop: 1, borderColor: 'divider', textAlign: 'center', bgcolor: 'background.paper' }}>
+                <Typography variant="body2" color="text.secondary" fontWeight={500}>
+                    FQDE Education Network
+                </Typography>
                 <Typography variant="caption" color="text.secondary">
-                    © 2025 FQDE Education Network — {(users || []).length.toLocaleString()} educators across Quebec
+                    Connecting {(users || []).length.toLocaleString()} educators across Quebec
                 </Typography>
             </Box>
         </Box>
