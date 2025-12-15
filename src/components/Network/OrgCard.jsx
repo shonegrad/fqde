@@ -28,7 +28,16 @@ const OrgCard = ({ org, onClick }) => {
         >
             <CardContent>
                 <Stack direction="row" justifyContent="space-between" alignItems="flex-start" sx={{ mb: 2 }}>
-                    <BusinessIcon sx={{ fontSize: 32, color: 'text.secondary', opacity: 0.7 }} />
+                    {org.logo ? (
+                        <Box
+                            component="img"
+                            src={org.logo}
+                            alt={org.name}
+                            sx={{ width: 48, height: 48, borderRadius: 1, objectFit: 'cover' }}
+                        />
+                    ) : (
+                        <BusinessIcon sx={{ fontSize: 32, color: 'text.secondary', opacity: 0.7 }} />
+                    )}
                     <Chip label={org.type} size="small" variant="outlined" />
                 </Stack>
 

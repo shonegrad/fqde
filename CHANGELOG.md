@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [Unreleased]
+### Added
+- Expanded mock dataset: 120+ members, 25 organizations, 20+ events.
+- New `MemberCard` component for displaying user profiles in the directory.
+- `OrgProfileModal` updated to support Member profiles with bios and avatars.
+- Toggle between "Organizations" and "Members" view in the Network page.
+- Visual thumbnails (avatars/logos) for all network entities.
+
+### Changed
+- `NetworkMap` visual improvements and MUI migration.
+- `seed.js` populated with generated realistic data.
+
 ## [0.1.0] - 2025-12-14
 - **Material UI Migration**: Complete UI overhaul using Material UI components and a custom theme.
 - **New Features**:

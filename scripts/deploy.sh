@@ -35,4 +35,4 @@ echo "🚀 Deploying to GitHub Pages..."
 # We use gh-pages to push the dist folder to the gh-pages branch
 npx gh-pages -d dist
 
-echo "🎉 Deployment complete! Site should be live at https://nebojsadespotovic.github.io/fqde/"
+echo "🎉 Deployment complete! Site should be live at https://shonegrad.github.io/fqde/"

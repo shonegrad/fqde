@@ -34,11 +34,18 @@ const OrgProfileModal = ({ node, onClose }) => {
             <Box sx={{ px: 4, pb: 4 }}>
                 <Box sx={{ mb: 4 }}>
                     {isOrg ? (
-                        <Avatar sx={{ width: 64, height: 64, bgcolor: 'primary.light', mb: 2 }}>
-                            <BusinessIcon fontSize="large" />
-                        </Avatar>
+                        node.logo ? (
+                            <Avatar src={node.logo} sx={{ width: 64, height: 64, mb: 2 }} variant="rounded" />
+                        ) : (
+                            <Avatar sx={{ width: 64, height: 64, bgcolor: 'primary.light', mb: 2 }}>
+                                <BusinessIcon fontSize="large" />
+                            </Avatar>
+                        )
                     ) : (
-                        <Avatar sx={{ width: 64, height: 64, bgcolor: 'secondary.main', mb: 2, fontSize: '1.5rem' }}>
+                        <Avatar
+                            src={node.avatar}
+                            sx={{ width: 64, height: 64, bgcolor: 'secondary.main', mb: 2, fontSize: '1.5rem' }}
+                        >
                             {node.name ? node.name.charAt(0) : '?'}
                         </Avatar>
                     )}
@@ -46,9 +53,13 @@ const OrgProfileModal = ({ node, onClose }) => {
                     <Typography variant="h5" component="h2" gutterBottom sx={{ fontFamily: 'serif', fontWeight: 600 }}>
                         {node.name}
                     </Typography>
-                    {isOrg && (
+                    {isOrg ? (
                         <Typography variant="body2" color="text.secondary">
                             {node.type} • {node.region}
+                        </Typography>
+                    ) : (
+                        <Typography variant="body2" color="text.secondary">
+                            {node.role} • {node.institutionId}
                         </Typography>
                     )}
                 </Box>
@@ -59,9 +70,7 @@ const OrgProfileModal = ({ node, onClose }) => {
                             About
                         </Typography>
                         <Typography variant="body2" color="text.secondary" sx={{ lineHeight: 1.6 }}>
-                            {isOrg
-                                ? "Leading institution dedicated to educational excellence and policy reform. Collaborating across the network to drive systemic change."
-                                : "Education leader passionate about inclusive learning environments and staff development."}
+                            {node.description || node.bio || "No description available."}
                         </Typography>
                     </Box>
 
