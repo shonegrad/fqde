@@ -1,7 +1,16 @@
 import React, { useState } from 'react';
 import { useApp } from '../../context/AppContext';
 import SessionCard from './SessionCard';
-import { Layers, User } from 'lucide-react';
+import {
+    Box,
+    ToggleButton,
+    ToggleButtonGroup,
+    Stack,
+    Typography,
+    Paper
+} from '@mui/material';
+import LayersIcon from '@mui/icons-material/Layers';
+import PersonIcon from '@mui/icons-material/Person';
 
 const TimelineView = ({ event }) => {
     const { mySchedule } = useApp();
@@ -12,40 +21,57 @@ const TimelineView = ({ event }) => {
         ? event.sessions.filter(s => mySchedule.includes(s.id))
         : event.sessions;
 
+    const handleViewChange = (event, newView) => {
+        if (newView !== null) {
+            setViewMode(newView);
+        }
+    };
+
     return (
-        <div className="mt-8">
+        <Box sx={{ mt: 4 }}>
             {/* View Toggle */}
-            <div className="flex justify-center mb-6">
-                <div className="bg-gray-100 p-1 rounded-lg flex">
-                    <button
-                        onClick={() => setViewMode('personal')}
-                        className={`flex items-center gap-2 px-6 py-2 rounded-md text-sm font-medium transition-all ${viewMode === 'personal' ? 'bg-white shadow text-accent' : 'text-gray-500 hover:text-gray-700'}`}
+            <Box sx={{ display: 'flex', justifyContent: 'center', mb: 4 }}>
+                <Paper elevation={0} variant="outlined" sx={{ borderRadius: 1 }}>
+                    <ToggleButtonGroup
+                        value={viewMode}
+                        exclusive
+                        onChange={handleViewChange}
+                        aria-label="schedule view"
+                        size="small"
+                        color="primary"
                     >
-                        <User size={16} /> For You
-                    </button>
-                    <button
-                        onClick={() => setViewMode('master')}
-                        className={`flex items-center gap-2 px-6 py-2 rounded-md text-sm font-medium transition-all ${viewMode === 'master' ? 'bg-white shadow text-accent' : 'text-gray-500 hover:text-gray-700'}`}
-                    >
-                        <Layers size={16} /> Master Schedule
-                    </button>
-                </div>
-            </div>
+                        <ToggleButton value="personal" aria-label="for you">
+                            <PersonIcon sx={{ mr: 1, fontSize: 18 }} /> For You
+                        </ToggleButton>
+                        <ToggleButton value="master" aria-label="master schedule">
+                            <LayersIcon sx={{ mr: 1, fontSize: 18 }} /> Master Schedule
+                        </ToggleButton>
+                    </ToggleButtonGroup>
+                </Paper>
+            </Box>
 
             {/* Timeline Content */}
-            <div className="space-y-4">
+            <Stack spacing={2}>
                 {sessions.length === 0 ? (
-                    <div className="text-center py-12 bg-gray-50 rounded-lg border border-dashed border-gray-300">
-                        <h4 className="text-lg font-medium text-gray-400">
+                    <Box sx={{
+                        textAlign: 'center',
+                        py: 6,
+                        bgcolor: 'background.default',
+                        borderRadius: 2,
+                        border: '1px dashed',
+                        borderColor: 'divider'
+                    }}>
+                        <Typography variant="h6" color="text.secondary" gutterBottom>
                             {viewMode === 'personal' ? 'Your schedule is empty.' : 'No sessions found.'}
-                        </h4>
+                        </Typography>
                         {viewMode === 'personal' && (
-                            <p className="text-gray-400 text-sm mt-1">Switch to Master Schedule to add sessions.</p>
+                            <Typography variant="body2" color="text.secondary">
+                                Switch to Master Schedule to add sessions.
+                            </Typography>
                         )}
-                    </div>
+                    </Box>
                 ) : (
-                    // Group by Day (Simulated by just list for now as most are single day in seed)
-                    <div className="grid gap-4">
+                    <Stack spacing={2}>
                         {sessions
                             .sort((a, b) => new Date(a.start) - new Date(b.start))
                             .map(session => (
@@ -56,10 +82,10 @@ const TimelineView = ({ event }) => {
                                     isForYouView={viewMode === 'personal'}
                                 />
                             ))}
-                    </div>
+                    </Stack>
                 )}
-            </div>
-        </div>
+            </Stack>
+        </Box>
     );
 };
 

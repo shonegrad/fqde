@@ -1,9 +1,23 @@
 import React, { useState } from 'react';
-import { X, Upload } from 'lucide-react';
 import { useApp } from '../../context/AppContext';
+import {
+    Dialog,
+    DialogTitle,
+    DialogContent,
+    DialogActions,
+    Button,
+    TextField,
+    MenuItem,
+    Box,
+    Typography,
+    Stack,
+    IconButton
+} from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
+import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 
 const UploadModal = ({ onClose }) => {
-    const { addResource, currentUser } = useApp();
+    const { addResource } = useApp();
     const [formData, setFormData] = useState({
         title: '',
         description: '',
@@ -28,78 +42,94 @@ const UploadModal = ({ onClose }) => {
     };
 
     return (
-        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-            <div className="bg-white rounded-lg w-full max-w-md p-6 relative animate-fade-in">
-                <button onClick={onClose} className="absolute top-4 right-4 text-gray-400 hover:text-gray-600">
-                    <X size={20} />
-                </button>
-
-                <h2 className="text-xl font-heading font-bold mb-4">Upload Resource</h2>
-
-                <form onSubmit={handleSubmit} className="space-y-4">
-                    <div>
-                        <label className="block text-sm font-medium mb-1">Title</label>
-                        <input
-                            type="text"
-                            className="w-full border p-2 rounded"
+        <Dialog open={true} onClose={onClose} maxWidth="sm" fullWidth>
+            <DialogTitle sx={{ m: 0, p: 2, fontFamily: 'serif', fontWeight: 600 }}>
+                Upload Resource
+                <IconButton
+                    aria-label="close"
+                    onClick={onClose}
+                    sx={{
+                        position: 'absolute',
+                        right: 8,
+                        top: 8,
+                        color: (theme) => theme.palette.grey[500],
+                    }}
+                >
+                    <CloseIcon />
+                </IconButton>
+            </DialogTitle>
+            <form onSubmit={handleSubmit}>
+                <DialogContent dividers>
+                    <Stack spacing={3}>
+                        <TextField
+                            label="Title"
+                            fullWidth
                             required
                             value={formData.title}
                             onChange={e => setFormData({ ...formData, title: e.target.value })}
                         />
-                    </div>
 
-                    <div>
-                        <label className="block text-sm font-medium mb-1">Description</label>
-                        <textarea
-                            className="w-full border p-2 rounded"
-                            rows="3"
+                        <TextField
+                            label="Description"
+                            fullWidth
+                            multiline
+                            rows={3}
                             value={formData.description}
                             onChange={e => setFormData({ ...formData, description: e.target.value })}
-                        ></textarea>
-                    </div>
+                        />
 
-                    <div className="grid grid-cols-2 gap-4">
-                        <div>
-                            <label className="block text-sm font-medium mb-1">Access Level</label>
-                            <select
-                                className="w-full border p-2 rounded"
+                        <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2 }}>
+                            <TextField
+                                select
+                                label="Access Level"
                                 value={formData.access}
                                 onChange={e => setFormData({ ...formData, access: e.target.value })}
                             >
-                                <option>Public</option>
-                                <option>Network</option>
-                                <option>Institution-Only</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label className="block text-sm font-medium mb-1">Tags (comma sep)</label>
-                            <input
-                                type="text"
-                                className="w-full border p-2 rounded"
+                                <MenuItem value="Public">Public</MenuItem>
+                                <MenuItem value="Network">Network</MenuItem>
+                                <MenuItem value="Institution-Only">Institution-Only</MenuItem>
+                            </TextField>
+
+                            <TextField
+                                label="Tags (comma sep)"
                                 placeholder="policy, math..."
                                 value={formData.tags}
                                 onChange={e => setFormData({ ...formData, tags: e.target.value })}
                             />
-                        </div>
-                    </div>
+                        </Box>
 
-                    <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
-                        <input
-                            type="file"
-                            className="hidden"
-                            id="file-upload"
-                            onChange={e => setFormData({ ...formData, file: e.target.files[0] })}
-                        />
-                        <label htmlFor="file-upload" className="cursor-pointer flex flex-col items-center gap-2 text-gray-500 hover:text-accent">
-                            <Upload size={24} />
-                            <span className="text-sm">{formData.file ? formData.file.name : 'Click to upload file'}</span>
-                        </label>
-                    </div>
-
-                    <button type="submit" className="btn btn-primary w-full">Publish Resource</button>
-                </form>
-            </div>
-        </div>
+                        <Box
+                            sx={{
+                                border: '2px dashed',
+                                borderColor: 'divider',
+                                borderRadius: 2,
+                                p: 4,
+                                textAlign: 'center',
+                                cursor: 'pointer',
+                                '&:hover': { bgcolor: 'action.hover', borderColor: 'primary.main' }
+                            }}
+                        >
+                            <input
+                                type="file"
+                                id="file-upload"
+                                style={{ display: 'none' }}
+                                onChange={e => setFormData({ ...formData, file: e.target.files[0] })}
+                            />
+                            <label htmlFor="file-upload" style={{ width: '100%', height: '100%', cursor: 'pointer', display: 'block' }}>
+                                <CloudUploadIcon sx={{ fontSize: 40, color: 'text.secondary', mb: 1 }} />
+                                <Typography variant="body2" color="text.secondary">
+                                    {formData.file ? formData.file.name : 'Click to upload file'}
+                                </Typography>
+                            </label>
+                        </Box>
+                    </Stack>
+                </DialogContent>
+                <DialogActions sx={{ p: 2 }}>
+                    <Button onClick={onClose}>Cancel</Button>
+                    <Button type="submit" variant="contained">Publish Resource</Button>
+                </DialogActions>
+            </form>
+        </Dialog>
     );
 };
 

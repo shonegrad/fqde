@@ -1,62 +1,87 @@
 import React from 'react';
-import { FileText, Lock, Globe, Users, Bookmark, File } from 'lucide-react';
 import { useApp } from '../../context/AppContext';
+import {
+    Card,
+    CardContent,
+    CardActions,
+    Typography,
+    IconButton,
+    Chip,
+    Box,
+    Stack,
+    Avatar
+} from '@mui/material';
+import ArticleIcon from '@mui/icons-material/Article';
+import LockIcon from '@mui/icons-material/Lock';
+import PublicIcon from '@mui/icons-material/Public';
+import GroupIcon from '@mui/icons-material/Group';
+import BookmarkIcon from '@mui/icons-material/Bookmark';
+import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 
 const ResourceCard = ({ resource }) => {
     const { savedResources, toggleSaveResource } = useApp();
     const isSaved = savedResources.includes(resource.id);
 
-    const getIcon = (type) => {
-        // Simple icon mapping
-        return <FileText size={24} className="text-gray-500" />;
-    };
-
     const getAccessIcon = (access) => {
-        if (access === 'Public') return <Globe size={14} />;
-        if (access === 'Network') return <Users size={14} />;
-        return <Lock size={14} />;
+        if (access === 'Public') return <PublicIcon sx={{ fontSize: 16 }} />;
+        if (access === 'Network') return <GroupIcon sx={{ fontSize: 16 }} />;
+        return <LockIcon sx={{ fontSize: 16 }} />;
     };
 
     const getAccessColor = (access) => {
-        if (access === 'Public') return 'bg-green-100 text-green-700';
-        if (access === 'Network') return 'bg-blue-100 text-blue-700';
-        return 'bg-gray-100 text-gray-700';
+        if (access === 'Public') return 'success';
+        if (access === 'Network') return 'info';
+        return 'default';
     }
 
     return (
-        <div className="card hover:shadow-md transition-shadow flex items-start gap-4">
-            <div className="p-3 bg-gray-50 rounded-lg">
-                {getIcon(resource.type)}
-                <div className="text-center text-xs font-bold mt-1 text-gray-500">{resource.type}</div>
-            </div>
+        <Card variant="outlined" sx={{ height: '100%', display: 'flex', flexDirection: 'column', '&:hover': { boxShadow: 1, borderColor: 'primary.main' }, transition: 'all 0.2s' }}>
+            <CardContent sx={{ flexGrow: 1, display: 'flex', gap: 2, alignItems: 'flex-start' }}>
+                <Avatar sx={{ bgcolor: 'action.selected', color: 'text.secondary', width: 48, height: 48 }}>
+                    <ArticleIcon />
+                    {/* Hacky way to show type below if needed, or just rely on icon */}
+                </Avatar>
 
-            <div className="flex-1">
-                <div className="flex justify-between items-start">
-                    <h3 className="font-heading font-bold text-lg">{resource.title}</h3>
-                    <button
-                        onClick={() => toggleSaveResource(resource.id)}
-                        className={`text-gray-400 hover:text-accent ${isSaved ? 'text-blue-600' : ''}`}
-                    >
-                        <Bookmark fill={isSaved ? "currentColor" : "none"} size={20} />
-                    </button>
-                </div>
+                <Box sx={{ flexGrow: 1 }}>
+                    <Stack direction="row" justifyContent="space-between" alignItems="flex-start">
+                        <Typography variant="h6" component="h3" sx={{ fontFamily: 'serif', fontWeight: 600, lineHeight: 1.2, mb: 1 }}>
+                            {resource.title}
+                        </Typography>
+                        <IconButton
+                            onClick={() => toggleSaveResource(resource.id)}
+                            color={isSaved ? "primary" : "default"}
+                            size="small"
+                        >
+                            {isSaved ? <BookmarkIcon /> : <BookmarkBorderIcon />}
+                        </IconButton>
+                    </Stack>
 
-                <div className="flex items-center gap-2 mt-2 mb-3">
-                    <span className={`badge flex items-center gap-1 ${getAccessColor(resource.access)}`}>
-                        {getAccessIcon(resource.access)} {resource.access}
-                    </span>
-                    <span className="text-sm text-gray-500">by {resource.owner}</span>
-                </div>
+                    <Stack direction="row" spacing={1} alignItems="center" sx={{ mb: 1.5 }}>
+                        <Chip
+                            icon={getAccessIcon(resource.access)}
+                            label={resource.access}
+                            size="small"
+                            color={getAccessColor(resource.access)}
+                            variant="outlined"
+                        />
+                        <Typography variant="caption" color="text.secondary">
+                            by {resource.owner}
+                        </Typography>
+                    </Stack>
 
-                <div className="flex flex-wrap gap-1">
-                    {resource.tags.map(tag => (
-                        <span key={tag} className="text-xs bg-gray-50 text-gray-600 px-2 py-1 rounded">
-                            #{tag}
-                        </span>
-                    ))}
-                </div>
-            </div>
-        </div>
+                    <Stack direction="row" spacing={0.5} flexWrap="wrap" gap={0.5}>
+                        {resource.tags.map(tag => (
+                            <Chip
+                                key={tag}
+                                label={`#${tag}`}
+                                size="small"
+                                sx={{ height: 20, fontSize: '0.7rem', bgcolor: 'action.hover' }}
+                            />
+                        ))}
+                    </Stack>
+                </Box>
+            </CardContent>
+        </Card>
     );
 };
 

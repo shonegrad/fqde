@@ -1,31 +1,60 @@
 import React from 'react';
-import { Building2, MapPin } from 'lucide-react';
+import {
+    Card,
+    CardContent,
+    Typography,
+    Chip,
+    Stack,
+    Box
+} from '@mui/material';
+import BusinessIcon from '@mui/icons-material/Business';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const OrgCard = ({ org, onClick }) => {
     return (
-        <div
+        <Card
+            variant="outlined"
             onClick={() => onClick(org)}
-            className="card hover:shadow-md transition-all cursor-pointer group"
+            sx={{
+                height: '100%',
+                cursor: 'pointer',
+                transition: 'all 0.2s',
+                '&:hover': {
+                    borderColor: 'primary.main',
+                    boxShadow: 2,
+                    transform: 'translateY(-2px)'
+                }
+            }}
         >
-            <div className="flex justify-between items-start mb-2">
-                <Building2 className="text-gray-400 group-hover:text-accent transition-colors" size={32} />
-                <span className="badge">{org.type}</span>
-            </div>
+            <CardContent>
+                <Stack direction="row" justifyContent="space-between" alignItems="flex-start" sx={{ mb: 2 }}>
+                    <BusinessIcon sx={{ fontSize: 32, color: 'text.secondary', opacity: 0.7 }} />
+                    <Chip label={org.type} size="small" variant="outlined" />
+                </Stack>
 
-            <h3 className="font-heading font-bold text-lg mb-1 group-hover:text-accent">{org.name}</h3>
+                <Typography variant="h6" component="h3" sx={{ fontFamily: 'serif', fontWeight: 600, mb: 0.5, lineHeight: 1.2 }}>
+                    {org.name}
+                </Typography>
 
-            <div className="flex items-center gap-1 text-sm text-gray-500 mb-4">
-                <MapPin size={14} /> {org.region}
-            </div>
+                <Stack direction="row" spacing={0.5} alignItems="center" sx={{ mb: 2, color: 'text.secondary' }}>
+                    <LocationOnIcon sx={{ fontSize: 16 }} />
+                    <Typography variant="body2">
+                        {org.region}
+                    </Typography>
+                </Stack>
 
-            <div className="flex flex-wrap gap-1">
-                {org.tags.map(tag => (
-                    <span key={tag} className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">
-                        {tag}
-                    </span>
-                ))}
-            </div>
-        </div>
+                <Stack direction="row" spacing={0.5} flexWrap="wrap" gap={0.5}>
+                    {org.tags.map(tag => (
+                        <Chip
+                            key={tag}
+                            label={tag}
+                            size="small"
+                            sx={{ height: 24, fontSize: '0.75rem', bgcolor: 'action.hover' }}
+                        />
+                    ))}
+                </Stack>
+            </CardContent>
+        </Card>
     );
 };
 

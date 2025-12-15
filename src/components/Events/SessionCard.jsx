@@ -1,6 +1,19 @@
 import React from 'react';
-import { Plus, Check, Clock, AlertTriangle } from 'lucide-react';
 import { useApp } from '../../context/AppContext';
+import {
+    Card,
+    CardContent,
+    Typography,
+    Chip,
+    IconButton,
+    Box,
+    Stack,
+    Paper
+} from '@mui/material';
+import AddIcon from '@mui/icons-material/Add';
+import CheckIcon from '@mui/icons-material/Check';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import WarningAmberIcon from '@mui/icons-material/WarningAmber';
 
 const SessionCard = ({ session, eventId, isForYouView }) => {
     const { mySchedule, addToSchedule, removeFromSchedule, events } = useApp();
@@ -29,30 +42,54 @@ const SessionCard = ({ session, eventId, isForYouView }) => {
     };
 
     return (
-        <div className={`border rounded-lg p-3 mb-3 ${isScheduled ? 'bg-blue-50 border-blue-200' : 'bg-white border-gray-200'} ${hasConflict ? 'border-orange-300 bg-orange-50' : ''}`}>
-            <div className="flex justify-between items-start">
-                <div>
-                    <h4 className="font-bold text-md">{session.title}</h4>
-                    <div className="flex items-center text-sm text-gray-500 mt-1 gap-2">
-                        <span className="flex items-center gap-1"><Clock size={14} /> {formatTime(session.start)} - {formatTime(session.end)}</span>
-                        <span className="badge bg-gray-100">{session.track}</span>
-                    </div>
-                </div>
+        <Paper
+            variant="outlined"
+            sx={{
+                p: 2,
+                bgcolor: isScheduled ? 'info.light' : (hasConflict ? 'warning.light' : 'background.paper'),
+                borderColor: isScheduled ? 'info.main' : (hasConflict ? 'warning.main' : 'divider'),
+                transition: 'all 0.2s',
+                '&:hover': { boxShadow: 1 }
+            }}
+        >
+            <Stack direction="row" justifyContent="space-between" alignItems="flex-start">
+                <Box>
+                    <Typography variant="subtitle1" fontWeight={600} gutterBottom>
+                        {session.title}
+                    </Typography>
+                    <Stack direction="row" spacing={1} alignItems="center">
+                        <Stack direction="row" spacing={0.5} alignItems="center" color="text.secondary">
+                            <AccessTimeIcon sx={{ fontSize: 16 }} />
+                            <Typography variant="body2">
+                                {formatTime(session.start)} - {formatTime(session.end)}
+                            </Typography>
+                        </Stack>
+                        <Chip label={session.track} size="small" sx={{ height: 20, fontSize: '0.7rem' }} />
+                    </Stack>
+                </Box>
 
-                <button
+                <IconButton
                     onClick={() => isScheduled ? removeFromSchedule(session.id) : addToSchedule(session.id)}
-                    className={`btn btn-sm ${isScheduled ? 'btn-secondary text-blue-800' : 'btn-secondary'}`}
+                    color={isScheduled ? "success" : "default"}
+                    sx={{
+                        bgcolor: isScheduled ? 'background.paper' : 'action.hover',
+                        '&:hover': { bgcolor: isScheduled ? 'background.paper' : 'action.selected' }
+                    }}
+                    size="small"
                 >
-                    {isScheduled ? <Check size={16} /> : <Plus size={16} />}
-                </button>
-            </div>
+                    {isScheduled ? <CheckIcon /> : <AddIcon />}
+                </IconButton>
+            </Stack>
 
             {hasConflict && (
-                <div className="mt-2 text-xs text-orange-700 font-medium flex items-center gap-1">
-                    <AlertTriangle size={12} /> Time conflict with another session
-                </div>
+                <Stack direction="row" spacing={0.5} alignItems="center" sx={{ mt: 1, color: 'warning.dark' }}>
+                    <WarningAmberIcon sx={{ fontSize: 16 }} />
+                    <Typography variant="caption" fontWeight={500}>
+                        Time conflict with another session
+                    </Typography>
+                </Stack>
             )}
-        </div>
+        </Paper>
     );
 };
 

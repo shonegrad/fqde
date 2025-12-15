@@ -1,61 +1,85 @@
 import React, { useState } from 'react';
-import { useApp } from '../context/AppContext'; // Need to export ORGANIZATIONS from seed through context?
-// Ah, AppContext doesn't export organizations directly? Let's check AppContext.
-import { ORGANIZATIONS } from '../data/seed'; // Importing directly since it's static for now
+import { useApp } from '../context/AppContext';
+import { ORGANIZATIONS } from '../data/seed';
 import NetworkMap from '../components/Network/NetworkMap';
 import OrgCard from '../components/Network/OrgCard';
 import OrgProfileModal from '../components/Network/OrgProfileModal';
-import { Map, List } from 'lucide-react';
+import {
+    Container,
+    Box,
+    Typography,
+    ToggleButton,
+    ToggleButtonGroup,
+    Grid,
+    Stack,
+    Paper
+} from '@mui/material';
+import MapIcon from '@mui/icons-material/Map';
+import ListIcon from '@mui/icons-material/List';
 
 const Network = () => {
     const [view, setView] = useState('map'); // 'map' or 'list'
     const [selectedNode, setSelectedNode] = useState(null);
 
-    // Also need to get organizations from context if I want it to be cleaner, 
-    // but direct import is fine for this prototype as they are not editable.
+    const handleViewChange = (event, newView) => {
+        if (newView !== null) {
+            setView(newView);
+        }
+    };
 
     return (
-        <div className="container h-[calc(100vh-80px)] flex flex-col">
-            <div className="flex justify-between items-center mb-6 flex-shrink-0">
-                <div>
-                    <h1 className="text-3xl font-heading mb-2">Network Directory</h1>
-                    <p className="text-gray-500">Explore connections between {ORGANIZATIONS.length} institutions.</p>
-                </div>
+        <Container maxWidth="xl" sx={{ height: 'calc(100vh - 80px)', display: 'flex', flexDirection: 'column', pb: 2 }}>
+            <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{ mb: 3 }}>
+                <Box>
+                    <Typography variant="h4" component="h1" gutterBottom sx={{ fontFamily: 'serif', fontWeight: 600 }}>
+                        Network Directory
+                    </Typography>
+                    <Typography variant="body1" color="text.secondary">
+                        Explore connections between {ORGANIZATIONS.length} institutions.
+                    </Typography>
+                </Box>
 
-                <div className="bg-gray-100 p-1 rounded-lg flex">
-                    <button
-                        onClick={() => setView('map')}
-                        className={`flex items-center gap-2 px-4 py-2 rounded-md font-medium transition-all ${view === 'map' ? 'bg-white shadow text-accent' : 'text-gray-500'}`}
+                <Paper elevation={0} variant="outlined" sx={{ borderRadius: 1 }}>
+                    <ToggleButtonGroup
+                        value={view}
+                        exclusive
+                        onChange={handleViewChange}
+                        aria-label="view mode"
+                        size="small"
+                        color="primary"
                     >
-                        <Map size={18} /> Map
-                    </button>
-                    <button
-                        onClick={() => setView('list')}
-                        className={`flex items-center gap-2 px-4 py-2 rounded-md font-medium transition-all ${view === 'list' ? 'bg-white shadow text-accent' : 'text-gray-500'}`}
-                    >
-                        <List size={18} /> List
-                    </button>
-                </div>
-            </div>
+                        <ToggleButton value="map" aria-label="map view">
+                            <MapIcon sx={{ mr: 1, fontSize: 20 }} /> Map
+                        </ToggleButton>
+                        <ToggleButton value="list" aria-label="list view">
+                            <ListIcon sx={{ mr: 1, fontSize: 20 }} /> List
+                        </ToggleButton>
+                    </ToggleButtonGroup>
+                </Paper>
+            </Stack>
 
-            <div className="flex-1 min-h-0 relative">
+            <Box sx={{ flexGrow: 1, minHeight: 0, position: 'relative', bgcolor: 'background.paper', borderRadius: 2, overflow: 'hidden', border: 1, borderColor: 'divider' }}>
                 {view === 'map' ? (
-                    <div className="h-full">
+                    <Box sx={{ height: '100%', width: '100%' }}>
                         <NetworkMap onNodeClick={setSelectedNode} />
-                    </div>
+                    </Box>
                 ) : (
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 overflow-y-auto h-full pb-8">
-                        {ORGANIZATIONS.map(org => (
-                            <OrgCard key={org.id} org={org} onClick={setSelectedNode} />
-                        ))}
-                    </div>
+                    <Box sx={{ height: '100%', overflowY: 'auto', p: 3 }}>
+                        <Grid container spacing={3}>
+                            {ORGANIZATIONS.map(org => (
+                                <Grid size={{ xs: 12, md: 6, lg: 4 }} key={org.id}>
+                                    <OrgCard org={org} onClick={setSelectedNode} />
+                                </Grid>
+                            ))}
+                        </Grid>
+                    </Box>
                 )}
-            </div>
+            </Box>
 
             {selectedNode && (
                 <OrgProfileModal node={selectedNode} onClose={() => setSelectedNode(null)} />
             )}
-        </div>
+        </Container>
     );
 };
 export default Network;

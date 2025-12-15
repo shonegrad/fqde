@@ -2,11 +2,31 @@ import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import FeedItem from '../components/Home/FeedItem';
 import QuickActions from '../components/Home/QuickActions';
-import { Building2, MapPin } from 'lucide-react';
+import {
+    Box,
+    Container,
+    Grid,
+    Typography,
+    Tabs,
+    Tab,
+    Card,
+    CardContent,
+    CardActions,
+    Button,
+    Chip,
+    Divider,
+    Stack
+} from '@mui/material';
+import BusinessIcon from '@mui/icons-material/Business';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const Home = () => {
-    const { currentUser, feed, events, resources } = useApp();
+    const { currentUser, feed } = useApp();
     const [filter, setFilter] = useState('all');
+
+    const handleFilterChange = (event, newValue) => {
+        setFilter(newValue);
+    };
 
     // Filter feed items
     const filteredFeed = feed.filter(item => {
@@ -15,68 +35,91 @@ const Home = () => {
     });
 
     // Get user's institution
-    // In a real app we'd look this up properly
     const userOrg = { name: "Riverdale Leadership Institute", region: "Northeast", role: "Member" };
 
     return (
-        <div className="container">
-            <div className="mb-8">
-                <h1 className="text-3xl font-heading mb-2">Welcome back, {currentUser.name.split(' ')[0]}</h1>
-                <p className="text-gray-500">Here's what's happening in your network today.</p>
-            </div>
+        <Container maxWidth="lg">
+            <Box sx={{ mb: 4 }}>
+                <Typography variant="h4" component="h1" gutterBottom sx={{ fontFamily: 'serif', fontWeight: 600 }}>
+                    Welcome back, {currentUser.name.split(' ')[0]}
+                </Typography>
+                <Typography variant="body1" color="text.secondary">
+                    Here's what's happening in your network today.
+                </Typography>
+            </Box>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <Grid container spacing={4}>
                 {/* Main Feed Column */}
-                <div className="lg:col-span-2 space-y-6">
-
+                <Grid size={{ xs: 12, lg: 8 }}>
                     {/* Feed Filters */}
-                    <div className="flex border-b border-gray-200">
-                        {['all', 'announcement', 'event', 'resource'].map(f => (
-                            <button
-                                key={f}
-                                onClick={() => setFilter(f)}
-                                className={`px-4 py-2 capitalize font-medium ${filter === f ? 'text-accent border-b-2 border-accent' : 'text-gray-500'}`}
-                            >
-                                {f === 'all' ? 'Your Feed' : f + 's'}
-                            </button>
-                        ))}
-                    </div>
+                    <Box sx={{ borderBottom: 1, borderColor: 'divider', mb: 3 }}>
+                        <Tabs
+                            value={filter}
+                            onChange={handleFilterChange}
+                            aria-label="feed filters"
+                            textColor="primary"
+                            indicatorColor="primary"
+                        >
+                            <Tab label="Your Feed" value="all" />
+                            <Tab label="Announcements" value="announcement" />
+                            <Tab label="Events" value="event" />
+                            <Tab label="Resources" value="resource" />
+                        </Tabs>
+                    </Box>
 
                     {/* Feed Items */}
-                    <div className="space-y-4">
+                    <Stack spacing={2}>
                         {filteredFeed.map(item => (
                             <FeedItem key={item.id} item={item} />
                         ))}
                         {filteredFeed.length === 0 && (
-                            <p className="text-center text-gray-500 py-8">No updates found.</p>
+                            <Typography variant="body1" align="center" color="text.secondary" sx={{ py: 4 }}>
+                                No updates found.
+                            </Typography>
                         )}
-                    </div>
-                </div>
+                    </Stack>
+                </Grid>
 
                 {/* Sidebar */}
-                <div className="space-y-6">
-                    {/* Quick Actions */}
-                    <QuickActions />
+                <Grid size={{ xs: 12, lg: 4 }}>
+                    <Stack spacing={3}>
+                        {/* Quick Actions */}
+                        <QuickActions />
 
-                    {/* My Institution Card */}
-                    <div className="card bg-slate-50 border-slate-200">
-                        <div className="flex items-center gap-2 mb-3 text-slate-700">
-                            <Building2 size={20} />
-                            <h3 className="font-heading font-bold font-lg">My Institution</h3>
-                        </div>
-                        <h4 className="font-bold text-lg mb-1">{userOrg.name}</h4>
-                        <div className="flex items-center gap-1 text-sm text-gray-500 mb-4">
-                            <MapPin size={14} /> {userOrg.region}
-                        </div>
-                        <div className="border-t border-gray-200 pt-3 flex justify-between items-center">
-                            <span className="text-sm font-medium text-gray-600">Status</span>
-                            <span className="badge bg-green-100 text-green-700">Active Member</span>
-                        </div>
-                        <button className="btn btn-sm btn-secondary w-full mt-4">View Profile</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        {/* My Institution Card */}
+                        <Card variant="outlined" sx={{ bgcolor: 'background.default' }}>
+                            <CardContent>
+                                <Stack direction="row" spacing={1} alignItems="center" sx={{ mb: 2, color: 'text.secondary' }}>
+                                    <BusinessIcon fontSize="small" />
+                                    <Typography variant="subtitle1" fontWeight={600} sx={{ fontFamily: 'serif' }}>
+                                        My Institution
+                                    </Typography>
+                                </Stack>
+
+                                <Typography variant="h6" component="div" gutterBottom>
+                                    {userOrg.name}
+                                </Typography>
+
+                                <Stack direction="row" spacing={0.5} alignItems="center" sx={{ mb: 2, color: 'text.secondary' }}>
+                                    <LocationOnIcon fontSize="small" sx={{ fontSize: 16 }} />
+                                    <Typography variant="body2">{userOrg.region}</Typography>
+                                </Stack>
+
+                                <Divider sx={{ my: 1 }} />
+
+                                <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{ mt: 2 }}>
+                                    <Typography variant="body2" fontWeight={500}>Status</Typography>
+                                    <Chip label="Active Member" color="success" size="small" variant="outlined" sx={{ bgcolor: '#dcfce7', color: '#166534', borderColor: 'transparent' }} />
+                                </Stack>
+                            </CardContent>
+                            <CardActions>
+                                <Button fullWidth variant="outlined" color="inherit">View Profile</Button>
+                            </CardActions>
+                        </Card>
+                    </Stack>
+                </Grid>
+            </Grid>
+        </Container>
     );
 };
 export default Home;

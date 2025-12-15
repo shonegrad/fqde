@@ -1,33 +1,62 @@
 import React from 'react';
-import { Calendar, MapPin, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import {
+    Card,
+    CardContent,
+    CardActions,
+    Typography,
+    Button,
+    Chip,
+    Box,
+    Stack
+} from '@mui/material';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 
 const EventCard = ({ event }) => {
     return (
-        <div className="card hover:shadow-md transition-shadow">
-            <div className="flex justify-between items-start mb-4">
-                <div>
-                    <span className="badge mb-2">{event.type}</span>
-                    <h3 className="font-heading font-bold text-xl">{event.title}</h3>
-                </div>
-                <div className="text-right">
-                    <span className="block font-bold text-accent">{event.dateRange}</span>
-                </div>
-            </div>
+        <Card variant="outlined" sx={{ height: '100%', display: 'flex', flexDirection: 'column', '&:hover': { borderColor: 'primary.main', boxShadow: 1 }, transition: 'all 0.2s' }}>
+            <CardContent sx={{ flexGrow: 1 }}>
+                <Stack direction="row" justifyContent="space-between" alignItems="flex-start" sx={{ mb: 2 }}>
+                    <Box>
+                        <Chip label={event.type} size="small" sx={{ mb: 1, bgcolor: 'secondary.light', color: 'secondary.contrastText' }} />
+                        <Typography variant="h5" component="h3" sx={{ fontFamily: 'serif', fontWeight: 600 }}>
+                            {event.title}
+                        </Typography>
+                    </Box>
+                    <Chip
+                        icon={<CalendarTodayIcon sx={{ fontSize: '14px !important' }} />}
+                        label={event.dateRange}
+                        size="small"
+                        variant="outlined"
+                        color="primary"
+                        sx={{ fontWeight: 500 }}
+                    />
+                </Stack>
 
-            <p className="text-gray-600 mb-6">{event.description}</p>
+                <Typography variant="body2" color="text.secondary" paragraph>
+                    {event.description}
+                </Typography>
+            </CardContent>
 
-            <div className="flex items-center justify-between mt-auto">
-                <div className="flex items-center text-gray-500 text-sm gap-1">
-                    <MapPin size={16} />
-                    {event.location}
-                </div>
+            <CardActions sx={{ p: 2, pt: 0, justifyContent: 'space-between' }}>
+                <Stack direction="row" spacing={0.5} alignItems="center" color="text.secondary">
+                    <LocationOnIcon fontSize="small" />
+                    <Typography variant="body2">{event.location}</Typography>
+                </Stack>
 
-                <Link to={`/events/${event.id}`} className="btn btn-primary btn-sm">
-                    View Details <ArrowRight size={16} />
-                </Link>
-            </div>
-        </div>
+                <Button
+                    component={Link}
+                    to={`/events/${event.id}`}
+                    variant="contained"
+                    endIcon={<ArrowForwardIcon />}
+                    size="small"
+                >
+                    View Details
+                </Button>
+            </CardActions>
+        </Card>
     );
 };
 export default EventCard;
