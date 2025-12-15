@@ -63,43 +63,59 @@ const getTheme = (mode = 'dark') => {
         typography: {
             fontFamily: '"Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
             h1: {
-                fontFamily: '"Source Serif 4", Georgia, serif',
+                fontFamily: '"Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                 fontWeight: 800,
-                fontSize: '3.5rem',
+                fontSize: '4rem', // Previously 3.5
                 lineHeight: 1.1,
-                letterSpacing: '-0.02em',
+                letterSpacing: '-0.025em',
             },
             h2: {
-                fontFamily: '"Source Serif 4", Georgia, serif',
-                fontWeight: 700,
-                fontSize: '2.5rem',
+                fontFamily: '"Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                fontWeight: 800,
+                fontSize: '3rem', // Previously 2.5
                 lineHeight: 1.2,
-                letterSpacing: '-0.01em',
+                letterSpacing: '-0.02em',
             },
             h3: {
-                fontFamily: '"Source Serif 4", Georgia, serif',
+                fontFamily: '"Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                 fontWeight: 700,
-                fontSize: '2rem',
-                lineHeight: 1.2,
+                fontSize: '2.25rem', // Previously 2
+                lineHeight: 1.25,
+                letterSpacing: '-0.015em',
             },
             h4: {
-                fontFamily: '"Source Serif 4", Georgia, serif',
-                fontWeight: 600,
-                fontSize: '1.5rem',
+                fontFamily: '"Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                fontWeight: 700,
+                fontSize: '1.75rem', // Previously 1.5
+                lineHeight: 1.3,
+                letterSpacing: '-0.01em',
             },
             h5: {
-                fontFamily: '"Source Serif 4", Georgia, serif',
+                fontFamily: '"Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                 fontWeight: 600,
-                fontSize: '1.25rem',
+                fontSize: '1.5rem', // Previously 1.25
+                lineHeight: 1.35,
             },
             h6: {
-                fontFamily: '"Source Serif 4", Georgia, serif',
+                fontFamily: '"Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                 fontWeight: 600,
+                fontSize: '1.25rem', // Previously 1.125
+                lineHeight: 1.4,
+            },
+            subtitle1: {
                 fontSize: '1.125rem',
+                lineHeight: 1.5,
+                fontWeight: 500,
+            },
+            subtitle2: {
+                fontSize: '1rem',
+                lineHeight: 1.5,
+                fontWeight: 500,
             },
             button: {
                 fontWeight: 600,
                 textTransform: 'none',
+                letterSpacing: '0.01em',
             },
         },
         shape: {
