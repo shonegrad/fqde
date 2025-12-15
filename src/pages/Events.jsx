@@ -80,11 +80,10 @@ const Events = () => {
                 sx={{
                     p: 1, // Compact padding
                     mb: 3,
-                    borderRadius: 2, // 16px if base is 8, or just consistent sizing
-                    bgcolor: 'rgba(241, 245, 249, 0.6)', // Theme paper with transparency
-                    backdropFilter: 'blur(12px)',
+                    borderRadius: 3, // Consistent sizing
+                    bgcolor: 'background.paper',
                     border: '1px solid',
-                    borderColor: 'rgba(15, 23, 42, 0.06)',
+                    borderColor: 'divider',
                     display: 'flex',
                     alignItems: 'center',
                     gap: 2
@@ -96,7 +95,7 @@ const Events = () => {
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     InputProps={{
-                        startAdornment: <InputAdornment position="start"><SearchIcon color="primary" sx={{ opacity: 0.7 }} /></InputAdornment>,
+                        startAdornment: <InputAdornment position="start"><SearchIcon color="primary" sx={{ opacity: 0.5, fontSize: 20 }} /></InputAdornment>,
                         disableUnderline: true,
                         sx: { fontSize: '0.95rem' }
                     }}

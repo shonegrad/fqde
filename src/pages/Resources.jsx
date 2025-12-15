@@ -81,13 +81,12 @@ const Resources = () => {
 
             <Box
                 sx={{
-                    p: 2,
+                    p: 1.5,
                     mb: 4,
                     borderRadius: 3,
-                    bgcolor: 'rgba(255,255,255,0.5)',
-                    backdropFilter: 'blur(8px)',
+                    bgcolor: 'background.paper',
                     border: '1px solid',
-                    borderColor: 'rgba(0,0,0,0.04)'
+                    borderColor: 'divider'
                 }}
             >
                 <Stack direction={{ xs: 'column', md: 'row' }} spacing={2} alignItems="center">
@@ -97,7 +96,7 @@ const Resources = () => {
                         value={searchTerm}
                         onChange={e => setSearchTerm(e.target.value)}
                         InputProps={{
-                            startAdornment: <InputAdornment position="start"><SearchIcon color="primary" /></InputAdornment>,
+                            startAdornment: <InputAdornment position="start"><SearchIcon color="primary" sx={{ opacity: 0.5, fontSize: 20 }} /></InputAdornment>,
                             disableUnderline: true
                         }}
                         variant="standard"
