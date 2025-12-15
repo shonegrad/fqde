@@ -140,7 +140,6 @@ const MainLayout = () => {
                             position: 'absolute',
                             left: '50%',
                             transform: 'translateX(-50%)',
-                            transform: 'translateX(-50%)',
                             bgcolor: 'background.paper',
                             borderRadius: 4,
                             border: '1px solid',
