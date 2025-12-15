@@ -1,13 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-  <rect width="200" height="200" fill="#1e40af"/>
-  <text 
-    x="50%" 
-    y="50%" 
-    dominant-baseline="central" 
-    text-anchor="middle" 
-    font-family="Arial, sans-serif" 
-    font-size="100" 
-    font-weight="700" 
-    fill="white"
-  >NG</text>
+  <rect width="200" height="200" fill="white"/>
+  
+        <polygon points="100,30 170,100 100,170 30,100" fill="#0e7490"/>
+        <circle cx="100" cy="100" r="28" fill="#06b6d4"/>
+      
 </svg>
