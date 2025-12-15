@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState, useMemo, useCallback } from 'react';
 import * as d3 from 'd3';
-import { Box, Typography, IconButton, Tooltip, Stack, Chip } from '@mui/material';
+import { Box, Typography, IconButton, Tooltip, Stack, Chip, useTheme, alpha } from '@mui/material';
 import ZoomInIcon from '@mui/icons-material/ZoomIn';
 import ZoomOutIcon from '@mui/icons-material/ZoomOut';
 import CenterFocusStrongIcon from '@mui/icons-material/CenterFocusStrong';
@@ -22,6 +22,7 @@ const NetworkMap = ({
     const [hoveredNode, setHoveredNode] = useState(null);
     const zoomRef = useRef();
     const gRef = useRef();
+    const theme = useTheme();
 
     // Filter organizations
     const filteredOrganizations = useMemo(() => {
@@ -180,10 +181,11 @@ const NetworkMap = ({
             .attr('stroke', '#fff').attr('stroke-width', 1).attr('rx', 4);
 
         all.select('text.label')
-            .attr('x', 4).attr('y', 14).attr('font-size', '9px').attr('font-weight', 600).attr('fill', d => d.data.type === 'group' ? '#333' : '#fff')
+            .attr('x', 4).attr('y', 14).attr('font-size', '9px').attr('font-weight', 600)
+            .attr('fill', d => d.data.type === 'group' ? theme.palette.text.primary : theme.palette.getContrastText(d3.color(colorScale(d.data.groupName))?.darker(0.2) || '#000'))
             .style('pointer-events', 'none')
             .text(d => { const w = d.x1 - d.x0; if (w < 40) return ''; const n = d.data.name; const maxC = Math.floor(w / 6); return n.length > maxC ? n.slice(0, maxC - 1) + '…' : n; });
-    }, [hierarchyData, colorScale, onNodeClick]);
+    }, [hierarchyData, colorScale, onNodeClick, theme]);
 
     // Track previous view to detect changes
     const prevViewRef = useRef(viewType);
@@ -232,7 +234,7 @@ const NetworkMap = ({
             <svg ref={svgRef} width={dimensions.width} height={dimensions.height} style={{ display: 'block', background: 'transparent' }} />
 
             {/* Zoom Controls */}
-            <Box sx={{ position: 'absolute', top: 12, right: 12, zIndex: 10, bgcolor: 'rgba(255,255,255,0.9)', backdropFilter: 'blur(6px)', borderRadius: '10px', p: 0.5, boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}>
+            <Box sx={{ position: 'absolute', top: 12, right: 12, zIndex: 10, bgcolor: alpha(theme.palette.background.paper, 0.8), backdropFilter: 'blur(6px)', borderRadius: '10px', p: 0.5, boxShadow: theme.shadows[2], border: `1px solid ${theme.palette.divider}` }}>
                 <Stack direction="row" spacing={0.25}>
                     <Tooltip title="Zoom In"><IconButton size="small" onClick={handleZoomIn}><ZoomInIcon sx={{ fontSize: 18 }} /></IconButton></Tooltip>
                     <Tooltip title="Zoom Out"><IconButton size="small" onClick={handleZoomOut}><ZoomOutIcon sx={{ fontSize: 18 }} /></IconButton></Tooltip>
@@ -241,7 +243,7 @@ const NetworkMap = ({
             </Box>
 
             {/* Legend */}
-            <Box sx={{ position: 'absolute', bottom: 12, left: 12, zIndex: 10, bgcolor: 'rgba(255,255,255,0.9)', backdropFilter: 'blur(6px)', borderRadius: '10px', p: 1, boxShadow: '0 2px 8px rgba(0,0,0,0.08)', maxWidth: 150 }}>
+            <Box sx={{ position: 'absolute', bottom: 12, left: 12, zIndex: 10, bgcolor: alpha(theme.palette.background.paper, 0.8), backdropFilter: 'blur(6px)', borderRadius: '10px', p: 1, boxShadow: theme.shadows[2], border: `1px solid ${theme.palette.divider}`, maxWidth: 150 }}>
                 <Typography variant="caption" fontWeight={600} color="text.secondary" sx={{ fontSize: '0.6rem', textTransform: 'uppercase' }}>
                     {groupBy === 'tags' ? 'Tags' : groupBy === 'region' ? 'Regions' : groupBy === 'type' ? 'Types' : 'Associations'}
                 </Typography>
@@ -258,7 +260,7 @@ const NetworkMap = ({
 
             {/* Hover Tooltip */}
             {hoveredNode && (
-                <Box sx={{ position: 'absolute', top: 12, left: '50%', transform: 'translateX(-50%)', bgcolor: 'rgba(255,255,255,0.98)', backdropFilter: 'blur(6px)', borderRadius: '10px', px: 2, py: 1, boxShadow: '0 4px 16px rgba(0,0,0,0.12)', zIndex: 30, textAlign: 'center', maxWidth: 260 }}>
+                <Box sx={{ position: 'absolute', top: 12, left: '50%', transform: 'translateX(-50%)', bgcolor: alpha(theme.palette.background.paper, 0.95), backdropFilter: 'blur(8px)', borderRadius: '10px', px: 2, py: 1, boxShadow: theme.shadows[4], border: `1px solid ${theme.palette.divider}`, zIndex: 30, textAlign: 'center', maxWidth: 260 }}>
                     <Typography variant="subtitle2" fontWeight={700} sx={{ fontSize: '0.85rem' }}>{hoveredNode.name}</Typography>
                     {hoveredNode.type === 'org' && (
                         <>

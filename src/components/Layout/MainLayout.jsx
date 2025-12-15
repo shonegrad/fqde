@@ -14,9 +14,14 @@ import {
     FormControl,
     InputLabel,
     CircularProgress,
-    Chip
+    Chip,
+    IconButton,
+    Tooltip
 } from '@mui/material';
 import DashboardIcon from '@mui/icons-material/Dashboard';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import Brightness7Icon from '@mui/icons-material/Brightness7';
+import { useThemeContext } from '../../context/ThemeContext';
 import { version } from '../../../package.json';
 
 const APP_VERSION = version;
@@ -32,6 +37,7 @@ const ROLE_TYPES = [
 
 const MainLayout = () => {
     const { currentUser, switchRole, users, dataLoading } = useApp();
+    const { mode, toggleTheme } = useThemeContext();
     const location = useLocation();
 
     const roleUsers = useMemo(() => {
@@ -175,6 +181,11 @@ const MainLayout = () => {
                         </Box>
 
                         <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+                            <Tooltip title={mode === 'dark' ? 'Generic Light Mode' : 'Generic Dark Mode'}>
+                                <IconButton onClick={toggleTheme} sx={{ color: 'text.secondary' }}>
+                                    {mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
+                                </IconButton>
+                            </Tooltip>
                             {dataLoading ? (
                                 <CircularProgress size={24} color="primary" />
                             ) : (
