@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-  <rect width="200" height="200" fill="#0369a1"/>
+  <rect width="200" height="200" fill="#155e75"/>
   <text 
     x="50%" 
     y="50%" 
@@ -9,5 +9,5 @@
     font-size="100" 
     font-weight="700" 
     fill="white"
-  >CC</text>
+  >LI</text>
 </svg>
