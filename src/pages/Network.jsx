@@ -39,7 +39,7 @@ const VIEW_OPTIONS = [
 ];
 
 const Network = () => {
-    const { organizations, users, associations, dataLoading } = useApp();
+    const { organizations, users, associations, memberships, dataLoading } = useApp();
     const [selectedNode, setSelectedNode] = useState(null);
     const [searchQuery, setSearchQuery] = useState('');
     const [groupBy, setGroupBy] = useState('tags');
@@ -234,6 +234,7 @@ const Network = () => {
                         organizations={organizations}
                         users={users}
                         associations={associations}
+                        memberships={memberships}
                         searchQuery={searchQuery}
                         groupBy={groupBy}
                         selectedTag={selectedTag}

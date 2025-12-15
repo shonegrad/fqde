@@ -46,6 +46,25 @@ const MainLayout = () => {
         return representatives;
     }, [users]);
 
+    // Ensure the currentUser's id is valid for the Select, otherwise use first roleUser
+    const selectValue = useMemo(() => {
+        if (!currentUser) return '';
+        const isValidSelection = roleUsers.some(u => u.id === currentUser.id);
+        if (isValidSelection) return currentUser.id;
+        // If current user not in roleUsers but we have roleUsers, use first one
+        if (roleUsers.length > 0) {
+            return roleUsers[0].id;
+        }
+        return '';
+    }, [currentUser, roleUsers]);
+
+    // Auto-switch to a valid user if current selection is invalid
+    React.useEffect(() => {
+        if (selectValue && currentUser && selectValue !== currentUser.id) {
+            switchRole(selectValue);
+        }
+    }, [selectValue, currentUser, switchRole]);
+
     const isActive = (path) => {
         if (path === '/' && location.pathname === '/') return true;
         if (path !== '/' && location.pathname.startsWith(path)) return true;
@@ -163,7 +182,7 @@ const MainLayout = () => {
                                     <Box sx={{ display: { xs: 'none', sm: 'flex' }, alignItems: 'center', gap: 1, color: 'text.secondary' }}>
                                         <Typography variant="body2" fontWeight={500}>Viewing as</Typography>
                                         <Select
-                                            value={currentUser?.id || ''}
+                                            value={selectValue}
                                             onChange={(e) => switchRole(e.target.value)}
                                             variant="standard"
                                             disableUnderline

@@ -10,6 +10,7 @@ const NetworkMap = ({
     organizations = [],
     users = [],
     associations = [],
+    memberships = [],
     searchQuery = '',
     groupBy = 'tags',
     selectedTag = null,
@@ -43,6 +44,14 @@ const NetworkMap = ({
             ? filteredOrganizations.filter(org => (org.tags || []).includes(selectedTag))
             : filteredOrganizations;
 
+        // Build membership counts per org from memberships data
+        const orgMemberCounts = {};
+        memberships.forEach(m => {
+            if (m.entityType === 'org') {
+                orgMemberCounts[m.entityId] = (orgMemberCounts[m.entityId] || 0) + 1;
+            }
+        });
+
         const getGroupKey = (org) => {
             if (groupBy === 'tags') return org.tags?.[0] || 'Untagged';
             if (groupBy === 'region') return org.region || 'Unknown';
@@ -57,11 +66,12 @@ const NetworkMap = ({
 
         orgsToShow.forEach(org => {
             const key = getGroupKey(org);
+            const memberCount = orgMemberCounts[org.id] || 0;
             if (!groups[key]) groups[key] = { name: key, type: 'group', children: [] };
             groups[key].children.push({
                 id: org.id, name: org.name, type: 'org', groupName: key,
                 orgType: org.type, region: org.region, tags: org.tags || [],
-                memberCount: users.filter(u => u.institutionId === org.id).length
+                memberCount
             });
         });
 
@@ -71,14 +81,17 @@ const NetworkMap = ({
             hierarchy: { name: 'Network', type: 'root', children: sortedGroups },
             orgMap: new Map(organizations.map(o => [o.id, o])),
             groupNames: sortedGroups.map(g => g.name),
-            flatOrgs: orgsToShow.map(org => ({
-                id: org.id, name: org.name, type: 'org', groupName: getGroupKey(org),
-                orgType: org.type, region: org.region, tags: org.tags || [],
-                memberCount: users.filter(u => u.institutionId === org.id).length,
-                radius: 8 + users.filter(u => u.institutionId === org.id).length / 8
-            }))
+            flatOrgs: orgsToShow.map(org => {
+                const memberCount = orgMemberCounts[org.id] || 0;
+                return {
+                    id: org.id, name: org.name, type: 'org', groupName: getGroupKey(org),
+                    orgType: org.type, region: org.region, tags: org.tags || [],
+                    memberCount,
+                    radius: 8 + memberCount / 3
+                };
+            })
         };
-    }, [filteredOrganizations, users, associations, groupBy, selectedTag]);
+    }, [filteredOrganizations, memberships, associations, groupBy, selectedTag, organizations]);
 
     // Responsive sizing
     useEffect(() => {
