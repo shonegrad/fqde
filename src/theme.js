@@ -65,52 +65,60 @@ const getTheme = (mode = 'dark') => {
             h1: {
                 fontFamily: '"Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                 fontWeight: 800,
-                fontSize: '4rem', // Previously 3.5
+                fontSize: '4rem',
                 lineHeight: 1.1,
                 letterSpacing: '-0.025em',
+                color: isDark ? '#f8fafc' : '#0f172a',
             },
             h2: {
                 fontFamily: '"Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                 fontWeight: 800,
-                fontSize: '3rem', // Previously 2.5
+                fontSize: '3rem',
                 lineHeight: 1.2,
                 letterSpacing: '-0.02em',
+                color: isDark ? '#f8fafc' : '#0f172a',
             },
             h3: {
                 fontFamily: '"Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                 fontWeight: 700,
-                fontSize: '2.25rem', // Previously 2
+                fontSize: '2.25rem',
                 lineHeight: 1.25,
                 letterSpacing: '-0.015em',
+                color: isDark ? '#f8fafc' : '#0f172a',
             },
             h4: {
                 fontFamily: '"Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                 fontWeight: 700,
-                fontSize: '1.75rem', // Previously 1.5
+                fontSize: '1.75rem',
                 lineHeight: 1.3,
                 letterSpacing: '-0.01em',
+                color: isDark ? '#f1f5f9' : '#0f172a',
             },
             h5: {
                 fontFamily: '"Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                 fontWeight: 600,
-                fontSize: '1.5rem', // Previously 1.25
+                fontSize: '1.5rem',
                 lineHeight: 1.35,
+                color: isDark ? '#f1f5f9' : '#0f172a',
             },
             h6: {
                 fontFamily: '"Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                 fontWeight: 600,
-                fontSize: '1.25rem', // Previously 1.125
+                fontSize: '1.25rem',
                 lineHeight: 1.4,
+                color: isDark ? '#f1f5f9' : '#0f172a',
             },
             subtitle1: {
                 fontSize: '1.125rem',
                 lineHeight: 1.5,
                 fontWeight: 500,
+                color: isDark ? '#f8fafc' : '#0f172a',
             },
             subtitle2: {
                 fontSize: '1rem',
                 lineHeight: 1.5,
                 fontWeight: 500,
+                color: isDark ? '#f8fafc' : '#0f172a',
             },
             button: {
                 fontWeight: 600,
