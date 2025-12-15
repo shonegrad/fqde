@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.2.4] - 2025-12-15
+### Added
+- **Dark Mode**: Complete support with a toggle switch in the header.
+- **Theme Improvements**: Enhanced UI with glassmorphism, noise textures, and dynamic palette colors.
+
+### Changed
+- **UI Standardization**: Unified search bar styles across Network, Events, and Resources pages.
+- **Events UI**: Modernized Event Cards and Details views to remove hardcoded styles and align with the design system.
+- **Navigation**: Improved routing stability by replacing `NavLink` with `Link`.
+
 ## [0.2.0] - 2025-12-14
 ### Added
 - Expanded mock dataset: 120+ members, 25 organizations, 20+ events.

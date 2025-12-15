@@ -78,7 +78,7 @@ const EventDetail = () => {
                 <Stack direction={{ xs: 'column', md: 'row' }} spacing={4} divider={<Divider orientation="vertical" flexItem sx={{ display: { xs: 'none', md: 'block' } }} />} >
                     <Box sx={{ flex: 1 }}>
                         <Chip label={event.type || event.tags?.[0] || 'Event'} size="small" sx={{ mb: 2, bgcolor: 'secondary.light', color: 'secondary.contrastText' }} />
-                        <Typography variant="h3" component="h1" gutterBottom sx={{ fontFamily: 'serif', fontWeight: 700 }}>
+                        <Typography variant="h3" component="h1" gutterBottom sx={{ fontWeight: 700 }}>
                             {event.title}
                         </Typography>
                         <Typography variant="body1" color="text.secondary" sx={{ maxWidth: 'sm' }}>
@@ -112,7 +112,7 @@ const EventDetail = () => {
                     <>
                         <Divider sx={{ my: 4 }} />
 
-                        <Typography variant="h5" component="h2" gutterBottom sx={{ fontFamily: 'serif', fontWeight: 600 }}>
+                        <Typography variant="h5" component="h2" gutterBottom sx={{ fontWeight: 600 }}>
                             Schedule ({eventSessions.length} sessions)
                         </Typography>
                         <TimelineView sessions={eventSessions} eventId={eventId} />
