@@ -168,9 +168,6 @@ const Network = () => {
                     </ToggleButtonGroup>
                 </Box>
 
-                {/* Divider */}
-                <Box sx={{ width: 1, height: 20, bgcolor: 'divider' }} />
-
                 {/* Group By Selector */}
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                     <Typography variant="body2" fontWeight={600} color="text.secondary" sx={{ fontSize: '0.8rem', whiteSpace: 'nowrap' }}>
@@ -203,9 +200,6 @@ const Network = () => {
                         ))}
                     </ToggleButtonGroup>
                 </Box>
-
-                {/* Divider */}
-                <Box sx={{ width: 1, height: 20, bgcolor: 'divider' }} />
 
                 {/* Tag filter chips */}
                 {groupBy === 'tags' && (
