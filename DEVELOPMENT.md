@@ -37,7 +37,7 @@ Before doing anything else, complete this checklist:
 |-------|-------|
 | **Project Name** | connecting-educators |
 | **Primary Repo** | https://github.com/shonegrad/fqde.git |
-| **Default Branch** | main |
+| **Default Branch** | master |
 | **Deployment Method** | GitHub Pages via `gh-pages` branch (using `gh-pages` npm package) |
 | **Live URL** | https://shonegrad.github.io/fqde/ |
 | **Local Dev URL** | http://localhost:5173/fqde/ |
@@ -354,7 +354,7 @@ git commit -m "feat: description of changes (vX.Y.Z)"
 
 #### Step 5: Push to GitHub
 ```bash
-git push origin main
+git push origin master
 ```
 
 #### Step 6: Deploy to GitHub Pages
@@ -507,7 +507,7 @@ git status                    # Check working tree status
 git remote -v                 # Verify remote URLs
 git add .                     # Stage all changes
 git commit -m "message"       # Commit with message
-git push origin main          # Push to main branch
+git push origin master        # Push to master branch
 git tag vX.Y.Z                # Create version tag
 git push --tags               # Push all tags
 ```
