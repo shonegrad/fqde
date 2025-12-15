@@ -78,42 +78,53 @@ const Events = () => {
 
             <Box
                 sx={{
-                    p: 2,
-                    mb: 4,
-                    borderRadius: 3,
-                    bgcolor: 'rgba(255,255,255,0.5)',
-                    backdropFilter: 'blur(8px)',
+                    p: 1, // Compact padding
+                    mb: 3,
+                    borderRadius: 2, // 16px if base is 8, or just consistent sizing
+                    bgcolor: 'rgba(241, 245, 249, 0.6)', // Theme paper with transparency
+                    backdropFilter: 'blur(12px)',
                     border: '1px solid',
-                    borderColor: 'rgba(0,0,0,0.04)'
+                    borderColor: 'rgba(15, 23, 42, 0.06)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 2
                 }}
             >
-                <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} alignItems="center">
-                    <TextField
-                        fullWidth
-                        placeholder="Search events..."
-                        value={searchQuery}
-                        onChange={(e) => setSearchQuery(e.target.value)}
-                        InputProps={{
-                            startAdornment: <InputAdornment position="start"><SearchIcon color="primary" /></InputAdornment>,
-                            disableUnderline: true
+                <TextField
+                    fullWidth
+                    placeholder="Search events..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    InputProps={{
+                        startAdornment: <InputAdornment position="start"><SearchIcon color="primary" sx={{ opacity: 0.7 }} /></InputAdornment>,
+                        disableUnderline: true,
+                        sx: { fontSize: '0.95rem' }
+                    }}
+                    variant="standard"
+                    sx={{
+                        flexGrow: 1,
+                        px: 1,
+                        py: 0.5
+                    }}
+                />
+                <Box sx={{ width: 1, height: 24, bgcolor: 'divider' }} />
+                <FormControl size="small" variant="standard" sx={{ minWidth: 150, mr: 1 }}>
+                    <Select
+                        value={cityFilter}
+                        displayEmpty
+                        onChange={(e) => setCityFilter(e.target.value)}
+                        disableUnderline
+                        sx={{
+                            fontWeight: 600,
+                            color: cityFilter === 'all' ? 'text.secondary' : 'primary.main',
+                            fontSize: '0.9rem',
+                            '& .MuiSelect-select': { py: 0.5 }
                         }}
-                        variant="standard"
-                        sx={{ flexGrow: 1 }}
-                    />
-                    <FormControl size="small" variant="standard" sx={{ minWidth: 150 }}>
-                        <InputLabel>City</InputLabel>
-                        <Select
-                            value={cityFilter}
-                            label="City"
-                            onChange={(e) => setCityFilter(e.target.value)}
-                            disableUnderline
-                            sx={{ fontWeight: 600, color: 'primary.main' }}
-                        >
-                            <MenuItem value="all">All Cities</MenuItem>
-                            {cities.map(city => <MenuItem key={city} value={city}>{city}</MenuItem>)}
-                        </Select>
-                    </FormControl>
-                </Stack>
+                    >
+                        <MenuItem value="all">All Cities</MenuItem>
+                        {cities.map(city => <MenuItem key={city} value={city}>{city}</MenuItem>)}
+                    </Select>
+                </FormControl>
             </Box>
 
             {(searchQuery || cityFilter !== 'all') && (

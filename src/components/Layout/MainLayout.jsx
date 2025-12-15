@@ -112,15 +112,17 @@ const MainLayout = () => {
 
                         <Box sx={{
                             display: { xs: 'none', md: 'flex' },
-                            gap: 1,
+                            gap: 0.5,
                             position: 'absolute',
                             left: '50%',
                             transform: 'translateX(-50%)',
-                            bgcolor: 'rgba(255,255,255,0.5)',
+                            bgcolor: 'rgba(241, 245, 249, 0.8)', // Theme paper alpha
+                            backdropFilter: 'blur(12px)',
                             p: 0.5,
                             borderRadius: 4,
                             border: '1px solid',
-                            borderColor: 'divider'
+                            borderColor: 'rgba(15, 23, 42, 0.08)',
+                            boxShadow: '0 4px 12px -2px rgba(15, 23, 42, 0.05)'
                         }}>
                             {[
                                 { name: 'Home', path: '/' },
@@ -137,10 +139,15 @@ const MainLayout = () => {
                                     size="medium"
                                     disableElevation
                                     sx={{
-                                        borderRadius: 3,
-                                        px: 3,
+                                        borderRadius: 3.5, // rounded-full feel inside the pill
+                                        px: 2.5,
+                                        py: 0.75,
                                         fontWeight: 600,
-                                        minWidth: 'auto'
+                                        minWidth: 'auto',
+                                        color: isActive(page.path) ? 'white' : 'text.secondary',
+                                        '&:hover': {
+                                            bgcolor: isActive(page.path) ? 'primary.dark' : 'rgba(15, 23, 42, 0.04)'
+                                        }
                                     }}
                                 >
                                     {page.name}

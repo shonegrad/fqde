@@ -161,17 +161,18 @@ function generateAssociations(count) {
     console.log(`📋 Generating ${count} associations...`);
     const associations = [];
 
+    const assocTypes = ['Association', 'Network', 'Federation', 'Alliance', 'Coalition'];
+    const focusAreas = ['Educators', 'Teachers', 'Principals', 'Administrators', 'Professionals'];
+    const regionNames = ['Quebec', 'Montreal', 'Provincial', 'National', 'Regional'];
+
     for (let i = 0; i < count; i++) {
         const id = `assoc${i + 1}`;
-        const useFrench = rng.next() > 0.3; // 70% French
-        const adjective = useFrench ? rng.choice(ORG_ADJECTIVES_FR) : rng.choice(ORG_ADJECTIVES_EN);
-        const type = rng.choice(['Association', 'Réseau', 'Fédération', 'Alliance', 'Coalition']);
-        const focus = rng.choice(['Éducateurs', 'Enseignants', 'Directeurs', 'Pédagogues', 'Professionnels']);
-        const region = rng.choice(['Québec', 'Montréal', 'Provincial', 'Nationale', 'Régionale']);
+        const adjective = rng.choice(ORG_ADJECTIVES_EN);
+        const type = rng.choice(assocTypes);
+        const focus = rng.choice(focusAreas);
+        const region = rng.choice(regionNames);
 
-        const name = useFrench
-            ? `${type} ${adjective} des ${focus} du ${region}`
-            : `${region} ${adjective} Educators ${type}`;
+        const name = `${region} ${adjective} ${focus} ${type}`;
 
         const shortName = name.split(' ').slice(0, 3).join(' ');
         const city = rng.choice(QUEBEC_CITIES);
@@ -184,7 +185,7 @@ function generateAssociations(count) {
             website: `https://www.${id}.qc.ca`,
             contactEmail: `info@${id}.qc.ca`,
             phone: generatePhoneNumber(city),
-            address: `${rng.nextInt(100, 9999)} ${useFrench ? 'rue' : 'Street'} ${useFrench ? 'de la Formation' : 'Education'}`,
+            address: `${rng.nextInt(100, 9999)} Education Street`,
             city: city.name,
             region: city.region,
             logoPath: `/assets/logos/${id}.svg`,
@@ -201,14 +202,11 @@ function generateOrganizations(count, associations) {
 
     for (let i = 0; i < count; i++) {
         const id = `org${i + 1}`;
-        const useFrench = rng.next() > 0.3; // 70% French
-        const adjective = useFrench ? rng.choice(ORG_ADJECTIVES_FR) : rng.choice(ORG_ADJECTIVES_EN);
+        const adjective = rng.choice(ORG_ADJECTIVES_EN);
         const type = rng.choice(ORG_TYPES);
         const city = rng.choice(QUEBEC_CITIES);
 
-        const name = useFrench
-            ? `${type === 'School' ? 'École' : type} ${adjective} ${city.name}`
-            : `${city.name} ${adjective} ${type}`;
+        const name = `${city.name} ${adjective} ${type}`;
 
         // Each org belongs to 0-3 associations
         const numAssociations = rng.nextInt(0, 3);
@@ -238,7 +236,7 @@ function generateOrganizations(count, associations) {
             website: `https://www.${id}.qc.ca`,
             contactEmail: `contact@${id}.qc.ca`,
             phone: generatePhoneNumber(city),
-            address: `${rng.nextInt(100, 9999)} ${useFrench ? 'rue' : 'Street'} ${useFrench ? 'de l\'Éducation' : 'Education'}`,
+            address: `${rng.nextInt(100, 9999)} Education Street`,
             city: city.name,
             region: city.region,
             postalCode: generatePostalCode(city),
@@ -354,13 +352,10 @@ function generateEvents(count, organizations, associations) {
 
     for (let i = 0; i < count; i++) {
         const id = `evt${i + 1}`;
-        const useFrench = rng.next() > 0.3;
         const eventType = rng.choice(EVENT_TYPES);
         const topic = rng.choice(EXPERTISE_TAGS);
 
-        const title = useFrench
-            ? `${eventType} sur ${topic}`
-            : `${topic} ${eventType}`;
+        const title = `${topic} ${eventType}`;
 
         const city = rng.choice(QUEBEC_CITIES);
         const org = rng.choice(organizations);
@@ -389,8 +384,8 @@ function generateEvents(count, organizations, associations) {
             description: `Join us for an engaging ${eventType.toLowerCase()} focused on ${topic} and educational excellence.`,
             startDateTime: startDate.toISOString(),
             endDateTime: endDate.toISOString(),
-            locationName: useFrench ? `Centre ${city.name}` : `${city.name} Convention Center`,
-            address: `${rng.nextInt(100, 999)} ${useFrench ? 'boulevard' : 'Boulevard'} ${useFrench ? 'Principal' : 'Main'}`,
+            locationName: `${city.name} Convention Center`,
+            address: `${rng.nextInt(100, 999)} Main Boulevard`,
             city: city.name,
             region: city.region,
             organizerOrgId: org.id,
@@ -423,11 +418,10 @@ function generateSessions(events, people) {
             for (let i = 0; i < sessionsPerDay; i++) {
                 const id = `sess${sessionId++}`;
                 const topic = rng.choice(EXPERTISE_TAGS);
-                const useFrench = rng.next() > 0.3;
 
-                const title = useFrench
-                    ? `Atelier: ${topic}`
-                    : `Workshop: ${topic}`;
+                const sessionTypes = ['Workshop', 'Panel', 'Presentation', 'Discussion', 'Lecture'];
+                const sessionType = rng.choice(sessionTypes);
+                const title = `${sessionType}: ${topic}`;
 
                 // Sessions between 9 AM and 5 PM, 30-90 min duration
                 const startHour = rng.nextInt(9, 16);
@@ -478,15 +472,15 @@ function generateResources(count, organizations, people) {
     console.log(`📚 Generating ${count} resources...`);
     const resources = [];
 
+    const resourcePrefixes = ['Guide to', 'Handbook on', 'Introduction to', 'Best Practices for', 'Essentials of'];
+
     for (let i = 0; i < count; i++) {
         const id = `res${i + 1}`;
         const type = rng.choice(RESOURCE_TYPES);
         const topic = rng.choice(EXPERTISE_TAGS);
-        const useFrench = rng.next() > 0.3;
+        const prefix = rng.choice(resourcePrefixes);
 
-        const title = useFrench
-            ? `Guide sur ${topic}`
-            : `${topic} Guide`;
+        const title = `${prefix} ${topic}`;
 
         const org = rng.choice(organizations);
         const hasAuthor = rng.next() > 0.3;

@@ -88,41 +88,46 @@ const Network = () => {
                     </Typography>
                 </Box>
 
-                <Stack direction="row" spacing={2} alignItems="center">
-                    <Box sx={{ borderRadius: 3, p: 0.5 }}>
-                        <ToggleButtonGroup
-                            value={contentType}
-                            exclusive
-                            onChange={(e, v) => v && setContentType(v)}
-                            size="medium"
-                            color="primary"
-                            sx={{
-                                bgcolor: 'rgba(255,255,255,0.5)',
-                                backdropFilter: 'blur(8px)',
-                                '& .MuiToggleButton-root': { border: 'none', borderRadius: 2, px: 2 }
-                            }}
-                        >
-                            <ToggleButton value="orgs"><BusinessIcon sx={{ mr: 1 }} /> Organizations</ToggleButton>
-                            <ToggleButton value="members"><PeopleIcon sx={{ mr: 1 }} /> Members</ToggleButton>
-                        </ToggleButtonGroup>
-                    </Box>
-                    <Box sx={{ borderRadius: 3, p: 0.5 }}>
-                        <ToggleButtonGroup
-                            value={view}
-                            exclusive
-                            onChange={(e, v) => v && setView(v)}
-                            size="medium"
-                            color="primary"
-                            sx={{
-                                bgcolor: 'rgba(255,255,255,0.5)',
-                                backdropFilter: 'blur(8px)',
-                                '& .MuiToggleButton-root': { border: 'none', borderRadius: 2, px: 2 }
-                            }}
-                        >
-                            <ToggleButton value="map" disabled={contentType === 'members'}><MapIcon sx={{ mr: 1 }} /> Map</ToggleButton>
-                            <ToggleButton value="list"><ListIcon sx={{ mr: 1 }} /> List</ToggleButton>
-                        </ToggleButtonGroup>
-                    </Box>
+                <Stack direction="row" spacing={1} alignItems="center">
+                    <ToggleButtonGroup
+                        value={contentType}
+                        exclusive
+                        onChange={(e, v) => v && setContentType(v)}
+                        size="small"
+                        color="primary"
+                        sx={{
+                            bgcolor: 'rgba(241, 245, 249, 0.6)',
+                            backdropFilter: 'blur(8px)',
+                            border: '1px solid',
+                            borderColor: 'rgba(15, 23, 42, 0.06)',
+                            borderRadius: '12px', // Explicit 12px
+                            p: 0.5,
+                            '& .MuiToggleButton-root': { border: 'none', borderRadius: '8px', px: 1.5, py: 0.5, fontSize: '0.85rem' } // Explicit 8px
+                        }}
+                    >
+                        <ToggleButton value="orgs"><BusinessIcon sx={{ mr: 0.5, fontSize: 18 }} /> Organizations</ToggleButton>
+                        <ToggleButton value="members"><PeopleIcon sx={{ mr: 0.5, fontSize: 18 }} /> Members</ToggleButton>
+                    </ToggleButtonGroup>
+
+                    <ToggleButtonGroup
+                        value={view}
+                        exclusive
+                        onChange={(e, v) => v && setView(v)}
+                        size="small"
+                        color="primary"
+                        sx={{
+                            bgcolor: 'rgba(241, 245, 249, 0.6)',
+                            backdropFilter: 'blur(8px)',
+                            border: '1px solid',
+                            borderColor: 'rgba(15, 23, 42, 0.06)',
+                            borderRadius: '12px', // Explicit 12px
+                            p: 0.5,
+                            '& .MuiToggleButton-root': { border: 'none', borderRadius: '8px', px: 1.5, py: 0.5, fontSize: '0.85rem' } // Explicit 8px
+                        }}
+                    >
+                        <ToggleButton value="map" disabled={contentType === 'members'}><MapIcon sx={{ mr: 0.5, fontSize: 18 }} /> Map</ToggleButton>
+                        <ToggleButton value="list"><ListIcon sx={{ mr: 0.5, fontSize: 18 }} /> List</ToggleButton>
+                    </ToggleButtonGroup>
                 </Stack>
             </Stack>
 
@@ -130,12 +135,13 @@ const Network = () => {
                 component={Fade} in={true}
                 elevation={0}
                 sx={{
-                    p: 2,
+                    p: 1.5,
                     mb: 4,
-                    borderRadius: 3,
-                    bgcolor: 'background.paper',
+                    borderRadius: '12px', // Explicit 12px
+                    bgcolor: 'rgba(241, 245, 249, 0.6)',
+                    backdropFilter: 'blur(12px)',
                     border: '1px solid',
-                    borderColor: 'divider',
+                    borderColor: 'rgba(15, 23, 42, 0.06)',
                     display: 'flex',
                     alignItems: 'center'
                 }}
@@ -146,9 +152,9 @@ const Network = () => {
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     InputProps={{
-                        startAdornment: <InputAdornment position="start"><SearchIcon color="primary" /></InputAdornment>,
+                        startAdornment: <InputAdornment position="start"><SearchIcon color="primary" sx={{ opacity: 0.7 }} /></InputAdornment>,
                         disableUnderline: true,
-                        sx: { fontSize: '1.1rem' }
+                        sx: { fontSize: '1rem' }
                     }}
                     variant="standard"
                 />

@@ -9,13 +9,13 @@ const OrgCard = ({ org, onClick }) => {
     const tags = org.tags || [];
 
     return (
-        <Card elevation={2} onClick={() => onClick(org)} sx={{ height: '100%', cursor: 'pointer', transition: 'all 0.2s', '&:hover': { transform: 'translateY(-4px)' } }}>
+        <Card onClick={() => onClick(org)} sx={{ height: '100%', cursor: 'pointer' }}>
             <CardContent>
                 <Stack direction="row" justifyContent="space-between" alignItems="flex-start" sx={{ mb: 2 }}>
                     {logoPath ? (
-                        <Avatar src={logoPath} alt={org.name} variant="rounded" sx={{ width: 48, height: 48 }} />
+                        <Avatar src={logoPath} alt={org.name} variant="circular" sx={{ width: 48, height: 48 }} />
                     ) : (
-                        <Avatar variant="rounded" sx={{ width: 48, height: 48, bgcolor: 'action.selected' }}>
+                        <Avatar variant="circular" sx={{ width: 48, height: 48, bgcolor: 'action.selected' }}>
                             <BusinessIcon />
                         </Avatar>
                     )}

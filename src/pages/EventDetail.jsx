@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useParams, Link as RouterLink } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
 import TimelineView from '../components/Events/TimelineView';
@@ -19,12 +19,46 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const EventDetail = () => {
     const { eventId } = useParams();
-    const { events } = useApp();
+    const { events, sessions, dataLoading } = useApp();
 
-    const event = events.find(e => e.id === eventId);
+    const event = events?.find(e => e.id === eventId);
+
+    // Get sessions for this event from the sessions data
+    const eventSessions = useMemo(() => {
+        if (!sessions || !eventId) return [];
+        return sessions.filter(s => s.eventId === eventId);
+    }, [sessions, eventId]);
+
+    // Compute date range from event data
+    const dateRange = useMemo(() => {
+        if (!event) return 'TBD';
+        if (event.dateRange) return event.dateRange;
+        if (!event.startDateTime) return 'TBD';
+        const start = new Date(event.startDateTime);
+        const end = event.endDateTime ? new Date(event.endDateTime) : null;
+        const formatDate = (d) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+        if (!end || start.toDateString() === end.toDateString()) return formatDate(start);
+        return `${formatDate(start)} - ${formatDate(end)}`;
+    }, [event]);
+
+    if (dataLoading) {
+        return (
+            <Container maxWidth="lg" sx={{ py: 4 }}>
+                <Typography>Loading event...</Typography>
+            </Container>
+        );
+    }
 
     if (!event) return (
         <Container maxWidth="lg" sx={{ py: 4 }}>
+            <Button
+                component={RouterLink}
+                to="/events"
+                startIcon={<ArrowBackIcon />}
+                sx={{ mb: 2, color: 'text.secondary', textTransform: 'none' }}
+            >
+                Back to Events
+            </Button>
             <Typography>Event not found</Typography>
         </Container>
     );
@@ -43,7 +77,7 @@ const EventDetail = () => {
             <Paper variant="outlined" sx={{ p: { xs: 3, md: 4 }, mb: 4, borderRadius: 2 }}>
                 <Stack direction={{ xs: 'column', md: 'row' }} spacing={4} divider={<Divider orientation="vertical" flexItem sx={{ display: { xs: 'none', md: 'block' } }} />} >
                     <Box sx={{ flex: 1 }}>
-                        <Chip label={event.type} size="small" sx={{ mb: 2, bgcolor: 'secondary.light', color: 'secondary.contrastText' }} />
+                        <Chip label={event.type || event.tags?.[0] || 'Event'} size="small" sx={{ mb: 2, bgcolor: 'secondary.light', color: 'secondary.contrastText' }} />
                         <Typography variant="h3" component="h1" gutterBottom sx={{ fontFamily: 'serif', fontWeight: 700 }}>
                             {event.title}
                         </Typography>
@@ -56,28 +90,34 @@ const EventDetail = () => {
                         <Stack direction="row" spacing={1} alignItems="center" color="text.secondary">
                             <CalendarTodayIcon color="primary" />
                             <Typography variant="subtitle1" fontWeight={500}>
-                                {event.dateRange}
+                                {dateRange}
                             </Typography>
                         </Stack>
                         <Stack direction="row" spacing={1} alignItems="center" color="text.secondary">
                             <LocationOnIcon color="primary" />
                             <Typography variant="subtitle1" fontWeight={500}>
-                                {event.location}
+                                {event.location || event.locationName || event.city || 'Location TBD'}
                             </Typography>
                         </Stack>
 
-                        <Button variant="contained" size="large" fullWidth sx={{ mt: 2 }}>
-                            Register Now
-                        </Button>
+                        {event.registrationEnabled && (
+                            <Button variant="contained" size="large" fullWidth sx={{ mt: 2 }}>
+                                Register Now
+                            </Button>
+                        )}
                     </Stack>
                 </Stack>
 
-                <Divider sx={{ my: 4 }} />
+                {eventSessions.length > 0 && (
+                    <>
+                        <Divider sx={{ my: 4 }} />
 
-                <Typography variant="h5" component="h2" gutterBottom sx={{ fontFamily: 'serif', fontWeight: 600 }}>
-                    Schedule
-                </Typography>
-                <TimelineView event={event} />
+                        <Typography variant="h5" component="h2" gutterBottom sx={{ fontFamily: 'serif', fontWeight: 600 }}>
+                            Schedule ({eventSessions.length} sessions)
+                        </Typography>
+                        <TimelineView sessions={eventSessions} eventId={eventId} />
+                    </>
+                )}
             </Paper>
         </Container>
     );

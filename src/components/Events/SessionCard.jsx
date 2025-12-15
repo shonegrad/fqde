@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useApp } from '../../context/AppContext';
 import {
     Card,
@@ -13,31 +13,41 @@ import {
 import AddIcon from '@mui/icons-material/Add';
 import CheckIcon from '@mui/icons-material/Check';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import RoomIcon from '@mui/icons-material/Room';
 import WarningAmberIcon from '@mui/icons-material/WarningAmber';
 
 const SessionCard = ({ session, eventId, isForYouView }) => {
-    const { mySchedule, addToSchedule, removeFromSchedule, events } = useApp();
+    const { mySchedule, addToSchedule, removeFromSchedule, sessions } = useApp();
 
     const isScheduled = mySchedule.includes(session.id);
-    const event = events.find(e => e.id === eventId);
 
-    // Conflict detection (simple version)
-    // Check if any other scheduled session in this event overlaps
-    const hasConflict = !isScheduled && !isForYouView && mySchedule.some(scheduledId => {
-        // Find the scheduled session object
-        const scheduledSession = event.sessions.find(s => s.id === scheduledId);
-        if (!scheduledSession) return false;
+    // Get all sessions for this event from context
+    const eventSessions = useMemo(() => {
+        if (!sessions || !eventId) return [];
+        return sessions.filter(s => s.eventId === eventId);
+    }, [sessions, eventId]);
 
-        // Check time overlap
-        const sStart = new Date(session.start);
-        const sEnd = new Date(session.end);
-        const oStart = new Date(scheduledSession.start);
-        const oEnd = new Date(scheduledSession.end);
+    // Conflict detection - check if any other scheduled session in this event overlaps
+    const hasConflict = useMemo(() => {
+        if (isScheduled || isForYouView) return false;
 
-        return (sStart < oEnd && sEnd > oStart);
-    });
+        return mySchedule.some(scheduledId => {
+            // Find the scheduled session object
+            const scheduledSession = eventSessions.find(s => s.id === scheduledId);
+            if (!scheduledSession) return false;
+
+            // Check time overlap
+            const sStart = new Date(session.startDateTime);
+            const sEnd = new Date(session.endDateTime);
+            const oStart = new Date(scheduledSession.startDateTime);
+            const oEnd = new Date(scheduledSession.endDateTime);
+
+            return (sStart < oEnd && sEnd > oStart);
+        });
+    }, [isScheduled, isForYouView, mySchedule, eventSessions, session]);
 
     const formatTime = (isoString) => {
+        if (!isoString) return '--:--';
         return new Date(isoString).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     };
 
@@ -53,19 +63,32 @@ const SessionCard = ({ session, eventId, isForYouView }) => {
             }}
         >
             <Stack direction="row" justifyContent="space-between" alignItems="flex-start">
-                <Box>
-                    <Typography variant="subtitle1" fontWeight={600} gutterBottom>
+                <Box sx={{ minWidth: 0, flex: 1, pr: 2 }}>
+                    <Typography variant="subtitle1" fontWeight={600} gutterBottom sx={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
                         {session.title}
                     </Typography>
-                    <Stack direction="row" spacing={1} alignItems="center">
+                    <Stack direction="row" spacing={1} alignItems="center" flexWrap="wrap" useFlexGap>
                         <Stack direction="row" spacing={0.5} alignItems="center" color="text.secondary">
                             <AccessTimeIcon sx={{ fontSize: 16 }} />
                             <Typography variant="body2">
-                                {formatTime(session.start)} - {formatTime(session.end)}
+                                {formatTime(session.startDateTime)} - {formatTime(session.endDateTime)}
                             </Typography>
                         </Stack>
-                        <Chip label={session.track} size="small" sx={{ height: 20, fontSize: '0.7rem' }} />
+                        {session.room && (
+                            <Stack direction="row" spacing={0.5} alignItems="center" color="text.secondary">
+                                <RoomIcon sx={{ fontSize: 16 }} />
+                                <Typography variant="body2">{session.room}</Typography>
+                            </Stack>
+                        )}
+                        {session.track && (
+                            <Chip label={session.track} size="small" sx={{ height: 20, fontSize: '0.7rem' }} />
+                        )}
                     </Stack>
+                    {session.description && (
+                        <Typography variant="body2" color="text.secondary" sx={{ mt: 1, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                            {session.description}
+                        </Typography>
+                    )}
                 </Box>
 
                 <IconButton
@@ -94,3 +117,4 @@ const SessionCard = ({ session, eventId, isForYouView }) => {
 };
 
 export default SessionCard;
+

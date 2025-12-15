@@ -15,10 +15,12 @@ function seededRandom(seed) {
         hash = ((hash << 5) - hash) + char;
         hash = hash & hash;
     }
+    // Ensure hash is positive
+    hash = Math.abs(hash);
 
     return function () {
         hash = (hash * 9301 + 49297) % 233280;
-        return hash / 233280;
+        return Math.abs(hash) / 233280;
     };
 }
 
@@ -57,6 +59,31 @@ function generateOrgColors(seed, type = 'School') {
             { primary: '#1e293b', secondary: '#64748b' },
             { primary: '#713f12', secondary: '#fbbf24' },
             { primary: '#312e81', secondary: '#818cf8' },
+        ],
+        Academy: [
+            { primary: '#155e75', secondary: '#22d3ee' },
+            { primary: '#4c1d95', secondary: '#a78bfa' },
+            { primary: '#166534', secondary: '#86efac' },
+        ],
+        Foundation: [
+            { primary: '#0f766e', secondary: '#2dd4bf' },
+            { primary: '#7e22ce', secondary: '#d8b4fe' },
+            { primary: '#b91c1c', secondary: '#fca5a5' },
+        ],
+        Lab: [
+            { primary: '#0369a1', secondary: '#38bdf8' },
+            { primary: '#c026d3', secondary: '#f0abfc' },
+            { primary: '#15803d', secondary: '#4ade80' },
+        ],
+        Center: [
+            { primary: '#1d4ed8', secondary: '#93c5fd' },
+            { primary: '#a21caf', secondary: '#e879f9' },
+            { primary: '#047857', secondary: '#6ee7b7' },
+        ],
+        Council: [
+            { primary: '#0c4a6e', secondary: '#7dd3fc' },
+            { primary: '#86198f', secondary: '#f5d0fe' },
+            { primary: '#064e3b', secondary: '#a7f3d0' },
         ],
     };
 

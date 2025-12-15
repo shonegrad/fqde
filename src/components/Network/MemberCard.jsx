@@ -11,7 +11,7 @@ const MemberCard = ({ member, onClick }) => {
         : displayName?.charAt(0) || '?';
 
     return (
-        <Card elevation={2} onClick={() => onClick(member)} sx={{ height: '100%', cursor: 'pointer', transition: 'all 0.2s', '&:hover': { transform: 'translateY(-4px)' } }}>
+        <Card onClick={() => onClick(member)} sx={{ height: '100%', cursor: 'pointer' }}>
             <CardContent>
                 <Stack direction="row" spacing={2} alignItems="center" sx={{ mb: 2 }}>
                     <Avatar src={avatarPath} alt={displayName} sx={{ width: 56, height: 56 }}>{initials}</Avatar>
