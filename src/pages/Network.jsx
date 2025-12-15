@@ -95,8 +95,9 @@ const Network = () => {
                         px: 1.5,
                         py: 0.5,
                         borderRadius: '10px',
-                        bgcolor: 'rgba(241, 245, 249, 0.8)',
-                        border: '1px solid rgba(15, 23, 42, 0.06)',
+                        bgcolor: 'background.paper',
+                        border: '1px solid',
+                        borderColor: 'divider',
                         width: 280,
                         flexShrink: 0
                     }}
@@ -128,8 +129,9 @@ const Network = () => {
                     py: 0.75,
                     mb: 1.5,
                     borderRadius: '12px',
-                    bgcolor: 'rgba(241, 245, 249, 0.6)',
-                    border: '1px solid rgba(15, 23, 42, 0.04)',
+                    bgcolor: 'background.paper',
+                    border: '1px solid',
+                    borderColor: 'divider',
                     flexWrap: 'wrap'
                 }}
             >
@@ -153,7 +155,7 @@ const Network = () => {
                                 textTransform: 'none',
                                 color: 'text.secondary',
                                 '&.Mui-selected': { bgcolor: 'secondary.main', color: 'white', '&:hover': { bgcolor: 'secondary.dark' } },
-                                '&:hover': { bgcolor: 'rgba(0,0,0,0.04)' }
+                                '&:hover': { bgcolor: 'action.hover' }
                             }
                         }}
                     >
@@ -186,7 +188,7 @@ const Network = () => {
                                 textTransform: 'none',
                                 color: 'text.secondary',
                                 '&.Mui-selected': { bgcolor: 'primary.main', color: 'white', '&:hover': { bgcolor: 'primary.dark' } },
-                                '&:hover': { bgcolor: 'rgba(0,0,0,0.04)' }
+                                '&:hover': { bgcolor: 'action.hover' }
                             }
                         }}
                     >
@@ -218,7 +220,7 @@ const Network = () => {
 
             {/* Visualization Canvas */}
             <Box sx={{ flexGrow: 1, minHeight: 0 }}>
-                <Paper elevation={0} sx={{ height: '100%', borderRadius: 3, overflow: 'hidden', border: '1px solid', borderColor: 'divider' }}>
+                <Paper elevation={0} sx={{ height: '100%', borderRadius: 3, overflow: 'hidden', border: '1px solid', borderColor: 'divider', bgcolor: 'background.paper' }}>
                     <NetworkMap
                         onNodeClick={setSelectedNode}
                         organizations={organizations}

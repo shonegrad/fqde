@@ -100,10 +100,9 @@ const MainLayout = () => {
                 color="inherit"
                 elevation={0}
                 sx={{
-                    bgcolor: 'rgba(241, 245, 249, 0.9)',
-                    backdropFilter: 'blur(16px)',
+                    bgcolor: 'background.default',
                     borderBottom: '1px solid',
-                    borderColor: 'rgba(0,0,0,0.06)',
+                    borderColor: 'divider',
                     py: 1
                 }}
             >
@@ -141,13 +140,12 @@ const MainLayout = () => {
                             position: 'absolute',
                             left: '50%',
                             transform: 'translateX(-50%)',
-                            bgcolor: 'rgba(241, 245, 249, 0.8)', // Theme paper alpha
-                            backdropFilter: 'blur(12px)',
-                            p: 0.5,
+                            transform: 'translateX(-50%)',
+                            bgcolor: 'background.paper',
                             borderRadius: 4,
                             border: '1px solid',
-                            borderColor: 'rgba(15, 23, 42, 0.08)',
-                            boxShadow: '0 4px 12px -2px rgba(15, 23, 42, 0.05)'
+                            borderColor: 'divider',
+                            boxShadow: 1
                         }}>
                             {[
                                 { name: 'Home', path: '/' },
@@ -215,7 +213,8 @@ const MainLayout = () => {
                                             width: 40,
                                             height: 40,
                                             boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
-                                            border: '2px solid white'
+                                            border: '2px solid',
+                                            borderColor: 'primary.contrastText'
                                         }}
                                     >
                                         {getUserInitials(currentUser)}
