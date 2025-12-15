@@ -142,12 +142,24 @@ const NetworkMap = ({
             .attr('stroke-width', d => d.data.type === 'group' ? 2 : 1.5);
 
         all.select('text.label')
-            .attr('text-anchor', 'middle').attr('font-weight', d => d.data.type === 'group' ? 700 : 600)
-            .attr('fill', d => d.data.type === 'group' ? colorScale(d.data.name) : '#fff')
-            .attr('font-size', d => d.data.type === 'group' ? '10px' : Math.min(d.r / 4, 8) + 'px')
-            .attr('dy', d => d.data.type === 'group' ? -d.r + 14 : '0.35em')
+            .attr('text-anchor', 'middle')
+            .attr('font-weight', 600)
+            .style('font-family', theme.typography.fontFamily)
+            .attr('fill', d => {
+                if (d.data.type === 'group') return theme.palette.text.primary;
+                const nodeColor = d3.color(colorScale(d.data.groupName))?.darker(0.3);
+                return theme.palette.getContrastText(nodeColor?.toString() || '#000');
+            })
+            .style('text-shadow', d => d.data.type === 'org' ? '0 1px 3px rgba(0,0,0,0.4)' : 'none')
+            .attr('font-size', d => d.data.type === 'group' ? '11px' : Math.max(9, Math.min(d.r / 3.5, 12)) + 'px')
+            .attr('dy', d => d.data.type === 'group' ? -d.r + 16 : '0.35em')
             .style('pointer-events', 'none')
-            .text(d => { if (d.data.type === 'root') return ''; if (d.r < 15 && d.data.type === 'org') return ''; const n = d.data.name; return n.length > 12 ? n.slice(0, 10) + '…' : n; });
+            .text(d => {
+                if (d.data.type === 'root') return '';
+                if (d.r < 18 && d.data.type === 'org') return ''; // Don't show label if node is too small
+                const n = d.data.name;
+                return n.length > 14 ? n.slice(0, 12) + '…' : n;
+            });
     }, [hierarchyData, colorScale, onNodeClick]);
 
     // Render Treemap view
@@ -181,10 +193,13 @@ const NetworkMap = ({
             .attr('stroke', '#fff').attr('stroke-width', 1).attr('rx', 4);
 
         all.select('text.label')
-            .attr('x', 4).attr('y', 14).attr('font-size', '9px').attr('font-weight', 600)
-            .attr('fill', d => d.data.type === 'group' ? theme.palette.text.primary : theme.palette.getContrastText(d3.color(colorScale(d.data.groupName))?.darker(0.2) || '#000'))
+            .attr('x', 6).attr('y', 16)
+            .attr('font-size', '11px')
+            .attr('font-weight', 600)
+            .style('font-family', theme.typography.fontFamily)
+            .attr('fill', d => d.data.type === 'group' ? theme.palette.text.primary : theme.palette.getContrastText(d3.color(colorScale(d.data.groupName))?.darker(0.2)?.toString() || '#000'))
             .style('pointer-events', 'none')
-            .text(d => { const w = d.x1 - d.x0; if (w < 40) return ''; const n = d.data.name; const maxC = Math.floor(w / 6); return n.length > maxC ? n.slice(0, maxC - 1) + '…' : n; });
+            .text(d => { const w = d.x1 - d.x0; if (w < 45) return ''; const n = d.data.name; const maxC = Math.floor(w / 7); return n.length > maxC ? n.slice(0, maxC - 1) + '…' : n; });
     }, [hierarchyData, colorScale, onNodeClick, theme]);
 
     // Track previous view to detect changes
