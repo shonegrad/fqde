@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.2.5] - 2025-12-15
+### Added
+- **Directory View**: New list-based interface for browsing Organizations and Members in the Network page.
+- **Organization Cards**: Dedicated card components for organization listings.
+- **Member Search**: Enhanced search functionality in Network page to filter users by name, role, and tags.
+
 ## [0.2.4] - 2025-12-15
 ### Added
 - **Dark Mode**: Complete support with a toggle switch in the header.

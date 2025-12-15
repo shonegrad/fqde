@@ -21,6 +21,8 @@ import CategoryIcon from '@mui/icons-material/Category';
 import GroupWorkIcon from '@mui/icons-material/GroupWork';
 import BubbleChartIcon from '@mui/icons-material/BubbleChart';
 import GridViewIcon from '@mui/icons-material/GridView';
+import ViewListIcon from '@mui/icons-material/ViewList';
+import DirectoryView from '../components/Network/DirectoryView';
 
 const GROUPING_OPTIONS = [
     { value: 'tags', label: 'Tag', icon: LocalOfferIcon },
@@ -31,7 +33,8 @@ const GROUPING_OPTIONS = [
 
 const VIEW_OPTIONS = [
     { value: 'pack', label: 'Bubble', icon: BubbleChartIcon },
-    { value: 'treemap', label: 'Treemap', icon: GridViewIcon }
+    { value: 'treemap', label: 'Treemap', icon: GridViewIcon },
+    { value: 'directory', label: 'Directory', icon: ViewListIcon }
 ];
 
 const Network = () => {
@@ -50,6 +53,35 @@ const Network = () => {
         });
         return Array.from(tagSet).sort();
     }, [organizations]);
+
+    // Filtered Users Logic
+    const filteredUsers = React.useMemo(() => {
+        if (!searchQuery) return users;
+        const query = searchQuery.toLowerCase();
+        return users.filter(user => {
+            const fullName = `${user.firstName || ''} ${user.lastName || ''}`.toLowerCase();
+            return (
+                fullName.includes(query) ||
+                user.title?.toLowerCase().includes(query) ||
+                user.role?.toLowerCase().includes(query) ||
+                user.city?.toLowerCase().includes(query) ||
+                user.tags?.some(tag => tag.toLowerCase().includes(query))
+            );
+        });
+    }, [users, searchQuery]);
+
+    // Filter Organizations Logic (Reused from NetworkMap logic, moved here for shared use)
+    const filteredOrganizations = React.useMemo(() => {
+        if (!searchQuery) return organizations;
+        const query = searchQuery.toLowerCase();
+        return organizations.filter(org =>
+            org.name.toLowerCase().includes(query) ||
+            org.city?.toLowerCase().includes(query) ||
+            org.region?.toLowerCase().includes(query) ||
+            org.type?.toLowerCase().includes(query) ||
+            org.tags?.some(tag => tag.toLowerCase().includes(query))
+        );
+    }, [organizations, searchQuery]);
 
     if (dataLoading) {
         return (
@@ -104,7 +136,7 @@ const Network = () => {
                 >
                     <TextField
                         fullWidth
-                        placeholder="Search organizations..."
+                        placeholder="Search organizations & members..."
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
                         size="small"
@@ -168,41 +200,43 @@ const Network = () => {
                     </ToggleButtonGroup>
                 </Box>
 
-                {/* Group By Selector */}
-                <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                    <Typography variant="body2" fontWeight={600} color="text.secondary" sx={{ fontSize: '0.8rem', whiteSpace: 'nowrap' }}>
-                        Group:
-                    </Typography>
-                    <ToggleButtonGroup
-                        value={groupBy}
-                        exclusive
-                        onChange={(e, v) => { if (v) { setGroupBy(v); setSelectedTag(null); } }}
-                        size="small"
-                        sx={{
-                            '& .MuiToggleButton-root': {
-                                border: 'none',
-                                borderRadius: '8px !important',
-                                px: 1,
-                                py: 0.25,
-                                fontSize: '0.7rem',
-                                textTransform: 'none',
-                                color: 'text.secondary',
-                                '&.Mui-selected': { bgcolor: 'primary.main', color: 'white', '&:hover': { bgcolor: 'primary.dark' } },
-                                '&:hover': { bgcolor: 'action.hover' }
-                            }
-                        }}
-                    >
-                        {GROUPING_OPTIONS.map(({ value, label, icon: Icon }) => (
-                            <ToggleButton key={value} value={value}>
-                                <Icon sx={{ mr: 0.5, fontSize: 14 }} />
-                                {label}
-                            </ToggleButton>
-                        ))}
-                    </ToggleButtonGroup>
-                </Box>
+                {/* Group By Selector - Only show for D3 Views */}
+                {viewType !== 'directory' && (
+                    <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                        <Typography variant="body2" fontWeight={600} color="text.secondary" sx={{ fontSize: '0.8rem', whiteSpace: 'nowrap' }}>
+                            Group:
+                        </Typography>
+                        <ToggleButtonGroup
+                            value={groupBy}
+                            exclusive
+                            onChange={(e, v) => { if (v) { setGroupBy(v); setSelectedTag(null); } }}
+                            size="small"
+                            sx={{
+                                '& .MuiToggleButton-root': {
+                                    border: 'none',
+                                    borderRadius: '8px !important',
+                                    px: 1,
+                                    py: 0.25,
+                                    fontSize: '0.7rem',
+                                    textTransform: 'none',
+                                    color: 'text.secondary',
+                                    '&.Mui-selected': { bgcolor: 'primary.main', color: 'white', '&:hover': { bgcolor: 'primary.dark' } },
+                                    '&:hover': { bgcolor: 'action.hover' }
+                                }
+                            }}
+                        >
+                            {GROUPING_OPTIONS.map(({ value, label, icon: Icon }) => (
+                                <ToggleButton key={value} value={value}>
+                                    <Icon sx={{ mr: 0.5, fontSize: 14 }} />
+                                    {label}
+                                </ToggleButton>
+                            ))}
+                        </ToggleButtonGroup>
+                    </Box>
+                )}
 
                 {/* Tag filter chips */}
-                {groupBy === 'tags' && (
+                {viewType !== 'directory' && groupBy === 'tags' && (
                     <Stack direction="row" spacing={0.5} sx={{ flexWrap: 'wrap', gap: 0.5, alignItems: 'center' }}>
                         <Chip label="All" size="small" variant={!selectedTag ? 'filled' : 'outlined'} color={!selectedTag ? 'primary' : 'default'} onClick={() => setSelectedTag(null)} sx={{ height: 22, fontSize: '0.7rem' }} />
                         {allTags.slice(0, 6).map(tag => (
@@ -221,17 +255,25 @@ const Network = () => {
             {/* Visualization Canvas */}
             <Box sx={{ flexGrow: 1, minHeight: 0 }}>
                 <Paper elevation={0} sx={{ height: '100%', borderRadius: 3, overflow: 'hidden', border: '1px solid', borderColor: 'divider', bgcolor: 'background.paper' }}>
-                    <NetworkMap
-                        onNodeClick={setSelectedNode}
-                        organizations={organizations}
-                        users={users}
-                        associations={associations}
-                        memberships={memberships}
-                        searchQuery={searchQuery}
-                        groupBy={groupBy}
-                        selectedTag={selectedTag}
-                        viewType={viewType}
-                    />
+                    {viewType === 'directory' ? (
+                        <DirectoryView
+                            organizations={filteredOrganizations}
+                            users={filteredUsers}
+                            onNodeClick={setSelectedNode}
+                        />
+                    ) : (
+                        <NetworkMap
+                            onNodeClick={setSelectedNode}
+                            organizations={organizations}
+                            users={users}
+                            associations={associations}
+                            memberships={memberships}
+                            searchQuery={searchQuery}
+                            groupBy={groupBy}
+                            selectedTag={selectedTag}
+                            viewType={viewType}
+                        />
+                    )}
                 </Paper>
             </Box>
 
