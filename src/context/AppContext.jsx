@@ -1,39 +1,97 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { USERS, EVENTS, RESOURCES, FEED_ITEMS } from '../data/seed';
+import { loadData, ROLES } from '../data/seedData';
 
 const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
-    // --- State Initialization ---
+    // --- Data Loading State ---
+    const [dataLoaded, setDataLoaded] = useState(false);
+    const [dataLoading, setDataLoading] = useState(true);
 
-    // User/Role
-    const [currentUser, setCurrentUser] = useState(() => {
-        const saved = localStorage.getItem('ce_user');
-        return saved ? JSON.parse(saved) : USERS[0]; // Default to Director
+    // --- Core Data ---
+    const [allData, setAllData] = useState({
+        users: [],
+        organizations: [],
+        associations: [],
+        events: [],
+        sessions: [],
+        resources: [],
+        memberships: [],
+        relationships: []
     });
 
-    // Events & Schedule
-    // We store "mySchedule" as list of session IDs
+    // --- User/Role ---
+    const [currentUser, setCurrentUser] = useState(null);
+
+    // --- Events & Schedule ---
     const [mySchedule, setMySchedule] = useState(() => {
         const saved = localStorage.getItem('ce_schedule');
         return saved ? JSON.parse(saved) : [];
     });
 
-    // Resources (including uploads)
-    const [resources, setResources] = useState(() => {
-        const saved = localStorage.getItem('ce_resources');
-        return saved ? JSON.parse(saved) : RESOURCES;
-    });
+    // --- Resources (including uploads) ---
+    const [resources, setResources] = useState([]);
 
-    // Saved Resources (bookmarks)
+    // --- Saved Resources (bookmarks) ---
     const [savedResources, setSavedResources] = useState(() => {
         const saved = localStorage.getItem('ce_saved_resources');
         return saved ? JSON.parse(saved) : [];
     });
 
+    // --- Load Data on Mount ---
+    useEffect(() => {
+        let isMounted = true;
+
+        async function fetchData() {
+            try {
+                setDataLoading(true);
+                const data = await loadData();
+
+                if (!isMounted) return;
+
+                setAllData({
+                    users: data.users || [],
+                    organizations: data.organizations || [],
+                    associations: data.associations || [],
+                    events: data.events || [],
+                    sessions: data.sessions || [],
+                    resources: data.resources || [],
+                    memberships: data.memberships || [],
+                    relationships: data.relationships || []
+                });
+
+                setResources(data.resources || []);
+
+                // Set current user from localStorage or default to first user
+                const savedUser = localStorage.getItem('ce_user');
+                if (savedUser) {
+                    setCurrentUser(JSON.parse(savedUser));
+                } else if (data.users && data.users.length > 0) {
+                    setCurrentUser(data.users[0]);
+                }
+
+                setDataLoaded(true);
+            } catch (error) {
+                console.error('Failed to load application data:', error);
+            } finally {
+                if (isMounted) {
+                    setDataLoading(false);
+                }
+            }
+        }
+
+        fetchData();
+
+        return () => {
+            isMounted = false;
+        };
+    }, []);
+
     // --- Persistence Effects ---
     useEffect(() => {
-        localStorage.setItem('ce_user', JSON.stringify(currentUser));
+        if (currentUser) {
+            localStorage.setItem('ce_user', JSON.stringify(currentUser));
+        }
     }, [currentUser]);
 
     useEffect(() => {
@@ -48,11 +106,10 @@ export const AppProvider = ({ children }) => {
         localStorage.setItem('ce_saved_resources', JSON.stringify(savedResources));
     }, [savedResources]);
 
-
     // --- Actions ---
 
     const switchRole = (userId) => {
-        const user = USERS.find(u => u.id === userId);
+        const user = allData.users.find(u => u.id === userId);
         if (user) setCurrentUser(user);
     };
 
@@ -79,22 +136,55 @@ export const AppProvider = ({ children }) => {
     };
 
     const value = {
-        users: USERS,
+        // Data loading state
+        dataLoaded,
+        dataLoading,
+
+        // Core data
+        users: allData.users,
+        organizations: allData.organizations,
+        associations: allData.associations,
+        events: allData.events,
+        sessions: allData.sessions,
+        memberships: allData.memberships,
+        relationships: allData.relationships,
+
+        // User
         currentUser,
         switchRole,
+        roles: ROLES,
 
-        events: EVENTS, // Static for now, could be state if we edited events
+        // Schedule
         mySchedule,
         addToSchedule,
         removeFromSchedule,
 
+        // Resources
         resources,
         savedResources,
         toggleSaveResource,
         addResource,
-
-        feed: FEED_ITEMS // Static for now
     };
+
+    // Show loading state while data is being fetched
+    if (dataLoading) {
+        return (
+            <AppContext.Provider value={value}>
+                <div style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100vh',
+                    fontFamily: 'sans-serif'
+                }}>
+                    <div style={{ textAlign: 'center' }}>
+                        <h2>Loading FQDE Network...</h2>
+                        <p>Initializing  1200+ educators and 250+ organizations...</p>
+                    </div>
+                </div>
+            </AppContext.Provider>
+        );
+    }
 
     return (
         <AppContext.Provider value={value}>

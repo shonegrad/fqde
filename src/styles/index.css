@@ -1,19 +1,24 @@
 :root {
   /* Colors - Neutral Palette */
-  --color-bg-primary: #ffffff;
-  --color-bg-secondary: #f8fafc;
-  --color-bg-tertiary: #f1f5f9;
-  
-  --color-text-primary: #0f172a;
+  --color-bg-primary: #f8fafc;
+  /* Matching theme.palette.background.paper */
+  --color-bg-secondary: #f0f4f8;
+  /* Matching theme.palette.background.default */
+  --color-bg-tertiary: #e2e8f0;
+  /* Matching darker slate */
+
+  --color-text-primary: #1e293b;
   --color-text-secondary: #475569;
-  --color-text-muted: #94a3b8;
-  
+  --color-text-muted: #64748b;
+
   --color-border: #e2e8f0;
-  
+
   /* Brand/Accent Colors (Subtle) */
-  --color-accent: #0f172a; /* Dark Slate */
-  --color-accent-light: #e2e8f0;
-  
+  --color-accent: #2563eb;
+  /* Blue 600 */
+  --color-accent-light: #dbeafe;
+  /* Blue 100 */
+
   --color-success: #16a34a;
   --color-warning: #ea580c;
   --color-error: #dc2626;
@@ -21,7 +26,7 @@
   /* Typography */
   --font-heading: "Georgia", serif;
   --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  
+
   /* Spacing */
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
@@ -50,7 +55,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   font-weight: 600;
   line-height: 1.2;
@@ -98,6 +108,7 @@ button {
   background: var(--color-accent);
   color: white;
 }
+
 .btn-primary:hover {
   opacity: 0.9;
 }
@@ -107,6 +118,7 @@ button {
   border-color: var(--color-border);
   color: var(--color-text-primary);
 }
+
 .btn-secondary:hover {
   background: var(--color-bg-secondary);
 }

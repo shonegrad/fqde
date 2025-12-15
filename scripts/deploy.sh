@@ -13,6 +13,10 @@ fi
 VERSION=$(node -p "require('./package.json').version")
 echo "🚀 Deploying version v$VERSION..."
 
+# 2a. Sync .version file with package.json (single source of truth)
+echo "$VERSION" > .version
+echo "📋 Synced .version file to $VERSION"
+
 # 3. Build the project
 echo "📦 Building project..."
 npm run build

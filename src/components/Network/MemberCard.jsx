@@ -1,59 +1,42 @@
 import React from 'react';
-import {
-    Card,
-    CardContent,
-    Typography,
-    Stack,
-    Avatar,
-    Box
-} from '@mui/material';
-import BusinessIcon from '@mui/icons-material/Business';
+import { Card, CardContent, Typography, Stack, Avatar, Box, Chip } from '@mui/material';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const MemberCard = ({ member, onClick }) => {
+    const displayName = member.displayName || member.name || `${member.firstName || ''} ${member.lastName || ''}`.trim();
+    const role = member.title || member.role || '';
+    const avatarPath = member.avatarPath ? `/fqde${member.avatarPath}` : member.avatar;
+    const initials = member.firstName && member.lastName
+        ? `${member.firstName.charAt(0)}${member.lastName.charAt(0)}`
+        : displayName?.charAt(0) || '?';
+
     return (
-        <Card
-            variant="outlined"
-            onClick={() => onClick(member)}
-            sx={{
-                height: '100%',
-                cursor: 'pointer',
-                transition: 'all 0.2s',
-                '&:hover': {
-                    borderColor: 'primary.main',
-                    boxShadow: 2,
-                    transform: 'translateY(-2px)'
-                }
-            }}
-        >
+        <Card variant="outlined" onClick={() => onClick(member)} sx={{ height: '100%', cursor: 'pointer', transition: 'all 0.2s', '&:hover': { borderColor: 'primary.main', transform: 'translateY(-2px)' } }}>
             <CardContent>
                 <Stack direction="row" spacing={2} alignItems="center" sx={{ mb: 2 }}>
-                    <Avatar
-                        src={member.avatar}
-                        alt={member.name}
-                        sx={{ width: 56, height: 56, bgcolor: 'secondary.main' }}
-                    >
-                        {member.name.charAt(0)}
-                    </Avatar>
-                    <Box>
-                        <Typography variant="subtitle1" component="h3" sx={{ fontWeight: 600, lineHeight: 1.2 }}>
-                            {member.name}
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            {member.role}
-                        </Typography>
+                    <Avatar src={avatarPath} alt={displayName} sx={{ width: 56, height: 56 }}>{initials}</Avatar>
+                    <Box sx={{ minWidth: 0, flex: 1 }}>
+                        <Typography variant="subtitle1" fontWeight={600} noWrap>{displayName}</Typography>
+                        <Typography variant="body2" color="text.secondary" noWrap>{role}</Typography>
                     </Box>
                 </Stack>
 
-                {member.bio && (
-                    <Typography variant="body2" color="text.secondary" sx={{
-                        display: '-webkit-box',
-                        WebkitLineClamp: 2,
-                        WebkitBoxOrient: 'vertical',
-                        overflow: 'hidden',
-                        mb: 2
-                    }}>
-                        {member.bio}
-                    </Typography>
+                {member.city && (
+                    <Stack direction="row" spacing={0.5} alignItems="center" sx={{ mb: 1 }}>
+                        <LocationOnIcon fontSize="small" color="action" />
+                        <Typography variant="caption" color="text.secondary">
+                            {member.city}{member.region ? `, ${member.region}` : ''}
+                        </Typography>
+                    </Stack>
+                )}
+
+                {member.tags?.length > 0 && (
+                    <Stack direction="row" spacing={0.5} flexWrap="wrap" useFlexGap>
+                        {member.tags.slice(0, 2).map(tag => (
+                            <Chip key={tag} label={tag} size="small" variant="outlined" />
+                        ))}
+                        {member.tags.length > 2 && <Chip label={`+${member.tags.length - 2}`} size="small" variant="outlined" />}
+                    </Stack>
                 )}
             </CardContent>
         </Card>

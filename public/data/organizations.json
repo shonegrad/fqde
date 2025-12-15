@@ -1,0 +1,5955 @@
+[
+  {
+    "id": "org1",
+    "name": "Association Stratégique Québec",
+    "type": "Association",
+    "description": "Association Stratégique Québec is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org1.qc.ca",
+    "contactEmail": "contact@org1.qc.ca",
+    "phone": "+1 (581) 419-6676",
+    "address": "5678 rue de l'Éducation",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "postalCode": "G3S 4E1",
+    "logoPath": "/assets/logos/org1.svg",
+    "associationIds": [
+      "assoc2",
+      "assoc17",
+      "assoc16"
+    ],
+    "tags": [
+      "Secondary Education",
+      "Sports",
+      "Inclusion",
+      "Assessment"
+    ],
+    "lastActivityAt": "2025-10-03T02:43:52.299Z"
+  },
+  {
+    "id": "org2",
+    "name": "Institute Stratégique Sherbrooke",
+    "type": "Institute",
+    "description": "Institute Stratégique Sherbrooke is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org2.qc.ca",
+    "contactEmail": "contact@org2.qc.ca",
+    "phone": "+1 (819) 870-2719",
+    "address": "2094 rue de l'Éducation",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J4M 2F2",
+    "logoPath": "/assets/logos/org2.svg",
+    "associationIds": [
+      "assoc23",
+      "assoc17",
+      "assoc1"
+    ],
+    "tags": [
+      "Secondary Education",
+      "Special Education",
+      "Sports"
+    ],
+    "lastActivityAt": "2025-11-08T02:43:52.299Z"
+  },
+  {
+    "id": "org3",
+    "name": "Consortium Future Sherbrooke",
+    "type": "Consortium",
+    "description": "Consortium Future Sherbrooke is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org3.qc.ca",
+    "contactEmail": "contact@org3.qc.ca",
+    "phone": "+1 (873) 306-5382",
+    "address": "756 rue de l'Éducation",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J8X 2I5",
+    "logoPath": "/assets/logos/org3.svg",
+    "associationIds": [
+      "assoc8",
+      "assoc19"
+    ],
+    "tags": [
+      "Inclusion",
+      "Arts"
+    ],
+    "lastActivityAt": "2025-10-14T02:43:52.300Z"
+  },
+  {
+    "id": "org4",
+    "name": "Center Future Québec",
+    "type": "Center",
+    "description": "Center Future Québec is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org4.qc.ca",
+    "contactEmail": "contact@org4.qc.ca",
+    "phone": "+1 (581) 619-6143",
+    "address": "4386 rue de l'Éducation",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "postalCode": "G5C 2E4",
+    "logoPath": "/assets/logos/org4.svg",
+    "associationIds": [],
+    "tags": [
+      "Technology Integration",
+      "Arts",
+      "Curriculum Development"
+    ],
+    "lastActivityAt": "2025-10-31T02:43:52.300Z"
+  },
+  {
+    "id": "org5",
+    "name": "Longueuil Regional Center",
+    "type": "Center",
+    "description": "Longueuil Regional Center is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org5.qc.ca",
+    "contactEmail": "contact@org5.qc.ca",
+    "phone": "+1 (579) 895-8004",
+    "address": "2342 Street Education",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J9E 3Q6",
+    "logoPath": "/assets/logos/org5.svg",
+    "associationIds": [
+      "assoc25",
+      "assoc21"
+    ],
+    "tags": [
+      "Inclusion",
+      "Curriculum Development",
+      "Sports",
+      "STEM"
+    ],
+    "lastActivityAt": "2025-10-25T02:43:52.300Z"
+  },
+  {
+    "id": "org6",
+    "name": "Network Avancée Sherbrooke",
+    "type": "Network",
+    "description": "Network Avancée Sherbrooke is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org6.qc.ca",
+    "contactEmail": "contact@org6.qc.ca",
+    "phone": "+1 (819) 896-4241",
+    "address": "2613 rue de l'Éducation",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J4H 7N6",
+    "logoPath": "/assets/logos/org6.svg",
+    "associationIds": [
+      "assoc10"
+    ],
+    "tags": [
+      "Curriculum Development",
+      "Professional Development",
+      "Assessment"
+    ],
+    "lastActivityAt": "2025-11-22T02:43:52.300Z"
+  },
+  {
+    "id": "org7",
+    "name": "Institute Nationale Saguenay",
+    "type": "Institute",
+    "description": "Institute Nationale Saguenay is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org7.qc.ca",
+    "contactEmail": "contact@org7.qc.ca",
+    "phone": "+1 (581) 399-3774",
+    "address": "8220 rue de l'Éducation",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G8J 9X0",
+    "logoPath": "/assets/logos/org7.svg",
+    "associationIds": [
+      "assoc23",
+      "assoc10"
+    ],
+    "tags": [
+      "Inclusion",
+      "Curriculum Development"
+    ],
+    "lastActivityAt": "2025-10-28T02:43:52.300Z"
+  },
+  {
+    "id": "org8",
+    "name": "Center Future Québec",
+    "type": "Center",
+    "description": "Center Future Québec is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org8.qc.ca",
+    "contactEmail": "contact@org8.qc.ca",
+    "phone": "+1 (418) 558-3170",
+    "address": "9694 rue de l'Éducation",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "postalCode": "G5W 1H3",
+    "logoPath": "/assets/logos/org8.svg",
+    "associationIds": [
+      "assoc17",
+      "assoc2",
+      "assoc26"
+    ],
+    "tags": [
+      "Special Education",
+      "Early Childhood",
+      "Bilingual Education"
+    ],
+    "lastActivityAt": "2025-09-17T02:43:52.300Z"
+  },
+  {
+    "id": "org9",
+    "name": "École Innovante Chicoutimi",
+    "type": "School",
+    "description": "École Innovante Chicoutimi is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org9.qc.ca",
+    "contactEmail": "contact@org9.qc.ca",
+    "phone": "+1 (581) 881-2676",
+    "address": "3931 rue de l'Éducation",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G8H 5P0",
+    "logoPath": "/assets/logos/org9.svg",
+    "associationIds": [
+      "assoc19",
+      "assoc21",
+      "assoc25"
+    ],
+    "tags": [
+      "Arts",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-10-09T02:43:52.301Z"
+  },
+  {
+    "id": "org10",
+    "name": "Association Digitale Sherbrooke",
+    "type": "Association",
+    "description": "Association Digitale Sherbrooke is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org10.qc.ca",
+    "contactEmail": "contact@org10.qc.ca",
+    "phone": "+1 (819) 528-2153",
+    "address": "5444 rue de l'Éducation",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J6V 1K3",
+    "logoPath": "/assets/logos/org10.svg",
+    "associationIds": [
+      "assoc9"
+    ],
+    "tags": [
+      "Leadership",
+      "Curriculum Development",
+      "Inclusion"
+    ],
+    "lastActivityAt": "2025-12-01T02:43:52.301Z"
+  },
+  {
+    "id": "org11",
+    "name": "Saguenay National Academy",
+    "type": "Academy",
+    "description": "Saguenay National Academy is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org11.qc.ca",
+    "contactEmail": "contact@org11.qc.ca",
+    "phone": "+1 (581) 987-9520",
+    "address": "9795 Street Education",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G8H 9L1",
+    "logoPath": "/assets/logos/org11.svg",
+    "associationIds": [
+      "assoc22"
+    ],
+    "tags": [
+      "Leadership",
+      "Literacy",
+      "Secondary Education",
+      "Technology Integration",
+      "Professional Development"
+    ],
+    "lastActivityAt": "2025-10-02T02:43:52.301Z"
+  },
+  {
+    "id": "org12",
+    "name": "Longueuil Global Institute",
+    "type": "Institute",
+    "description": "Longueuil Global Institute is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org12.qc.ca",
+    "contactEmail": "contact@org12.qc.ca",
+    "phone": "+1 (450) 584-8426",
+    "address": "8930 Street Education",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J9X 8I0",
+    "logoPath": "/assets/logos/org12.svg",
+    "associationIds": [
+      "assoc6",
+      "assoc15",
+      "assoc22"
+    ],
+    "tags": [
+      "STEM",
+      "Inclusion",
+      "Curriculum Development",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-10-14T02:43:52.301Z"
+  },
+  {
+    "id": "org13",
+    "name": "Foundation Inclusive Longueuil",
+    "type": "Foundation",
+    "description": "Foundation Inclusive Longueuil is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org13.qc.ca",
+    "contactEmail": "contact@org13.qc.ca",
+    "phone": "+1 (579) 286-6282",
+    "address": "167 rue de l'Éducation",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J6U 4Q3",
+    "logoPath": "/assets/logos/org13.svg",
+    "associationIds": [],
+    "tags": [
+      "Arts",
+      "Inclusion",
+      "Early Childhood"
+    ],
+    "lastActivityAt": "2025-10-15T02:43:52.301Z"
+  },
+  {
+    "id": "org14",
+    "name": "Institute Inclusive Chicoutimi",
+    "type": "Institute",
+    "description": "Institute Inclusive Chicoutimi is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org14.qc.ca",
+    "contactEmail": "contact@org14.qc.ca",
+    "phone": "+1 (418) 446-2786",
+    "address": "9751 rue de l'Éducation",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G2Q 5D9",
+    "logoPath": "/assets/logos/org14.svg",
+    "associationIds": [],
+    "tags": [
+      "STEM",
+      "Special Education"
+    ],
+    "lastActivityAt": "2025-11-20T02:43:52.301Z"
+  },
+  {
+    "id": "org15",
+    "name": "Lab Stratégique Lévis",
+    "type": "Lab",
+    "description": "Lab Stratégique Lévis is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org15.qc.ca",
+    "contactEmail": "contact@org15.qc.ca",
+    "phone": "+1 (418) 543-5998",
+    "address": "4456 rue de l'Éducation",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "postalCode": "G8I 2K4",
+    "logoPath": "/assets/logos/org15.svg",
+    "associationIds": [
+      "assoc13",
+      "assoc7"
+    ],
+    "tags": [
+      "Professional Development",
+      "Technology Integration",
+      "Inclusion",
+      "Arts"
+    ],
+    "lastActivityAt": "2025-12-02T02:43:52.301Z"
+  },
+  {
+    "id": "org16",
+    "name": "Council Innovante Saint-Jérôme",
+    "type": "Council",
+    "description": "Council Innovante Saint-Jérôme is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org16.qc.ca",
+    "contactEmail": "contact@org16.qc.ca",
+    "phone": "+1 (579) 394-1604",
+    "address": "8644 rue de l'Éducation",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "postalCode": "J9C 5S4",
+    "logoPath": "/assets/logos/org16.svg",
+    "associationIds": [
+      "assoc5"
+    ],
+    "tags": [
+      "Special Education",
+      "Literacy",
+      "Secondary Education",
+      "Arts"
+    ],
+    "lastActivityAt": "2025-11-20T02:43:52.301Z"
+  },
+  {
+    "id": "org17",
+    "name": "Longueuil Strategic Association",
+    "type": "Association",
+    "description": "Longueuil Strategic Association is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org17.qc.ca",
+    "contactEmail": "contact@org17.qc.ca",
+    "phone": "+1 (579) 546-3989",
+    "address": "6633 Street Education",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J8S 4V1",
+    "logoPath": "/assets/logos/org17.svg",
+    "associationIds": [
+      "assoc20",
+      "assoc3"
+    ],
+    "tags": [
+      "Special Education",
+      "Leadership"
+    ],
+    "lastActivityAt": "2025-11-21T02:43:52.301Z"
+  },
+  {
+    "id": "org18",
+    "name": "Foundation Nationale Laval",
+    "type": "Foundation",
+    "description": "Foundation Nationale Laval is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org18.qc.ca",
+    "contactEmail": "contact@org18.qc.ca",
+    "phone": "+1 (450) 690-3254",
+    "address": "2928 rue de l'Éducation",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H1B 1O9",
+    "logoPath": "/assets/logos/org18.svg",
+    "associationIds": [
+      "assoc9",
+      "assoc13",
+      "assoc25"
+    ],
+    "tags": [
+      "Arts",
+      "Professional Development",
+      "Literacy"
+    ],
+    "lastActivityAt": "2025-10-18T02:43:52.301Z"
+  },
+  {
+    "id": "org19",
+    "name": "Council Stratégique Montréal",
+    "type": "Council",
+    "description": "Council Stratégique Montréal is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org19.qc.ca",
+    "contactEmail": "contact@org19.qc.ca",
+    "phone": "+1 (438) 202-7798",
+    "address": "1272 rue de l'Éducation",
+    "city": "Montréal",
+    "region": "Montréal",
+    "postalCode": "H1B 9Y4",
+    "logoPath": "/assets/logos/org19.svg",
+    "associationIds": [
+      "assoc10",
+      "assoc27",
+      "assoc15"
+    ],
+    "tags": [
+      "Curriculum Development",
+      "STEM"
+    ],
+    "lastActivityAt": "2025-10-13T02:43:52.301Z"
+  },
+  {
+    "id": "org20",
+    "name": "Québec Regional Council",
+    "type": "Council",
+    "description": "Québec Regional Council is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org20.qc.ca",
+    "contactEmail": "contact@org20.qc.ca",
+    "phone": "+1 (418) 524-4027",
+    "address": "6963 Street Education",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "postalCode": "G2N 8F0",
+    "logoPath": "/assets/logos/org20.svg",
+    "associationIds": [
+      "assoc8",
+      "assoc6",
+      "assoc22"
+    ],
+    "tags": [
+      "Bilingual Education",
+      "Technology Integration",
+      "Special Education",
+      "Literacy"
+    ],
+    "lastActivityAt": "2025-11-25T02:43:52.301Z"
+  },
+  {
+    "id": "org21",
+    "name": "Institute Innovante Trois-Rivières",
+    "type": "Institute",
+    "description": "Institute Innovante Trois-Rivières is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org21.qc.ca",
+    "contactEmail": "contact@org21.qc.ca",
+    "phone": "+1 (819) 811-1297",
+    "address": "2223 rue de l'Éducation",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "postalCode": "G2D 4Y2",
+    "logoPath": "/assets/logos/org21.svg",
+    "associationIds": [
+      "assoc3",
+      "assoc21",
+      "assoc1"
+    ],
+    "tags": [
+      "Inclusion",
+      "Special Education",
+      "Leadership"
+    ],
+    "lastActivityAt": "2025-11-27T02:43:52.301Z"
+  },
+  {
+    "id": "org22",
+    "name": "Center Digitale Saint-Jérôme",
+    "type": "Center",
+    "description": "Center Digitale Saint-Jérôme is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org22.qc.ca",
+    "contactEmail": "contact@org22.qc.ca",
+    "phone": "+1 (450) 419-9333",
+    "address": "9268 rue de l'Éducation",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "postalCode": "J4I 7S7",
+    "logoPath": "/assets/logos/org22.svg",
+    "associationIds": [
+      "assoc2",
+      "assoc27"
+    ],
+    "tags": [
+      "Sports",
+      "Arts",
+      "Literacy"
+    ],
+    "lastActivityAt": "2025-12-09T02:43:52.301Z"
+  },
+  {
+    "id": "org23",
+    "name": "Academy Avancée Saguenay",
+    "type": "Academy",
+    "description": "Academy Avancée Saguenay is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org23.qc.ca",
+    "contactEmail": "contact@org23.qc.ca",
+    "phone": "+1 (418) 825-3600",
+    "address": "2541 rue de l'Éducation",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G1L 2I4",
+    "logoPath": "/assets/logos/org23.svg",
+    "associationIds": [],
+    "tags": [
+      "Sports",
+      "Literacy",
+      "Early Childhood",
+      "Professional Development"
+    ],
+    "lastActivityAt": "2025-11-10T02:43:52.301Z"
+  },
+  {
+    "id": "org24",
+    "name": "Chicoutimi Global Network",
+    "type": "Network",
+    "description": "Chicoutimi Global Network is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org24.qc.ca",
+    "contactEmail": "contact@org24.qc.ca",
+    "phone": "+1 (418) 274-9429",
+    "address": "3333 Street Education",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G4S 5B8",
+    "logoPath": "/assets/logos/org24.svg",
+    "associationIds": [
+      "assoc21",
+      "assoc5",
+      "assoc9"
+    ],
+    "tags": [
+      "Literacy",
+      "Special Education",
+      "Professional Development"
+    ],
+    "lastActivityAt": "2025-10-03T02:43:52.301Z"
+  },
+  {
+    "id": "org25",
+    "name": "Lab Digitale Saint-Jérôme",
+    "type": "Lab",
+    "description": "Lab Digitale Saint-Jérôme is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org25.qc.ca",
+    "contactEmail": "contact@org25.qc.ca",
+    "phone": "+1 (450) 293-9518",
+    "address": "5912 rue de l'Éducation",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "postalCode": "J7O 1R3",
+    "logoPath": "/assets/logos/org25.svg",
+    "associationIds": [
+      "assoc27"
+    ],
+    "tags": [
+      "Secondary Education",
+      "Assessment",
+      "Sports",
+      "Curriculum Development",
+      "Literacy"
+    ],
+    "lastActivityAt": "2025-12-09T02:43:52.301Z"
+  },
+  {
+    "id": "org26",
+    "name": "Institute Inclusive Longueuil",
+    "type": "Institute",
+    "description": "Institute Inclusive Longueuil is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org26.qc.ca",
+    "contactEmail": "contact@org26.qc.ca",
+    "phone": "+1 (450) 570-2826",
+    "address": "5280 rue de l'Éducation",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J3S 2M2",
+    "logoPath": "/assets/logos/org26.svg",
+    "associationIds": [],
+    "tags": [
+      "Arts",
+      "Inclusion",
+      "Early Childhood",
+      "Curriculum Development",
+      "Technology Integration"
+    ],
+    "lastActivityAt": "2025-11-14T02:43:52.301Z"
+  },
+  {
+    "id": "org27",
+    "name": "Network Innovante Laval",
+    "type": "Network",
+    "description": "Network Innovante Laval is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org27.qc.ca",
+    "contactEmail": "contact@org27.qc.ca",
+    "phone": "+1 (579) 910-1113",
+    "address": "1601 rue de l'Éducation",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H4V 4E6",
+    "logoPath": "/assets/logos/org27.svg",
+    "associationIds": [
+      "assoc2"
+    ],
+    "tags": [
+      "Professional Development",
+      "Technology Integration",
+      "Literacy",
+      "Inclusion"
+    ],
+    "lastActivityAt": "2025-12-04T02:43:52.301Z"
+  },
+  {
+    "id": "org28",
+    "name": "Foundation Globale Saint-Jérôme",
+    "type": "Foundation",
+    "description": "Foundation Globale Saint-Jérôme is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org28.qc.ca",
+    "contactEmail": "contact@org28.qc.ca",
+    "phone": "+1 (450) 433-4498",
+    "address": "9516 rue de l'Éducation",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "postalCode": "J8R 7I3",
+    "logoPath": "/assets/logos/org28.svg",
+    "associationIds": [
+      "assoc19",
+      "assoc20",
+      "assoc8"
+    ],
+    "tags": [
+      "Technology Integration",
+      "Early Childhood",
+      "STEM"
+    ],
+    "lastActivityAt": "2025-09-18T02:43:52.301Z"
+  },
+  {
+    "id": "org29",
+    "name": "Saguenay Global Institute",
+    "type": "Institute",
+    "description": "Saguenay Global Institute is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org29.qc.ca",
+    "contactEmail": "contact@org29.qc.ca",
+    "phone": "+1 (418) 840-6969",
+    "address": "9027 Street Education",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G9F 9P9",
+    "logoPath": "/assets/logos/org29.svg",
+    "associationIds": [
+      "assoc22",
+      "assoc11"
+    ],
+    "tags": [
+      "Literacy",
+      "Professional Development",
+      "Secondary Education",
+      "Sports"
+    ],
+    "lastActivityAt": "2025-10-10T02:43:52.301Z"
+  },
+  {
+    "id": "org30",
+    "name": "Rimouski Strategic Council",
+    "type": "Council",
+    "description": "Rimouski Strategic Council is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org30.qc.ca",
+    "contactEmail": "contact@org30.qc.ca",
+    "phone": "+1 (418) 983-9270",
+    "address": "2273 Street Education",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "postalCode": "G8H 4H4",
+    "logoPath": "/assets/logos/org30.svg",
+    "associationIds": [
+      "assoc3",
+      "assoc8",
+      "assoc28"
+    ],
+    "tags": [
+      "Bilingual Education",
+      "Arts",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-11-30T02:43:52.301Z"
+  },
+  {
+    "id": "org31",
+    "name": "Center Future Saint-Jérôme",
+    "type": "Center",
+    "description": "Center Future Saint-Jérôme is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org31.qc.ca",
+    "contactEmail": "contact@org31.qc.ca",
+    "phone": "+1 (450) 865-4980",
+    "address": "3001 rue de l'Éducation",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "postalCode": "J8Z 3M2",
+    "logoPath": "/assets/logos/org31.svg",
+    "associationIds": [
+      "assoc4",
+      "assoc21"
+    ],
+    "tags": [
+      "Arts",
+      "Special Education"
+    ],
+    "lastActivityAt": "2025-10-04T02:43:52.301Z"
+  },
+  {
+    "id": "org32",
+    "name": "Montréal Inclusive Academy",
+    "type": "Academy",
+    "description": "Montréal Inclusive Academy is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org32.qc.ca",
+    "contactEmail": "contact@org32.qc.ca",
+    "phone": "+1 (514) 570-4028",
+    "address": "583 Street Education",
+    "city": "Montréal",
+    "region": "Montréal",
+    "postalCode": "H6O 2J2",
+    "logoPath": "/assets/logos/org32.svg",
+    "associationIds": [
+      "assoc27"
+    ],
+    "tags": [
+      "Secondary Education",
+      "Curriculum Development",
+      "Inclusion",
+      "Assessment",
+      "Literacy"
+    ],
+    "lastActivityAt": "2025-11-26T02:43:52.301Z"
+  },
+  {
+    "id": "org33",
+    "name": "Longueuil Future Association",
+    "type": "Association",
+    "description": "Longueuil Future Association is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org33.qc.ca",
+    "contactEmail": "contact@org33.qc.ca",
+    "phone": "+1 (450) 624-9089",
+    "address": "2738 Street Education",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J3B 2I7",
+    "logoPath": "/assets/logos/org33.svg",
+    "associationIds": [
+      "assoc17"
+    ],
+    "tags": [
+      "Bilingual Education"
+    ],
+    "lastActivityAt": "2025-11-12T02:43:52.301Z"
+  },
+  {
+    "id": "org34",
+    "name": "Longueuil Innovative Consortium",
+    "type": "Consortium",
+    "description": "Longueuil Innovative Consortium is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org34.qc.ca",
+    "contactEmail": "contact@org34.qc.ca",
+    "phone": "+1 (579) 278-8903",
+    "address": "2180 Street Education",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J6Z 4G9",
+    "logoPath": "/assets/logos/org34.svg",
+    "associationIds": [
+      "assoc13"
+    ],
+    "tags": [
+      "Literacy",
+      "Special Education"
+    ],
+    "lastActivityAt": "2025-09-29T02:43:52.301Z"
+  },
+  {
+    "id": "org35",
+    "name": "Laval Regional School",
+    "type": "School",
+    "description": "Laval Regional School is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org35.qc.ca",
+    "contactEmail": "contact@org35.qc.ca",
+    "phone": "+1 (450) 525-1854",
+    "address": "1924 Street Education",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H7I 7L3",
+    "logoPath": "/assets/logos/org35.svg",
+    "associationIds": [],
+    "tags": [
+      "Secondary Education",
+      "Sports",
+      "Early Childhood"
+    ],
+    "lastActivityAt": "2025-12-05T02:43:52.301Z"
+  },
+  {
+    "id": "org36",
+    "name": "Center Inclusive Sherbrooke",
+    "type": "Center",
+    "description": "Center Inclusive Sherbrooke is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org36.qc.ca",
+    "contactEmail": "contact@org36.qc.ca",
+    "phone": "+1 (873) 556-2821",
+    "address": "277 rue de l'Éducation",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J8V 8O1",
+    "logoPath": "/assets/logos/org36.svg",
+    "associationIds": [
+      "assoc14",
+      "assoc19"
+    ],
+    "tags": [
+      "Early Childhood",
+      "Bilingual Education",
+      "Arts"
+    ],
+    "lastActivityAt": "2025-10-26T02:43:52.301Z"
+  },
+  {
+    "id": "org37",
+    "name": "Association Inclusive Gatineau",
+    "type": "Association",
+    "description": "Association Inclusive Gatineau is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org37.qc.ca",
+    "contactEmail": "contact@org37.qc.ca",
+    "phone": "+1 (819) 334-5642",
+    "address": "1215 rue de l'Éducation",
+    "city": "Gatineau",
+    "region": "Outaouais",
+    "postalCode": "J6D 2P4",
+    "logoPath": "/assets/logos/org37.svg",
+    "associationIds": [
+      "assoc6"
+    ],
+    "tags": [
+      "Sports",
+      "STEM",
+      "Early Childhood"
+    ],
+    "lastActivityAt": "2025-09-30T02:43:52.301Z"
+  },
+  {
+    "id": "org38",
+    "name": "Network Nationale Laval",
+    "type": "Network",
+    "description": "Network Nationale Laval is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org38.qc.ca",
+    "contactEmail": "contact@org38.qc.ca",
+    "phone": "+1 (450) 679-9194",
+    "address": "5988 rue de l'Éducation",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H4N 4H6",
+    "logoPath": "/assets/logos/org38.svg",
+    "associationIds": [],
+    "tags": [
+      "Professional Development",
+      "Curriculum Development"
+    ],
+    "lastActivityAt": "2025-09-29T02:43:52.301Z"
+  },
+  {
+    "id": "org39",
+    "name": "Network Globale Chicoutimi",
+    "type": "Network",
+    "description": "Network Globale Chicoutimi is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org39.qc.ca",
+    "contactEmail": "contact@org39.qc.ca",
+    "phone": "+1 (581) 638-4099",
+    "address": "1797 rue de l'Éducation",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G7O 5U2",
+    "logoPath": "/assets/logos/org39.svg",
+    "associationIds": [
+      "assoc15"
+    ],
+    "tags": [
+      "Leadership",
+      "STEM",
+      "Special Education"
+    ],
+    "lastActivityAt": "2025-10-28T02:43:52.301Z"
+  },
+  {
+    "id": "org40",
+    "name": "Association Globale Lévis",
+    "type": "Association",
+    "description": "Association Globale Lévis is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org40.qc.ca",
+    "contactEmail": "contact@org40.qc.ca",
+    "phone": "+1 (581) 973-4483",
+    "address": "1707 rue de l'Éducation",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "postalCode": "G8Q 5P3",
+    "logoPath": "/assets/logos/org40.svg",
+    "associationIds": [
+      "assoc28",
+      "assoc10"
+    ],
+    "tags": [
+      "Secondary Education",
+      "Leadership",
+      "Literacy"
+    ],
+    "lastActivityAt": "2025-11-04T02:43:52.301Z"
+  },
+  {
+    "id": "org41",
+    "name": "Consortium Future Trois-Rivières",
+    "type": "Consortium",
+    "description": "Consortium Future Trois-Rivières is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org41.qc.ca",
+    "contactEmail": "contact@org41.qc.ca",
+    "phone": "+1 (873) 817-9596",
+    "address": "4895 rue de l'Éducation",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "postalCode": "G8R 3Q7",
+    "logoPath": "/assets/logos/org41.svg",
+    "associationIds": [
+      "assoc15"
+    ],
+    "tags": [
+      "Inclusion",
+      "Assessment",
+      "Special Education",
+      "Literacy"
+    ],
+    "lastActivityAt": "2025-10-26T02:43:52.301Z"
+  },
+  {
+    "id": "org42",
+    "name": "Council Stratégique Sherbrooke",
+    "type": "Council",
+    "description": "Council Stratégique Sherbrooke is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org42.qc.ca",
+    "contactEmail": "contact@org42.qc.ca",
+    "phone": "+1 (819) 469-8916",
+    "address": "9658 rue de l'Éducation",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J1L 6S7",
+    "logoPath": "/assets/logos/org42.svg",
+    "associationIds": [
+      "assoc2"
+    ],
+    "tags": [
+      "Inclusion",
+      "Special Education",
+      "Leadership"
+    ],
+    "lastActivityAt": "2025-11-11T02:43:52.301Z"
+  },
+  {
+    "id": "org43",
+    "name": "Lab Communautaire Trois-Rivières",
+    "type": "Lab",
+    "description": "Lab Communautaire Trois-Rivières is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org43.qc.ca",
+    "contactEmail": "contact@org43.qc.ca",
+    "phone": "+1 (819) 780-2870",
+    "address": "3411 rue de l'Éducation",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "postalCode": "G8U 2S9",
+    "logoPath": "/assets/logos/org43.svg",
+    "associationIds": [
+      "assoc10"
+    ],
+    "tags": [
+      "Technology Integration",
+      "Secondary Education",
+      "Literacy",
+      "Arts"
+    ],
+    "lastActivityAt": "2025-11-24T02:43:52.301Z"
+  },
+  {
+    "id": "org44",
+    "name": "Lab Innovante Rimouski",
+    "type": "Lab",
+    "description": "Lab Innovante Rimouski is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org44.qc.ca",
+    "contactEmail": "contact@org44.qc.ca",
+    "phone": "+1 (418) 900-1224",
+    "address": "7816 rue de l'Éducation",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "postalCode": "G7Z 6Q5",
+    "logoPath": "/assets/logos/org44.svg",
+    "associationIds": [],
+    "tags": [
+      "Bilingual Education",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-11-27T02:43:52.301Z"
+  },
+  {
+    "id": "org45",
+    "name": "Lévis Community Center",
+    "type": "Center",
+    "description": "Lévis Community Center is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org45.qc.ca",
+    "contactEmail": "contact@org45.qc.ca",
+    "phone": "+1 (581) 594-6899",
+    "address": "4197 Street Education",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "postalCode": "G2V 4Z5",
+    "logoPath": "/assets/logos/org45.svg",
+    "associationIds": [
+      "assoc12"
+    ],
+    "tags": [
+      "Secondary Education",
+      "Bilingual Education",
+      "Curriculum Development",
+      "Leadership"
+    ],
+    "lastActivityAt": "2025-12-05T02:43:52.301Z"
+  },
+  {
+    "id": "org46",
+    "name": "Sherbrooke Community Center",
+    "type": "Center",
+    "description": "Sherbrooke Community Center is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org46.qc.ca",
+    "contactEmail": "contact@org46.qc.ca",
+    "phone": "+1 (873) 982-5915",
+    "address": "6816 Street Education",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J7D 7A3",
+    "logoPath": "/assets/logos/org46.svg",
+    "associationIds": [
+      "assoc7"
+    ],
+    "tags": [
+      "Special Education",
+      "Assessment",
+      "Early Childhood",
+      "Literacy"
+    ],
+    "lastActivityAt": "2025-12-05T02:43:52.301Z"
+  },
+  {
+    "id": "org47",
+    "name": "Saguenay Advanced Consortium",
+    "type": "Consortium",
+    "description": "Saguenay Advanced Consortium is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org47.qc.ca",
+    "contactEmail": "contact@org47.qc.ca",
+    "phone": "+1 (581) 274-1476",
+    "address": "7348 Street Education",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G7S 9V7",
+    "logoPath": "/assets/logos/org47.svg",
+    "associationIds": [
+      "assoc25"
+    ],
+    "tags": [
+      "Inclusion",
+      "STEM",
+      "Leadership",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-09-20T02:43:52.301Z"
+  },
+  {
+    "id": "org48",
+    "name": "Institute Stratégique Longueuil",
+    "type": "Institute",
+    "description": "Institute Stratégique Longueuil is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org48.qc.ca",
+    "contactEmail": "contact@org48.qc.ca",
+    "phone": "+1 (450) 976-3076",
+    "address": "6487 rue de l'Éducation",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J1Y 3M9",
+    "logoPath": "/assets/logos/org48.svg",
+    "associationIds": [
+      "assoc2"
+    ],
+    "tags": [
+      "Bilingual Education",
+      "Sports",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-10-28T02:43:52.301Z"
+  },
+  {
+    "id": "org49",
+    "name": "Center Avancée Sherbrooke",
+    "type": "Center",
+    "description": "Center Avancée Sherbrooke is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org49.qc.ca",
+    "contactEmail": "contact@org49.qc.ca",
+    "phone": "+1 (819) 276-2154",
+    "address": "4228 rue de l'Éducation",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J9I 8F7",
+    "logoPath": "/assets/logos/org49.svg",
+    "associationIds": [
+      "assoc27"
+    ],
+    "tags": [
+      "Assessment",
+      "Arts",
+      "Special Education",
+      "Professional Development"
+    ],
+    "lastActivityAt": "2025-10-04T02:43:52.301Z"
+  },
+  {
+    "id": "org50",
+    "name": "Sherbrooke Inclusive Lab",
+    "type": "Lab",
+    "description": "Sherbrooke Inclusive Lab is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org50.qc.ca",
+    "contactEmail": "contact@org50.qc.ca",
+    "phone": "+1 (819) 619-4465",
+    "address": "6658 Street Education",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J9N 7O9",
+    "logoPath": "/assets/logos/org50.svg",
+    "associationIds": [
+      "assoc11",
+      "assoc8"
+    ],
+    "tags": [
+      "Bilingual Education",
+      "Literacy"
+    ],
+    "lastActivityAt": "2025-09-18T02:43:52.301Z"
+  },
+  {
+    "id": "org51",
+    "name": "Council Nationale Rimouski",
+    "type": "Council",
+    "description": "Council Nationale Rimouski is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org51.qc.ca",
+    "contactEmail": "contact@org51.qc.ca",
+    "phone": "+1 (581) 919-1517",
+    "address": "7581 rue de l'Éducation",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "postalCode": "G7F 6E4",
+    "logoPath": "/assets/logos/org51.svg",
+    "associationIds": [
+      "assoc8"
+    ],
+    "tags": [
+      "STEM",
+      "Special Education",
+      "Assessment"
+    ],
+    "lastActivityAt": "2025-10-23T02:43:52.302Z"
+  },
+  {
+    "id": "org52",
+    "name": "Academy Nationale Sherbrooke",
+    "type": "Academy",
+    "description": "Academy Nationale Sherbrooke is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org52.qc.ca",
+    "contactEmail": "contact@org52.qc.ca",
+    "phone": "+1 (873) 711-8047",
+    "address": "1327 rue de l'Éducation",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J3B 1M2",
+    "logoPath": "/assets/logos/org52.svg",
+    "associationIds": [
+      "assoc25",
+      "assoc4"
+    ],
+    "tags": [
+      "Sports",
+      "STEM"
+    ],
+    "lastActivityAt": "2025-12-10T02:43:52.302Z"
+  },
+  {
+    "id": "org53",
+    "name": "Council Digitale Chicoutimi",
+    "type": "Council",
+    "description": "Council Digitale Chicoutimi is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org53.qc.ca",
+    "contactEmail": "contact@org53.qc.ca",
+    "phone": "+1 (418) 423-6287",
+    "address": "3559 rue de l'Éducation",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G6K 3L8",
+    "logoPath": "/assets/logos/org53.svg",
+    "associationIds": [
+      "assoc4"
+    ],
+    "tags": [
+      "Sports"
+    ],
+    "lastActivityAt": "2025-10-25T02:43:52.302Z"
+  },
+  {
+    "id": "org54",
+    "name": "Québec Community Foundation",
+    "type": "Foundation",
+    "description": "Québec Community Foundation is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org54.qc.ca",
+    "contactEmail": "contact@org54.qc.ca",
+    "phone": "+1 (418) 753-9708",
+    "address": "3152 Street Education",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "postalCode": "G1R 9M5",
+    "logoPath": "/assets/logos/org54.svg",
+    "associationIds": [],
+    "tags": [
+      "Bilingual Education",
+      "Sports"
+    ],
+    "lastActivityAt": "2025-10-31T02:43:52.302Z"
+  },
+  {
+    "id": "org55",
+    "name": "Rimouski Global Consortium",
+    "type": "Consortium",
+    "description": "Rimouski Global Consortium is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org55.qc.ca",
+    "contactEmail": "contact@org55.qc.ca",
+    "phone": "+1 (581) 216-3380",
+    "address": "1920 Street Education",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "postalCode": "G5X 6L1",
+    "logoPath": "/assets/logos/org55.svg",
+    "associationIds": [],
+    "tags": [
+      "Leadership",
+      "Bilingual Education"
+    ],
+    "lastActivityAt": "2025-11-14T02:43:52.302Z"
+  },
+  {
+    "id": "org56",
+    "name": "Longueuil Innovative Center",
+    "type": "Center",
+    "description": "Longueuil Innovative Center is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org56.qc.ca",
+    "contactEmail": "contact@org56.qc.ca",
+    "phone": "+1 (579) 850-1049",
+    "address": "952 Street Education",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J3Q 1G8",
+    "logoPath": "/assets/logos/org56.svg",
+    "associationIds": [],
+    "tags": [
+      "Early Childhood",
+      "Leadership",
+      "Technology Integration",
+      "Curriculum Development"
+    ],
+    "lastActivityAt": "2025-11-03T02:43:52.306Z"
+  },
+  {
+    "id": "org57",
+    "name": "Association Digitale Saint-Jérôme",
+    "type": "Association",
+    "description": "Association Digitale Saint-Jérôme is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org57.qc.ca",
+    "contactEmail": "contact@org57.qc.ca",
+    "phone": "+1 (450) 624-2184",
+    "address": "866 rue de l'Éducation",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "postalCode": "J8C 2W3",
+    "logoPath": "/assets/logos/org57.svg",
+    "associationIds": [
+      "assoc24"
+    ],
+    "tags": [
+      "Leadership",
+      "Professional Development",
+      "STEM"
+    ],
+    "lastActivityAt": "2025-10-17T02:43:52.306Z"
+  },
+  {
+    "id": "org58",
+    "name": "Laval Innovative School",
+    "type": "School",
+    "description": "Laval Innovative School is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org58.qc.ca",
+    "contactEmail": "contact@org58.qc.ca",
+    "phone": "+1 (579) 543-4504",
+    "address": "8929 Street Education",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H4F 7H7",
+    "logoPath": "/assets/logos/org58.svg",
+    "associationIds": [
+      "assoc19",
+      "assoc9"
+    ],
+    "tags": [
+      "Sports",
+      "Arts"
+    ],
+    "lastActivityAt": "2025-10-03T02:43:52.306Z"
+  },
+  {
+    "id": "org59",
+    "name": "Association Avancée Saguenay",
+    "type": "Association",
+    "description": "Association Avancée Saguenay is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org59.qc.ca",
+    "contactEmail": "contact@org59.qc.ca",
+    "phone": "+1 (581) 574-1098",
+    "address": "8823 rue de l'Éducation",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G3D 1T4",
+    "logoPath": "/assets/logos/org59.svg",
+    "associationIds": [
+      "assoc8",
+      "assoc24",
+      "assoc5"
+    ],
+    "tags": [
+      "Professional Development",
+      "Arts",
+      "Leadership"
+    ],
+    "lastActivityAt": "2025-10-31T02:43:52.306Z"
+  },
+  {
+    "id": "org60",
+    "name": "Council Communautaire Longueuil",
+    "type": "Council",
+    "description": "Council Communautaire Longueuil is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org60.qc.ca",
+    "contactEmail": "contact@org60.qc.ca",
+    "phone": "+1 (450) 745-4649",
+    "address": "4517 rue de l'Éducation",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J9G 3R1",
+    "logoPath": "/assets/logos/org60.svg",
+    "associationIds": [],
+    "tags": [
+      "Secondary Education",
+      "Early Childhood",
+      "Professional Development",
+      "Leadership",
+      "Special Education"
+    ],
+    "lastActivityAt": "2025-11-15T02:43:52.306Z"
+  },
+  {
+    "id": "org61",
+    "name": "Center Avancée Lévis",
+    "type": "Center",
+    "description": "Center Avancée Lévis is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org61.qc.ca",
+    "contactEmail": "contact@org61.qc.ca",
+    "phone": "+1 (418) 983-9600",
+    "address": "9536 rue de l'Éducation",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "postalCode": "G5X 1Y2",
+    "logoPath": "/assets/logos/org61.svg",
+    "associationIds": [
+      "assoc19",
+      "assoc21",
+      "assoc9"
+    ],
+    "tags": [
+      "STEM",
+      "Leadership",
+      "Inclusion",
+      "Sports"
+    ],
+    "lastActivityAt": "2025-10-23T02:43:52.306Z"
+  },
+  {
+    "id": "org62",
+    "name": "Institute Innovante Laval",
+    "type": "Institute",
+    "description": "Institute Innovante Laval is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org62.qc.ca",
+    "contactEmail": "contact@org62.qc.ca",
+    "phone": "+1 (450) 352-9476",
+    "address": "1369 rue de l'Éducation",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H6K 6H3",
+    "logoPath": "/assets/logos/org62.svg",
+    "associationIds": [
+      "assoc28",
+      "assoc26"
+    ],
+    "tags": [
+      "Leadership",
+      "Special Education",
+      "Professional Development",
+      "Curriculum Development"
+    ],
+    "lastActivityAt": "2025-11-10T02:43:52.306Z"
+  },
+  {
+    "id": "org63",
+    "name": "Lab Régionale Laval",
+    "type": "Lab",
+    "description": "Lab Régionale Laval is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org63.qc.ca",
+    "contactEmail": "contact@org63.qc.ca",
+    "phone": "+1 (450) 835-3033",
+    "address": "8686 rue de l'Éducation",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H2M 2N4",
+    "logoPath": "/assets/logos/org63.svg",
+    "associationIds": [],
+    "tags": [
+      "Secondary Education",
+      "Sports"
+    ],
+    "lastActivityAt": "2025-10-21T02:43:52.306Z"
+  },
+  {
+    "id": "org64",
+    "name": "Saguenay Inclusive Foundation",
+    "type": "Foundation",
+    "description": "Saguenay Inclusive Foundation is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org64.qc.ca",
+    "contactEmail": "contact@org64.qc.ca",
+    "phone": "+1 (418) 257-8650",
+    "address": "2285 Street Education",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G9P 5L1",
+    "logoPath": "/assets/logos/org64.svg",
+    "associationIds": [
+      "assoc26"
+    ],
+    "tags": [
+      "Literacy",
+      "Assessment"
+    ],
+    "lastActivityAt": "2025-11-14T02:43:52.306Z"
+  },
+  {
+    "id": "org65",
+    "name": "Longueuil National Consortium",
+    "type": "Consortium",
+    "description": "Longueuil National Consortium is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org65.qc.ca",
+    "contactEmail": "contact@org65.qc.ca",
+    "phone": "+1 (450) 910-6340",
+    "address": "5744 Street Education",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J4F 1Z4",
+    "logoPath": "/assets/logos/org65.svg",
+    "associationIds": [
+      "assoc23",
+      "assoc17"
+    ],
+    "tags": [
+      "Special Education"
+    ],
+    "lastActivityAt": "2025-11-16T02:43:52.306Z"
+  },
+  {
+    "id": "org66",
+    "name": "Longueuil Future Foundation",
+    "type": "Foundation",
+    "description": "Longueuil Future Foundation is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org66.qc.ca",
+    "contactEmail": "contact@org66.qc.ca",
+    "phone": "+1 (450) 582-2549",
+    "address": "8918 Street Education",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J8N 7O9",
+    "logoPath": "/assets/logos/org66.svg",
+    "associationIds": [
+      "assoc24",
+      "assoc1"
+    ],
+    "tags": [
+      "Sports",
+      "Curriculum Development"
+    ],
+    "lastActivityAt": "2025-12-07T02:43:52.306Z"
+  },
+  {
+    "id": "org67",
+    "name": "Network Digitale Longueuil",
+    "type": "Network",
+    "description": "Network Digitale Longueuil is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org67.qc.ca",
+    "contactEmail": "contact@org67.qc.ca",
+    "phone": "+1 (450) 904-7031",
+    "address": "6945 rue de l'Éducation",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J3Y 4G8",
+    "logoPath": "/assets/logos/org67.svg",
+    "associationIds": [
+      "assoc6",
+      "assoc11",
+      "assoc28"
+    ],
+    "tags": [
+      "Secondary Education",
+      "Arts",
+      "Curriculum Development",
+      "Leadership"
+    ],
+    "lastActivityAt": "2025-11-03T02:43:52.306Z"
+  },
+  {
+    "id": "org68",
+    "name": "Québec Future Consortium",
+    "type": "Consortium",
+    "description": "Québec Future Consortium is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org68.qc.ca",
+    "contactEmail": "contact@org68.qc.ca",
+    "phone": "+1 (581) 453-5305",
+    "address": "8845 Street Education",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "postalCode": "G7Z 2B8",
+    "logoPath": "/assets/logos/org68.svg",
+    "associationIds": [],
+    "tags": [
+      "Sports",
+      "Early Childhood",
+      "Technology Integration"
+    ],
+    "lastActivityAt": "2025-09-19T02:43:52.306Z"
+  },
+  {
+    "id": "org69",
+    "name": "Foundation Avancée Québec",
+    "type": "Foundation",
+    "description": "Foundation Avancée Québec is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org69.qc.ca",
+    "contactEmail": "contact@org69.qc.ca",
+    "phone": "+1 (581) 208-6418",
+    "address": "4333 rue de l'Éducation",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "postalCode": "G6O 2Z7",
+    "logoPath": "/assets/logos/org69.svg",
+    "associationIds": [
+      "assoc23"
+    ],
+    "tags": [
+      "Sports",
+      "Professional Development",
+      "Arts",
+      "Assessment"
+    ],
+    "lastActivityAt": "2025-11-20T02:43:52.306Z"
+  },
+  {
+    "id": "org70",
+    "name": "Academy Future Chicoutimi",
+    "type": "Academy",
+    "description": "Academy Future Chicoutimi is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org70.qc.ca",
+    "contactEmail": "contact@org70.qc.ca",
+    "phone": "+1 (418) 375-2271",
+    "address": "9856 rue de l'Éducation",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G7A 1R0",
+    "logoPath": "/assets/logos/org70.svg",
+    "associationIds": [
+      "assoc16",
+      "assoc9",
+      "assoc15"
+    ],
+    "tags": [
+      "Special Education",
+      "Leadership",
+      "STEM"
+    ],
+    "lastActivityAt": "2025-10-13T02:43:52.306Z"
+  },
+  {
+    "id": "org71",
+    "name": "Network Inclusive Laval",
+    "type": "Network",
+    "description": "Network Inclusive Laval is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org71.qc.ca",
+    "contactEmail": "contact@org71.qc.ca",
+    "phone": "+1 (450) 340-4079",
+    "address": "2075 rue de l'Éducation",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H9D 4B9",
+    "logoPath": "/assets/logos/org71.svg",
+    "associationIds": [
+      "assoc18"
+    ],
+    "tags": [
+      "Secondary Education",
+      "Professional Development",
+      "Early Childhood"
+    ],
+    "lastActivityAt": "2025-11-24T02:43:52.306Z"
+  },
+  {
+    "id": "org72",
+    "name": "École Innovante Lévis",
+    "type": "School",
+    "description": "École Innovante Lévis is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org72.qc.ca",
+    "contactEmail": "contact@org72.qc.ca",
+    "phone": "+1 (581) 434-2917",
+    "address": "1052 rue de l'Éducation",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "postalCode": "G1S 2Z3",
+    "logoPath": "/assets/logos/org72.svg",
+    "associationIds": [
+      "assoc5"
+    ],
+    "tags": [
+      "Literacy",
+      "Assessment"
+    ],
+    "lastActivityAt": "2025-11-19T02:43:52.306Z"
+  },
+  {
+    "id": "org73",
+    "name": "Lab Inclusive Trois-Rivières",
+    "type": "Lab",
+    "description": "Lab Inclusive Trois-Rivières is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org73.qc.ca",
+    "contactEmail": "contact@org73.qc.ca",
+    "phone": "+1 (819) 456-6584",
+    "address": "8327 rue de l'Éducation",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "postalCode": "G2N 5X8",
+    "logoPath": "/assets/logos/org73.svg",
+    "associationIds": [
+      "assoc5",
+      "assoc2",
+      "assoc21"
+    ],
+    "tags": [
+      "Secondary Education",
+      "Sports",
+      "Professional Development"
+    ],
+    "lastActivityAt": "2025-10-09T02:43:52.307Z"
+  },
+  {
+    "id": "org74",
+    "name": "Lab Digitale Rimouski",
+    "type": "Lab",
+    "description": "Lab Digitale Rimouski is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org74.qc.ca",
+    "contactEmail": "contact@org74.qc.ca",
+    "phone": "+1 (418) 348-2776",
+    "address": "9315 rue de l'Éducation",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "postalCode": "G6H 9A4",
+    "logoPath": "/assets/logos/org74.svg",
+    "associationIds": [],
+    "tags": [
+      "Bilingual Education",
+      "Special Education",
+      "Professional Development"
+    ],
+    "lastActivityAt": "2025-10-10T02:43:52.307Z"
+  },
+  {
+    "id": "org75",
+    "name": "Foundation Digitale Montréal",
+    "type": "Foundation",
+    "description": "Foundation Digitale Montréal is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org75.qc.ca",
+    "contactEmail": "contact@org75.qc.ca",
+    "phone": "+1 (438) 769-9799",
+    "address": "8461 rue de l'Éducation",
+    "city": "Montréal",
+    "region": "Montréal",
+    "postalCode": "H2A 4J9",
+    "logoPath": "/assets/logos/org75.svg",
+    "associationIds": [
+      "assoc15"
+    ],
+    "tags": [
+      "Literacy",
+      "Secondary Education",
+      "Professional Development",
+      "Curriculum Development"
+    ],
+    "lastActivityAt": "2025-10-14T02:43:52.307Z"
+  },
+  {
+    "id": "org76",
+    "name": "Institute Communautaire Chicoutimi",
+    "type": "Institute",
+    "description": "Institute Communautaire Chicoutimi is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org76.qc.ca",
+    "contactEmail": "contact@org76.qc.ca",
+    "phone": "+1 (581) 664-7231",
+    "address": "1891 rue de l'Éducation",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G5Z 9W5",
+    "logoPath": "/assets/logos/org76.svg",
+    "associationIds": [
+      "assoc6"
+    ],
+    "tags": [
+      "Professional Development",
+      "Early Childhood"
+    ],
+    "lastActivityAt": "2025-10-30T02:43:52.307Z"
+  },
+  {
+    "id": "org77",
+    "name": "Saguenay Future Institute",
+    "type": "Institute",
+    "description": "Saguenay Future Institute is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org77.qc.ca",
+    "contactEmail": "contact@org77.qc.ca",
+    "phone": "+1 (418) 606-7282",
+    "address": "2561 Street Education",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G1V 2I7",
+    "logoPath": "/assets/logos/org77.svg",
+    "associationIds": [
+      "assoc11",
+      "assoc23",
+      "assoc22"
+    ],
+    "tags": [
+      "Literacy",
+      "Curriculum Development",
+      "Arts"
+    ],
+    "lastActivityAt": "2025-10-13T02:43:52.307Z"
+  },
+  {
+    "id": "org78",
+    "name": "Academy Globale Longueuil",
+    "type": "Academy",
+    "description": "Academy Globale Longueuil is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org78.qc.ca",
+    "contactEmail": "contact@org78.qc.ca",
+    "phone": "+1 (579) 689-5243",
+    "address": "5764 rue de l'Éducation",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J4U 3T7",
+    "logoPath": "/assets/logos/org78.svg",
+    "associationIds": [
+      "assoc4",
+      "assoc1"
+    ],
+    "tags": [
+      "Arts",
+      "Sports",
+      "Curriculum Development"
+    ],
+    "lastActivityAt": "2025-10-24T02:43:52.307Z"
+  },
+  {
+    "id": "org79",
+    "name": "Rimouski Global Foundation",
+    "type": "Foundation",
+    "description": "Rimouski Global Foundation is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org79.qc.ca",
+    "contactEmail": "contact@org79.qc.ca",
+    "phone": "+1 (418) 902-4656",
+    "address": "7451 Street Education",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "postalCode": "G8V 6W7",
+    "logoPath": "/assets/logos/org79.svg",
+    "associationIds": [
+      "assoc7",
+      "assoc9"
+    ],
+    "tags": [
+      "Curriculum Development",
+      "STEM"
+    ],
+    "lastActivityAt": "2025-12-01T02:43:52.307Z"
+  },
+  {
+    "id": "org80",
+    "name": "Sherbrooke Strategic Council",
+    "type": "Council",
+    "description": "Sherbrooke Strategic Council is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org80.qc.ca",
+    "contactEmail": "contact@org80.qc.ca",
+    "phone": "+1 (873) 459-8290",
+    "address": "4337 Street Education",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J1H 4R1",
+    "logoPath": "/assets/logos/org80.svg",
+    "associationIds": [
+      "assoc19",
+      "assoc27"
+    ],
+    "tags": [
+      "Assessment",
+      "Literacy",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-10-05T02:43:52.307Z"
+  },
+  {
+    "id": "org81",
+    "name": "Institute Future Longueuil",
+    "type": "Institute",
+    "description": "Institute Future Longueuil is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org81.qc.ca",
+    "contactEmail": "contact@org81.qc.ca",
+    "phone": "+1 (579) 302-2416",
+    "address": "7419 rue de l'Éducation",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J5A 6U7",
+    "logoPath": "/assets/logos/org81.svg",
+    "associationIds": [
+      "assoc26",
+      "assoc7"
+    ],
+    "tags": [
+      "Technology Integration",
+      "Professional Development"
+    ],
+    "lastActivityAt": "2025-09-27T02:43:52.307Z"
+  },
+  {
+    "id": "org82",
+    "name": "Lab Inclusive Laval",
+    "type": "Lab",
+    "description": "Lab Inclusive Laval is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org82.qc.ca",
+    "contactEmail": "contact@org82.qc.ca",
+    "phone": "+1 (579) 348-2116",
+    "address": "4688 rue de l'Éducation",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H3C 7T9",
+    "logoPath": "/assets/logos/org82.svg",
+    "associationIds": [
+      "assoc26"
+    ],
+    "tags": [
+      "Sports",
+      "Assessment"
+    ],
+    "lastActivityAt": "2025-09-25T02:43:52.307Z"
+  },
+  {
+    "id": "org83",
+    "name": "Network Digitale Gatineau",
+    "type": "Network",
+    "description": "Network Digitale Gatineau is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org83.qc.ca",
+    "contactEmail": "contact@org83.qc.ca",
+    "phone": "+1 (819) 579-5334",
+    "address": "5516 rue de l'Éducation",
+    "city": "Gatineau",
+    "region": "Outaouais",
+    "postalCode": "J6V 2B9",
+    "logoPath": "/assets/logos/org83.svg",
+    "associationIds": [
+      "assoc22",
+      "assoc6"
+    ],
+    "tags": [
+      "Early Childhood",
+      "Literacy",
+      "Technology Integration"
+    ],
+    "lastActivityAt": "2025-10-23T02:43:52.307Z"
+  },
+  {
+    "id": "org84",
+    "name": "Gatineau Regional Consortium",
+    "type": "Consortium",
+    "description": "Gatineau Regional Consortium is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org84.qc.ca",
+    "contactEmail": "contact@org84.qc.ca",
+    "phone": "+1 (819) 758-3655",
+    "address": "1504 Street Education",
+    "city": "Gatineau",
+    "region": "Outaouais",
+    "postalCode": "J8Q 9Q7",
+    "logoPath": "/assets/logos/org84.svg",
+    "associationIds": [
+      "assoc21",
+      "assoc28",
+      "assoc19"
+    ],
+    "tags": [
+      "Leadership",
+      "Inclusion",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-11-12T02:43:52.307Z"
+  },
+  {
+    "id": "org85",
+    "name": "Foundation Nationale Rimouski",
+    "type": "Foundation",
+    "description": "Foundation Nationale Rimouski is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org85.qc.ca",
+    "contactEmail": "contact@org85.qc.ca",
+    "phone": "+1 (418) 302-7206",
+    "address": "6277 rue de l'Éducation",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "postalCode": "G7B 2I9",
+    "logoPath": "/assets/logos/org85.svg",
+    "associationIds": [],
+    "tags": [
+      "Sports",
+      "Early Childhood",
+      "Curriculum Development"
+    ],
+    "lastActivityAt": "2025-11-11T02:43:52.307Z"
+  },
+  {
+    "id": "org86",
+    "name": "Foundation Globale Trois-Rivières",
+    "type": "Foundation",
+    "description": "Foundation Globale Trois-Rivières is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org86.qc.ca",
+    "contactEmail": "contact@org86.qc.ca",
+    "phone": "+1 (819) 614-3943",
+    "address": "3797 rue de l'Éducation",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "postalCode": "G5F 4O0",
+    "logoPath": "/assets/logos/org86.svg",
+    "associationIds": [],
+    "tags": [
+      "Arts",
+      "Special Education",
+      "Technology Integration",
+      "STEM"
+    ],
+    "lastActivityAt": "2025-10-04T02:43:52.307Z"
+  },
+  {
+    "id": "org87",
+    "name": "Institute Innovante Montréal",
+    "type": "Institute",
+    "description": "Institute Innovante Montréal is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org87.qc.ca",
+    "contactEmail": "contact@org87.qc.ca",
+    "phone": "+1 (438) 695-6976",
+    "address": "9955 rue de l'Éducation",
+    "city": "Montréal",
+    "region": "Montréal",
+    "postalCode": "H6R 6R8",
+    "logoPath": "/assets/logos/org87.svg",
+    "associationIds": [
+      "assoc22"
+    ],
+    "tags": [
+      "Bilingual Education",
+      "Literacy",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-12-04T02:43:52.307Z"
+  },
+  {
+    "id": "org88",
+    "name": "Gatineau Strategic Center",
+    "type": "Center",
+    "description": "Gatineau Strategic Center is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org88.qc.ca",
+    "contactEmail": "contact@org88.qc.ca",
+    "phone": "+1 (873) 763-9084",
+    "address": "7272 Street Education",
+    "city": "Gatineau",
+    "region": "Outaouais",
+    "postalCode": "J1M 3V9",
+    "logoPath": "/assets/logos/org88.svg",
+    "associationIds": [],
+    "tags": [
+      "Inclusion",
+      "STEM",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-10-01T02:43:52.307Z"
+  },
+  {
+    "id": "org89",
+    "name": "Lab Future Laval",
+    "type": "Lab",
+    "description": "Lab Future Laval is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org89.qc.ca",
+    "contactEmail": "contact@org89.qc.ca",
+    "phone": "+1 (450) 739-4709",
+    "address": "2104 rue de l'Éducation",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H6K 7C7",
+    "logoPath": "/assets/logos/org89.svg",
+    "associationIds": [],
+    "tags": [
+      "Inclusion",
+      "Arts",
+      "Bilingual Education",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-12-07T02:43:52.307Z"
+  },
+  {
+    "id": "org90",
+    "name": "Council Globale Gatineau",
+    "type": "Council",
+    "description": "Council Globale Gatineau is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org90.qc.ca",
+    "contactEmail": "contact@org90.qc.ca",
+    "phone": "+1 (873) 908-9309",
+    "address": "4543 rue de l'Éducation",
+    "city": "Gatineau",
+    "region": "Outaouais",
+    "postalCode": "J3Z 4B2",
+    "logoPath": "/assets/logos/org90.svg",
+    "associationIds": [],
+    "tags": [
+      "Bilingual Education",
+      "Arts",
+      "Literacy",
+      "Assessment",
+      "Professional Development"
+    ],
+    "lastActivityAt": "2025-09-16T02:43:52.307Z"
+  },
+  {
+    "id": "org91",
+    "name": "Foundation Communautaire Lévis",
+    "type": "Foundation",
+    "description": "Foundation Communautaire Lévis is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org91.qc.ca",
+    "contactEmail": "contact@org91.qc.ca",
+    "phone": "+1 (418) 255-4092",
+    "address": "1626 rue de l'Éducation",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "postalCode": "G5O 7G1",
+    "logoPath": "/assets/logos/org91.svg",
+    "associationIds": [
+      "assoc3"
+    ],
+    "tags": [
+      "Arts",
+      "Technology Integration",
+      "STEM"
+    ],
+    "lastActivityAt": "2025-11-08T02:43:52.307Z"
+  },
+  {
+    "id": "org92",
+    "name": "Foundation Stratégique Chicoutimi",
+    "type": "Foundation",
+    "description": "Foundation Stratégique Chicoutimi is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org92.qc.ca",
+    "contactEmail": "contact@org92.qc.ca",
+    "phone": "+1 (418) 728-9698",
+    "address": "315 rue de l'Éducation",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G4L 5I1",
+    "logoPath": "/assets/logos/org92.svg",
+    "associationIds": [],
+    "tags": [
+      "Bilingual Education",
+      "Special Education",
+      "Professional Development",
+      "Leadership",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-09-16T02:43:52.307Z"
+  },
+  {
+    "id": "org93",
+    "name": "École Inclusive Laval",
+    "type": "School",
+    "description": "École Inclusive Laval is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org93.qc.ca",
+    "contactEmail": "contact@org93.qc.ca",
+    "phone": "+1 (450) 622-7034",
+    "address": "4480 rue de l'Éducation",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H1V 2O1",
+    "logoPath": "/assets/logos/org93.svg",
+    "associationIds": [],
+    "tags": [
+      "STEM",
+      "Early Childhood",
+      "Professional Development",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-09-18T02:43:52.307Z"
+  },
+  {
+    "id": "org94",
+    "name": "Institute Régionale Sherbrooke",
+    "type": "Institute",
+    "description": "Institute Régionale Sherbrooke is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org94.qc.ca",
+    "contactEmail": "contact@org94.qc.ca",
+    "phone": "+1 (819) 630-8330",
+    "address": "3386 rue de l'Éducation",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J6J 3E6",
+    "logoPath": "/assets/logos/org94.svg",
+    "associationIds": [],
+    "tags": [
+      "Leadership",
+      "Assessment"
+    ],
+    "lastActivityAt": "2025-10-01T02:43:52.307Z"
+  },
+  {
+    "id": "org95",
+    "name": "Academy Digitale Lévis",
+    "type": "Academy",
+    "description": "Academy Digitale Lévis is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org95.qc.ca",
+    "contactEmail": "contact@org95.qc.ca",
+    "phone": "+1 (418) 868-4378",
+    "address": "7568 rue de l'Éducation",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "postalCode": "G9P 9T2",
+    "logoPath": "/assets/logos/org95.svg",
+    "associationIds": [
+      "assoc28",
+      "assoc14",
+      "assoc20"
+    ],
+    "tags": [
+      "Curriculum Development",
+      "Arts",
+      "Literacy"
+    ],
+    "lastActivityAt": "2025-09-22T02:43:52.307Z"
+  },
+  {
+    "id": "org96",
+    "name": "Academy Future Rimouski",
+    "type": "Academy",
+    "description": "Academy Future Rimouski is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org96.qc.ca",
+    "contactEmail": "contact@org96.qc.ca",
+    "phone": "+1 (418) 444-9528",
+    "address": "4407 rue de l'Éducation",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "postalCode": "G2B 2K9",
+    "logoPath": "/assets/logos/org96.svg",
+    "associationIds": [
+      "assoc9"
+    ],
+    "tags": [
+      "Arts",
+      "Curriculum Development",
+      "Early Childhood",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-10-08T02:43:52.307Z"
+  },
+  {
+    "id": "org97",
+    "name": "Foundation Nationale Trois-Rivières",
+    "type": "Foundation",
+    "description": "Foundation Nationale Trois-Rivières is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org97.qc.ca",
+    "contactEmail": "contact@org97.qc.ca",
+    "phone": "+1 (819) 266-6668",
+    "address": "9914 rue de l'Éducation",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "postalCode": "G5R 2T5",
+    "logoPath": "/assets/logos/org97.svg",
+    "associationIds": [
+      "assoc15",
+      "assoc6",
+      "assoc18"
+    ],
+    "tags": [
+      "Arts",
+      "STEM"
+    ],
+    "lastActivityAt": "2025-12-10T02:43:52.307Z"
+  },
+  {
+    "id": "org98",
+    "name": "Chicoutimi Future School",
+    "type": "School",
+    "description": "Chicoutimi Future School is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org98.qc.ca",
+    "contactEmail": "contact@org98.qc.ca",
+    "phone": "+1 (418) 591-9354",
+    "address": "3432 Street Education",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G3N 3W7",
+    "logoPath": "/assets/logos/org98.svg",
+    "associationIds": [
+      "assoc13",
+      "assoc23"
+    ],
+    "tags": [
+      "Bilingual Education",
+      "STEM",
+      "Curriculum Development"
+    ],
+    "lastActivityAt": "2025-11-29T02:43:52.307Z"
+  },
+  {
+    "id": "org99",
+    "name": "Council Globale Chicoutimi",
+    "type": "Council",
+    "description": "Council Globale Chicoutimi is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org99.qc.ca",
+    "contactEmail": "contact@org99.qc.ca",
+    "phone": "+1 (581) 877-9360",
+    "address": "9193 rue de l'Éducation",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G3X 4I5",
+    "logoPath": "/assets/logos/org99.svg",
+    "associationIds": [
+      "assoc26"
+    ],
+    "tags": [
+      "Arts",
+      "Assessment",
+      "Early Childhood"
+    ],
+    "lastActivityAt": "2025-11-23T02:43:52.307Z"
+  },
+  {
+    "id": "org100",
+    "name": "École Innovante Lévis",
+    "type": "School",
+    "description": "École Innovante Lévis is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org100.qc.ca",
+    "contactEmail": "contact@org100.qc.ca",
+    "phone": "+1 (581) 902-4568",
+    "address": "4414 rue de l'Éducation",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "postalCode": "G5Y 6P3",
+    "logoPath": "/assets/logos/org100.svg",
+    "associationIds": [
+      "assoc7",
+      "assoc25"
+    ],
+    "tags": [
+      "Special Education",
+      "Early Childhood",
+      "Curriculum Development",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-10-02T02:43:52.307Z"
+  },
+  {
+    "id": "org101",
+    "name": "Network Régionale Saguenay",
+    "type": "Network",
+    "description": "Network Régionale Saguenay is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org101.qc.ca",
+    "contactEmail": "contact@org101.qc.ca",
+    "phone": "+1 (418) 374-7527",
+    "address": "5112 rue de l'Éducation",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G8A 1X6",
+    "logoPath": "/assets/logos/org101.svg",
+    "associationIds": [
+      "assoc28",
+      "assoc13"
+    ],
+    "tags": [
+      "Inclusion",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-11-15T02:43:52.307Z"
+  },
+  {
+    "id": "org102",
+    "name": "Lab Nationale Longueuil",
+    "type": "Lab",
+    "description": "Lab Nationale Longueuil is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org102.qc.ca",
+    "contactEmail": "contact@org102.qc.ca",
+    "phone": "+1 (579) 500-6024",
+    "address": "9117 rue de l'Éducation",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J7L 4J0",
+    "logoPath": "/assets/logos/org102.svg",
+    "associationIds": [
+      "assoc2",
+      "assoc16"
+    ],
+    "tags": [
+      "Early Childhood",
+      "Arts",
+      "Bilingual Education",
+      "Sports"
+    ],
+    "lastActivityAt": "2025-10-15T02:43:52.307Z"
+  },
+  {
+    "id": "org103",
+    "name": "Academy Future Montréal",
+    "type": "Academy",
+    "description": "Academy Future Montréal is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org103.qc.ca",
+    "contactEmail": "contact@org103.qc.ca",
+    "phone": "+1 (514) 866-7705",
+    "address": "4743 rue de l'Éducation",
+    "city": "Montréal",
+    "region": "Montréal",
+    "postalCode": "H7P 2X6",
+    "logoPath": "/assets/logos/org103.svg",
+    "associationIds": [],
+    "tags": [
+      "Arts",
+      "Technology Integration",
+      "Leadership"
+    ],
+    "lastActivityAt": "2025-11-04T02:43:52.307Z"
+  },
+  {
+    "id": "org104",
+    "name": "Lab Communautaire Montréal",
+    "type": "Lab",
+    "description": "Lab Communautaire Montréal is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org104.qc.ca",
+    "contactEmail": "contact@org104.qc.ca",
+    "phone": "+1 (438) 801-2397",
+    "address": "528 rue de l'Éducation",
+    "city": "Montréal",
+    "region": "Montréal",
+    "postalCode": "H5A 4I4",
+    "logoPath": "/assets/logos/org104.svg",
+    "associationIds": [
+      "assoc19",
+      "assoc24",
+      "assoc23"
+    ],
+    "tags": [
+      "Professional Development",
+      "Technology Integration"
+    ],
+    "lastActivityAt": "2025-10-29T02:43:52.307Z"
+  },
+  {
+    "id": "org105",
+    "name": "Foundation Globale Chicoutimi",
+    "type": "Foundation",
+    "description": "Foundation Globale Chicoutimi is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org105.qc.ca",
+    "contactEmail": "contact@org105.qc.ca",
+    "phone": "+1 (418) 448-5802",
+    "address": "8986 rue de l'Éducation",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G4B 8L0",
+    "logoPath": "/assets/logos/org105.svg",
+    "associationIds": [
+      "assoc12",
+      "assoc14"
+    ],
+    "tags": [
+      "Literacy",
+      "Bilingual Education"
+    ],
+    "lastActivityAt": "2025-11-02T02:43:52.307Z"
+  },
+  {
+    "id": "org106",
+    "name": "École Globale Laval",
+    "type": "School",
+    "description": "École Globale Laval is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org106.qc.ca",
+    "contactEmail": "contact@org106.qc.ca",
+    "phone": "+1 (450) 227-9515",
+    "address": "2850 rue de l'Éducation",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H4N 2D0",
+    "logoPath": "/assets/logos/org106.svg",
+    "associationIds": [],
+    "tags": [
+      "Bilingual Education",
+      "Arts"
+    ],
+    "lastActivityAt": "2025-12-01T02:43:52.307Z"
+  },
+  {
+    "id": "org107",
+    "name": "Council Digitale Saint-Jérôme",
+    "type": "Council",
+    "description": "Council Digitale Saint-Jérôme is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org107.qc.ca",
+    "contactEmail": "contact@org107.qc.ca",
+    "phone": "+1 (450) 935-4294",
+    "address": "7593 rue de l'Éducation",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "postalCode": "J1T 7A1",
+    "logoPath": "/assets/logos/org107.svg",
+    "associationIds": [
+      "assoc5",
+      "assoc20"
+    ],
+    "tags": [
+      "Sports",
+      "Professional Development",
+      "Early Childhood",
+      "Leadership"
+    ],
+    "lastActivityAt": "2025-10-31T02:43:52.307Z"
+  },
+  {
+    "id": "org108",
+    "name": "Association Nationale Longueuil",
+    "type": "Association",
+    "description": "Association Nationale Longueuil is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org108.qc.ca",
+    "contactEmail": "contact@org108.qc.ca",
+    "phone": "+1 (450) 934-3567",
+    "address": "4815 rue de l'Éducation",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J9P 9W8",
+    "logoPath": "/assets/logos/org108.svg",
+    "associationIds": [
+      "assoc7",
+      "assoc15",
+      "assoc23"
+    ],
+    "tags": [
+      "Early Childhood",
+      "Curriculum Development"
+    ],
+    "lastActivityAt": "2025-11-21T02:43:52.307Z"
+  },
+  {
+    "id": "org109",
+    "name": "Foundation Avancée Lévis",
+    "type": "Foundation",
+    "description": "Foundation Avancée Lévis is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org109.qc.ca",
+    "contactEmail": "contact@org109.qc.ca",
+    "phone": "+1 (581) 532-3713",
+    "address": "6292 rue de l'Éducation",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "postalCode": "G9M 2C7",
+    "logoPath": "/assets/logos/org109.svg",
+    "associationIds": [
+      "assoc21",
+      "assoc14",
+      "assoc15"
+    ],
+    "tags": [
+      "Inclusion",
+      "Special Education",
+      "Arts"
+    ],
+    "lastActivityAt": "2025-09-19T02:43:52.307Z"
+  },
+  {
+    "id": "org110",
+    "name": "Network Inclusive Québec",
+    "type": "Network",
+    "description": "Network Inclusive Québec is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org110.qc.ca",
+    "contactEmail": "contact@org110.qc.ca",
+    "phone": "+1 (418) 912-7464",
+    "address": "4037 rue de l'Éducation",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "postalCode": "G7Y 8R3",
+    "logoPath": "/assets/logos/org110.svg",
+    "associationIds": [
+      "assoc3"
+    ],
+    "tags": [
+      "Professional Development",
+      "Special Education",
+      "Inclusion",
+      "Early Childhood"
+    ],
+    "lastActivityAt": "2025-11-12T02:43:52.307Z"
+  },
+  {
+    "id": "org111",
+    "name": "Longueuil Innovative Academy",
+    "type": "Academy",
+    "description": "Longueuil Innovative Academy is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org111.qc.ca",
+    "contactEmail": "contact@org111.qc.ca",
+    "phone": "+1 (579) 847-4095",
+    "address": "6661 Street Education",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J2O 6N7",
+    "logoPath": "/assets/logos/org111.svg",
+    "associationIds": [
+      "assoc28"
+    ],
+    "tags": [
+      "Arts",
+      "Sports",
+      "Early Childhood",
+      "Special Education",
+      "Leadership"
+    ],
+    "lastActivityAt": "2025-09-18T02:43:52.307Z"
+  },
+  {
+    "id": "org112",
+    "name": "Institute Régionale Longueuil",
+    "type": "Institute",
+    "description": "Institute Régionale Longueuil is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org112.qc.ca",
+    "contactEmail": "contact@org112.qc.ca",
+    "phone": "+1 (579) 850-7091",
+    "address": "1011 rue de l'Éducation",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J6B 5M2",
+    "logoPath": "/assets/logos/org112.svg",
+    "associationIds": [
+      "assoc14"
+    ],
+    "tags": [
+      "Inclusion",
+      "Assessment",
+      "Leadership"
+    ],
+    "lastActivityAt": "2025-11-25T02:43:52.307Z"
+  },
+  {
+    "id": "org113",
+    "name": "Council Future Saint-Jérôme",
+    "type": "Council",
+    "description": "Council Future Saint-Jérôme is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org113.qc.ca",
+    "contactEmail": "contact@org113.qc.ca",
+    "phone": "+1 (579) 450-9671",
+    "address": "4007 rue de l'Éducation",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "postalCode": "J3G 1Y7",
+    "logoPath": "/assets/logos/org113.svg",
+    "associationIds": [
+      "assoc7",
+      "assoc9",
+      "assoc1"
+    ],
+    "tags": [
+      "Curriculum Development",
+      "Professional Development"
+    ],
+    "lastActivityAt": "2025-12-04T02:43:52.307Z"
+  },
+  {
+    "id": "org114",
+    "name": "Center Digitale Laval",
+    "type": "Center",
+    "description": "Center Digitale Laval is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org114.qc.ca",
+    "contactEmail": "contact@org114.qc.ca",
+    "phone": "+1 (450) 335-2742",
+    "address": "3299 rue de l'Éducation",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H1U 3R4",
+    "logoPath": "/assets/logos/org114.svg",
+    "associationIds": [],
+    "tags": [
+      "Professional Development",
+      "Inclusion",
+      "Leadership",
+      "Curriculum Development",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-10-31T02:43:52.307Z"
+  },
+  {
+    "id": "org115",
+    "name": "Network Future Trois-Rivières",
+    "type": "Network",
+    "description": "Network Future Trois-Rivières is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org115.qc.ca",
+    "contactEmail": "contact@org115.qc.ca",
+    "phone": "+1 (819) 587-9860",
+    "address": "9601 rue de l'Éducation",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "postalCode": "G4I 8H1",
+    "logoPath": "/assets/logos/org115.svg",
+    "associationIds": [
+      "assoc13",
+      "assoc17",
+      "assoc18"
+    ],
+    "tags": [
+      "STEM",
+      "Curriculum Development",
+      "Special Education",
+      "Professional Development"
+    ],
+    "lastActivityAt": "2025-11-27T02:43:52.307Z"
+  },
+  {
+    "id": "org116",
+    "name": "Council Globale Rimouski",
+    "type": "Council",
+    "description": "Council Globale Rimouski is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org116.qc.ca",
+    "contactEmail": "contact@org116.qc.ca",
+    "phone": "+1 (418) 843-1556",
+    "address": "9852 rue de l'Éducation",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "postalCode": "G2X 5Y2",
+    "logoPath": "/assets/logos/org116.svg",
+    "associationIds": [
+      "assoc16",
+      "assoc5"
+    ],
+    "tags": [
+      "Special Education",
+      "Technology Integration",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-11-07T02:43:52.307Z"
+  },
+  {
+    "id": "org117",
+    "name": "École Avancée Gatineau",
+    "type": "School",
+    "description": "École Avancée Gatineau is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org117.qc.ca",
+    "contactEmail": "contact@org117.qc.ca",
+    "phone": "+1 (873) 320-5454",
+    "address": "3911 rue de l'Éducation",
+    "city": "Gatineau",
+    "region": "Outaouais",
+    "postalCode": "J9T 1D4",
+    "logoPath": "/assets/logos/org117.svg",
+    "associationIds": [],
+    "tags": [
+      "Inclusion",
+      "Leadership",
+      "Early Childhood",
+      "Special Education"
+    ],
+    "lastActivityAt": "2025-09-27T02:43:52.307Z"
+  },
+  {
+    "id": "org118",
+    "name": "Network Nationale Chicoutimi",
+    "type": "Network",
+    "description": "Network Nationale Chicoutimi is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org118.qc.ca",
+    "contactEmail": "contact@org118.qc.ca",
+    "phone": "+1 (418) 951-2581",
+    "address": "5097 rue de l'Éducation",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G6H 6O7",
+    "logoPath": "/assets/logos/org118.svg",
+    "associationIds": [
+      "assoc1",
+      "assoc15",
+      "assoc11"
+    ],
+    "tags": [
+      "STEM"
+    ],
+    "lastActivityAt": "2025-09-27T02:43:52.307Z"
+  },
+  {
+    "id": "org119",
+    "name": "Rimouski Digital Foundation",
+    "type": "Foundation",
+    "description": "Rimouski Digital Foundation is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org119.qc.ca",
+    "contactEmail": "contact@org119.qc.ca",
+    "phone": "+1 (418) 216-3351",
+    "address": "908 Street Education",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "postalCode": "G4G 2A3",
+    "logoPath": "/assets/logos/org119.svg",
+    "associationIds": [
+      "assoc16"
+    ],
+    "tags": [
+      "Curriculum Development",
+      "Bilingual Education",
+      "Assessment",
+      "Arts"
+    ],
+    "lastActivityAt": "2025-09-25T02:43:52.307Z"
+  },
+  {
+    "id": "org120",
+    "name": "Association Digitale Rimouski",
+    "type": "Association",
+    "description": "Association Digitale Rimouski is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org120.qc.ca",
+    "contactEmail": "contact@org120.qc.ca",
+    "phone": "+1 (581) 656-2889",
+    "address": "9908 rue de l'Éducation",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "postalCode": "G9Z 3F1",
+    "logoPath": "/assets/logos/org120.svg",
+    "associationIds": [
+      "assoc17"
+    ],
+    "tags": [
+      "Early Childhood",
+      "Curriculum Development",
+      "Professional Development",
+      "Bilingual Education",
+      "Assessment"
+    ],
+    "lastActivityAt": "2025-12-09T02:43:52.307Z"
+  },
+  {
+    "id": "org121",
+    "name": "Center Innovante Trois-Rivières",
+    "type": "Center",
+    "description": "Center Innovante Trois-Rivières is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org121.qc.ca",
+    "contactEmail": "contact@org121.qc.ca",
+    "phone": "+1 (873) 207-4644",
+    "address": "7441 rue de l'Éducation",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "postalCode": "G3J 9A6",
+    "logoPath": "/assets/logos/org121.svg",
+    "associationIds": [
+      "assoc8",
+      "assoc9"
+    ],
+    "tags": [
+      "Technology Integration",
+      "Bilingual Education",
+      "Literacy",
+      "Arts",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-09-24T02:43:52.307Z"
+  },
+  {
+    "id": "org122",
+    "name": "Institute Future Rimouski",
+    "type": "Institute",
+    "description": "Institute Future Rimouski is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org122.qc.ca",
+    "contactEmail": "contact@org122.qc.ca",
+    "phone": "+1 (418) 227-7817",
+    "address": "237 rue de l'Éducation",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "postalCode": "G2B 3D9",
+    "logoPath": "/assets/logos/org122.svg",
+    "associationIds": [
+      "assoc27",
+      "assoc19",
+      "assoc21"
+    ],
+    "tags": [
+      "Professional Development",
+      "Assessment",
+      "Special Education",
+      "Technology Integration",
+      "Inclusion"
+    ],
+    "lastActivityAt": "2025-10-13T02:43:52.307Z"
+  },
+  {
+    "id": "org123",
+    "name": "Council Nationale Gatineau",
+    "type": "Council",
+    "description": "Council Nationale Gatineau is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org123.qc.ca",
+    "contactEmail": "contact@org123.qc.ca",
+    "phone": "+1 (819) 504-4209",
+    "address": "9623 rue de l'Éducation",
+    "city": "Gatineau",
+    "region": "Outaouais",
+    "postalCode": "J4A 3K8",
+    "logoPath": "/assets/logos/org123.svg",
+    "associationIds": [
+      "assoc17",
+      "assoc11"
+    ],
+    "tags": [
+      "Arts",
+      "Sports",
+      "Inclusion",
+      "STEM",
+      "Curriculum Development"
+    ],
+    "lastActivityAt": "2025-11-01T02:43:52.307Z"
+  },
+  {
+    "id": "org124",
+    "name": "Institute Innovante Gatineau",
+    "type": "Institute",
+    "description": "Institute Innovante Gatineau is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org124.qc.ca",
+    "contactEmail": "contact@org124.qc.ca",
+    "phone": "+1 (873) 646-4173",
+    "address": "514 rue de l'Éducation",
+    "city": "Gatineau",
+    "region": "Outaouais",
+    "postalCode": "J3J 2E2",
+    "logoPath": "/assets/logos/org124.svg",
+    "associationIds": [
+      "assoc19",
+      "assoc28",
+      "assoc21"
+    ],
+    "tags": [
+      "Technology Integration",
+      "Assessment",
+      "Bilingual Education"
+    ],
+    "lastActivityAt": "2025-10-24T02:43:52.307Z"
+  },
+  {
+    "id": "org125",
+    "name": "Lab Avancée Saint-Jérôme",
+    "type": "Lab",
+    "description": "Lab Avancée Saint-Jérôme is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org125.qc.ca",
+    "contactEmail": "contact@org125.qc.ca",
+    "phone": "+1 (579) 303-3239",
+    "address": "9361 rue de l'Éducation",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "postalCode": "J3U 3G6",
+    "logoPath": "/assets/logos/org125.svg",
+    "associationIds": [
+      "assoc9",
+      "assoc16"
+    ],
+    "tags": [
+      "Curriculum Development",
+      "STEM",
+      "Technology Integration",
+      "Leadership"
+    ],
+    "lastActivityAt": "2025-09-20T02:43:52.307Z"
+  },
+  {
+    "id": "org126",
+    "name": "Association Régionale Longueuil",
+    "type": "Association",
+    "description": "Association Régionale Longueuil is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org126.qc.ca",
+    "contactEmail": "contact@org126.qc.ca",
+    "phone": "+1 (579) 941-3690",
+    "address": "9429 rue de l'Éducation",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J4X 4A1",
+    "logoPath": "/assets/logos/org126.svg",
+    "associationIds": [
+      "assoc12",
+      "assoc10",
+      "assoc3"
+    ],
+    "tags": [
+      "Bilingual Education",
+      "Secondary Education",
+      "Leadership",
+      "Special Education",
+      "Arts"
+    ],
+    "lastActivityAt": "2025-10-13T02:43:52.307Z"
+  },
+  {
+    "id": "org127",
+    "name": "Sherbrooke Strategic Institute",
+    "type": "Institute",
+    "description": "Sherbrooke Strategic Institute is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org127.qc.ca",
+    "contactEmail": "contact@org127.qc.ca",
+    "phone": "+1 (873) 924-8653",
+    "address": "2189 Street Education",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J6G 6L9",
+    "logoPath": "/assets/logos/org127.svg",
+    "associationIds": [
+      "assoc7"
+    ],
+    "tags": [
+      "Sports",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-12-14T02:43:52.307Z"
+  },
+  {
+    "id": "org128",
+    "name": "Center Communautaire Québec",
+    "type": "Center",
+    "description": "Center Communautaire Québec is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org128.qc.ca",
+    "contactEmail": "contact@org128.qc.ca",
+    "phone": "+1 (418) 976-1436",
+    "address": "5898 rue de l'Éducation",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "postalCode": "G1S 1H4",
+    "logoPath": "/assets/logos/org128.svg",
+    "associationIds": [
+      "assoc24",
+      "assoc25"
+    ],
+    "tags": [
+      "STEM",
+      "Curriculum Development",
+      "Professional Development",
+      "Sports"
+    ],
+    "lastActivityAt": "2025-09-20T02:43:52.307Z"
+  },
+  {
+    "id": "org129",
+    "name": "Montréal Advanced Foundation",
+    "type": "Foundation",
+    "description": "Montréal Advanced Foundation is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org129.qc.ca",
+    "contactEmail": "contact@org129.qc.ca",
+    "phone": "+1 (514) 731-1803",
+    "address": "3623 Street Education",
+    "city": "Montréal",
+    "region": "Montréal",
+    "postalCode": "H2G 7R5",
+    "logoPath": "/assets/logos/org129.svg",
+    "associationIds": [
+      "assoc25"
+    ],
+    "tags": [
+      "Leadership",
+      "Professional Development"
+    ],
+    "lastActivityAt": "2025-12-06T02:43:52.307Z"
+  },
+  {
+    "id": "org130",
+    "name": "Foundation Innovante Laval",
+    "type": "Foundation",
+    "description": "Foundation Innovante Laval is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org130.qc.ca",
+    "contactEmail": "contact@org130.qc.ca",
+    "phone": "+1 (579) 728-1474",
+    "address": "8990 rue de l'Éducation",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H3D 1H7",
+    "logoPath": "/assets/logos/org130.svg",
+    "associationIds": [],
+    "tags": [
+      "Literacy",
+      "Special Education"
+    ],
+    "lastActivityAt": "2025-10-20T02:43:52.307Z"
+  },
+  {
+    "id": "org131",
+    "name": "Trois-Rivières Advanced School",
+    "type": "School",
+    "description": "Trois-Rivières Advanced School is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org131.qc.ca",
+    "contactEmail": "contact@org131.qc.ca",
+    "phone": "+1 (819) 923-3202",
+    "address": "8605 Street Education",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "postalCode": "G9B 8P1",
+    "logoPath": "/assets/logos/org131.svg",
+    "associationIds": [
+      "assoc19",
+      "assoc14"
+    ],
+    "tags": [
+      "Sports",
+      "Leadership",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-10-14T02:43:52.307Z"
+  },
+  {
+    "id": "org132",
+    "name": "Montréal National Foundation",
+    "type": "Foundation",
+    "description": "Montréal National Foundation is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org132.qc.ca",
+    "contactEmail": "contact@org132.qc.ca",
+    "phone": "+1 (438) 485-3945",
+    "address": "970 Street Education",
+    "city": "Montréal",
+    "region": "Montréal",
+    "postalCode": "H4K 6G7",
+    "logoPath": "/assets/logos/org132.svg",
+    "associationIds": [],
+    "tags": [
+      "Inclusion",
+      "Literacy"
+    ],
+    "lastActivityAt": "2025-10-27T02:43:52.307Z"
+  },
+  {
+    "id": "org133",
+    "name": "Consortium Digitale Québec",
+    "type": "Consortium",
+    "description": "Consortium Digitale Québec is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org133.qc.ca",
+    "contactEmail": "contact@org133.qc.ca",
+    "phone": "+1 (418) 769-1963",
+    "address": "6625 rue de l'Éducation",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "postalCode": "G8N 3V8",
+    "logoPath": "/assets/logos/org133.svg",
+    "associationIds": [],
+    "tags": [
+      "STEM",
+      "Sports",
+      "Early Childhood"
+    ],
+    "lastActivityAt": "2025-10-20T02:43:52.307Z"
+  },
+  {
+    "id": "org134",
+    "name": "Institute Avancée Rimouski",
+    "type": "Institute",
+    "description": "Institute Avancée Rimouski is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org134.qc.ca",
+    "contactEmail": "contact@org134.qc.ca",
+    "phone": "+1 (418) 210-1384",
+    "address": "8418 rue de l'Éducation",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "postalCode": "G3J 2T1",
+    "logoPath": "/assets/logos/org134.svg",
+    "associationIds": [],
+    "tags": [
+      "Professional Development",
+      "Inclusion"
+    ],
+    "lastActivityAt": "2025-10-06T02:43:52.307Z"
+  },
+  {
+    "id": "org135",
+    "name": "Longueuil Future School",
+    "type": "School",
+    "description": "Longueuil Future School is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org135.qc.ca",
+    "contactEmail": "contact@org135.qc.ca",
+    "phone": "+1 (579) 950-5714",
+    "address": "1213 Street Education",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J1Q 3V9",
+    "logoPath": "/assets/logos/org135.svg",
+    "associationIds": [
+      "assoc11",
+      "assoc10"
+    ],
+    "tags": [
+      "Special Education",
+      "Early Childhood"
+    ],
+    "lastActivityAt": "2025-10-05T02:43:52.307Z"
+  },
+  {
+    "id": "org136",
+    "name": "École Globale Longueuil",
+    "type": "School",
+    "description": "École Globale Longueuil is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org136.qc.ca",
+    "contactEmail": "contact@org136.qc.ca",
+    "phone": "+1 (450) 477-8448",
+    "address": "7798 rue de l'Éducation",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J7O 3M3",
+    "logoPath": "/assets/logos/org136.svg",
+    "associationIds": [
+      "assoc16",
+      "assoc28",
+      "assoc11"
+    ],
+    "tags": [
+      "Sports",
+      "Inclusion"
+    ],
+    "lastActivityAt": "2025-11-12T02:43:52.307Z"
+  },
+  {
+    "id": "org137",
+    "name": "Network Inclusive Longueuil",
+    "type": "Network",
+    "description": "Network Inclusive Longueuil is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org137.qc.ca",
+    "contactEmail": "contact@org137.qc.ca",
+    "phone": "+1 (579) 729-2735",
+    "address": "6318 rue de l'Éducation",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J7G 7B2",
+    "logoPath": "/assets/logos/org137.svg",
+    "associationIds": [
+      "assoc24",
+      "assoc11",
+      "assoc13"
+    ],
+    "tags": [
+      "Secondary Education",
+      "Inclusion"
+    ],
+    "lastActivityAt": "2025-11-10T02:43:52.307Z"
+  },
+  {
+    "id": "org138",
+    "name": "Lab Future Saint-Jérôme",
+    "type": "Lab",
+    "description": "Lab Future Saint-Jérôme is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org138.qc.ca",
+    "contactEmail": "contact@org138.qc.ca",
+    "phone": "+1 (579) 899-9768",
+    "address": "376 rue de l'Éducation",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "postalCode": "J1E 8H4",
+    "logoPath": "/assets/logos/org138.svg",
+    "associationIds": [],
+    "tags": [
+      "Early Childhood",
+      "Assessment",
+      "Special Education",
+      "Curriculum Development"
+    ],
+    "lastActivityAt": "2025-10-31T02:43:52.307Z"
+  },
+  {
+    "id": "org139",
+    "name": "Association Communautaire Laval",
+    "type": "Association",
+    "description": "Association Communautaire Laval is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org139.qc.ca",
+    "contactEmail": "contact@org139.qc.ca",
+    "phone": "+1 (450) 283-7631",
+    "address": "3263 rue de l'Éducation",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H2G 1X1",
+    "logoPath": "/assets/logos/org139.svg",
+    "associationIds": [],
+    "tags": [
+      "Bilingual Education",
+      "Special Education",
+      "Early Childhood"
+    ],
+    "lastActivityAt": "2025-10-12T02:43:52.307Z"
+  },
+  {
+    "id": "org140",
+    "name": "Council Digitale Rimouski",
+    "type": "Council",
+    "description": "Council Digitale Rimouski is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org140.qc.ca",
+    "contactEmail": "contact@org140.qc.ca",
+    "phone": "+1 (418) 320-6501",
+    "address": "7925 rue de l'Éducation",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "postalCode": "G3U 5X2",
+    "logoPath": "/assets/logos/org140.svg",
+    "associationIds": [
+      "assoc9",
+      "assoc24",
+      "assoc18"
+    ],
+    "tags": [
+      "Special Education",
+      "Technology Integration"
+    ],
+    "lastActivityAt": "2025-12-14T02:43:52.308Z"
+  },
+  {
+    "id": "org141",
+    "name": "Foundation Avancée Longueuil",
+    "type": "Foundation",
+    "description": "Foundation Avancée Longueuil is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org141.qc.ca",
+    "contactEmail": "contact@org141.qc.ca",
+    "phone": "+1 (450) 362-1587",
+    "address": "5242 rue de l'Éducation",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J3B 9C8",
+    "logoPath": "/assets/logos/org141.svg",
+    "associationIds": [
+      "assoc4",
+      "assoc26"
+    ],
+    "tags": [
+      "STEM",
+      "Arts",
+      "Technology Integration",
+      "Assessment"
+    ],
+    "lastActivityAt": "2025-12-03T02:43:52.308Z"
+  },
+  {
+    "id": "org142",
+    "name": "Trois-Rivières Digital Consortium",
+    "type": "Consortium",
+    "description": "Trois-Rivières Digital Consortium is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org142.qc.ca",
+    "contactEmail": "contact@org142.qc.ca",
+    "phone": "+1 (873) 520-4115",
+    "address": "2831 Street Education",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "postalCode": "G3W 8T4",
+    "logoPath": "/assets/logos/org142.svg",
+    "associationIds": [
+      "assoc3",
+      "assoc28",
+      "assoc20"
+    ],
+    "tags": [
+      "Bilingual Education",
+      "Special Education",
+      "Professional Development",
+      "Curriculum Development"
+    ],
+    "lastActivityAt": "2025-10-31T02:43:52.308Z"
+  },
+  {
+    "id": "org143",
+    "name": "Montréal Strategic Lab",
+    "type": "Lab",
+    "description": "Montréal Strategic Lab is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org143.qc.ca",
+    "contactEmail": "contact@org143.qc.ca",
+    "phone": "+1 (514) 679-5547",
+    "address": "408 Street Education",
+    "city": "Montréal",
+    "region": "Montréal",
+    "postalCode": "H3D 3V8",
+    "logoPath": "/assets/logos/org143.svg",
+    "associationIds": [
+      "assoc5"
+    ],
+    "tags": [
+      "Leadership",
+      "Sports",
+      "Inclusion",
+      "Assessment"
+    ],
+    "lastActivityAt": "2025-11-15T02:43:52.308Z"
+  },
+  {
+    "id": "org144",
+    "name": "Foundation Nationale Saguenay",
+    "type": "Foundation",
+    "description": "Foundation Nationale Saguenay is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org144.qc.ca",
+    "contactEmail": "contact@org144.qc.ca",
+    "phone": "+1 (418) 969-6841",
+    "address": "1778 rue de l'Éducation",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G2U 5E9",
+    "logoPath": "/assets/logos/org144.svg",
+    "associationIds": [
+      "assoc27"
+    ],
+    "tags": [
+      "Bilingual Education",
+      "Secondary Education",
+      "Early Childhood",
+      "Literacy"
+    ],
+    "lastActivityAt": "2025-10-14T02:43:52.308Z"
+  },
+  {
+    "id": "org145",
+    "name": "Institute Avancée Saguenay",
+    "type": "Institute",
+    "description": "Institute Avancée Saguenay is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org145.qc.ca",
+    "contactEmail": "contact@org145.qc.ca",
+    "phone": "+1 (418) 699-6500",
+    "address": "4799 rue de l'Éducation",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G7N 4R1",
+    "logoPath": "/assets/logos/org145.svg",
+    "associationIds": [
+      "assoc6",
+      "assoc24",
+      "assoc20"
+    ],
+    "tags": [
+      "Leadership",
+      "Literacy",
+      "STEM"
+    ],
+    "lastActivityAt": "2025-10-26T02:43:52.308Z"
+  },
+  {
+    "id": "org146",
+    "name": "Québec National Consortium",
+    "type": "Consortium",
+    "description": "Québec National Consortium is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org146.qc.ca",
+    "contactEmail": "contact@org146.qc.ca",
+    "phone": "+1 (581) 743-4116",
+    "address": "2799 Street Education",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "postalCode": "G2T 2K9",
+    "logoPath": "/assets/logos/org146.svg",
+    "associationIds": [
+      "assoc5"
+    ],
+    "tags": [
+      "Bilingual Education",
+      "Curriculum Development",
+      "Technology Integration"
+    ],
+    "lastActivityAt": "2025-10-10T02:43:52.308Z"
+  },
+  {
+    "id": "org147",
+    "name": "Consortium Avancée Saguenay",
+    "type": "Consortium",
+    "description": "Consortium Avancée Saguenay is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org147.qc.ca",
+    "contactEmail": "contact@org147.qc.ca",
+    "phone": "+1 (581) 951-8807",
+    "address": "7358 rue de l'Éducation",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G1E 9J0",
+    "logoPath": "/assets/logos/org147.svg",
+    "associationIds": [
+      "assoc15"
+    ],
+    "tags": [
+      "Assessment",
+      "Bilingual Education"
+    ],
+    "lastActivityAt": "2025-10-02T02:43:52.308Z"
+  },
+  {
+    "id": "org148",
+    "name": "Québec National Center",
+    "type": "Center",
+    "description": "Québec National Center is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org148.qc.ca",
+    "contactEmail": "contact@org148.qc.ca",
+    "phone": "+1 (581) 760-9298",
+    "address": "3317 Street Education",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "postalCode": "G1A 4B6",
+    "logoPath": "/assets/logos/org148.svg",
+    "associationIds": [
+      "assoc20",
+      "assoc12"
+    ],
+    "tags": [
+      "Curriculum Development",
+      "Assessment",
+      "Leadership",
+      "Arts"
+    ],
+    "lastActivityAt": "2025-11-10T02:43:52.308Z"
+  },
+  {
+    "id": "org149",
+    "name": "Saint-Jérôme Regional Foundation",
+    "type": "Foundation",
+    "description": "Saint-Jérôme Regional Foundation is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org149.qc.ca",
+    "contactEmail": "contact@org149.qc.ca",
+    "phone": "+1 (450) 333-7689",
+    "address": "6077 Street Education",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "postalCode": "J1C 2Q8",
+    "logoPath": "/assets/logos/org149.svg",
+    "associationIds": [],
+    "tags": [
+      "Curriculum Development",
+      "Leadership",
+      "Technology Integration"
+    ],
+    "lastActivityAt": "2025-10-16T02:43:52.308Z"
+  },
+  {
+    "id": "org150",
+    "name": "Laval Strategic Network",
+    "type": "Network",
+    "description": "Laval Strategic Network is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org150.qc.ca",
+    "contactEmail": "contact@org150.qc.ca",
+    "phone": "+1 (450) 495-7772",
+    "address": "559 Street Education",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H5X 9L4",
+    "logoPath": "/assets/logos/org150.svg",
+    "associationIds": [
+      "assoc27"
+    ],
+    "tags": [
+      "Inclusion",
+      "Assessment"
+    ],
+    "lastActivityAt": "2025-11-04T02:43:52.308Z"
+  },
+  {
+    "id": "org151",
+    "name": "Lab Future Saint-Jérôme",
+    "type": "Lab",
+    "description": "Lab Future Saint-Jérôme is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org151.qc.ca",
+    "contactEmail": "contact@org151.qc.ca",
+    "phone": "+1 (579) 854-9213",
+    "address": "7321 rue de l'Éducation",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "postalCode": "J5G 9E6",
+    "logoPath": "/assets/logos/org151.svg",
+    "associationIds": [
+      "assoc18"
+    ],
+    "tags": [
+      "Assessment",
+      "Special Education"
+    ],
+    "lastActivityAt": "2025-12-13T02:43:52.308Z"
+  },
+  {
+    "id": "org152",
+    "name": "Lévis Strategic Consortium",
+    "type": "Consortium",
+    "description": "Lévis Strategic Consortium is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org152.qc.ca",
+    "contactEmail": "contact@org152.qc.ca",
+    "phone": "+1 (581) 756-9319",
+    "address": "1033 Street Education",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "postalCode": "G4K 7S1",
+    "logoPath": "/assets/logos/org152.svg",
+    "associationIds": [],
+    "tags": [
+      "Curriculum Development",
+      "STEM",
+      "Technology Integration"
+    ],
+    "lastActivityAt": "2025-11-22T02:43:52.308Z"
+  },
+  {
+    "id": "org153",
+    "name": "Center Future Trois-Rivières",
+    "type": "Center",
+    "description": "Center Future Trois-Rivières is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org153.qc.ca",
+    "contactEmail": "contact@org153.qc.ca",
+    "phone": "+1 (873) 792-3816",
+    "address": "7237 rue de l'Éducation",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "postalCode": "G3J 4B1",
+    "logoPath": "/assets/logos/org153.svg",
+    "associationIds": [
+      "assoc9"
+    ],
+    "tags": [
+      "Inclusion",
+      "Professional Development",
+      "Technology Integration",
+      "STEM",
+      "Assessment"
+    ],
+    "lastActivityAt": "2025-10-02T02:43:52.308Z"
+  },
+  {
+    "id": "org154",
+    "name": "Association Nationale Montréal",
+    "type": "Association",
+    "description": "Association Nationale Montréal is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org154.qc.ca",
+    "contactEmail": "contact@org154.qc.ca",
+    "phone": "+1 (514) 730-3675",
+    "address": "2410 rue de l'Éducation",
+    "city": "Montréal",
+    "region": "Montréal",
+    "postalCode": "H1M 7F2",
+    "logoPath": "/assets/logos/org154.svg",
+    "associationIds": [
+      "assoc1",
+      "assoc2"
+    ],
+    "tags": [
+      "Assessment",
+      "STEM",
+      "Inclusion",
+      "Leadership",
+      "Early Childhood"
+    ],
+    "lastActivityAt": "2025-11-23T02:43:52.308Z"
+  },
+  {
+    "id": "org155",
+    "name": "Academy Nationale Trois-Rivières",
+    "type": "Academy",
+    "description": "Academy Nationale Trois-Rivières is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org155.qc.ca",
+    "contactEmail": "contact@org155.qc.ca",
+    "phone": "+1 (819) 923-5055",
+    "address": "2507 rue de l'Éducation",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "postalCode": "G2J 3T3",
+    "logoPath": "/assets/logos/org155.svg",
+    "associationIds": [],
+    "tags": [
+      "Curriculum Development",
+      "Special Education"
+    ],
+    "lastActivityAt": "2025-09-25T02:43:52.308Z"
+  },
+  {
+    "id": "org156",
+    "name": "Network Globale Longueuil",
+    "type": "Network",
+    "description": "Network Globale Longueuil is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org156.qc.ca",
+    "contactEmail": "contact@org156.qc.ca",
+    "phone": "+1 (450) 616-2526",
+    "address": "2550 rue de l'Éducation",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J2U 2K4",
+    "logoPath": "/assets/logos/org156.svg",
+    "associationIds": [
+      "assoc12"
+    ],
+    "tags": [
+      "STEM",
+      "Special Education"
+    ],
+    "lastActivityAt": "2025-11-13T02:43:52.308Z"
+  },
+  {
+    "id": "org157",
+    "name": "Institute Inclusive Gatineau",
+    "type": "Institute",
+    "description": "Institute Inclusive Gatineau is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org157.qc.ca",
+    "contactEmail": "contact@org157.qc.ca",
+    "phone": "+1 (819) 670-4358",
+    "address": "9425 rue de l'Éducation",
+    "city": "Gatineau",
+    "region": "Outaouais",
+    "postalCode": "J6I 6U2",
+    "logoPath": "/assets/logos/org157.svg",
+    "associationIds": [
+      "assoc26",
+      "assoc22"
+    ],
+    "tags": [
+      "Literacy",
+      "Assessment",
+      "STEM",
+      "Early Childhood",
+      "Arts"
+    ],
+    "lastActivityAt": "2025-10-08T02:43:52.308Z"
+  },
+  {
+    "id": "org158",
+    "name": "Council Stratégique Québec",
+    "type": "Council",
+    "description": "Council Stratégique Québec is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org158.qc.ca",
+    "contactEmail": "contact@org158.qc.ca",
+    "phone": "+1 (581) 398-4066",
+    "address": "8444 rue de l'Éducation",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "postalCode": "G9Q 4C7",
+    "logoPath": "/assets/logos/org158.svg",
+    "associationIds": [
+      "assoc22"
+    ],
+    "tags": [
+      "Assessment"
+    ],
+    "lastActivityAt": "2025-12-15T02:43:52.308Z"
+  },
+  {
+    "id": "org159",
+    "name": "Laval Community School",
+    "type": "School",
+    "description": "Laval Community School is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org159.qc.ca",
+    "contactEmail": "contact@org159.qc.ca",
+    "phone": "+1 (450) 724-9632",
+    "address": "4894 Street Education",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H5Y 8T4",
+    "logoPath": "/assets/logos/org159.svg",
+    "associationIds": [
+      "assoc27"
+    ],
+    "tags": [
+      "Inclusion",
+      "Literacy"
+    ],
+    "lastActivityAt": "2025-10-28T02:43:52.308Z"
+  },
+  {
+    "id": "org160",
+    "name": "Center Globale Montréal",
+    "type": "Center",
+    "description": "Center Globale Montréal is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org160.qc.ca",
+    "contactEmail": "contact@org160.qc.ca",
+    "phone": "+1 (438) 943-3767",
+    "address": "3708 rue de l'Éducation",
+    "city": "Montréal",
+    "region": "Montréal",
+    "postalCode": "H5P 7Y2",
+    "logoPath": "/assets/logos/org160.svg",
+    "associationIds": [
+      "assoc16",
+      "assoc27"
+    ],
+    "tags": [
+      "Inclusion",
+      "Arts"
+    ],
+    "lastActivityAt": "2025-10-22T02:43:52.308Z"
+  },
+  {
+    "id": "org161",
+    "name": "Consortium Avancée Chicoutimi",
+    "type": "Consortium",
+    "description": "Consortium Avancée Chicoutimi is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org161.qc.ca",
+    "contactEmail": "contact@org161.qc.ca",
+    "phone": "+1 (418) 220-7452",
+    "address": "1296 rue de l'Éducation",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G4A 3P2",
+    "logoPath": "/assets/logos/org161.svg",
+    "associationIds": [],
+    "tags": [
+      "Technology Integration",
+      "STEM",
+      "Sports"
+    ],
+    "lastActivityAt": "2025-11-28T02:43:52.308Z"
+  },
+  {
+    "id": "org162",
+    "name": "Academy Globale Montréal",
+    "type": "Academy",
+    "description": "Academy Globale Montréal is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org162.qc.ca",
+    "contactEmail": "contact@org162.qc.ca",
+    "phone": "+1 (438) 284-2704",
+    "address": "5370 rue de l'Éducation",
+    "city": "Montréal",
+    "region": "Montréal",
+    "postalCode": "H8V 7I3",
+    "logoPath": "/assets/logos/org162.svg",
+    "associationIds": [],
+    "tags": [
+      "Literacy",
+      "Bilingual Education",
+      "Assessment",
+      "Professional Development",
+      "Sports"
+    ],
+    "lastActivityAt": "2025-11-01T02:43:52.308Z"
+  },
+  {
+    "id": "org163",
+    "name": "Consortium Régionale Québec",
+    "type": "Consortium",
+    "description": "Consortium Régionale Québec is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org163.qc.ca",
+    "contactEmail": "contact@org163.qc.ca",
+    "phone": "+1 (418) 759-1394",
+    "address": "3329 rue de l'Éducation",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "postalCode": "G1P 7Q7",
+    "logoPath": "/assets/logos/org163.svg",
+    "associationIds": [
+      "assoc22",
+      "assoc6"
+    ],
+    "tags": [
+      "STEM",
+      "Inclusion"
+    ],
+    "lastActivityAt": "2025-09-23T02:43:52.308Z"
+  },
+  {
+    "id": "org164",
+    "name": "Academy Digitale Saint-Jérôme",
+    "type": "Academy",
+    "description": "Academy Digitale Saint-Jérôme is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org164.qc.ca",
+    "contactEmail": "contact@org164.qc.ca",
+    "phone": "+1 (579) 520-7820",
+    "address": "535 rue de l'Éducation",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "postalCode": "J7N 6B7",
+    "logoPath": "/assets/logos/org164.svg",
+    "associationIds": [
+      "assoc8",
+      "assoc12"
+    ],
+    "tags": [
+      "Early Childhood",
+      "Inclusion",
+      "Special Education"
+    ],
+    "lastActivityAt": "2025-09-24T02:43:52.308Z"
+  },
+  {
+    "id": "org165",
+    "name": "Academy Nationale Lévis",
+    "type": "Academy",
+    "description": "Academy Nationale Lévis is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org165.qc.ca",
+    "contactEmail": "contact@org165.qc.ca",
+    "phone": "+1 (581) 417-6890",
+    "address": "1723 rue de l'Éducation",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "postalCode": "G3G 5L8",
+    "logoPath": "/assets/logos/org165.svg",
+    "associationIds": [
+      "assoc6",
+      "assoc22"
+    ],
+    "tags": [
+      "STEM",
+      "Leadership"
+    ],
+    "lastActivityAt": "2025-11-12T02:43:52.308Z"
+  },
+  {
+    "id": "org166",
+    "name": "Montréal Global School",
+    "type": "School",
+    "description": "Montréal Global School is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org166.qc.ca",
+    "contactEmail": "contact@org166.qc.ca",
+    "phone": "+1 (514) 343-9004",
+    "address": "7137 Street Education",
+    "city": "Montréal",
+    "region": "Montréal",
+    "postalCode": "H6C 9J7",
+    "logoPath": "/assets/logos/org166.svg",
+    "associationIds": [
+      "assoc4",
+      "assoc9"
+    ],
+    "tags": [
+      "Arts",
+      "Technology Integration",
+      "Assessment",
+      "Inclusion",
+      "Bilingual Education"
+    ],
+    "lastActivityAt": "2025-10-28T02:43:52.308Z"
+  },
+  {
+    "id": "org167",
+    "name": "Lab Stratégique Rimouski",
+    "type": "Lab",
+    "description": "Lab Stratégique Rimouski is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org167.qc.ca",
+    "contactEmail": "contact@org167.qc.ca",
+    "phone": "+1 (581) 404-5402",
+    "address": "7220 rue de l'Éducation",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "postalCode": "G8Z 6M2",
+    "logoPath": "/assets/logos/org167.svg",
+    "associationIds": [
+      "assoc10"
+    ],
+    "tags": [
+      "Early Childhood",
+      "Technology Integration"
+    ],
+    "lastActivityAt": "2025-10-09T02:43:52.308Z"
+  },
+  {
+    "id": "org168",
+    "name": "Council Globale Sherbrooke",
+    "type": "Council",
+    "description": "Council Globale Sherbrooke is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org168.qc.ca",
+    "contactEmail": "contact@org168.qc.ca",
+    "phone": "+1 (819) 816-5824",
+    "address": "9039 rue de l'Éducation",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J7B 9L5",
+    "logoPath": "/assets/logos/org168.svg",
+    "associationIds": [],
+    "tags": [
+      "Professional Development",
+      "Technology Integration",
+      "Early Childhood",
+      "Assessment"
+    ],
+    "lastActivityAt": "2025-10-08T02:43:52.308Z"
+  },
+  {
+    "id": "org169",
+    "name": "Foundation Innovante Chicoutimi",
+    "type": "Foundation",
+    "description": "Foundation Innovante Chicoutimi is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org169.qc.ca",
+    "contactEmail": "contact@org169.qc.ca",
+    "phone": "+1 (581) 234-4886",
+    "address": "5746 rue de l'Éducation",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G1E 3F1",
+    "logoPath": "/assets/logos/org169.svg",
+    "associationIds": [
+      "assoc8",
+      "assoc18",
+      "assoc21"
+    ],
+    "tags": [
+      "Inclusion",
+      "Literacy",
+      "Assessment"
+    ],
+    "lastActivityAt": "2025-12-11T02:43:52.308Z"
+  },
+  {
+    "id": "org170",
+    "name": "Consortium Globale Saguenay",
+    "type": "Consortium",
+    "description": "Consortium Globale Saguenay is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org170.qc.ca",
+    "contactEmail": "contact@org170.qc.ca",
+    "phone": "+1 (581) 792-4504",
+    "address": "2976 rue de l'Éducation",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G7E 8T4",
+    "logoPath": "/assets/logos/org170.svg",
+    "associationIds": [
+      "assoc15",
+      "assoc20"
+    ],
+    "tags": [
+      "STEM",
+      "Assessment",
+      "Early Childhood",
+      "Secondary Education",
+      "Professional Development"
+    ],
+    "lastActivityAt": "2025-12-07T02:43:52.308Z"
+  },
+  {
+    "id": "org171",
+    "name": "Sherbrooke Advanced Consortium",
+    "type": "Consortium",
+    "description": "Sherbrooke Advanced Consortium is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org171.qc.ca",
+    "contactEmail": "contact@org171.qc.ca",
+    "phone": "+1 (819) 505-3889",
+    "address": "8387 Street Education",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J2D 5U3",
+    "logoPath": "/assets/logos/org171.svg",
+    "associationIds": [],
+    "tags": [
+      "Sports",
+      "Special Education",
+      "Assessment",
+      "Literacy",
+      "Curriculum Development"
+    ],
+    "lastActivityAt": "2025-10-24T02:43:52.308Z"
+  },
+  {
+    "id": "org172",
+    "name": "Council Innovante Trois-Rivières",
+    "type": "Council",
+    "description": "Council Innovante Trois-Rivières is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org172.qc.ca",
+    "contactEmail": "contact@org172.qc.ca",
+    "phone": "+1 (873) 527-8002",
+    "address": "7175 rue de l'Éducation",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "postalCode": "G3B 7B6",
+    "logoPath": "/assets/logos/org172.svg",
+    "associationIds": [
+      "assoc3",
+      "assoc13"
+    ],
+    "tags": [
+      "Secondary Education",
+      "Arts",
+      "Technology Integration"
+    ],
+    "lastActivityAt": "2025-11-25T02:43:52.308Z"
+  },
+  {
+    "id": "org173",
+    "name": "Saguenay Digital Association",
+    "type": "Association",
+    "description": "Saguenay Digital Association is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org173.qc.ca",
+    "contactEmail": "contact@org173.qc.ca",
+    "phone": "+1 (418) 920-7655",
+    "address": "6804 Street Education",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G8F 8S4",
+    "logoPath": "/assets/logos/org173.svg",
+    "associationIds": [
+      "assoc6"
+    ],
+    "tags": [
+      "Technology Integration",
+      "Curriculum Development",
+      "Leadership"
+    ],
+    "lastActivityAt": "2025-11-27T02:43:52.308Z"
+  },
+  {
+    "id": "org174",
+    "name": "Academy Future Chicoutimi",
+    "type": "Academy",
+    "description": "Academy Future Chicoutimi is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org174.qc.ca",
+    "contactEmail": "contact@org174.qc.ca",
+    "phone": "+1 (581) 303-7662",
+    "address": "3816 rue de l'Éducation",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G3W 9R0",
+    "logoPath": "/assets/logos/org174.svg",
+    "associationIds": [
+      "assoc8",
+      "assoc6",
+      "assoc21"
+    ],
+    "tags": [
+      "STEM",
+      "Literacy",
+      "Early Childhood",
+      "Bilingual Education",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-12-08T02:43:52.309Z"
+  },
+  {
+    "id": "org175",
+    "name": "Institute Future Montréal",
+    "type": "Institute",
+    "description": "Institute Future Montréal is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org175.qc.ca",
+    "contactEmail": "contact@org175.qc.ca",
+    "phone": "+1 (438) 862-6534",
+    "address": "3283 rue de l'Éducation",
+    "city": "Montréal",
+    "region": "Montréal",
+    "postalCode": "H3V 4R4",
+    "logoPath": "/assets/logos/org175.svg",
+    "associationIds": [
+      "assoc19"
+    ],
+    "tags": [
+      "Secondary Education",
+      "Sports",
+      "Curriculum Development"
+    ],
+    "lastActivityAt": "2025-09-19T02:43:52.309Z"
+  },
+  {
+    "id": "org176",
+    "name": "Council Nationale Laval",
+    "type": "Council",
+    "description": "Council Nationale Laval is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org176.qc.ca",
+    "contactEmail": "contact@org176.qc.ca",
+    "phone": "+1 (450) 827-5955",
+    "address": "7050 rue de l'Éducation",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H8Q 3J0",
+    "logoPath": "/assets/logos/org176.svg",
+    "associationIds": [
+      "assoc20",
+      "assoc4",
+      "assoc14"
+    ],
+    "tags": [
+      "Inclusion",
+      "Special Education",
+      "Arts",
+      "Technology Integration"
+    ],
+    "lastActivityAt": "2025-10-08T02:43:52.309Z"
+  },
+  {
+    "id": "org177",
+    "name": "Network Communautaire Lévis",
+    "type": "Network",
+    "description": "Network Communautaire Lévis is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org177.qc.ca",
+    "contactEmail": "contact@org177.qc.ca",
+    "phone": "+1 (581) 663-6805",
+    "address": "5364 rue de l'Éducation",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "postalCode": "G1U 5Y1",
+    "logoPath": "/assets/logos/org177.svg",
+    "associationIds": [
+      "assoc20",
+      "assoc10"
+    ],
+    "tags": [
+      "STEM",
+      "Special Education",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-11-23T02:43:52.309Z"
+  },
+  {
+    "id": "org178",
+    "name": "Institute Communautaire Lévis",
+    "type": "Institute",
+    "description": "Institute Communautaire Lévis is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org178.qc.ca",
+    "contactEmail": "contact@org178.qc.ca",
+    "phone": "+1 (581) 722-6588",
+    "address": "4647 rue de l'Éducation",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "postalCode": "G2X 1A5",
+    "logoPath": "/assets/logos/org178.svg",
+    "associationIds": [
+      "assoc15"
+    ],
+    "tags": [
+      "STEM",
+      "Arts",
+      "Early Childhood"
+    ],
+    "lastActivityAt": "2025-09-26T02:43:52.309Z"
+  },
+  {
+    "id": "org179",
+    "name": "Academy Nationale Saint-Jérôme",
+    "type": "Academy",
+    "description": "Academy Nationale Saint-Jérôme is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org179.qc.ca",
+    "contactEmail": "contact@org179.qc.ca",
+    "phone": "+1 (579) 928-7158",
+    "address": "3932 rue de l'Éducation",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "postalCode": "J4R 3B2",
+    "logoPath": "/assets/logos/org179.svg",
+    "associationIds": [
+      "assoc18",
+      "assoc24"
+    ],
+    "tags": [
+      "Technology Integration",
+      "Professional Development",
+      "Literacy",
+      "STEM",
+      "Bilingual Education"
+    ],
+    "lastActivityAt": "2025-10-08T02:43:52.309Z"
+  },
+  {
+    "id": "org180",
+    "name": "Laval Future Consortium",
+    "type": "Consortium",
+    "description": "Laval Future Consortium is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org180.qc.ca",
+    "contactEmail": "contact@org180.qc.ca",
+    "phone": "+1 (450) 931-8563",
+    "address": "3590 Street Education",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H7L 8P5",
+    "logoPath": "/assets/logos/org180.svg",
+    "associationIds": [
+      "assoc16"
+    ],
+    "tags": [
+      "Professional Development",
+      "Early Childhood"
+    ],
+    "lastActivityAt": "2025-10-02T02:43:52.309Z"
+  },
+  {
+    "id": "org181",
+    "name": "Lab Avancée Chicoutimi",
+    "type": "Lab",
+    "description": "Lab Avancée Chicoutimi is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org181.qc.ca",
+    "contactEmail": "contact@org181.qc.ca",
+    "phone": "+1 (581) 976-3347",
+    "address": "1825 rue de l'Éducation",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G5H 2H1",
+    "logoPath": "/assets/logos/org181.svg",
+    "associationIds": [
+      "assoc12",
+      "assoc9",
+      "assoc23"
+    ],
+    "tags": [
+      "Secondary Education",
+      "Arts",
+      "Technology Integration",
+      "Leadership"
+    ],
+    "lastActivityAt": "2025-12-11T02:43:52.309Z"
+  },
+  {
+    "id": "org182",
+    "name": "Consortium Communautaire Saguenay",
+    "type": "Consortium",
+    "description": "Consortium Communautaire Saguenay is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org182.qc.ca",
+    "contactEmail": "contact@org182.qc.ca",
+    "phone": "+1 (418) 450-5908",
+    "address": "4278 rue de l'Éducation",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G6J 6U8",
+    "logoPath": "/assets/logos/org182.svg",
+    "associationIds": [
+      "assoc11",
+      "assoc27",
+      "assoc19"
+    ],
+    "tags": [
+      "Early Childhood",
+      "Arts",
+      "Curriculum Development",
+      "Sports"
+    ],
+    "lastActivityAt": "2025-10-01T02:43:52.309Z"
+  },
+  {
+    "id": "org183",
+    "name": "Longueuil Innovative Council",
+    "type": "Council",
+    "description": "Longueuil Innovative Council is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org183.qc.ca",
+    "contactEmail": "contact@org183.qc.ca",
+    "phone": "+1 (579) 293-7840",
+    "address": "8184 Street Education",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J2Z 6B7",
+    "logoPath": "/assets/logos/org183.svg",
+    "associationIds": [
+      "assoc13"
+    ],
+    "tags": [
+      "Technology Integration",
+      "Leadership",
+      "Professional Development"
+    ],
+    "lastActivityAt": "2025-10-26T02:43:52.309Z"
+  },
+  {
+    "id": "org184",
+    "name": "Lévis Advanced Center",
+    "type": "Center",
+    "description": "Lévis Advanced Center is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org184.qc.ca",
+    "contactEmail": "contact@org184.qc.ca",
+    "phone": "+1 (418) 522-7781",
+    "address": "665 Street Education",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "postalCode": "G4S 6H7",
+    "logoPath": "/assets/logos/org184.svg",
+    "associationIds": [
+      "assoc5",
+      "assoc12",
+      "assoc23"
+    ],
+    "tags": [
+      "Assessment",
+      "Literacy",
+      "Sports"
+    ],
+    "lastActivityAt": "2025-12-13T02:43:52.309Z"
+  },
+  {
+    "id": "org185",
+    "name": "Foundation Innovante Lévis",
+    "type": "Foundation",
+    "description": "Foundation Innovante Lévis is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org185.qc.ca",
+    "contactEmail": "contact@org185.qc.ca",
+    "phone": "+1 (418) 278-3074",
+    "address": "5335 rue de l'Éducation",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "postalCode": "G6R 2Z1",
+    "logoPath": "/assets/logos/org185.svg",
+    "associationIds": [
+      "assoc9",
+      "assoc3",
+      "assoc21"
+    ],
+    "tags": [
+      "STEM",
+      "Technology Integration"
+    ],
+    "lastActivityAt": "2025-10-12T02:43:52.309Z"
+  },
+  {
+    "id": "org186",
+    "name": "Network Nationale Québec",
+    "type": "Network",
+    "description": "Network Nationale Québec is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org186.qc.ca",
+    "contactEmail": "contact@org186.qc.ca",
+    "phone": "+1 (581) 630-3733",
+    "address": "2856 rue de l'Éducation",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "postalCode": "G9O 5G5",
+    "logoPath": "/assets/logos/org186.svg",
+    "associationIds": [
+      "assoc25",
+      "assoc19",
+      "assoc27"
+    ],
+    "tags": [
+      "Inclusion",
+      "Professional Development",
+      "Technology Integration"
+    ],
+    "lastActivityAt": "2025-12-13T02:43:52.309Z"
+  },
+  {
+    "id": "org187",
+    "name": "Institute Inclusive Longueuil",
+    "type": "Institute",
+    "description": "Institute Inclusive Longueuil is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org187.qc.ca",
+    "contactEmail": "contact@org187.qc.ca",
+    "phone": "+1 (450) 454-5344",
+    "address": "5985 rue de l'Éducation",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J3I 3N8",
+    "logoPath": "/assets/logos/org187.svg",
+    "associationIds": [
+      "assoc9"
+    ],
+    "tags": [
+      "Special Education",
+      "Sports"
+    ],
+    "lastActivityAt": "2025-09-24T02:43:52.309Z"
+  },
+  {
+    "id": "org188",
+    "name": "Foundation Avancée Longueuil",
+    "type": "Foundation",
+    "description": "Foundation Avancée Longueuil is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org188.qc.ca",
+    "contactEmail": "contact@org188.qc.ca",
+    "phone": "+1 (450) 543-6628",
+    "address": "8070 rue de l'Éducation",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J1W 1G1",
+    "logoPath": "/assets/logos/org188.svg",
+    "associationIds": [
+      "assoc10",
+      "assoc25",
+      "assoc1"
+    ],
+    "tags": [
+      "Early Childhood",
+      "Leadership",
+      "Special Education",
+      "Sports",
+      "STEM"
+    ],
+    "lastActivityAt": "2025-10-28T02:43:52.309Z"
+  },
+  {
+    "id": "org189",
+    "name": "Association Digitale Québec",
+    "type": "Association",
+    "description": "Association Digitale Québec is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org189.qc.ca",
+    "contactEmail": "contact@org189.qc.ca",
+    "phone": "+1 (581) 302-3560",
+    "address": "697 rue de l'Éducation",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "postalCode": "G5Q 1W1",
+    "logoPath": "/assets/logos/org189.svg",
+    "associationIds": [
+      "assoc20",
+      "assoc16"
+    ],
+    "tags": [
+      "Early Childhood",
+      "Secondary Education",
+      "Leadership"
+    ],
+    "lastActivityAt": "2025-09-28T02:43:52.309Z"
+  },
+  {
+    "id": "org190",
+    "name": "École Régionale Québec",
+    "type": "School",
+    "description": "École Régionale Québec is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org190.qc.ca",
+    "contactEmail": "contact@org190.qc.ca",
+    "phone": "+1 (581) 792-7104",
+    "address": "4542 rue de l'Éducation",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "postalCode": "G6O 5M4",
+    "logoPath": "/assets/logos/org190.svg",
+    "associationIds": [],
+    "tags": [
+      "Arts",
+      "Secondary Education",
+      "Literacy",
+      "Technology Integration"
+    ],
+    "lastActivityAt": "2025-11-03T02:43:52.309Z"
+  },
+  {
+    "id": "org191",
+    "name": "Council Future Longueuil",
+    "type": "Council",
+    "description": "Council Future Longueuil is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org191.qc.ca",
+    "contactEmail": "contact@org191.qc.ca",
+    "phone": "+1 (450) 922-2262",
+    "address": "2613 rue de l'Éducation",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J7U 9L2",
+    "logoPath": "/assets/logos/org191.svg",
+    "associationIds": [
+      "assoc14",
+      "assoc11",
+      "assoc13"
+    ],
+    "tags": [
+      "Arts",
+      "Leadership",
+      "Bilingual Education"
+    ],
+    "lastActivityAt": "2025-10-01T02:43:52.309Z"
+  },
+  {
+    "id": "org192",
+    "name": "Consortium Future Sherbrooke",
+    "type": "Consortium",
+    "description": "Consortium Future Sherbrooke is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org192.qc.ca",
+    "contactEmail": "contact@org192.qc.ca",
+    "phone": "+1 (873) 900-1466",
+    "address": "2142 rue de l'Éducation",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J1S 2A0",
+    "logoPath": "/assets/logos/org192.svg",
+    "associationIds": [
+      "assoc27",
+      "assoc14",
+      "assoc3"
+    ],
+    "tags": [
+      "Special Education",
+      "Professional Development"
+    ],
+    "lastActivityAt": "2025-11-20T02:43:52.309Z"
+  },
+  {
+    "id": "org193",
+    "name": "Center Innovante Gatineau",
+    "type": "Center",
+    "description": "Center Innovante Gatineau is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org193.qc.ca",
+    "contactEmail": "contact@org193.qc.ca",
+    "phone": "+1 (819) 517-5610",
+    "address": "1089 rue de l'Éducation",
+    "city": "Gatineau",
+    "region": "Outaouais",
+    "postalCode": "J4K 2C1",
+    "logoPath": "/assets/logos/org193.svg",
+    "associationIds": [
+      "assoc16"
+    ],
+    "tags": [
+      "Literacy",
+      "Leadership",
+      "Sports"
+    ],
+    "lastActivityAt": "2025-10-06T02:43:52.309Z"
+  },
+  {
+    "id": "org194",
+    "name": "Consortium Digitale Montréal",
+    "type": "Consortium",
+    "description": "Consortium Digitale Montréal is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org194.qc.ca",
+    "contactEmail": "contact@org194.qc.ca",
+    "phone": "+1 (438) 936-4779",
+    "address": "6145 rue de l'Éducation",
+    "city": "Montréal",
+    "region": "Montréal",
+    "postalCode": "H7F 8V0",
+    "logoPath": "/assets/logos/org194.svg",
+    "associationIds": [
+      "assoc13"
+    ],
+    "tags": [
+      "Sports",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-10-17T02:43:52.309Z"
+  },
+  {
+    "id": "org195",
+    "name": "Network Stratégique Sherbrooke",
+    "type": "Network",
+    "description": "Network Stratégique Sherbrooke is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org195.qc.ca",
+    "contactEmail": "contact@org195.qc.ca",
+    "phone": "+1 (873) 966-2565",
+    "address": "5215 rue de l'Éducation",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J5H 4D3",
+    "logoPath": "/assets/logos/org195.svg",
+    "associationIds": [
+      "assoc16",
+      "assoc25"
+    ],
+    "tags": [
+      "Assessment",
+      "Early Childhood",
+      "Professional Development"
+    ],
+    "lastActivityAt": "2025-10-11T02:43:52.309Z"
+  },
+  {
+    "id": "org196",
+    "name": "Center Globale Lévis",
+    "type": "Center",
+    "description": "Center Globale Lévis is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org196.qc.ca",
+    "contactEmail": "contact@org196.qc.ca",
+    "phone": "+1 (418) 250-1863",
+    "address": "9925 rue de l'Éducation",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "postalCode": "G4A 6F9",
+    "logoPath": "/assets/logos/org196.svg",
+    "associationIds": [],
+    "tags": [
+      "Curriculum Development",
+      "Bilingual Education",
+      "Professional Development"
+    ],
+    "lastActivityAt": "2025-11-21T02:43:52.309Z"
+  },
+  {
+    "id": "org197",
+    "name": "Network Communautaire Montréal",
+    "type": "Network",
+    "description": "Network Communautaire Montréal is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org197.qc.ca",
+    "contactEmail": "contact@org197.qc.ca",
+    "phone": "+1 (514) 677-9476",
+    "address": "185 rue de l'Éducation",
+    "city": "Montréal",
+    "region": "Montréal",
+    "postalCode": "H1A 9L1",
+    "logoPath": "/assets/logos/org197.svg",
+    "associationIds": [
+      "assoc19"
+    ],
+    "tags": [
+      "Leadership",
+      "Special Education",
+      "Arts",
+      "Curriculum Development"
+    ],
+    "lastActivityAt": "2025-10-03T02:43:52.309Z"
+  },
+  {
+    "id": "org198",
+    "name": "Sherbrooke Future Lab",
+    "type": "Lab",
+    "description": "Sherbrooke Future Lab is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org198.qc.ca",
+    "contactEmail": "contact@org198.qc.ca",
+    "phone": "+1 (819) 762-2111",
+    "address": "7249 Street Education",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J9O 7M7",
+    "logoPath": "/assets/logos/org198.svg",
+    "associationIds": [],
+    "tags": [
+      "STEM",
+      "Bilingual Education",
+      "Technology Integration",
+      "Literacy"
+    ],
+    "lastActivityAt": "2025-10-12T02:43:52.309Z"
+  },
+  {
+    "id": "org199",
+    "name": "École Communautaire Laval",
+    "type": "School",
+    "description": "École Communautaire Laval is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org199.qc.ca",
+    "contactEmail": "contact@org199.qc.ca",
+    "phone": "+1 (450) 459-7931",
+    "address": "5961 rue de l'Éducation",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H3B 4Q5",
+    "logoPath": "/assets/logos/org199.svg",
+    "associationIds": [
+      "assoc4"
+    ],
+    "tags": [
+      "Curriculum Development",
+      "Technology Integration",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-09-23T02:43:52.309Z"
+  },
+  {
+    "id": "org200",
+    "name": "Association Future Longueuil",
+    "type": "Association",
+    "description": "Association Future Longueuil is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org200.qc.ca",
+    "contactEmail": "contact@org200.qc.ca",
+    "phone": "+1 (579) 737-6010",
+    "address": "9203 rue de l'Éducation",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J4I 5O2",
+    "logoPath": "/assets/logos/org200.svg",
+    "associationIds": [],
+    "tags": [
+      "Assessment",
+      "Bilingual Education",
+      "Sports"
+    ],
+    "lastActivityAt": "2025-10-09T02:43:52.311Z"
+  },
+  {
+    "id": "org201",
+    "name": "École Future Trois-Rivières",
+    "type": "School",
+    "description": "École Future Trois-Rivières is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org201.qc.ca",
+    "contactEmail": "contact@org201.qc.ca",
+    "phone": "+1 (873) 487-2654",
+    "address": "9799 rue de l'Éducation",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "postalCode": "G1F 6V5",
+    "logoPath": "/assets/logos/org201.svg",
+    "associationIds": [
+      "assoc22"
+    ],
+    "tags": [
+      "Early Childhood",
+      "Technology Integration",
+      "STEM"
+    ],
+    "lastActivityAt": "2025-11-09T02:43:52.311Z"
+  },
+  {
+    "id": "org202",
+    "name": "Sherbrooke Advanced Council",
+    "type": "Council",
+    "description": "Sherbrooke Advanced Council is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org202.qc.ca",
+    "contactEmail": "contact@org202.qc.ca",
+    "phone": "+1 (873) 559-7989",
+    "address": "9565 Street Education",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J8M 9G3",
+    "logoPath": "/assets/logos/org202.svg",
+    "associationIds": [
+      "assoc23",
+      "assoc6"
+    ],
+    "tags": [
+      "Secondary Education",
+      "Inclusion",
+      "Bilingual Education"
+    ],
+    "lastActivityAt": "2025-09-22T02:43:52.311Z"
+  },
+  {
+    "id": "org203",
+    "name": "Saint-Jérôme Digital Consortium",
+    "type": "Consortium",
+    "description": "Saint-Jérôme Digital Consortium is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org203.qc.ca",
+    "contactEmail": "contact@org203.qc.ca",
+    "phone": "+1 (579) 493-4620",
+    "address": "2289 Street Education",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "postalCode": "J2D 7C7",
+    "logoPath": "/assets/logos/org203.svg",
+    "associationIds": [
+      "assoc16"
+    ],
+    "tags": [
+      "Technology Integration",
+      "STEM",
+      "Bilingual Education",
+      "Early Childhood",
+      "Special Education"
+    ],
+    "lastActivityAt": "2025-10-28T02:43:52.311Z"
+  },
+  {
+    "id": "org204",
+    "name": "Institute Future Saint-Jérôme",
+    "type": "Institute",
+    "description": "Institute Future Saint-Jérôme is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org204.qc.ca",
+    "contactEmail": "contact@org204.qc.ca",
+    "phone": "+1 (450) 897-3116",
+    "address": "1589 rue de l'Éducation",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "postalCode": "J2C 1N8",
+    "logoPath": "/assets/logos/org204.svg",
+    "associationIds": [
+      "assoc2"
+    ],
+    "tags": [
+      "Secondary Education",
+      "Assessment",
+      "Special Education",
+      "Inclusion"
+    ],
+    "lastActivityAt": "2025-11-19T02:43:52.311Z"
+  },
+  {
+    "id": "org205",
+    "name": "Academy Future Chicoutimi",
+    "type": "Academy",
+    "description": "Academy Future Chicoutimi is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org205.qc.ca",
+    "contactEmail": "contact@org205.qc.ca",
+    "phone": "+1 (418) 496-5696",
+    "address": "4584 rue de l'Éducation",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G8I 6Z3",
+    "logoPath": "/assets/logos/org205.svg",
+    "associationIds": [
+      "assoc9"
+    ],
+    "tags": [
+      "STEM",
+      "Sports",
+      "Curriculum Development",
+      "Early Childhood",
+      "Assessment"
+    ],
+    "lastActivityAt": "2025-11-29T02:43:52.311Z"
+  },
+  {
+    "id": "org206",
+    "name": "Association Digitale Gatineau",
+    "type": "Association",
+    "description": "Association Digitale Gatineau is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org206.qc.ca",
+    "contactEmail": "contact@org206.qc.ca",
+    "phone": "+1 (819) 905-2347",
+    "address": "3378 rue de l'Éducation",
+    "city": "Gatineau",
+    "region": "Outaouais",
+    "postalCode": "J3G 5B4",
+    "logoPath": "/assets/logos/org206.svg",
+    "associationIds": [
+      "assoc1",
+      "assoc6"
+    ],
+    "tags": [
+      "Special Education",
+      "Assessment",
+      "Arts",
+      "Secondary Education",
+      "Inclusion"
+    ],
+    "lastActivityAt": "2025-11-17T02:43:52.311Z"
+  },
+  {
+    "id": "org207",
+    "name": "École Nationale Chicoutimi",
+    "type": "School",
+    "description": "École Nationale Chicoutimi is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org207.qc.ca",
+    "contactEmail": "contact@org207.qc.ca",
+    "phone": "+1 (418) 234-1385",
+    "address": "5228 rue de l'Éducation",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G5W 8W1",
+    "logoPath": "/assets/logos/org207.svg",
+    "associationIds": [
+      "assoc6",
+      "assoc2"
+    ],
+    "tags": [
+      "Literacy",
+      "STEM",
+      "Early Childhood"
+    ],
+    "lastActivityAt": "2025-10-07T02:43:52.311Z"
+  },
+  {
+    "id": "org208",
+    "name": "Foundation Innovante Gatineau",
+    "type": "Foundation",
+    "description": "Foundation Innovante Gatineau is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org208.qc.ca",
+    "contactEmail": "contact@org208.qc.ca",
+    "phone": "+1 (819) 490-2081",
+    "address": "5479 rue de l'Éducation",
+    "city": "Gatineau",
+    "region": "Outaouais",
+    "postalCode": "J3L 6N3",
+    "logoPath": "/assets/logos/org208.svg",
+    "associationIds": [
+      "assoc4",
+      "assoc6",
+      "assoc3"
+    ],
+    "tags": [
+      "Inclusion",
+      "Curriculum Development",
+      "Arts"
+    ],
+    "lastActivityAt": "2025-09-17T02:43:52.311Z"
+  },
+  {
+    "id": "org209",
+    "name": "Institute Régionale Saint-Jérôme",
+    "type": "Institute",
+    "description": "Institute Régionale Saint-Jérôme is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org209.qc.ca",
+    "contactEmail": "contact@org209.qc.ca",
+    "phone": "+1 (450) 242-4989",
+    "address": "5475 rue de l'Éducation",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "postalCode": "J8O 2A9",
+    "logoPath": "/assets/logos/org209.svg",
+    "associationIds": [
+      "assoc12"
+    ],
+    "tags": [
+      "Special Education",
+      "Early Childhood",
+      "Inclusion",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-10-28T02:43:52.311Z"
+  },
+  {
+    "id": "org210",
+    "name": "Longueuil Digital School",
+    "type": "School",
+    "description": "Longueuil Digital School is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org210.qc.ca",
+    "contactEmail": "contact@org210.qc.ca",
+    "phone": "+1 (450) 657-2869",
+    "address": "5022 Street Education",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J3B 7V6",
+    "logoPath": "/assets/logos/org210.svg",
+    "associationIds": [],
+    "tags": [
+      "Curriculum Development",
+      "Professional Development"
+    ],
+    "lastActivityAt": "2025-12-04T02:43:52.311Z"
+  },
+  {
+    "id": "org211",
+    "name": "Institute Stratégique Trois-Rivières",
+    "type": "Institute",
+    "description": "Institute Stratégique Trois-Rivières is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org211.qc.ca",
+    "contactEmail": "contact@org211.qc.ca",
+    "phone": "+1 (819) 663-3876",
+    "address": "6435 rue de l'Éducation",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "postalCode": "G5V 3P4",
+    "logoPath": "/assets/logos/org211.svg",
+    "associationIds": [
+      "assoc9",
+      "assoc14",
+      "assoc4"
+    ],
+    "tags": [
+      "STEM",
+      "Arts",
+      "Technology Integration",
+      "Leadership",
+      "Curriculum Development"
+    ],
+    "lastActivityAt": "2025-11-04T02:43:52.311Z"
+  },
+  {
+    "id": "org212",
+    "name": "Council Stratégique Longueuil",
+    "type": "Council",
+    "description": "Council Stratégique Longueuil is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org212.qc.ca",
+    "contactEmail": "contact@org212.qc.ca",
+    "phone": "+1 (450) 303-3414",
+    "address": "5535 rue de l'Éducation",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J9N 3T2",
+    "logoPath": "/assets/logos/org212.svg",
+    "associationIds": [
+      "assoc5"
+    ],
+    "tags": [
+      "Bilingual Education",
+      "Assessment",
+      "Early Childhood",
+      "Arts",
+      "STEM"
+    ],
+    "lastActivityAt": "2025-10-19T02:43:52.311Z"
+  },
+  {
+    "id": "org213",
+    "name": "Montréal Global Center",
+    "type": "Center",
+    "description": "Montréal Global Center is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org213.qc.ca",
+    "contactEmail": "contact@org213.qc.ca",
+    "phone": "+1 (514) 604-1610",
+    "address": "9636 Street Education",
+    "city": "Montréal",
+    "region": "Montréal",
+    "postalCode": "H8V 4M0",
+    "logoPath": "/assets/logos/org213.svg",
+    "associationIds": [
+      "assoc23",
+      "assoc11",
+      "assoc12"
+    ],
+    "tags": [
+      "Secondary Education",
+      "Special Education",
+      "Curriculum Development"
+    ],
+    "lastActivityAt": "2025-11-24T02:43:52.312Z"
+  },
+  {
+    "id": "org214",
+    "name": "Foundation Innovante Lévis",
+    "type": "Foundation",
+    "description": "Foundation Innovante Lévis is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org214.qc.ca",
+    "contactEmail": "contact@org214.qc.ca",
+    "phone": "+1 (581) 214-1839",
+    "address": "3227 rue de l'Éducation",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "postalCode": "G1S 1V1",
+    "logoPath": "/assets/logos/org214.svg",
+    "associationIds": [
+      "assoc14",
+      "assoc1",
+      "assoc7"
+    ],
+    "tags": [
+      "Technology Integration",
+      "Inclusion",
+      "Literacy",
+      "Early Childhood",
+      "Arts"
+    ],
+    "lastActivityAt": "2025-10-27T02:43:52.312Z"
+  },
+  {
+    "id": "org215",
+    "name": "École Digitale Laval",
+    "type": "School",
+    "description": "École Digitale Laval is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org215.qc.ca",
+    "contactEmail": "contact@org215.qc.ca",
+    "phone": "+1 (450) 276-1320",
+    "address": "3428 rue de l'Éducation",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H9K 5K5",
+    "logoPath": "/assets/logos/org215.svg",
+    "associationIds": [
+      "assoc3"
+    ],
+    "tags": [
+      "Sports",
+      "STEM",
+      "Curriculum Development"
+    ],
+    "lastActivityAt": "2025-11-20T02:43:52.312Z"
+  },
+  {
+    "id": "org216",
+    "name": "École Digitale Chicoutimi",
+    "type": "School",
+    "description": "École Digitale Chicoutimi is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org216.qc.ca",
+    "contactEmail": "contact@org216.qc.ca",
+    "phone": "+1 (418) 959-6030",
+    "address": "4156 rue de l'Éducation",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G9D 4P3",
+    "logoPath": "/assets/logos/org216.svg",
+    "associationIds": [
+      "assoc7",
+      "assoc24"
+    ],
+    "tags": [
+      "STEM",
+      "Early Childhood"
+    ],
+    "lastActivityAt": "2025-09-24T02:43:52.312Z"
+  },
+  {
+    "id": "org217",
+    "name": "Québec Future Consortium",
+    "type": "Consortium",
+    "description": "Québec Future Consortium is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org217.qc.ca",
+    "contactEmail": "contact@org217.qc.ca",
+    "phone": "+1 (418) 595-6220",
+    "address": "4586 Street Education",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "postalCode": "G2T 7H4",
+    "logoPath": "/assets/logos/org217.svg",
+    "associationIds": [
+      "assoc2",
+      "assoc26"
+    ],
+    "tags": [
+      "Assessment",
+      "Arts",
+      "Leadership"
+    ],
+    "lastActivityAt": "2025-11-15T02:43:52.312Z"
+  },
+  {
+    "id": "org218",
+    "name": "Lab Communautaire Lévis",
+    "type": "Lab",
+    "description": "Lab Communautaire Lévis is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org218.qc.ca",
+    "contactEmail": "contact@org218.qc.ca",
+    "phone": "+1 (581) 212-4448",
+    "address": "3650 rue de l'Éducation",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "postalCode": "G2G 5W4",
+    "logoPath": "/assets/logos/org218.svg",
+    "associationIds": [
+      "assoc16",
+      "assoc21"
+    ],
+    "tags": [
+      "Sports",
+      "Arts",
+      "Technology Integration"
+    ],
+    "lastActivityAt": "2025-11-13T02:43:52.312Z"
+  },
+  {
+    "id": "org219",
+    "name": "Network Stratégique Sherbrooke",
+    "type": "Network",
+    "description": "Network Stratégique Sherbrooke is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org219.qc.ca",
+    "contactEmail": "contact@org219.qc.ca",
+    "phone": "+1 (819) 825-2048",
+    "address": "4990 rue de l'Éducation",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J4B 9K2",
+    "logoPath": "/assets/logos/org219.svg",
+    "associationIds": [
+      "assoc7",
+      "assoc8"
+    ],
+    "tags": [
+      "STEM",
+      "Early Childhood",
+      "Sports"
+    ],
+    "lastActivityAt": "2025-12-01T02:43:52.312Z"
+  },
+  {
+    "id": "org220",
+    "name": "Network Régionale Sherbrooke",
+    "type": "Network",
+    "description": "Network Régionale Sherbrooke is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org220.qc.ca",
+    "contactEmail": "contact@org220.qc.ca",
+    "phone": "+1 (819) 904-5033",
+    "address": "7981 rue de l'Éducation",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J6M 3A7",
+    "logoPath": "/assets/logos/org220.svg",
+    "associationIds": [],
+    "tags": [
+      "Secondary Education",
+      "Assessment",
+      "Special Education"
+    ],
+    "lastActivityAt": "2025-12-13T02:43:52.312Z"
+  },
+  {
+    "id": "org221",
+    "name": "Council Inclusive Rimouski",
+    "type": "Council",
+    "description": "Council Inclusive Rimouski is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org221.qc.ca",
+    "contactEmail": "contact@org221.qc.ca",
+    "phone": "+1 (418) 307-9881",
+    "address": "9290 rue de l'Éducation",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "postalCode": "G9R 3R9",
+    "logoPath": "/assets/logos/org221.svg",
+    "associationIds": [
+      "assoc11",
+      "assoc28"
+    ],
+    "tags": [
+      "Inclusion",
+      "Assessment"
+    ],
+    "lastActivityAt": "2025-10-11T02:43:52.312Z"
+  },
+  {
+    "id": "org222",
+    "name": "Foundation Stratégique Gatineau",
+    "type": "Foundation",
+    "description": "Foundation Stratégique Gatineau is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org222.qc.ca",
+    "contactEmail": "contact@org222.qc.ca",
+    "phone": "+1 (819) 456-3568",
+    "address": "6361 rue de l'Éducation",
+    "city": "Gatineau",
+    "region": "Outaouais",
+    "postalCode": "J3R 3H7",
+    "logoPath": "/assets/logos/org222.svg",
+    "associationIds": [
+      "assoc21"
+    ],
+    "tags": [
+      "Special Education",
+      "Literacy"
+    ],
+    "lastActivityAt": "2025-10-21T02:43:52.312Z"
+  },
+  {
+    "id": "org223",
+    "name": "Institute Globale Saguenay",
+    "type": "Institute",
+    "description": "Institute Globale Saguenay is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org223.qc.ca",
+    "contactEmail": "contact@org223.qc.ca",
+    "phone": "+1 (418) 772-1244",
+    "address": "7143 rue de l'Éducation",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G5Q 5K7",
+    "logoPath": "/assets/logos/org223.svg",
+    "associationIds": [
+      "assoc11"
+    ],
+    "tags": [
+      "Bilingual Education",
+      "Assessment"
+    ],
+    "lastActivityAt": "2025-09-19T02:43:52.312Z"
+  },
+  {
+    "id": "org224",
+    "name": "Association Digitale Québec",
+    "type": "Association",
+    "description": "Association Digitale Québec is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org224.qc.ca",
+    "contactEmail": "contact@org224.qc.ca",
+    "phone": "+1 (418) 731-5149",
+    "address": "2952 rue de l'Éducation",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "postalCode": "G8R 6X3",
+    "logoPath": "/assets/logos/org224.svg",
+    "associationIds": [
+      "assoc19"
+    ],
+    "tags": [
+      "Inclusion",
+      "Professional Development",
+      "Literacy",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-10-18T02:43:52.312Z"
+  },
+  {
+    "id": "org225",
+    "name": "Council Digitale Rimouski",
+    "type": "Council",
+    "description": "Council Digitale Rimouski is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org225.qc.ca",
+    "contactEmail": "contact@org225.qc.ca",
+    "phone": "+1 (418) 602-3511",
+    "address": "9436 rue de l'Éducation",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "postalCode": "G7R 7L5",
+    "logoPath": "/assets/logos/org225.svg",
+    "associationIds": [
+      "assoc3",
+      "assoc13"
+    ],
+    "tags": [
+      "Inclusion",
+      "Special Education",
+      "STEM"
+    ],
+    "lastActivityAt": "2025-10-02T02:43:52.312Z"
+  },
+  {
+    "id": "org226",
+    "name": "Council Stratégique Trois-Rivières",
+    "type": "Council",
+    "description": "Council Stratégique Trois-Rivières is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org226.qc.ca",
+    "contactEmail": "contact@org226.qc.ca",
+    "phone": "+1 (819) 680-9087",
+    "address": "7966 rue de l'Éducation",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "postalCode": "G4T 8R8",
+    "logoPath": "/assets/logos/org226.svg",
+    "associationIds": [
+      "assoc20",
+      "assoc25"
+    ],
+    "tags": [
+      "Secondary Education",
+      "Early Childhood",
+      "Bilingual Education",
+      "Arts"
+    ],
+    "lastActivityAt": "2025-10-25T02:43:52.312Z"
+  },
+  {
+    "id": "org227",
+    "name": "Network Avancée Laval",
+    "type": "Network",
+    "description": "Network Avancée Laval is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org227.qc.ca",
+    "contactEmail": "contact@org227.qc.ca",
+    "phone": "+1 (579) 265-2536",
+    "address": "5782 rue de l'Éducation",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H7V 9M8",
+    "logoPath": "/assets/logos/org227.svg",
+    "associationIds": [
+      "assoc25"
+    ],
+    "tags": [
+      "Inclusion",
+      "Secondary Education",
+      "Curriculum Development"
+    ],
+    "lastActivityAt": "2025-11-10T02:43:52.312Z"
+  },
+  {
+    "id": "org228",
+    "name": "Network Inclusive Sherbrooke",
+    "type": "Network",
+    "description": "Network Inclusive Sherbrooke is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org228.qc.ca",
+    "contactEmail": "contact@org228.qc.ca",
+    "phone": "+1 (873) 459-5060",
+    "address": "9057 rue de l'Éducation",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J8I 8C3",
+    "logoPath": "/assets/logos/org228.svg",
+    "associationIds": [
+      "assoc15",
+      "assoc12"
+    ],
+    "tags": [
+      "STEM",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-12-13T02:43:52.312Z"
+  },
+  {
+    "id": "org229",
+    "name": "Center Digitale Laval",
+    "type": "Center",
+    "description": "Center Digitale Laval is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org229.qc.ca",
+    "contactEmail": "contact@org229.qc.ca",
+    "phone": "+1 (579) 276-7478",
+    "address": "7536 rue de l'Éducation",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H7I 3I1",
+    "logoPath": "/assets/logos/org229.svg",
+    "associationIds": [
+      "assoc26"
+    ],
+    "tags": [
+      "Technology Integration",
+      "Curriculum Development",
+      "Sports",
+      "Literacy",
+      "Arts"
+    ],
+    "lastActivityAt": "2025-10-01T02:43:52.312Z"
+  },
+  {
+    "id": "org230",
+    "name": "Foundation Avancée Sherbrooke",
+    "type": "Foundation",
+    "description": "Foundation Avancée Sherbrooke is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org230.qc.ca",
+    "contactEmail": "contact@org230.qc.ca",
+    "phone": "+1 (873) 269-6812",
+    "address": "2344 rue de l'Éducation",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J4I 1O3",
+    "logoPath": "/assets/logos/org230.svg",
+    "associationIds": [
+      "assoc17",
+      "assoc21",
+      "assoc23"
+    ],
+    "tags": [
+      "Inclusion",
+      "Assessment",
+      "Secondary Education",
+      "Sports"
+    ],
+    "lastActivityAt": "2025-11-13T02:43:52.312Z"
+  },
+  {
+    "id": "org231",
+    "name": "Longueuil Community Council",
+    "type": "Council",
+    "description": "Longueuil Community Council is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org231.qc.ca",
+    "contactEmail": "contact@org231.qc.ca",
+    "phone": "+1 (579) 304-5188",
+    "address": "2427 Street Education",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J3S 5S3",
+    "logoPath": "/assets/logos/org231.svg",
+    "associationIds": [
+      "assoc8"
+    ],
+    "tags": [
+      "Literacy",
+      "Professional Development",
+      "Bilingual Education",
+      "Arts",
+      "Early Childhood"
+    ],
+    "lastActivityAt": "2025-09-16T02:43:52.312Z"
+  },
+  {
+    "id": "org232",
+    "name": "Institute Digitale Laval",
+    "type": "Institute",
+    "description": "Institute Digitale Laval is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org232.qc.ca",
+    "contactEmail": "contact@org232.qc.ca",
+    "phone": "+1 (579) 866-1518",
+    "address": "9522 rue de l'Éducation",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H8B 1O3",
+    "logoPath": "/assets/logos/org232.svg",
+    "associationIds": [
+      "assoc12",
+      "assoc1"
+    ],
+    "tags": [
+      "Special Education",
+      "Bilingual Education"
+    ],
+    "lastActivityAt": "2025-11-03T02:43:52.312Z"
+  },
+  {
+    "id": "org233",
+    "name": "Council Régionale Chicoutimi",
+    "type": "Council",
+    "description": "Council Régionale Chicoutimi is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org233.qc.ca",
+    "contactEmail": "contact@org233.qc.ca",
+    "phone": "+1 (418) 477-7856",
+    "address": "1323 rue de l'Éducation",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G1I 6B6",
+    "logoPath": "/assets/logos/org233.svg",
+    "associationIds": [],
+    "tags": [
+      "Curriculum Development"
+    ],
+    "lastActivityAt": "2025-09-21T02:43:52.312Z"
+  },
+  {
+    "id": "org234",
+    "name": "Association Nationale Sherbrooke",
+    "type": "Association",
+    "description": "Association Nationale Sherbrooke is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org234.qc.ca",
+    "contactEmail": "contact@org234.qc.ca",
+    "phone": "+1 (819) 395-5803",
+    "address": "1028 rue de l'Éducation",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J5X 4V9",
+    "logoPath": "/assets/logos/org234.svg",
+    "associationIds": [],
+    "tags": [
+      "Professional Development",
+      "STEM",
+      "Early Childhood",
+      "Inclusion",
+      "Technology Integration"
+    ],
+    "lastActivityAt": "2025-11-14T02:43:52.312Z"
+  },
+  {
+    "id": "org235",
+    "name": "Association Digitale Rimouski",
+    "type": "Association",
+    "description": "Association Digitale Rimouski is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org235.qc.ca",
+    "contactEmail": "contact@org235.qc.ca",
+    "phone": "+1 (418) 715-9044",
+    "address": "6612 rue de l'Éducation",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "postalCode": "G1C 8E7",
+    "logoPath": "/assets/logos/org235.svg",
+    "associationIds": [
+      "assoc11",
+      "assoc4"
+    ],
+    "tags": [
+      "Early Childhood",
+      "Secondary Education",
+      "Leadership",
+      "Assessment",
+      "Inclusion"
+    ],
+    "lastActivityAt": "2025-09-26T02:43:52.312Z"
+  },
+  {
+    "id": "org236",
+    "name": "Consortium Innovante Québec",
+    "type": "Consortium",
+    "description": "Consortium Innovante Québec is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org236.qc.ca",
+    "contactEmail": "contact@org236.qc.ca",
+    "phone": "+1 (581) 438-5679",
+    "address": "7103 rue de l'Éducation",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "postalCode": "G7E 3O7",
+    "logoPath": "/assets/logos/org236.svg",
+    "associationIds": [
+      "assoc19"
+    ],
+    "tags": [
+      "STEM",
+      "Special Education",
+      "Arts",
+      "Secondary Education"
+    ],
+    "lastActivityAt": "2025-09-18T02:43:52.312Z"
+  },
+  {
+    "id": "org237",
+    "name": "Laval Inclusive School",
+    "type": "School",
+    "description": "Laval Inclusive School is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org237.qc.ca",
+    "contactEmail": "contact@org237.qc.ca",
+    "phone": "+1 (450) 539-2518",
+    "address": "1654 Street Education",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H6K 2R0",
+    "logoPath": "/assets/logos/org237.svg",
+    "associationIds": [],
+    "tags": [
+      "Inclusion",
+      "Arts"
+    ],
+    "lastActivityAt": "2025-10-10T02:43:52.312Z"
+  },
+  {
+    "id": "org238",
+    "name": "Laval Strategic Academy",
+    "type": "Academy",
+    "description": "Laval Strategic Academy is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org238.qc.ca",
+    "contactEmail": "contact@org238.qc.ca",
+    "phone": "+1 (579) 572-7606",
+    "address": "5280 Street Education",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H4O 9R2",
+    "logoPath": "/assets/logos/org238.svg",
+    "associationIds": [],
+    "tags": [
+      "Assessment",
+      "Technology Integration"
+    ],
+    "lastActivityAt": "2025-11-09T02:43:52.312Z"
+  },
+  {
+    "id": "org239",
+    "name": "Consortium Communautaire Laval",
+    "type": "Consortium",
+    "description": "Consortium Communautaire Laval is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org239.qc.ca",
+    "contactEmail": "contact@org239.qc.ca",
+    "phone": "+1 (579) 250-6344",
+    "address": "6405 rue de l'Éducation",
+    "city": "Laval",
+    "region": "Laval",
+    "postalCode": "H6J 9M9",
+    "logoPath": "/assets/logos/org239.svg",
+    "associationIds": [
+      "assoc2",
+      "assoc8",
+      "assoc23"
+    ],
+    "tags": [
+      "Technology Integration",
+      "Early Childhood"
+    ],
+    "lastActivityAt": "2025-11-19T02:43:52.312Z"
+  },
+  {
+    "id": "org240",
+    "name": "Chicoutimi Future Center",
+    "type": "Center",
+    "description": "Chicoutimi Future Center is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org240.qc.ca",
+    "contactEmail": "contact@org240.qc.ca",
+    "phone": "+1 (581) 649-3154",
+    "address": "4681 Street Education",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "postalCode": "G4M 1N1",
+    "logoPath": "/assets/logos/org240.svg",
+    "associationIds": [],
+    "tags": [
+      "Secondary Education",
+      "Leadership",
+      "STEM"
+    ],
+    "lastActivityAt": "2025-09-20T02:43:52.312Z"
+  },
+  {
+    "id": "org241",
+    "name": "Network Future Longueuil",
+    "type": "Network",
+    "description": "Network Future Longueuil is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org241.qc.ca",
+    "contactEmail": "contact@org241.qc.ca",
+    "phone": "+1 (579) 381-4150",
+    "address": "9209 rue de l'Éducation",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J6B 1R9",
+    "logoPath": "/assets/logos/org241.svg",
+    "associationIds": [
+      "assoc3",
+      "assoc27"
+    ],
+    "tags": [
+      "Special Education",
+      "Curriculum Development"
+    ],
+    "lastActivityAt": "2025-11-01T02:43:52.312Z"
+  },
+  {
+    "id": "org242",
+    "name": "Foundation Avancée Rimouski",
+    "type": "Foundation",
+    "description": "Foundation Avancée Rimouski is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org242.qc.ca",
+    "contactEmail": "contact@org242.qc.ca",
+    "phone": "+1 (418) 926-2988",
+    "address": "2660 rue de l'Éducation",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "postalCode": "G9M 7I4",
+    "logoPath": "/assets/logos/org242.svg",
+    "associationIds": [],
+    "tags": [
+      "Professional Development",
+      "Early Childhood"
+    ],
+    "lastActivityAt": "2025-12-04T02:43:52.312Z"
+  },
+  {
+    "id": "org243",
+    "name": "Foundation Inclusive Sherbrooke",
+    "type": "Foundation",
+    "description": "Foundation Inclusive Sherbrooke is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org243.qc.ca",
+    "contactEmail": "contact@org243.qc.ca",
+    "phone": "+1 (873) 206-5624",
+    "address": "3403 rue de l'Éducation",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J8L 9X6",
+    "logoPath": "/assets/logos/org243.svg",
+    "associationIds": [
+      "assoc3"
+    ],
+    "tags": [
+      "Sports",
+      "Assessment"
+    ],
+    "lastActivityAt": "2025-10-17T02:43:52.312Z"
+  },
+  {
+    "id": "org244",
+    "name": "Center Future Longueuil",
+    "type": "Center",
+    "description": "Center Future Longueuil is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org244.qc.ca",
+    "contactEmail": "contact@org244.qc.ca",
+    "phone": "+1 (579) 302-9980",
+    "address": "4017 rue de l'Éducation",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J3E 8N6",
+    "logoPath": "/assets/logos/org244.svg",
+    "associationIds": [
+      "assoc9",
+      "assoc17",
+      "assoc23"
+    ],
+    "tags": [
+      "Professional Development"
+    ],
+    "lastActivityAt": "2025-11-07T02:43:52.312Z"
+  },
+  {
+    "id": "org245",
+    "name": "Network Future Québec",
+    "type": "Network",
+    "description": "Network Future Québec is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org245.qc.ca",
+    "contactEmail": "contact@org245.qc.ca",
+    "phone": "+1 (418) 591-8190",
+    "address": "5269 rue de l'Éducation",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "postalCode": "G6A 4K8",
+    "logoPath": "/assets/logos/org245.svg",
+    "associationIds": [],
+    "tags": [
+      "Secondary Education",
+      "Inclusion"
+    ],
+    "lastActivityAt": "2025-11-22T02:43:52.312Z"
+  },
+  {
+    "id": "org246",
+    "name": "Council Avancée Québec",
+    "type": "Council",
+    "description": "Council Avancée Québec is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org246.qc.ca",
+    "contactEmail": "contact@org246.qc.ca",
+    "phone": "+1 (581) 253-1979",
+    "address": "1344 rue de l'Éducation",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "postalCode": "G1B 1Q0",
+    "logoPath": "/assets/logos/org246.svg",
+    "associationIds": [
+      "assoc25",
+      "assoc22",
+      "assoc24"
+    ],
+    "tags": [
+      "Arts",
+      "Literacy",
+      "Professional Development"
+    ],
+    "lastActivityAt": "2025-12-04T02:43:52.312Z"
+  },
+  {
+    "id": "org247",
+    "name": "Saint-Jérôme Innovative Foundation",
+    "type": "Foundation",
+    "description": "Saint-Jérôme Innovative Foundation is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org247.qc.ca",
+    "contactEmail": "contact@org247.qc.ca",
+    "phone": "+1 (579) 804-3743",
+    "address": "8062 Street Education",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "postalCode": "J6O 3B2",
+    "logoPath": "/assets/logos/org247.svg",
+    "associationIds": [
+      "assoc7"
+    ],
+    "tags": [
+      "Bilingual Education",
+      "Literacy",
+      "STEM"
+    ],
+    "lastActivityAt": "2025-10-13T02:43:52.312Z"
+  },
+  {
+    "id": "org248",
+    "name": "Consortium Future Sherbrooke",
+    "type": "Consortium",
+    "description": "Consortium Future Sherbrooke is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org248.qc.ca",
+    "contactEmail": "contact@org248.qc.ca",
+    "phone": "+1 (819) 620-9197",
+    "address": "3492 rue de l'Éducation",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "postalCode": "J9H 6G6",
+    "logoPath": "/assets/logos/org248.svg",
+    "associationIds": [
+      "assoc23",
+      "assoc7"
+    ],
+    "tags": [
+      "Secondary Education",
+      "Curriculum Development",
+      "STEM"
+    ],
+    "lastActivityAt": "2025-10-24T02:43:52.312Z"
+  },
+  {
+    "id": "org249",
+    "name": "Foundation Innovante Saint-Jérôme",
+    "type": "Foundation",
+    "description": "Foundation Innovante Saint-Jérôme is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org249.qc.ca",
+    "contactEmail": "contact@org249.qc.ca",
+    "phone": "+1 (450) 350-9700",
+    "address": "3440 rue de l'Éducation",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "postalCode": "J1S 6O2",
+    "logoPath": "/assets/logos/org249.svg",
+    "associationIds": [
+      "assoc14",
+      "assoc1",
+      "assoc12"
+    ],
+    "tags": [
+      "Professional Development"
+    ],
+    "lastActivityAt": "2025-11-04T02:43:52.312Z"
+  },
+  {
+    "id": "org250",
+    "name": "Trois-Rivières Regional Network",
+    "type": "Network",
+    "description": "Trois-Rivières Regional Network is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org250.qc.ca",
+    "contactEmail": "contact@org250.qc.ca",
+    "phone": "+1 (819) 768-7181",
+    "address": "4741 Street Education",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "postalCode": "G3E 1P4",
+    "logoPath": "/assets/logos/org250.svg",
+    "associationIds": [
+      "assoc26",
+      "assoc20"
+    ],
+    "tags": [
+      "Secondary Education",
+      "Assessment"
+    ],
+    "lastActivityAt": "2025-11-18T02:43:52.312Z"
+  },
+  {
+    "id": "org251",
+    "name": "Association Digitale Lévis",
+    "type": "Association",
+    "description": "Association Digitale Lévis is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org251.qc.ca",
+    "contactEmail": "contact@org251.qc.ca",
+    "phone": "+1 (581) 722-8508",
+    "address": "6601 rue de l'Éducation",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "postalCode": "G1F 1B5",
+    "logoPath": "/assets/logos/org251.svg",
+    "associationIds": [
+      "assoc4",
+      "assoc10",
+      "assoc2"
+    ],
+    "tags": [
+      "Secondary Education",
+      "Leadership",
+      "STEM"
+    ],
+    "lastActivityAt": "2025-11-01T02:43:52.312Z"
+  },
+  {
+    "id": "org252",
+    "name": "Network Innovante Québec",
+    "type": "Network",
+    "description": "Network Innovante Québec is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org252.qc.ca",
+    "contactEmail": "contact@org252.qc.ca",
+    "phone": "+1 (418) 240-5388",
+    "address": "3721 rue de l'Éducation",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "postalCode": "G9P 2V5",
+    "logoPath": "/assets/logos/org252.svg",
+    "associationIds": [
+      "assoc12",
+      "assoc1",
+      "assoc17"
+    ],
+    "tags": [
+      "Literacy",
+      "Sports",
+      "Bilingual Education"
+    ],
+    "lastActivityAt": "2025-11-20T02:43:52.312Z"
+  },
+  {
+    "id": "org253",
+    "name": "Longueuil Inclusive Institute",
+    "type": "Institute",
+    "description": "Longueuil Inclusive Institute is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org253.qc.ca",
+    "contactEmail": "contact@org253.qc.ca",
+    "phone": "+1 (450) 420-2612",
+    "address": "9598 Street Education",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "postalCode": "J1V 6V2",
+    "logoPath": "/assets/logos/org253.svg",
+    "associationIds": [
+      "assoc3",
+      "assoc24"
+    ],
+    "tags": [
+      "Leadership",
+      "STEM",
+      "Bilingual Education"
+    ],
+    "lastActivityAt": "2025-10-28T02:43:52.312Z"
+  },
+  {
+    "id": "org254",
+    "name": "École Globale Rimouski",
+    "type": "School",
+    "description": "École Globale Rimouski is a leading educational institution committed to excellence in teaching and learning.",
+    "website": "https://www.org254.qc.ca",
+    "contactEmail": "contact@org254.qc.ca",
+    "phone": "+1 (418) 929-4539",
+    "address": "7381 rue de l'Éducation",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "postalCode": "G8K 1Z6",
+    "logoPath": "/assets/logos/org254.svg",
+    "associationIds": [
+      "assoc19",
+      "assoc25",
+      "assoc4"
+    ],
+    "tags": [
+      "Assessment",
+      "Professional Development",
+      "Early Childhood"
+    ],
+    "lastActivityAt": "2025-11-06T02:43:52.312Z"
+  }
+]
