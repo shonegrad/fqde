@@ -1,66 +1,59 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import NetworkMap from '../components/Network/NetworkMap';
-import OrgCard from '../components/Network/OrgCard';
-import MemberCard from '../components/Network/MemberCard';
 import OrgProfileModal from '../components/Network/OrgProfileModal';
-import LazyList from '../components/common/LazyList';
 import {
     Container,
     Box,
     Typography,
-    ToggleButton,
-    ToggleButtonGroup,
-    Stack,
     Paper,
     TextField,
     InputAdornment,
-    Fade
+    ToggleButton,
+    ToggleButtonGroup,
+    Chip,
+    Stack
 } from '@mui/material';
-import MapIcon from '@mui/icons-material/Map';
-import ListIcon from '@mui/icons-material/List';
-import PeopleIcon from '@mui/icons-material/People';
-import BusinessIcon from '@mui/icons-material/Business';
 import SearchIcon from '@mui/icons-material/Search';
+import LocalOfferIcon from '@mui/icons-material/LocalOffer';
+import PlaceIcon from '@mui/icons-material/Place';
+import CategoryIcon from '@mui/icons-material/Category';
+import GroupWorkIcon from '@mui/icons-material/GroupWork';
+import BubbleChartIcon from '@mui/icons-material/BubbleChart';
+import GridViewIcon from '@mui/icons-material/GridView';
+import DonutLargeIcon from '@mui/icons-material/DonutLarge';
+import HubIcon from '@mui/icons-material/Hub';
+
+const GROUPING_OPTIONS = [
+    { value: 'tags', label: 'Tag', icon: LocalOfferIcon },
+    { value: 'region', label: 'Region', icon: PlaceIcon },
+    { value: 'type', label: 'Type', icon: CategoryIcon },
+    { value: 'association', label: 'Assoc', icon: GroupWorkIcon }
+];
+
+const VIEW_OPTIONS = [
+    { value: 'pack', label: 'Bubble', icon: BubbleChartIcon },
+    { value: 'treemap', label: 'Treemap', icon: GridViewIcon },
+    { value: 'sunburst', label: 'Sunburst', icon: DonutLargeIcon },
+    { value: 'force', label: 'Force', icon: HubIcon }
+];
 
 const Network = () => {
-    const { organizations, users: people, dataLoading } = useApp();
-    const [view, setView] = useState('list');
-    const [contentType, setContentType] = useState('orgs');
+    const { organizations, users, associations, dataLoading } = useApp();
     const [selectedNode, setSelectedNode] = useState(null);
     const [searchQuery, setSearchQuery] = useState('');
+    const [groupBy, setGroupBy] = useState('tags');
+    const [selectedTag, setSelectedTag] = useState(null);
+    const [viewType, setViewType] = useState('pack');
 
-    const filteredOrganizations = useMemo(() => {
-        if (!searchQuery) return organizations;
-        const query = searchQuery.toLowerCase();
-        return organizations.filter(org =>
-            org.name.toLowerCase().includes(query) ||
-            org.city?.toLowerCase().includes(query) ||
-            org.region?.toLowerCase().includes(query) ||
-            org.tags?.some(tag => tag.toLowerCase().includes(query))
-        );
-    }, [organizations, searchQuery]);
-
-    const filteredPeople = useMemo(() => {
-        if (!searchQuery) return people;
-        const query = searchQuery.toLowerCase();
-        return people.filter(person =>
-            person.displayName?.toLowerCase().includes(query) ||
-            person.firstName?.toLowerCase().includes(query) ||
-            person.lastName?.toLowerCase().includes(query) ||
-            person.city?.toLowerCase().includes(query) ||
-            person.title?.toLowerCase().includes(query) ||
-            person.tags?.some(tag => tag.toLowerCase().includes(query))
-        );
-    }, [people, searchQuery]);
-
-    const renderOrgCard = (org) => (
-        <OrgCard org={org} onClick={setSelectedNode} />
-    );
-
-    const renderMemberCard = (member) => (
-        <MemberCard member={member} onClick={setSelectedNode} />
-    );
+    // Extract all unique tags
+    const allTags = React.useMemo(() => {
+        const tagSet = new Set();
+        organizations.forEach(org => {
+            (org.tags || []).forEach(tag => tagSet.add(tag));
+        });
+        return Array.from(tagSet).sort();
+    }, [organizations]);
 
     if (dataLoading) {
         return (
@@ -71,127 +64,182 @@ const Network = () => {
     }
 
     return (
-        <Container maxWidth="xl" sx={{
-            // Only fix height if map view is active to allow efficient scrolling for list
-            height: view === 'map' ? 'calc(100vh - 80px)' : 'auto',
-            display: 'flex',
-            flexDirection: 'column',
-            pb: 2
-        }}>
-            <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{ mb: 3 }}>
-                <Box>
-                    <Typography variant="h3" component="h1" gutterBottom sx={{ fontWeight: 800, color: 'primary.main', mb: 1 }}>
-                        Network Directory
-                    </Typography>
-                    <Typography variant="h6" color="text.secondary" fontWeight={400}>
-                        Connecting {organizations.length} institutions and {people.length.toLocaleString()} educators.
-                    </Typography>
-                </Box>
-
-                <Stack direction="row" spacing={1} alignItems="center">
-                    <ToggleButtonGroup
-                        value={contentType}
-                        exclusive
-                        onChange={(e, v) => v && setContentType(v)}
-                        size="small"
-                        color="primary"
-                        sx={{
-                            bgcolor: 'rgba(241, 245, 249, 0.6)',
-                            backdropFilter: 'blur(8px)',
-                            border: '1px solid',
-                            borderColor: 'rgba(15, 23, 42, 0.06)',
-                            borderRadius: '12px', // Explicit 12px
-                            p: 0.5,
-                            '& .MuiToggleButton-root': { border: 'none', borderRadius: '8px', px: 1.5, py: 0.5, fontSize: '0.85rem' } // Explicit 8px
-                        }}
-                    >
-                        <ToggleButton value="orgs"><BusinessIcon sx={{ mr: 0.5, fontSize: 18 }} /> Organizations</ToggleButton>
-                        <ToggleButton value="members"><PeopleIcon sx={{ mr: 0.5, fontSize: 18 }} /> Members</ToggleButton>
-                    </ToggleButtonGroup>
-
-                    <ToggleButtonGroup
-                        value={view}
-                        exclusive
-                        onChange={(e, v) => v && setView(v)}
-                        size="small"
-                        color="primary"
-                        sx={{
-                            bgcolor: 'rgba(241, 245, 249, 0.6)',
-                            backdropFilter: 'blur(8px)',
-                            border: '1px solid',
-                            borderColor: 'rgba(15, 23, 42, 0.06)',
-                            borderRadius: '12px', // Explicit 12px
-                            p: 0.5,
-                            '& .MuiToggleButton-root': { border: 'none', borderRadius: '8px', px: 1.5, py: 0.5, fontSize: '0.85rem' } // Explicit 8px
-                        }}
-                    >
-                        <ToggleButton value="map" disabled={contentType === 'members'}><MapIcon sx={{ mr: 0.5, fontSize: 18 }} /> Map</ToggleButton>
-                        <ToggleButton value="list"><ListIcon sx={{ mr: 0.5, fontSize: 18 }} /> List</ToggleButton>
-                    </ToggleButtonGroup>
-                </Stack>
-            </Stack>
-
-            <Paper
-                component={Fade} in={true}
-                elevation={0}
+        <Container
+            maxWidth="xl"
+            sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                height: 'calc(100vh - 180px)',
+                minHeight: 500,
+                pb: 2
+            }}
+        >
+            {/* Compact Header Row */}
+            <Box
                 sx={{
-                    p: 1.5,
-                    mb: 4,
-                    borderRadius: '12px', // Explicit 12px
-                    bgcolor: 'rgba(241, 245, 249, 0.6)',
-                    backdropFilter: 'blur(12px)',
-                    border: '1px solid',
-                    borderColor: 'rgba(15, 23, 42, 0.06)',
                     display: 'flex',
-                    alignItems: 'center'
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    mb: 1.5,
+                    gap: 2,
+                    flexWrap: 'wrap'
                 }}
             >
-                <TextField
-                    fullWidth
-                    placeholder={`Search ${contentType === 'orgs' ? 'organizations' : 'people'} by name, location, or expertise...`}
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    InputProps={{
-                        startAdornment: <InputAdornment position="start"><SearchIcon color="primary" sx={{ opacity: 0.7 }} /></InputAdornment>,
-                        disableUnderline: true,
-                        sx: { fontSize: '1rem' }
+                <Typography
+                    variant="h5"
+                    component="h1"
+                    sx={{ fontWeight: 800, color: 'primary.main', whiteSpace: 'nowrap' }}
+                >
+                    Network Explorer
+                </Typography>
+
+                <Paper
+                    elevation={0}
+                    sx={{
+                        px: 1.5,
+                        py: 0.5,
+                        borderRadius: '10px',
+                        bgcolor: 'rgba(241, 245, 249, 0.8)',
+                        border: '1px solid rgba(15, 23, 42, 0.06)',
+                        width: 280,
+                        flexShrink: 0
                     }}
-                    variant="standard"
-                />
+                >
+                    <TextField
+                        fullWidth
+                        placeholder="Search organizations..."
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        size="small"
+                        InputProps={{
+                            startAdornment: <InputAdornment position="start"><SearchIcon sx={{ opacity: 0.5, fontSize: 18 }} /></InputAdornment>,
+                            disableUnderline: true,
+                            sx: { fontSize: '0.85rem' }
+                        }}
+                        variant="standard"
+                    />
+                </Paper>
+            </Box>
+
+            {/* Compact Controls Bar */}
+            <Paper
+                elevation={0}
+                sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 2,
+                    px: 2,
+                    py: 0.75,
+                    mb: 1.5,
+                    borderRadius: '12px',
+                    bgcolor: 'rgba(241, 245, 249, 0.6)',
+                    border: '1px solid rgba(15, 23, 42, 0.04)',
+                    flexWrap: 'wrap'
+                }}
+            >
+                {/* View Type Selector */}
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                    <Typography variant="body2" fontWeight={600} color="text.secondary" sx={{ fontSize: '0.8rem', whiteSpace: 'nowrap' }}>
+                        View:
+                    </Typography>
+                    <ToggleButtonGroup
+                        value={viewType}
+                        exclusive
+                        onChange={(e, v) => v && setViewType(v)}
+                        size="small"
+                        sx={{
+                            '& .MuiToggleButton-root': {
+                                border: 'none',
+                                borderRadius: '8px !important',
+                                px: 1,
+                                py: 0.25,
+                                fontSize: '0.7rem',
+                                textTransform: 'none',
+                                color: 'text.secondary',
+                                '&.Mui-selected': { bgcolor: 'secondary.main', color: 'white', '&:hover': { bgcolor: 'secondary.dark' } },
+                                '&:hover': { bgcolor: 'rgba(0,0,0,0.04)' }
+                            }
+                        }}
+                    >
+                        {VIEW_OPTIONS.map(({ value, label, icon: Icon }) => (
+                            <ToggleButton key={value} value={value}>
+                                <Icon sx={{ mr: 0.5, fontSize: 14 }} />
+                                {label}
+                            </ToggleButton>
+                        ))}
+                    </ToggleButtonGroup>
+                </Box>
+
+                {/* Divider */}
+                <Box sx={{ width: 1, height: 20, bgcolor: 'divider' }} />
+
+                {/* Group By Selector */}
+                <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                    <Typography variant="body2" fontWeight={600} color="text.secondary" sx={{ fontSize: '0.8rem', whiteSpace: 'nowrap' }}>
+                        Group:
+                    </Typography>
+                    <ToggleButtonGroup
+                        value={groupBy}
+                        exclusive
+                        onChange={(e, v) => { if (v) { setGroupBy(v); setSelectedTag(null); } }}
+                        size="small"
+                        sx={{
+                            '& .MuiToggleButton-root': {
+                                border: 'none',
+                                borderRadius: '8px !important',
+                                px: 1,
+                                py: 0.25,
+                                fontSize: '0.7rem',
+                                textTransform: 'none',
+                                color: 'text.secondary',
+                                '&.Mui-selected': { bgcolor: 'primary.main', color: 'white', '&:hover': { bgcolor: 'primary.dark' } },
+                                '&:hover': { bgcolor: 'rgba(0,0,0,0.04)' }
+                            }
+                        }}
+                    >
+                        {GROUPING_OPTIONS.map(({ value, label, icon: Icon }) => (
+                            <ToggleButton key={value} value={value}>
+                                <Icon sx={{ mr: 0.5, fontSize: 14 }} />
+                                {label}
+                            </ToggleButton>
+                        ))}
+                    </ToggleButtonGroup>
+                </Box>
+
+                {/* Divider */}
+                <Box sx={{ width: 1, height: 20, bgcolor: 'divider' }} />
+
+                {/* Tag filter chips */}
+                {groupBy === 'tags' && (
+                    <Stack direction="row" spacing={0.5} sx={{ flexWrap: 'wrap', gap: 0.5, alignItems: 'center' }}>
+                        <Chip label="All" size="small" variant={!selectedTag ? 'filled' : 'outlined'} color={!selectedTag ? 'primary' : 'default'} onClick={() => setSelectedTag(null)} sx={{ height: 22, fontSize: '0.7rem' }} />
+                        {allTags.slice(0, 6).map(tag => (
+                            <Chip key={tag} label={tag.length > 10 ? tag.slice(0, 8) + '…' : tag} size="small" variant={selectedTag === tag ? 'filled' : 'outlined'} color={selectedTag === tag ? 'primary' : 'default'} onClick={() => setSelectedTag(tag)} sx={{ height: 22, fontSize: '0.7rem' }} />
+                        ))}
+                        {allTags.length > 6 && <Typography variant="caption" color="text.secondary" sx={{ fontSize: '0.65rem' }}>+{allTags.length - 6}</Typography>}
+                    </Stack>
+                )}
+
+                {/* Stats */}
+                <Typography variant="caption" color="text.secondary" sx={{ ml: 'auto', fontSize: '0.7rem', whiteSpace: 'nowrap' }}>
+                    {organizations.length} orgs
+                </Typography>
             </Paper>
 
-            {searchQuery && (
-                <Typography variant="body2" color="text.secondary" sx={{ mb: 2, display: 'block' }}>
-                    Found <strong>{contentType === 'orgs' ? filteredOrganizations.length : filteredPeople.length}</strong> results matching "{searchQuery}"
-                </Typography>
-            )}
-
+            {/* Visualization Canvas */}
             <Box sx={{ flexGrow: 1, minHeight: 0 }}>
-                {view === 'map' && contentType === 'orgs' ? (
-                    <Paper elevation={0} sx={{ height: '100%', borderRadius: 4, overflow: 'hidden', border: '1px solid', borderColor: 'divider' }}>
-                        <NetworkMap onNodeClick={setSelectedNode} organizations={organizations} />
-                    </Paper>
-                ) : (
-                    <Box sx={{ pb: 4 }}>
-                        {contentType === 'orgs' ? (
-                            <LazyList
-                                items={filteredOrganizations}
-                                renderItem={renderOrgCard}
-                                batchSize={24}
-                                emptyMessage={`No organizations found matching "${searchQuery}"`}
-                                loadingMessage="Loading more organizations..."
-                            />
-                        ) : (
-                            <LazyList
-                                items={filteredPeople}
-                                renderItem={renderMemberCard}
-                                batchSize={30}
-                                emptyMessage={`No people found matching "${searchQuery}"`}
-                                loadingMessage="Loading more people..."
-                            />
-                        )}
-                    </Box>
-                )}
+                <Paper elevation={0} sx={{ height: '100%', borderRadius: 3, overflow: 'hidden', border: '1px solid', borderColor: 'divider' }}>
+                    <NetworkMap
+                        onNodeClick={setSelectedNode}
+                        organizations={organizations}
+                        users={users}
+                        associations={associations}
+                        searchQuery={searchQuery}
+                        groupBy={groupBy}
+                        selectedTag={selectedTag}
+                        viewType={viewType}
+                    />
+                </Paper>
             </Box>
 
             {selectedNode && <OrgProfileModal node={selectedNode} onClose={() => setSelectedNode(null)} />}
