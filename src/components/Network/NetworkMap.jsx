@@ -22,7 +22,6 @@ const NetworkMap = ({
     const [hoveredNode, setHoveredNode] = useState(null);
     const zoomRef = useRef();
     const gRef = useRef();
-    const simulationRef = useRef();
 
     // Filter organizations
     const filteredOrganizations = useMemo(() => {
@@ -186,60 +185,8 @@ const NetworkMap = ({
             .text(d => { const w = d.x1 - d.x0; if (w < 40) return ''; const n = d.data.name; const maxC = Math.floor(w / 6); return n.length > maxC ? n.slice(0, maxC - 1) + '…' : n; });
     }, [hierarchyData, colorScale, onNodeClick]);
 
-    // Render Force view
-    const renderForceView = useCallback((g, width, height) => {
-        // Stop existing simulation
-        if (simulationRef.current) simulationRef.current.stop();
-
-        const nodes = hierarchyData.flatOrgs.map(d => ({ ...d }));
-        const links = [];
-
-        // Create links between orgs in same group
-        const byGroup = {};
-        nodes.forEach(n => { if (!byGroup[n.groupName]) byGroup[n.groupName] = []; byGroup[n.groupName].push(n); });
-        Object.values(byGroup).forEach(group => {
-            for (let i = 0; i < Math.min(group.length - 1, 5); i++) {
-                links.push({ source: group[i].id, target: group[i + 1].id });
-            }
-        });
-
-        const simulation = d3.forceSimulation(nodes)
-            .force('link', d3.forceLink(links).id(d => d.id).distance(40).strength(0.3))
-            .force('charge', d3.forceManyBody().strength(-80))
-            .force('center', d3.forceCenter(0, 0))
-            .force('collision', d3.forceCollide().radius(d => d.radius + 2));
-        simulationRef.current = simulation;
-
-        // Clear and redraw
-        g.selectAll('*').remove();
-
-        const link = g.append('g').selectAll('line').data(links).join('line')
-            .attr('stroke', '#e2e8f0').attr('stroke-width', 1).attr('stroke-opacity', 0.5);
-
-        const node = g.append('g').selectAll('g').data(nodes).join('g').attr('class', 'node')
-            .style('cursor', 'pointer')
-            .call(d3.drag()
-                .on('start', (e, d) => { if (!e.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
-                .on('drag', (e, d) => { d.fx = e.x; d.fy = e.y; })
-                .on('end', (e, d) => { if (!e.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; }));
-
-        node.append('circle')
-            .attr('r', d => d.radius)
-            .attr('fill', d => colorScale(d.groupName))
-            .attr('stroke', '#fff').attr('stroke-width', 1.5)
-            .on('mouseover', (e, d) => setHoveredNode(d))
-            .on('mouseout', () => setHoveredNode(null))
-            .on('click', (e, d) => { const org = hierarchyData.orgMap.get(d.id); if (org && onNodeClick) onNodeClick({ ...org, group: 'org' }); });
-
-        node.append('text').attr('text-anchor', 'middle').attr('dy', d => d.radius + 10)
-            .attr('font-size', '8px').attr('fill', '#64748b').style('pointer-events', 'none')
-            .text(d => d.name.length > 10 ? d.name.slice(0, 8) + '…' : d.name);
-
-        simulation.on('tick', () => {
-            link.attr('x1', d => d.source.x).attr('y1', d => d.source.y).attr('x2', d => d.target.x).attr('y2', d => d.target.y);
-            node.attr('transform', d => `translate(${d.x}, ${d.y})`);
-        });
-    }, [hierarchyData, colorScale, onNodeClick]);
+    // Track previous view to detect changes
+    const prevViewRef = useRef(viewType);
 
     // Main render effect
     useEffect(() => {
@@ -262,20 +209,17 @@ const NetworkMap = ({
         if (g.empty()) g = svg.append('g').attr('class', 'main-group').attr('transform', `translate(${centerX}, ${centerY})`);
         gRef.current = g;
 
-        // Clear for view change
-        if (viewType === 'force') {
+        // Clear SVG content when view type changes
+        if (prevViewRef.current !== viewType) {
             g.selectAll('*').remove();
+            prevViewRef.current = viewType;
         }
 
         // Render based on view type
         if (viewType === 'pack') renderPackView(g, width, height);
         else if (viewType === 'treemap') renderTreemapView(g, width, height);
-        else if (viewType === 'force') renderForceView(g, width, height);
 
-    }, [dimensions, hierarchyData, viewType, renderPackView, renderTreemapView, renderForceView]);
-
-    // Cleanup simulation on unmount
-    useEffect(() => { return () => { if (simulationRef.current) simulationRef.current.stop(); }; }, []);
+    }, [dimensions, hierarchyData, viewType, renderPackView, renderTreemapView]);
 
     const handleZoomIn = () => { d3.select(svgRef.current).transition().duration(300).call(zoomRef.current.scaleBy, 1.5, [dimensions.width / 2, dimensions.height / 2]); };
     const handleZoomOut = () => { d3.select(svgRef.current).transition().duration(300).call(zoomRef.current.scaleBy, 0.67, [dimensions.width / 2, dimensions.height / 2]); };
