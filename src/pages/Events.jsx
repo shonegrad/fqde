@@ -15,15 +15,21 @@ import {
     Stack,
     Chip,
     InputBase,
-    IconButton
+    IconButton,
+    ToggleButtonGroup,
+    ToggleButton
 } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import ClearIcon from '@mui/icons-material/Clear';
+import ViewListIcon from '@mui/icons-material/ViewList';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import EventCalendar from '../components/Events/EventCalendar';
 
 const Events = () => {
     const { events, dataLoading } = useApp();
     const [searchQuery, setSearchQuery] = useState('');
     const [cityFilter, setCityFilter] = useState('all');
+    const [viewMode, setViewMode] = useState('list');
 
     const cities = useMemo(() => {
         if (!events) return [];
@@ -72,11 +78,27 @@ const Events = () => {
 
     return (
         <Container maxWidth="lg">
-            <Box sx={{ mb: 4 }}>
-                <Typography variant="h4" component="h1" gutterBottom>Events</Typography>
-                <Typography variant="body1" color="text.secondary">
-                    {events?.length || 0} events across Quebec • {upcomingCount} upcoming
-                </Typography>
+            <Box sx={{ mb: 4, display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 2 }}>
+                <Box>
+                    <Typography variant="h4" component="h1" gutterBottom>Events</Typography>
+                    <Typography variant="body1" color="text.secondary">
+                        {events?.length || 0} events across Quebec • {upcomingCount} upcoming
+                    </Typography>
+                </Box>
+                <ToggleButtonGroup
+                    value={viewMode}
+                    exclusive
+                    onChange={(e, newView) => { if (newView) setViewMode(newView); }}
+                    aria-label="view mode"
+                    size="small"
+                >
+                    <ToggleButton value="list" aria-label="list view">
+                        <ViewListIcon fontSize="small" />
+                    </ToggleButton>
+                    <ToggleButton value="calendar" aria-label="calendar view">
+                        <CalendarMonthIcon fontSize="small" />
+                    </ToggleButton>
+                </ToggleButtonGroup>
             </Box>
 
             <Box
@@ -134,15 +156,19 @@ const Events = () => {
                 </Box>
             )}
 
-            <LazyList
-                items={filteredEvents}
-                renderItem={renderEventCard}
-                batchSize={12}
-                gridColumns={{ xs: 12, md: 6, lg: 6 }}
-                gridSpacing={3}
-                emptyMessage="No events found matching your criteria."
-                loadingMessage="Loading more events..."
-            />
+            {viewMode === 'list' ? (
+                <LazyList
+                    items={filteredEvents}
+                    renderItem={renderEventCard}
+                    batchSize={12}
+                    gridColumns={{ xs: 12, md: 6, lg: 6 }}
+                    gridSpacing={3}
+                    emptyMessage="No events found matching your criteria."
+                    loadingMessage="Loading more events..."
+                />
+            ) : (
+                <EventCalendar events={filteredEvents} />
+            )}
         </Container>
     );
 };
