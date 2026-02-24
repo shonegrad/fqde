@@ -1,6 +1,7 @@
 import React from 'react';
 import { useApp } from '../../context/AppContext';
-import { Card, CardContent, Typography, IconButton, Chip, Box, Stack, Avatar } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
+import { Card, CardContent, CardActionArea, Typography, IconButton, Chip, Box, Stack, Avatar } from '@mui/material';
 import ArticleIcon from '@mui/icons-material/Article';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
@@ -14,6 +15,7 @@ import BookmarkIcon from '@mui/icons-material/Bookmark';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 
 const ResourceCard = ({ resource }) => {
+    const navigate = useNavigate();
     const { savedResources, toggleSaveResource } = useApp();
     const isSaved = (savedResources || []).includes(resource.id);
     const visibility = resource.visibility || resource.access || 'Public';
@@ -44,38 +46,51 @@ const ResourceCard = ({ resource }) => {
 
     return (
         <Card variant="outlined" sx={{ height: '100%', display: 'flex', flexDirection: 'column', transition: 'all 0.2s', '&:hover': { borderColor: 'primary.main' } }}>
-            <CardContent sx={{ flexGrow: 1, display: 'flex', gap: 2, alignItems: 'flex-start' }}>
-                <Avatar sx={{ bgcolor: 'action.selected' }}>{getTypeIcon(resource.type)}</Avatar>
+            <CardActionArea
+                sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', alignItems: 'stretch' }}
+                onClick={() => navigate(`/resources/${resource.id}`)}
+            >
+                <CardContent sx={{ flexGrow: 1, display: 'flex', gap: 2, alignItems: 'flex-start' }}>
+                    <Avatar sx={{ bgcolor: 'action.selected' }}>{getTypeIcon(resource.type)}</Avatar>
 
-                <Box sx={{ flexGrow: 1, minWidth: 0 }}>
-                    <Stack direction="row" justifyContent="space-between" alignItems="flex-start">
-                        <Typography variant="h6" sx={{ mb: 1, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
-                            {resource.title}
-                        </Typography>
-                        <IconButton onClick={() => toggleSaveResource(resource.id)} color={isSaved ? "primary" : "default"} size="small">
-                            {isSaved ? <BookmarkIcon /> : <BookmarkBorderIcon />}
-                        </IconButton>
-                    </Stack>
-
-                    {resource.description && (
-                        <Typography variant="body2" color="text.secondary" sx={{ mb: 1, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
-                            {resource.description}
-                        </Typography>
-                    )}
-
-                    <Stack direction="row" spacing={1} alignItems="center" sx={{ mb: 1 }}>
-                        <Chip icon={getVisibilityIcon(visibility)} label={visibility} size="small" color={getVisibilityColor(visibility)} variant="outlined" />
-                        <Chip label={resource.type || 'DOC'} size="small" variant="outlined" />
-                    </Stack>
-
-                    {tags.length > 0 && (
-                        <Stack direction="row" spacing={0.5} flexWrap="wrap" useFlexGap>
-                            {tags.slice(0, 3).map(tag => <Chip key={tag} label={`#${tag}`} size="small" />)}
-                            {tags.length > 3 && <Chip label={`+${tags.length - 3}`} size="small" />}
+                    <Box sx={{ flexGrow: 1, minWidth: 0 }}>
+                        <Stack direction="row" justifyContent="space-between" alignItems="flex-start">
+                            <Typography variant="h6" sx={{ mb: 1, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                                {resource.title}
+                            </Typography>
+                            <IconButton
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    toggleSaveResource(resource.id);
+                                }}
+                                color={isSaved ? "primary" : "default"}
+                                size="small"
+                                sx={{ ml: 1 }}
+                            >
+                                {isSaved ? <BookmarkIcon /> : <BookmarkBorderIcon />}
+                            </IconButton>
                         </Stack>
-                    )}
-                </Box>
-            </CardContent>
+
+                        {resource.description && (
+                            <Typography variant="body2" color="text.secondary" sx={{ mb: 1, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                                {resource.description}
+                            </Typography>
+                        )}
+
+                        <Stack direction="row" spacing={1} alignItems="center" sx={{ mb: 1 }}>
+                            <Chip icon={getVisibilityIcon(visibility)} label={visibility} size="small" color={getVisibilityColor(visibility)} variant="outlined" />
+                            <Chip label={resource.type || 'DOC'} size="small" variant="outlined" />
+                        </Stack>
+
+                        {tags.length > 0 && (
+                            <Stack direction="row" spacing={0.5} flexWrap="wrap" useFlexGap>
+                                {tags.slice(0, 3).map(tag => <Chip key={tag} label={`#${tag}`} size="small" />)}
+                                {tags.length > 3 && <Chip label={`+${tags.length - 3}`} size="small" />}
+                            </Stack>
+                        )}
+                    </Box>
+                </CardContent>
+            </CardActionArea>
         </Card>
     );
 };

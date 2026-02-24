@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react';
-import { Link as RouterLink } from 'react-router-dom';
+import { Link as RouterLink, useNavigate } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
 import QuickActions from '../components/Home/QuickActions';
+import NetworkMap from '../components/Network/NetworkMap';
 import {
     Box,
     Container,
@@ -10,6 +11,7 @@ import {
     Card,
     CardContent,
     CardActions,
+    CardActionArea,
     Button,
     Chip,
     Divider,
@@ -33,6 +35,7 @@ const StatCard = ({ icon, value, label, color }) => (
 
 const Home = () => {
     const { currentUser, users, organizations, events, resources, dataLoading, dataLoaded } = useApp();
+    const navigate = useNavigate();
 
     const firstName = useMemo(() => {
         if (!currentUser) return 'Guest';
@@ -95,6 +98,23 @@ const Home = () => {
                         </Grid>
                     </Grid>
 
+                    {/* Network Overview */}
+                    <Card elevation={2} sx={{ mb: 3, borderRadius: 1 }}>
+                        <CardContent>
+                            <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{ mb: 2 }}>
+                                <Typography variant="h6">Network Landscape</Typography>
+                                <Button component={RouterLink} to="/network" size="small">Explore Network</Button>
+                            </Stack>
+                            <Box sx={{ height: 350, bgcolor: 'background.default', borderRadius: 1, p: 1, border: '1px solid', borderColor: 'divider' }}>
+                                <NetworkMap
+                                    organizations={organizations}
+                                    groupBy="region"
+                                    viewType="pack"
+                                />
+                            </Box>
+                        </CardContent>
+                    </Card>
+
                     {/* Upcoming Events */}
                     <Card elevation={2} sx={{ mb: 3, borderRadius: 1 }}>
                         <CardContent>
@@ -102,20 +122,26 @@ const Home = () => {
                                 <Typography variant="h6">Upcoming Events</Typography>
                                 <Button component={RouterLink} to="/events" size="small">View All</Button>
                             </Stack>
-                            <Stack spacing={2}>
+                            <Stack spacing={0}>
                                 {upcomingEvents.length > 0 ? upcomingEvents.map(event => (
-                                    <Box key={event.id} sx={{ display: 'flex', gap: 2, alignItems: 'flex-start' }}>
-                                        <Paper sx={{ bgcolor: 'primary.main', color: 'primary.contrastText', p: 1, textAlign: 'center', minWidth: 50, borderRadius: 1 }}>
-                                            <Typography variant="caption" display="block">
-                                                {new Date(event.startDateTime).toLocaleDateString('en-US', { month: 'short' })}
-                                            </Typography>
-                                            <Typography variant="h6">{new Date(event.startDateTime).getDate()}</Typography>
-                                        </Paper>
-                                        <Box>
-                                            <Typography variant="subtitle1" fontWeight={500}>{event.title}</Typography>
-                                            <Typography variant="body2" color="text.secondary">{event.city} • {event.locationName}</Typography>
+                                    <CardActionArea
+                                        key={event.id}
+                                        onClick={() => navigate(`/events/${event.id}`)}
+                                        sx={{ borderRadius: 1, p: 1 }}
+                                    >
+                                        <Box sx={{ display: 'flex', gap: 2, alignItems: 'flex-start' }}>
+                                            <Paper sx={{ bgcolor: 'primary.main', color: 'primary.contrastText', p: 1, textAlign: 'center', minWidth: 50, borderRadius: 1 }}>
+                                                <Typography variant="caption" display="block">
+                                                    {new Date(event.startDateTime).toLocaleDateString('en-US', { month: 'short' })}
+                                                </Typography>
+                                                <Typography variant="h6">{new Date(event.startDateTime).getDate()}</Typography>
+                                            </Paper>
+                                            <Box>
+                                                <Typography variant="subtitle1" fontWeight={500}>{event.title}</Typography>
+                                                <Typography variant="body2" color="text.secondary">{event.city} • {event.locationName}</Typography>
+                                            </Box>
                                         </Box>
-                                    </Box>
+                                    </CardActionArea>
                                 )) : (
                                     <Typography variant="body2" color="text.secondary">No upcoming events</Typography>
                                 )}
@@ -130,17 +156,23 @@ const Home = () => {
                                 <Typography variant="h6">Recent Resources</Typography>
                                 <Button component={RouterLink} to="/resources" size="small">View All</Button>
                             </Stack>
-                            <Stack spacing={1} divider={<Divider />}>
+                            <Stack spacing={0}>
                                 {recentResources.length > 0 ? recentResources.map(resource => (
-                                    <Box key={resource.id} sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', py: 1 }}>
-                                        <Box>
-                                            <Typography variant="body1">{resource.title}</Typography>
-                                            <Typography variant="caption" color="text.secondary">
-                                                {resource.type} • {resource.tags?.slice(0, 2).join(', ')}
-                                            </Typography>
+                                    <CardActionArea
+                                        key={resource.id}
+                                        onClick={() => navigate(`/resources/${resource.id}`)}
+                                        sx={{ borderRadius: 1, p: 1 }}
+                                    >
+                                        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                                            <Box>
+                                                <Typography variant="body1">{resource.title}</Typography>
+                                                <Typography variant="caption" color="text.secondary">
+                                                    {resource.type} • {resource.tags?.slice(0, 2).join(', ')}
+                                                </Typography>
+                                            </Box>
+                                            <Chip label={resource.type} size="small" variant="outlined" />
                                         </Box>
-                                        <Chip label={resource.type} size="small" variant="outlined" />
-                                    </Box>
+                                    </CardActionArea>
                                 )) : (
                                     <Typography variant="body2" color="text.secondary">No resources available</Typography>
                                 )}
