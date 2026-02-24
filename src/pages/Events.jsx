@@ -24,12 +24,14 @@ import ClearIcon from '@mui/icons-material/Clear';
 import ViewListIcon from '@mui/icons-material/ViewList';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import EventCalendar from '../components/Events/EventCalendar';
+import { useLocation } from 'react-router-dom';
 
 const Events = () => {
+    const location = useLocation();
     const { events, dataLoading } = useApp();
     const [searchQuery, setSearchQuery] = useState('');
     const [cityFilter, setCityFilter] = useState('all');
-    const [viewMode, setViewMode] = useState('list');
+    const [viewMode, setViewMode] = useState(location.state?.viewMode || 'list');
 
     const cities = useMemo(() => {
         if (!events) return [];
@@ -92,11 +94,11 @@ const Events = () => {
                     aria-label="view mode"
                     size="small"
                 >
-                    <ToggleButton value="list" aria-label="list view">
-                        <ViewListIcon fontSize="small" />
+                    <ToggleButton value="list" aria-label="list view" sx={{ px: 2 }}>
+                        <ViewListIcon fontSize="small" sx={{ mr: 1 }} /> List
                     </ToggleButton>
-                    <ToggleButton value="calendar" aria-label="calendar view">
-                        <CalendarMonthIcon fontSize="small" />
+                    <ToggleButton value="calendar" aria-label="calendar view" sx={{ px: 2 }}>
+                        <CalendarMonthIcon fontSize="small" sx={{ mr: 1 }} /> Calendar
                     </ToggleButton>
                 </ToggleButtonGroup>
             </Box>

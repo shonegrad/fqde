@@ -122,7 +122,14 @@ const Home = () => {
                         <CardContent>
                             <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{ mb: 2 }}>
                                 <Typography variant="h6">Upcoming Events</Typography>
-                                <Button component={RouterLink} to="/events" size="small">View All</Button>
+                                <Stack direction="row" spacing={1}>
+                                    <Button component={RouterLink} to="/events" state={{ viewMode: 'calendar' }} size="small" variant="outlined" startIcon={<EventIcon fontSize="small" />}>
+                                        Calendar
+                                    </Button>
+                                    <Button component={RouterLink} to="/events" size="small" variant="contained">
+                                        View All
+                                    </Button>
+                                </Stack>
                             </Stack>
                             <Grid container spacing={2}>
                                 {upcomingEvents.length > 0 ? upcomingEvents.map(event => (
