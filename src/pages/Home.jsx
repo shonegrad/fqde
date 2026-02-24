@@ -124,30 +124,38 @@ const Home = () => {
                                 <Typography variant="h6">Upcoming Events</Typography>
                                 <Button component={RouterLink} to="/events" size="small">View All</Button>
                             </Stack>
-                            <Stack spacing={0}>
+                            <Grid container spacing={2}>
                                 {upcomingEvents.length > 0 ? upcomingEvents.map(event => (
-                                    <CardActionArea
-                                        key={event.id}
-                                        onClick={() => navigate(`/events/${event.id}`)}
-                                        sx={{ borderRadius: 1, p: 1 }}
-                                    >
-                                        <Box sx={{ display: 'flex', gap: 2, alignItems: 'flex-start' }}>
-                                            <Paper sx={{ bgcolor: 'primary.main', color: 'primary.contrastText', p: 1, textAlign: 'center', minWidth: 50, borderRadius: 1 }}>
-                                                <Typography variant="caption" display="block">
-                                                    {new Date(event.startDateTime).toLocaleDateString('en-US', { month: 'short' })}
-                                                </Typography>
-                                                <Typography variant="h6">{new Date(event.startDateTime).getDate()}</Typography>
-                                            </Paper>
-                                            <Box>
-                                                <Typography variant="subtitle1" fontWeight={500}>{event.title}</Typography>
-                                                <Typography variant="body2" color="text.secondary">{event.city} • {event.locationName}</Typography>
+                                    <Grid size={{ xs: 12, md: 6 }} key={event.id}>
+                                        <CardActionArea
+                                            onClick={() => navigate(`/events/${event.id}`)}
+                                            sx={{ borderRadius: 1, p: 1, border: '1px solid', borderColor: 'divider', height: '100%' }}
+                                        >
+                                            <Box sx={{ display: 'flex', gap: 2, alignItems: 'center' }}>
+                                                <Paper elevation={0} sx={{ bgcolor: 'primary.main', color: 'primary.contrastText', p: 1, textAlign: 'center', minWidth: 60, borderRadius: 1, border: '1px solid', borderColor: 'primary.dark' }}>
+                                                    <Typography variant="caption" display="block" fontWeight={600} sx={{ textTransform: 'uppercase' }}>
+                                                        {new Date(event.startDateTime).toLocaleDateString('en-US', { month: 'short' })}
+                                                    </Typography>
+                                                    <Typography variant="h5" fontWeight={800}>
+                                                        {new Date(event.startDateTime).getDate()}
+                                                    </Typography>
+                                                </Paper>
+                                                <Box sx={{ flexGrow: 1 }}>
+                                                    <Typography variant="subtitle1" fontWeight={600}>{event.title}</Typography>
+                                                    <Typography variant="body2" color="text.secondary">
+                                                        {new Date(event.startDateTime).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' })} • {event.locationName}
+                                                    </Typography>
+                                                </Box>
+                                                <Chip label={event.type} size="small" variant="outlined" color="primary" sx={{ display: { xs: 'none', sm: 'inline-flex' } }} />
                                             </Box>
-                                        </Box>
-                                    </CardActionArea>
+                                        </CardActionArea>
+                                    </Grid>
                                 )) : (
-                                    <Typography variant="body2" color="text.secondary">No upcoming events</Typography>
+                                    <Grid size={12}>
+                                        <Typography variant="body2" color="text.secondary">No upcoming events</Typography>
+                                    </Grid>
                                 )}
-                            </Stack>
+                            </Grid>
                         </CardContent>
                     </Card>
 
@@ -158,27 +166,30 @@ const Home = () => {
                                 <Typography variant="h6">Recent Resources</Typography>
                                 <Button component={RouterLink} to="/resources" size="small">View All</Button>
                             </Stack>
-                            <Stack spacing={0}>
+                            <Grid container spacing={2}>
                                 {recentResources.length > 0 ? recentResources.map(resource => (
-                                    <CardActionArea
-                                        key={resource.id}
-                                        onClick={() => navigate(`/resources/${resource.id}`)}
-                                        sx={{ borderRadius: 1, p: 1 }}
-                                    >
-                                        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                                            <Box>
-                                                <Typography variant="body1">{resource.title}</Typography>
-                                                <Typography variant="caption" color="text.secondary">
-                                                    {resource.type} • {resource.tags?.slice(0, 2).join(', ')}
-                                                </Typography>
+                                    <Grid size={{ xs: 12, md: 6 }} key={resource.id}>
+                                        <CardActionArea
+                                            onClick={() => navigate(`/resources/${resource.id}`)}
+                                            sx={{ borderRadius: 1, p: 1.5, border: '1px solid', borderColor: 'divider', height: '100%' }}
+                                        >
+                                            <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                                                <Box>
+                                                    <Typography variant="subtitle1" fontWeight={600} sx={{ display: '-webkit-box', WebkitLineClamp: 1, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{resource.title}</Typography>
+                                                    <Typography variant="caption" color="text.secondary" display="block" sx={{ mt: 0.5 }}>
+                                                        Added {new Date(resource.createdAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })} • {resource.tags?.slice(0, 1).join(', ')}
+                                                    </Typography>
+                                                </Box>
+                                                <Chip label={resource.type} size="small" variant="filled" sx={{ bgcolor: 'action.hover', ml: 1 }} />
                                             </Box>
-                                            <Chip label={resource.type} size="small" variant="outlined" />
-                                        </Box>
-                                    </CardActionArea>
+                                        </CardActionArea>
+                                    </Grid>
                                 )) : (
-                                    <Typography variant="body2" color="text.secondary">No resources available</Typography>
+                                    <Grid size={12}>
+                                        <Typography variant="body2" color="text.secondary">No resources available</Typography>
+                                    </Grid>
                                 )}
-                            </Stack>
+                            </Grid>
                         </CardContent>
                     </Card>
                 </Grid>

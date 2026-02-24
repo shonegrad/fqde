@@ -1549,7 +1549,7 @@ export const EVENTS = [
   {
     "id": "evt16",
     "title": "Spring Leadership Workshop",
-    "dateRange": "Jan 4, 2026",
+    "dateRange": "Jun 4, 2026",
     "location": "San Francisco",
     "type": "Webinar",
     "description": "Join us for an immersive experience focusing on the latest trends in education.",
@@ -1558,8 +1558,8 @@ export const EVENTS = [
         "id": "s15_1",
         "eventId": "evt15",
         "title": "Opening Keynote",
-        "start": "2026-01-04T09:00",
-        "end": "2026-01-04T10:30",
+        "start": "2026-06-04T09:00",
+        "end": "2026-06-04T10:30",
         "track": "Main Stage"
       }
     ]
@@ -1567,7 +1567,7 @@ export const EVENTS = [
   {
     "id": "evt17",
     "title": "Fall Policy Retreat",
-    "dateRange": "Mar 7, 2026",
+    "dateRange": "Jul 7, 2026",
     "location": "Phoenix",
     "type": "Retreat",
     "description": "Join us for an immersive experience focusing on the latest trends in education.",
@@ -1576,8 +1576,8 @@ export const EVENTS = [
         "id": "s16_1",
         "eventId": "evt16",
         "title": "Opening Keynote",
-        "start": "2026-03-07T09:00",
-        "end": "2026-03-07T10:30",
+        "start": "2026-07-07T09:00",
+        "end": "2026-07-07T10:30",
         "track": "Main Stage"
       }
     ]
@@ -1649,31 +1649,31 @@ export const RESOURCES = [
 ];
 
 export const FEED_ITEMS = [
-    { id: 'f1', type: 'announcement', title: 'Welcome to the new Network Portal', date: '2 hours ago', author: 'System' },
-    { id: 'f2', type: 'resource', title: 'New Resource Added: AI Policy Draft', date: '5 hours ago', resourceId: 'r4' },
-    { id: 'f3', type: 'event', title: 'Registration open for Spring Retreat', date: '1 day ago', eventId: 'evt2' },
-    { id: 'f4', type: 'member', title: 'Dr. Sarah Chen updated her profile', date: '2 days ago', memberId: 'u1' },
-    { id: 'f5', type: 'organization', title: 'National Educators Assoc. posted a new report', date: '3 days ago', orgId: 'org2' }
+  { id: 'f1', type: 'announcement', title: 'Welcome to the new Network Portal', date: '2 hours ago', author: 'System' },
+  { id: 'f2', type: 'resource', title: 'New Resource Added: AI Policy Draft', date: '5 hours ago', resourceId: 'r4' },
+  { id: 'f3', type: 'event', title: 'Registration open for Spring Retreat', date: '1 day ago', eventId: 'evt2' },
+  { id: 'f4', type: 'member', title: 'Dr. Sarah Chen updated her profile', date: '2 days ago', memberId: 'u1' },
+  { id: 'f5', type: 'organization', title: 'National Educators Assoc. posted a new report', date: '3 days ago', orgId: 'org2' }
 ];
 
 // Graph Nodes/Links
 export const GRAPH_DATA = {
-    nodes: [
-        ...ORGANIZATIONS.map(o => ({ id: o.id, name: o.name, group: 'org', val: 10 + (Math.random() * 10) })),
-        ...USERS.map(u => ({ id: u.id, name: u.name, group: 'person', val: 5 }))
-    ],
-    links: [
-        // User to their Org
-        ...USERS.map(u => ({ source: u.id, target: u.institutionId })),
-        // Random inter-org connections (partnerships)
-        ...ORGANIZATIONS.map(o => {
-            const potentialPartner = ORGANIZATIONS[Math.floor(Math.random() * ORGANIZATIONS.length)];
-            if (potentialPartner.id !== o.id && Math.random() > 0.7) {
-                return { source: o.id, target: potentialPartner.id };
-            }
-            return null;
-        }).filter(l => l !== null),
-        // Random cross-disciplinary connections (users connected to other orgs or events - simplified here)
-    ]
+  nodes: [
+    ...ORGANIZATIONS.map(o => ({ id: o.id, name: o.name, group: 'org', val: 10 + (Math.random() * 10) })),
+    ...USERS.map(u => ({ id: u.id, name: u.name, group: 'person', val: 5 }))
+  ],
+  links: [
+    // User to their Org
+    ...USERS.map(u => ({ source: u.id, target: u.institutionId })),
+    // Random inter-org connections (partnerships)
+    ...ORGANIZATIONS.map(o => {
+      const potentialPartner = ORGANIZATIONS[Math.floor(Math.random() * ORGANIZATIONS.length)];
+      if (potentialPartner.id !== o.id && Math.random() > 0.7) {
+        return { source: o.id, target: potentialPartner.id };
+      }
+      return null;
+    }).filter(l => l !== null),
+    // Random cross-disciplinary connections (users connected to other orgs or events - simplified here)
+  ]
 };
 

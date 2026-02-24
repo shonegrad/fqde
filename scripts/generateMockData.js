@@ -453,7 +453,10 @@ function generateEvents(count, organizations, associations) {
 
         // Event duration: 1-3 days
         const durationDays = rng.nextInt(1, 3);
-        const startDate = new Date(2025, rng.nextInt(0, 11), rng.nextInt(1, 28), 9, 0, 0);
+        const currentYear = new Date().getFullYear();
+        // Generate events between current year and 2 years from now to ensure upcoming events
+        const eventYear = currentYear + rng.nextInt(0, 2);
+        const startDate = new Date(eventYear, rng.nextInt(0, 11), rng.nextInt(1, 28), 9, 0, 0);
         const endDate = new Date(startDate);
         endDate.setDate(endDate.getDate() + durationDays - 1);
         endDate.setHours(17, 0, 0);
