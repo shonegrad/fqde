@@ -8,7 +8,6 @@ import CenterFocusStrongIcon from '@mui/icons-material/CenterFocusStrong';
 const NetworkMap = ({
     onNodeClick,
     organizations = [],
-    users = [],
     associations = [],
     memberships = [],
     searchQuery = '',
@@ -119,17 +118,31 @@ const NetworkMap = ({
 
         d3.pack().size([radius * 2, radius * 2]).padding(d => d.depth === 0 ? 30 : d.depth === 1 ? 15 : 6)(root);
 
-        const nodes = g.selectAll('g.node').data(root.descendants(), d => d.data.id || d.data.name);
-        nodes.exit().transition().duration(400).style('opacity', 0).remove();
+        let bubblesGroup = g.select('g.bubbles');
+        if (bubblesGroup.empty()) bubblesGroup = g.append('g').attr('class', 'bubbles');
 
-        const enter = nodes.enter().append('g').attr('class', 'node').style('opacity', 0).attr('transform', 'translate(0,0)');
-        enter.append('circle');
-        enter.append('text').attr('class', 'label');
+        let labelsGroup = g.select('g.labels');
+        if (labelsGroup.empty()) labelsGroup = g.append('g').attr('class', 'labels');
 
-        const all = enter.merge(nodes);
-        all.transition().duration(600).ease(d3.easeCubicInOut).style('opacity', 1).attr('transform', d => `translate(${d.x - radius}, ${d.y - radius})`);
+        const descendants = root.descendants();
 
-        all.select('circle')
+        // 1) Render Bubbles
+        const circles = bubblesGroup.selectAll('g.node-circle').data(descendants, d => d.data.id || d.data.name);
+        circles.exit().transition().duration(400).style('opacity', 0).remove();
+
+        const enterCircles = circles.enter()
+            .append('g').attr('class', 'node-circle')
+            .style('opacity', 0)
+            .attr('transform', 'translate(0,0)');
+
+        enterCircles.append('circle');
+
+        const allCircles = enterCircles.merge(circles);
+        allCircles.transition().duration(600).ease(d3.easeCubicInOut)
+            .style('opacity', 1)
+            .attr('transform', d => `translate(${d.x - radius}, ${d.y - radius})`);
+
+        allCircles.select('circle')
             .on('mouseover', (e, d) => { if (d.data.type !== 'root') setHoveredNode(d.data); })
             .on('mouseout', () => setHoveredNode(null))
             .on('click', (e, d) => { if (d.data.type === 'org') { const org = hierarchyData.orgMap.get(d.data.id); if (org && onNodeClick) onNodeClick({ ...org, group: 'org' }); } })
@@ -141,7 +154,23 @@ const NetworkMap = ({
             .attr('stroke', d => d.data.type === 'root' ? 'none' : d.data.type === 'group' ? colorScale(d.data.name) : '#fff')
             .attr('stroke-width', d => d.data.type === 'group' ? 2 : 1.5);
 
-        all.select('text.label')
+        // 2) Render Labels (on top)
+        const labels = labelsGroup.selectAll('g.node-label').data(descendants, d => d.data.id || d.data.name);
+        labels.exit().transition().duration(400).style('opacity', 0).remove();
+
+        const enterLabels = labels.enter()
+            .append('g').attr('class', 'node-label')
+            .style('opacity', 0)
+            .attr('transform', 'translate(0,0)');
+
+        enterLabels.append('text').attr('class', 'label');
+
+        const allLabels = enterLabels.merge(labels);
+        allLabels.transition().duration(600).ease(d3.easeCubicInOut)
+            .style('opacity', 1)
+            .attr('transform', d => `translate(${d.x - radius}, ${d.y - radius})`);
+
+        allLabels.select('text.label')
             .attr('text-anchor', 'middle')
             .attr('font-weight', 600)
             .style('font-family', theme.typography.fontFamily)

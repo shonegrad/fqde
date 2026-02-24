@@ -61,9 +61,9 @@ const getTheme = (mode = 'dark') => {
     return createTheme({
         palette,
         typography: {
-            fontFamily: '"Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+            fontFamily: '"Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
             h1: {
-                fontFamily: '"Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                fontFamily: '"Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                 fontWeight: 800,
                 fontSize: '4rem',
                 lineHeight: 1.1,
@@ -71,7 +71,7 @@ const getTheme = (mode = 'dark') => {
                 color: isDark ? '#f8fafc' : '#0f172a',
             },
             h2: {
-                fontFamily: '"Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                fontFamily: '"Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                 fontWeight: 800,
                 fontSize: '3rem',
                 lineHeight: 1.2,
@@ -79,7 +79,7 @@ const getTheme = (mode = 'dark') => {
                 color: isDark ? '#f8fafc' : '#0f172a',
             },
             h3: {
-                fontFamily: '"Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                fontFamily: '"Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                 fontWeight: 700,
                 fontSize: '2.25rem',
                 lineHeight: 1.25,
@@ -87,7 +87,7 @@ const getTheme = (mode = 'dark') => {
                 color: isDark ? '#f8fafc' : '#0f172a',
             },
             h4: {
-                fontFamily: '"Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                fontFamily: '"Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                 fontWeight: 700,
                 fontSize: '1.75rem',
                 lineHeight: 1.3,
@@ -95,14 +95,14 @@ const getTheme = (mode = 'dark') => {
                 color: isDark ? '#f1f5f9' : '#0f172a',
             },
             h5: {
-                fontFamily: '"Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                fontFamily: '"Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                 fontWeight: 600,
                 fontSize: '1.5rem',
                 lineHeight: 1.35,
                 color: isDark ? '#f1f5f9' : '#0f172a',
             },
             h6: {
-                fontFamily: '"Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                fontFamily: '"Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                 fontWeight: 600,
                 fontSize: '1.25rem',
                 lineHeight: 1.4,
