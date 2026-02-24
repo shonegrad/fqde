@@ -1,839 +1,831 @@
 [
   {
     "id": "evt1",
-    "title": "Collaborative Learning Symposium",
-    "description": "Join us for an engaging symposium focused on Collaborative Learning and educational excellence.",
-    "startDateTime": "2025-03-01T14:00:00.000Z",
-    "endDateTime": "2025-03-02T22:00:00.000Z",
-    "locationName": "Gatineau Convention Center",
-    "address": "559 Main Boulevard",
-    "city": "Gatineau",
-    "region": "Outaouais",
-    "organizerOrgId": "org79",
-    "associationId": "assoc11",
+    "title": "Social-Emotional Learning Summit",
+    "description": "Join us for an engaging summit focused on Social-Emotional Learning and educational excellence.",
+    "startDateTime": "2027-11-12T14:00:00.000Z",
+    "endDateTime": "2027-11-14T22:00:00.000Z",
+    "locationName": "Laval Convention Center",
+    "address": "250 Main Boulevard",
+    "city": "Laval",
+    "region": "Laval",
+    "organizerOrgId": "org231",
+    "associationId": null,
     "tags": [
-      "Game-Based Learning",
-      "French Language",
-      "ESL/ELL",
-      "Curriculum Development"
+      "EdTech",
+      "Bilingual Education",
+      "Coding & Robotics"
     ],
-    "registrationEnabled": true
+    "registrationEnabled": false
   },
   {
     "id": "evt2",
-    "title": "EdTech Workshop",
-    "description": "Join us for an engaging workshop focused on EdTech and educational excellence.",
-    "startDateTime": "2025-03-07T14:00:00.000Z",
-    "endDateTime": "2025-03-09T21:00:00.000Z",
-    "locationName": "Laval Convention Center",
-    "address": "316 Main Boulevard",
-    "city": "Laval",
-    "region": "Laval",
-    "organizerOrgId": "org179",
-    "associationId": null,
-    "tags": [
-      "Coding & Robotics",
-      "Mathematics",
-      "LMS Integration",
-      "School Finance"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt3",
-    "title": "Community Engagement Summit",
-    "description": "Join us for an engaging summit focused on Community Engagement and educational excellence.",
-    "startDateTime": "2025-11-19T14:00:00.000Z",
-    "endDateTime": "2025-11-19T22:00:00.000Z",
-    "locationName": "Saint-Jérôme Convention Center",
-    "address": "161 Main Boulevard",
-    "city": "Saint-Jérôme",
-    "region": "Laurentides",
-    "organizerOrgId": "org26",
+    "title": "Secondary Symposium",
+    "description": "Join us for an engaging symposium focused on Secondary and educational excellence.",
+    "startDateTime": "2026-08-19T13:00:00.000Z",
+    "endDateTime": "2026-08-21T21:00:00.000Z",
+    "locationName": "Montréal Convention Center",
+    "address": "910 Main Boulevard",
+    "city": "Montréal",
+    "region": "Montréal",
+    "organizerOrgId": "org178",
     "associationId": "assoc13",
     "tags": [
-      "Indigenous Education",
-      "History",
-      "Special Education",
-      "Literacy"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt4",
-    "title": "History Workshop",
-    "description": "Join us for an engaging workshop focused on History and educational excellence.",
-    "startDateTime": "2025-12-28T14:00:00.000Z",
-    "endDateTime": "2025-12-30T22:00:00.000Z",
-    "locationName": "Québec Convention Center",
-    "address": "498 Main Boulevard",
-    "city": "Québec",
-    "region": "Capitale-Nationale",
-    "organizerOrgId": "org92",
-    "associationId": null,
-    "tags": [
-      "Gifted Education",
-      "English Language",
-      "Experiential Learning"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt5",
-    "title": "Mathematics Summit",
-    "description": "Join us for an engaging summit focused on Mathematics and educational excellence.",
-    "startDateTime": "2025-10-16T13:00:00.000Z",
-    "endDateTime": "2025-10-17T21:00:00.000Z",
-    "locationName": "Saguenay Convention Center",
-    "address": "174 Main Boulevard",
-    "city": "Saguenay",
-    "region": "Saguenay–Lac-Saint-Jean",
-    "organizerOrgId": "org277",
-    "associationId": null,
-    "tags": [
-      "Accessibility",
-      "Experiential Learning",
-      "English Language",
+      "Community Engagement",
+      "Coding & Robotics",
       "Assessment & Evaluation"
     ],
     "registrationEnabled": true
   },
   {
-    "id": "evt6",
-    "title": "Environmental Education Summit",
-    "description": "Join us for an engaging summit focused on Environmental Education and educational excellence.",
-    "startDateTime": "2025-11-24T14:00:00.000Z",
-    "endDateTime": "2025-11-24T22:00:00.000Z",
-    "locationName": "Saint-Jérôme Convention Center",
-    "address": "273 Main Boulevard",
-    "city": "Saint-Jérôme",
-    "region": "Laurentides",
-    "organizerOrgId": "org121",
+    "id": "evt3",
+    "title": "Equity & Inclusion Forum",
+    "description": "Join us for an engaging forum focused on Equity & Inclusion and educational excellence.",
+    "startDateTime": "2027-08-22T13:00:00.000Z",
+    "endDateTime": "2027-08-24T21:00:00.000Z",
+    "locationName": "Saguenay Convention Center",
+    "address": "343 Main Boulevard",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org186",
     "associationId": null,
     "tags": [
-      "EdTech",
-      "Early Childhood",
-      "Blended Learning",
-      "French Language"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt7",
-    "title": "Accessibility Training",
-    "description": "Join us for an engaging training focused on Accessibility and educational excellence.",
-    "startDateTime": "2025-03-24T13:00:00.000Z",
-    "endDateTime": "2025-03-26T21:00:00.000Z",
-    "locationName": "Québec Convention Center",
-    "address": "835 Main Boulevard",
-    "city": "Québec",
-    "region": "Capitale-Nationale",
-    "organizerOrgId": "org220",
-    "associationId": null,
-    "tags": [
-      "Secondary",
-      "Social-Emotional Learning",
-      "Indigenous Education"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt8",
-    "title": "School Safety Training",
-    "description": "Join us for an engaging training focused on School Safety and educational excellence.",
-    "startDateTime": "2025-11-18T14:00:00.000Z",
-    "endDateTime": "2025-11-19T22:00:00.000Z",
-    "locationName": "Laval Convention Center",
-    "address": "763 Main Boulevard",
-    "city": "Laval",
-    "region": "Laval",
-    "organizerOrgId": "org146",
-    "associationId": "assoc20",
-    "tags": [
-      "Bilingual Education",
-      "Social-Emotional Learning"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt9",
-    "title": "Global Citizenship Workshop",
-    "description": "Join us for an engaging workshop focused on Global Citizenship and educational excellence.",
-    "startDateTime": "2025-02-14T14:00:00.000Z",
-    "endDateTime": "2025-02-14T22:00:00.000Z",
-    "locationName": "Laval Convention Center",
-    "address": "112 Main Boulevard",
-    "city": "Laval",
-    "region": "Laval",
-    "organizerOrgId": "org267",
-    "associationId": null,
-    "tags": [
+      "Mathematics",
+      "Elementary",
       "Physical Education",
-      "Assessment & Evaluation",
-      "Rural Education",
-      "Vocational Training"
+      "Coding & Robotics"
     ],
     "registrationEnabled": true
   },
   {
-    "id": "evt10",
-    "title": "Community Engagement Workshop",
-    "description": "Join us for an engaging workshop focused on Community Engagement and educational excellence.",
-    "startDateTime": "2025-03-16T13:00:00.000Z",
-    "endDateTime": "2025-03-18T21:00:00.000Z",
-    "locationName": "Longueuil Convention Center",
-    "address": "998 Main Boulevard",
-    "city": "Longueuil",
-    "region": "Montérégie",
-    "organizerOrgId": "org210",
-    "associationId": "assoc11",
+    "id": "evt4",
+    "title": "Professional Development Training",
+    "description": "Join us for an engaging training focused on Professional Development and educational excellence.",
+    "startDateTime": "2027-12-16T14:00:00.000Z",
+    "endDateTime": "2027-12-17T22:00:00.000Z",
+    "locationName": "Rimouski Convention Center",
+    "address": "832 Main Boulevard",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "organizerOrgId": "org162",
+    "associationId": null,
     "tags": [
-      "Coding & Robotics",
-      "Environmental Education",
-      "Social-Emotional Learning",
+      "Accessibility",
+      "Literacy",
+      "Leadership"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt5",
+    "title": "Differentiated Instruction Training",
+    "description": "Join us for an engaging training focused on Differentiated Instruction and educational excellence.",
+    "startDateTime": "2026-05-16T13:00:00.000Z",
+    "endDateTime": "2026-05-16T21:00:00.000Z",
+    "locationName": "Montréal Convention Center",
+    "address": "989 Main Boulevard",
+    "city": "Montréal",
+    "region": "Montréal",
+    "organizerOrgId": "org133",
+    "associationId": "assoc1",
+    "tags": [
+      "Blended Learning",
+      "Leadership",
+      "Physical Education",
+      "Behavioral Support"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt6",
+    "title": "Differentiated Instruction Seminar",
+    "description": "Join us for an engaging seminar focused on Differentiated Instruction and educational excellence.",
+    "startDateTime": "2026-11-24T14:00:00.000Z",
+    "endDateTime": "2026-11-25T22:00:00.000Z",
+    "locationName": "Lévis Convention Center",
+    "address": "255 Main Boulevard",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "organizerOrgId": "org14",
+    "associationId": null,
+    "tags": [
+      "ESL/ELL",
       "Post-Secondary"
     ],
     "registrationEnabled": true
   },
   {
-    "id": "evt11",
-    "title": "French Language Networking Event",
-    "description": "Join us for an engaging networking event focused on French Language and educational excellence.",
-    "startDateTime": "2025-09-19T13:00:00.000Z",
-    "endDateTime": "2025-09-21T21:00:00.000Z",
-    "locationName": "Lévis Convention Center",
-    "address": "304 Main Boulevard",
-    "city": "Lévis",
-    "region": "Chaudière-Appalaches",
-    "organizerOrgId": "org22",
-    "associationId": "assoc3",
+    "id": "evt7",
+    "title": "Global Citizenship Networking Event",
+    "description": "Join us for an engaging networking event focused on Global Citizenship and educational excellence.",
+    "startDateTime": "2026-10-14T13:00:00.000Z",
+    "endDateTime": "2026-10-15T21:00:00.000Z",
+    "locationName": "Gatineau Convention Center",
+    "address": "692 Main Boulevard",
+    "city": "Gatineau",
+    "region": "Outaouais",
+    "organizerOrgId": "org165",
+    "associationId": "assoc7",
     "tags": [
-      "Vocational Training",
-      "Policy & Advocacy"
+      "Coding & Robotics",
+      "Blended Learning"
     ],
     "registrationEnabled": true
   },
   {
-    "id": "evt12",
-    "title": "Indigenous Education Symposium",
-    "description": "Join us for an engaging symposium focused on Indigenous Education and educational excellence.",
-    "startDateTime": "2025-02-16T14:00:00.000Z",
-    "endDateTime": "2025-02-16T22:00:00.000Z",
-    "locationName": "Chicoutimi Convention Center",
-    "address": "398 Main Boulevard",
-    "city": "Chicoutimi",
-    "region": "Saguenay–Lac-Saint-Jean",
-    "organizerOrgId": "org18",
-    "associationId": "assoc15",
-    "tags": [
-      "ESL/ELL",
-      "Vocational Training",
-      "LMS Integration"
-    ],
-    "registrationEnabled": false
-  },
-  {
-    "id": "evt13",
-    "title": "Bilingual Education Summit",
-    "description": "Join us for an engaging summit focused on Bilingual Education and educational excellence.",
-    "startDateTime": "2025-06-04T13:00:00.000Z",
-    "endDateTime": "2025-06-04T21:00:00.000Z",
-    "locationName": "Trois-Rivières Convention Center",
-    "address": "289 Main Boulevard",
-    "city": "Trois-Rivières",
-    "region": "Mauricie",
-    "organizerOrgId": "org239",
-    "associationId": "assoc16",
-    "tags": [
-      "Collaborative Learning",
-      "Inquiry-Based Learning",
-      "Secondary"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt14",
-    "title": "Arts Conference",
-    "description": "Join us for an engaging conference focused on Arts and educational excellence.",
-    "startDateTime": "2025-10-15T13:00:00.000Z",
-    "endDateTime": "2025-10-17T21:00:00.000Z",
-    "locationName": "Laval Convention Center",
-    "address": "485 Main Boulevard",
-    "city": "Laval",
-    "region": "Laval",
-    "organizerOrgId": "org297",
-    "associationId": "assoc5",
-    "tags": [
-      "Collaborative Learning",
-      "Game-Based Learning",
-      "Vocational Training",
-      "Community Engagement"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt15",
-    "title": "Equity & Inclusion Training",
-    "description": "Join us for an engaging training focused on Equity & Inclusion and educational excellence.",
-    "startDateTime": "2025-03-24T13:00:00.000Z",
-    "endDateTime": "2025-03-25T21:00:00.000Z",
-    "locationName": "Lévis Convention Center",
-    "address": "727 Main Boulevard",
-    "city": "Lévis",
-    "region": "Chaudière-Appalaches",
-    "organizerOrgId": "org34",
+    "id": "evt8",
+    "title": "Vocational Training Symposium",
+    "description": "Join us for an engaging symposium focused on Vocational Training and educational excellence.",
+    "startDateTime": "2027-01-11T14:00:00.000Z",
+    "endDateTime": "2027-01-12T22:00:00.000Z",
+    "locationName": "Gatineau Convention Center",
+    "address": "841 Main Boulevard",
+    "city": "Gatineau",
+    "region": "Outaouais",
+    "organizerOrgId": "org126",
     "associationId": null,
     "tags": [
-      "Behavioral Support",
-      "French Language",
-      "School Safety",
-      "Curriculum Development"
-    ],
-    "registrationEnabled": false
-  },
-  {
-    "id": "evt16",
-    "title": "School Safety Symposium",
-    "description": "Join us for an engaging symposium focused on School Safety and educational excellence.",
-    "startDateTime": "2025-02-26T14:00:00.000Z",
-    "endDateTime": "2025-02-28T22:00:00.000Z",
-    "locationName": "Québec Convention Center",
-    "address": "520 Main Boulevard",
-    "city": "Québec",
-    "region": "Capitale-Nationale",
-    "organizerOrgId": "org107",
-    "associationId": "assoc5",
-    "tags": [
-      "Digital Literacy",
-      "Gifted Education",
+      "Environmental Education",
       "History",
-      "Secondary"
-    ],
-    "registrationEnabled": false
-  },
-  {
-    "id": "evt17",
-    "title": "French Language Training",
-    "description": "Join us for an engaging training focused on French Language and educational excellence.",
-    "startDateTime": "2025-07-19T13:00:00.000Z",
-    "endDateTime": "2025-07-21T21:00:00.000Z",
-    "locationName": "Sherbrooke Convention Center",
-    "address": "829 Main Boulevard",
-    "city": "Sherbrooke",
-    "region": "Estrie",
-    "organizerOrgId": "org298",
-    "associationId": null,
-    "tags": [
-      "Inquiry-Based Learning",
       "Social Studies",
       "Mathematics"
     ],
     "registrationEnabled": true
   },
   {
-    "id": "evt18",
-    "title": "Physical Education Networking Event",
-    "description": "Join us for an engaging networking event focused on Physical Education and educational excellence.",
-    "startDateTime": "2025-02-03T14:00:00.000Z",
-    "endDateTime": "2025-02-03T22:00:00.000Z",
-    "locationName": "Québec Convention Center",
-    "address": "237 Main Boulevard",
-    "city": "Québec",
-    "region": "Capitale-Nationale",
-    "organizerOrgId": "org150",
-    "associationId": "assoc6",
-    "tags": [
-      "Music",
-      "Inquiry-Based Learning"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt19",
-    "title": "Special Education Summit",
-    "description": "Join us for an engaging summit focused on Special Education and educational excellence.",
-    "startDateTime": "2025-10-27T13:00:00.000Z",
-    "endDateTime": "2025-10-29T21:00:00.000Z",
-    "locationName": "Laval Convention Center",
-    "address": "956 Main Boulevard",
-    "city": "Laval",
-    "region": "Laval",
-    "organizerOrgId": "org276",
-    "associationId": "assoc15",
-    "tags": [
-      "Leadership",
-      "Literacy"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt20",
-    "title": "Physical Education Networking Event",
-    "description": "Join us for an engaging networking event focused on Physical Education and educational excellence.",
-    "startDateTime": "2025-06-02T13:00:00.000Z",
-    "endDateTime": "2025-06-03T21:00:00.000Z",
-    "locationName": "Lévis Convention Center",
-    "address": "862 Main Boulevard",
-    "city": "Lévis",
-    "region": "Chaudière-Appalaches",
-    "organizerOrgId": "org161",
-    "associationId": "assoc15",
-    "tags": [
-      "Mathematics",
-      "Project-Based Learning"
-    ],
-    "registrationEnabled": false
-  },
-  {
-    "id": "evt21",
-    "title": "Science Conference",
-    "description": "Join us for an engaging conference focused on Science and educational excellence.",
-    "startDateTime": "2025-02-05T14:00:00.000Z",
-    "endDateTime": "2025-02-06T22:00:00.000Z",
-    "locationName": "Lévis Convention Center",
-    "address": "402 Main Boulevard",
-    "city": "Lévis",
-    "region": "Chaudière-Appalaches",
-    "organizerOrgId": "org193",
+    "id": "evt9",
+    "title": "Arts Workshop",
+    "description": "Join us for an engaging workshop focused on Arts and educational excellence.",
+    "startDateTime": "2027-08-05T13:00:00.000Z",
+    "endDateTime": "2027-08-07T21:00:00.000Z",
+    "locationName": "Longueuil Convention Center",
+    "address": "736 Main Boulevard",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "organizerOrgId": "org113",
     "associationId": null,
     "tags": [
-      "Indigenous Education",
-      "Curriculum Development",
-      "Bilingual Education",
+      "AI in Education",
+      "History"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt10",
+    "title": "Project-Based Learning Networking Event",
+    "description": "Join us for an engaging networking event focused on Project-Based Learning and educational excellence.",
+    "startDateTime": "2028-09-11T13:00:00.000Z",
+    "endDateTime": "2028-09-11T21:00:00.000Z",
+    "locationName": "Québec Convention Center",
+    "address": "407 Main Boulevard",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "organizerOrgId": "org89",
+    "associationId": "assoc1",
+    "tags": [
+      "Professional Development",
+      "Elementary",
       "LMS Integration"
     ],
     "registrationEnabled": true
   },
   {
-    "id": "evt22",
-    "title": "Professional Development Workshop",
-    "description": "Join us for an engaging workshop focused on Professional Development and educational excellence.",
-    "startDateTime": "2025-09-27T13:00:00.000Z",
-    "endDateTime": "2025-09-28T21:00:00.000Z",
-    "locationName": "Saint-Jérôme Convention Center",
-    "address": "984 Main Boulevard",
-    "city": "Saint-Jérôme",
-    "region": "Laurentides",
-    "organizerOrgId": "org138",
-    "associationId": null,
-    "tags": [
-      "LMS Integration",
-      "Professional Development",
-      "Early Childhood"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt23",
-    "title": "Elementary Summit",
-    "description": "Join us for an engaging summit focused on Elementary and educational excellence.",
-    "startDateTime": "2025-08-21T13:00:00.000Z",
-    "endDateTime": "2025-08-22T21:00:00.000Z",
+    "id": "evt11",
+    "title": "Experiential Learning Summit",
+    "description": "Join us for an engaging summit focused on Experiential Learning and educational excellence.",
+    "startDateTime": "2028-08-17T13:00:00.000Z",
+    "endDateTime": "2028-08-19T21:00:00.000Z",
     "locationName": "Trois-Rivières Convention Center",
-    "address": "739 Main Boulevard",
+    "address": "674 Main Boulevard",
     "city": "Trois-Rivières",
     "region": "Mauricie",
-    "organizerOrgId": "org261",
+    "organizerOrgId": "org204",
     "associationId": null,
     "tags": [
-      "Differentiated Instruction",
-      "Elementary",
-      "History",
-      "Behavioral Support"
-    ],
-    "registrationEnabled": false
-  },
-  {
-    "id": "evt24",
-    "title": "Rural Education Symposium",
-    "description": "Join us for an engaging symposium focused on Rural Education and educational excellence.",
-    "startDateTime": "2025-01-06T14:00:00.000Z",
-    "endDateTime": "2025-01-07T22:00:00.000Z",
-    "locationName": "Rimouski Convention Center",
-    "address": "656 Main Boulevard",
-    "city": "Rimouski",
-    "region": "Bas-Saint-Laurent",
-    "organizerOrgId": "org215",
-    "associationId": null,
-    "tags": [
-      "Social Studies",
-      "Community Engagement"
+      "Arts",
+      "Assessment & Evaluation",
+      "Blended Learning"
     ],
     "registrationEnabled": true
   },
   {
-    "id": "evt25",
-    "title": "Leadership Symposium",
-    "description": "Join us for an engaging symposium focused on Leadership and educational excellence.",
-    "startDateTime": "2025-09-27T13:00:00.000Z",
-    "endDateTime": "2025-09-29T21:00:00.000Z",
-    "locationName": "Trois-Rivières Convention Center",
-    "address": "168 Main Boulevard",
-    "city": "Trois-Rivières",
-    "region": "Mauricie",
-    "organizerOrgId": "org273",
-    "associationId": "assoc11",
-    "tags": [
-      "Leadership",
-      "English Language"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt26",
-    "title": "Collaborative Learning Training",
-    "description": "Join us for an engaging training focused on Collaborative Learning and educational excellence.",
-    "startDateTime": "2025-12-23T14:00:00.000Z",
-    "endDateTime": "2025-12-24T22:00:00.000Z",
-    "locationName": "Gatineau Convention Center",
-    "address": "191 Main Boulevard",
-    "city": "Gatineau",
-    "region": "Outaouais",
-    "organizerOrgId": "org11",
-    "associationId": "assoc17",
-    "tags": [
-      "School Safety",
-      "Mental Health"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt27",
-    "title": "Music Forum",
-    "description": "Join us for an engaging forum focused on Music and educational excellence.",
-    "startDateTime": "2025-10-12T13:00:00.000Z",
-    "endDateTime": "2025-10-12T21:00:00.000Z",
-    "locationName": "Saint-Jérôme Convention Center",
-    "address": "101 Main Boulevard",
-    "city": "Saint-Jérôme",
-    "region": "Laurentides",
-    "organizerOrgId": "org49",
-    "associationId": null,
-    "tags": [
-      "Bilingual Education",
-      "Science",
-      "Project-Based Learning"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt28",
-    "title": "EdTech Summit",
-    "description": "Join us for an engaging summit focused on EdTech and educational excellence.",
-    "startDateTime": "2025-08-17T13:00:00.000Z",
-    "endDateTime": "2025-08-17T21:00:00.000Z",
-    "locationName": "Laval Convention Center",
-    "address": "144 Main Boulevard",
-    "city": "Laval",
-    "region": "Laval",
-    "organizerOrgId": "org65",
-    "associationId": null,
-    "tags": [
-      "Flipped Classroom",
-      "History",
-      "Professional Development"
-    ],
-    "registrationEnabled": false
-  },
-  {
-    "id": "evt29",
-    "title": "Global Citizenship Training",
-    "description": "Join us for an engaging training focused on Global Citizenship and educational excellence.",
-    "startDateTime": "2025-03-04T14:00:00.000Z",
-    "endDateTime": "2025-03-04T22:00:00.000Z",
-    "locationName": "Québec Convention Center",
-    "address": "912 Main Boulevard",
-    "city": "Québec",
-    "region": "Capitale-Nationale",
-    "organizerOrgId": "org164",
-    "associationId": null,
-    "tags": [
-      "Science",
-      "Social Studies"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt30",
-    "title": "Policy & Advocacy Networking Event",
-    "description": "Join us for an engaging networking event focused on Policy & Advocacy and educational excellence.",
-    "startDateTime": "2025-02-02T14:00:00.000Z",
-    "endDateTime": "2025-02-04T22:00:00.000Z",
-    "locationName": "Saint-Jérôme Convention Center",
-    "address": "971 Main Boulevard",
-    "city": "Saint-Jérôme",
-    "region": "Laurentides",
-    "organizerOrgId": "org202",
-    "associationId": "assoc9",
-    "tags": [
-      "Curriculum Development",
-      "Collaborative Learning",
-      "Global Citizenship",
-      "Post-Secondary"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt31",
-    "title": "STEM Workshop",
-    "description": "Join us for an engaging workshop focused on STEM and educational excellence.",
-    "startDateTime": "2025-12-16T14:00:00.000Z",
-    "endDateTime": "2025-12-18T22:00:00.000Z",
-    "locationName": "Lévis Convention Center",
-    "address": "239 Main Boulevard",
-    "city": "Lévis",
-    "region": "Chaudière-Appalaches",
-    "organizerOrgId": "org9",
-    "associationId": "assoc4",
-    "tags": [
-      "Game-Based Learning",
-      "Social Studies"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt32",
-    "title": "Blended Learning Symposium",
-    "description": "Join us for an engaging symposium focused on Blended Learning and educational excellence.",
-    "startDateTime": "2025-06-08T13:00:00.000Z",
-    "endDateTime": "2025-06-08T21:00:00.000Z",
-    "locationName": "Lévis Convention Center",
-    "address": "463 Main Boulevard",
-    "city": "Lévis",
-    "region": "Chaudière-Appalaches",
-    "organizerOrgId": "org84",
-    "associationId": null,
-    "tags": [
-      "Curriculum Development",
-      "Professional Development"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt33",
-    "title": "Secondary Networking Event",
-    "description": "Join us for an engaging networking event focused on Secondary and educational excellence.",
-    "startDateTime": "2025-05-19T13:00:00.000Z",
-    "endDateTime": "2025-05-21T21:00:00.000Z",
-    "locationName": "Saguenay Convention Center",
-    "address": "982 Main Boulevard",
-    "city": "Saguenay",
+    "id": "evt12",
+    "title": "French Language Forum",
+    "description": "Join us for an engaging forum focused on French Language and educational excellence.",
+    "startDateTime": "2027-08-27T13:00:00.000Z",
+    "endDateTime": "2027-08-27T21:00:00.000Z",
+    "locationName": "Chicoutimi Convention Center",
+    "address": "749 Main Boulevard",
+    "city": "Chicoutimi",
     "region": "Saguenay–Lac-Saint-Jean",
-    "organizerOrgId": "org182",
-    "associationId": "assoc7",
-    "tags": [
-      "History",
-      "Flipped Classroom",
-      "Coding & Robotics"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt34",
-    "title": "Early Childhood Summit",
-    "description": "Join us for an engaging summit focused on Early Childhood and educational excellence.",
-    "startDateTime": "2025-12-09T14:00:00.000Z",
-    "endDateTime": "2025-12-11T22:00:00.000Z",
-    "locationName": "Rimouski Convention Center",
-    "address": "349 Main Boulevard",
-    "city": "Rimouski",
-    "region": "Bas-Saint-Laurent",
-    "organizerOrgId": "org236",
-    "associationId": null,
-    "tags": [
-      "EdTech",
-      "Indigenous Education",
-      "Bilingual Education",
-      "AI in Education"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt35",
-    "title": "Vocational Training Summit",
-    "description": "Join us for an engaging summit focused on Vocational Training and educational excellence.",
-    "startDateTime": "2025-06-07T13:00:00.000Z",
-    "endDateTime": "2025-06-08T21:00:00.000Z",
-    "locationName": "Gatineau Convention Center",
-    "address": "444 Main Boulevard",
-    "city": "Gatineau",
-    "region": "Outaouais",
-    "organizerOrgId": "org10",
+    "organizerOrgId": "org16",
     "associationId": null,
     "tags": [
       "English Language",
-      "Equity & Inclusion"
+      "Collaborative Learning"
     ],
     "registrationEnabled": true
   },
   {
-    "id": "evt36",
-    "title": "Literacy Summit",
-    "description": "Join us for an engaging summit focused on Literacy and educational excellence.",
-    "startDateTime": "2025-08-14T13:00:00.000Z",
-    "endDateTime": "2025-08-15T21:00:00.000Z",
-    "locationName": "Gatineau Convention Center",
-    "address": "385 Main Boulevard",
-    "city": "Gatineau",
-    "region": "Outaouais",
-    "organizerOrgId": "org49",
+    "id": "evt13",
+    "title": "History Networking Event",
+    "description": "Join us for an engaging networking event focused on History and educational excellence.",
+    "startDateTime": "2026-08-17T13:00:00.000Z",
+    "endDateTime": "2026-08-19T21:00:00.000Z",
+    "locationName": "Trois-Rivières Convention Center",
+    "address": "499 Main Boulevard",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "organizerOrgId": "org198",
     "associationId": null,
     "tags": [
-      "French Language",
-      "Elementary",
+      "STEM",
+      "Professional Development",
       "Experiential Learning"
     ],
     "registrationEnabled": true
   },
   {
-    "id": "evt37",
-    "title": "Digital Literacy Summit",
-    "description": "Join us for an engaging summit focused on Digital Literacy and educational excellence.",
-    "startDateTime": "2025-12-13T14:00:00.000Z",
-    "endDateTime": "2025-12-13T22:00:00.000Z",
-    "locationName": "Rimouski Convention Center",
-    "address": "381 Main Boulevard",
-    "city": "Rimouski",
-    "region": "Bas-Saint-Laurent",
-    "organizerOrgId": "org291",
-    "associationId": "assoc7",
+    "id": "evt14",
+    "title": "Rural Education Summit",
+    "description": "Join us for an engaging summit focused on Rural Education and educational excellence.",
+    "startDateTime": "2026-05-20T13:00:00.000Z",
+    "endDateTime": "2026-05-20T21:00:00.000Z",
+    "locationName": "Québec Convention Center",
+    "address": "832 Main Boulevard",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "organizerOrgId": "org7",
+    "associationId": null,
     "tags": [
-      "History",
-      "Accessibility",
-      "Differentiated Instruction"
+      "Flipped Classroom",
+      "Professional Development"
     ],
-    "registrationEnabled": false
+    "registrationEnabled": true
   },
   {
-    "id": "evt38",
-    "title": "History Symposium",
-    "description": "Join us for an engaging symposium focused on History and educational excellence.",
-    "startDateTime": "2025-01-11T14:00:00.000Z",
-    "endDateTime": "2025-01-11T22:00:00.000Z",
-    "locationName": "Sherbrooke Convention Center",
-    "address": "648 Main Boulevard",
-    "city": "Sherbrooke",
-    "region": "Estrie",
-    "organizerOrgId": "org160",
-    "associationId": "assoc3",
+    "id": "evt15",
+    "title": "Literacy Symposium",
+    "description": "Join us for an engaging symposium focused on Literacy and educational excellence.",
+    "startDateTime": "2026-11-01T14:00:00.000Z",
+    "endDateTime": "2026-11-02T22:00:00.000Z",
+    "locationName": "Trois-Rivières Convention Center",
+    "address": "518 Main Boulevard",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "organizerOrgId": "org35",
+    "associationId": "assoc5",
     "tags": [
-      "Professional Development",
-      "Early Childhood",
-      "Science",
+      "French Language",
+      "Physical Education"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt16",
+    "title": "STEM Conference",
+    "description": "Join us for an engaging conference focused on STEM and educational excellence.",
+    "startDateTime": "2026-09-02T13:00:00.000Z",
+    "endDateTime": "2026-09-02T21:00:00.000Z",
+    "locationName": "Saguenay Convention Center",
+    "address": "855 Main Boulevard",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org47",
+    "associationId": "assoc13",
+    "tags": [
+      "Assessment & Evaluation",
+      "Global Citizenship"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt17",
+    "title": "Curriculum Development Training",
+    "description": "Join us for an engaging training focused on Curriculum Development and educational excellence.",
+    "startDateTime": "2027-09-06T13:00:00.000Z",
+    "endDateTime": "2027-09-06T21:00:00.000Z",
+    "locationName": "Gatineau Convention Center",
+    "address": "228 Main Boulevard",
+    "city": "Gatineau",
+    "region": "Outaouais",
+    "organizerOrgId": "org125",
+    "associationId": null,
+    "tags": [
+      "Post-Secondary",
       "Community Engagement"
     ],
     "registrationEnabled": true
   },
   {
-    "id": "evt39",
-    "title": "AI in Education Seminar",
-    "description": "Join us for an engaging seminar focused on AI in Education and educational excellence.",
-    "startDateTime": "2025-02-10T14:00:00.000Z",
-    "endDateTime": "2025-02-11T22:00:00.000Z",
-    "locationName": "Québec Convention Center",
-    "address": "582 Main Boulevard",
-    "city": "Québec",
-    "region": "Capitale-Nationale",
-    "organizerOrgId": "org75",
-    "associationId": null,
+    "id": "evt18",
+    "title": "Accessibility Training",
+    "description": "Join us for an engaging training focused on Accessibility and educational excellence.",
+    "startDateTime": "2028-03-27T13:00:00.000Z",
+    "endDateTime": "2028-03-28T21:00:00.000Z",
+    "locationName": "Gatineau Convention Center",
+    "address": "888 Main Boulevard",
+    "city": "Gatineau",
+    "region": "Outaouais",
+    "organizerOrgId": "org29",
+    "associationId": "assoc14",
     "tags": [
-      "Physical Education",
-      "Digital Literacy"
+      "Vocational Training",
+      "Arts",
+      "Literacy"
     ],
     "registrationEnabled": true
   },
   {
-    "id": "evt40",
-    "title": "Environmental Education Networking Event",
-    "description": "Join us for an engaging networking event focused on Environmental Education and educational excellence.",
-    "startDateTime": "2025-06-03T13:00:00.000Z",
-    "endDateTime": "2025-06-04T21:00:00.000Z",
-    "locationName": "Sherbrooke Convention Center",
-    "address": "309 Main Boulevard",
-    "city": "Sherbrooke",
-    "region": "Estrie",
-    "organizerOrgId": "org170",
-    "associationId": "assoc6",
+    "id": "evt19",
+    "title": "Professional Development Symposium",
+    "description": "Join us for an engaging symposium focused on Professional Development and educational excellence.",
+    "startDateTime": "2026-05-28T13:00:00.000Z",
+    "endDateTime": "2026-05-28T21:00:00.000Z",
+    "locationName": "Rimouski Convention Center",
+    "address": "127 Main Boulevard",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "organizerOrgId": "org37",
+    "associationId": "assoc25",
     "tags": [
-      "Special Education",
-      "EdTech",
-      "Gifted Education"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt41",
-    "title": "Experiential Learning Workshop",
-    "description": "Join us for an engaging workshop focused on Experiential Learning and educational excellence.",
-    "startDateTime": "2025-12-04T14:00:00.000Z",
-    "endDateTime": "2025-12-05T22:00:00.000Z",
-    "locationName": "Saint-Jérôme Convention Center",
-    "address": "409 Main Boulevard",
-    "city": "Saint-Jérôme",
-    "region": "Laurentides",
-    "organizerOrgId": "org26",
-    "associationId": "assoc19",
-    "tags": [
-      "Early Childhood",
-      "Adult Education",
+      "Professional Development",
+      "Mathematics",
+      "Global Citizenship",
       "Social Studies"
     ],
     "registrationEnabled": true
   },
   {
-    "id": "evt42",
-    "title": "Science Forum",
-    "description": "Join us for an engaging forum focused on Science and educational excellence.",
-    "startDateTime": "2025-02-09T14:00:00.000Z",
-    "endDateTime": "2025-02-09T22:00:00.000Z",
-    "locationName": "Trois-Rivières Convention Center",
-    "address": "709 Main Boulevard",
-    "city": "Trois-Rivières",
-    "region": "Mauricie",
-    "organizerOrgId": "org17",
+    "id": "evt20",
+    "title": "Differentiated Instruction Summit",
+    "description": "Join us for an engaging summit focused on Differentiated Instruction and educational excellence.",
+    "startDateTime": "2026-12-09T14:00:00.000Z",
+    "endDateTime": "2026-12-10T22:00:00.000Z",
+    "locationName": "Montréal Convention Center",
+    "address": "852 Main Boulevard",
+    "city": "Montréal",
+    "region": "Montréal",
+    "organizerOrgId": "org199",
+    "associationId": "assoc27",
+    "tags": [
+      "Game-Based Learning",
+      "EdTech"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt21",
+    "title": "Secondary Workshop",
+    "description": "Join us for an engaging workshop focused on Secondary and educational excellence.",
+    "startDateTime": "2027-01-04T14:00:00.000Z",
+    "endDateTime": "2027-01-05T22:00:00.000Z",
+    "locationName": "Lévis Convention Center",
+    "address": "235 Main Boulevard",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "organizerOrgId": "org29",
+    "associationId": null,
+    "tags": [
+      "Mathematics",
+      "Social-Emotional Learning"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt22",
+    "title": "Global Citizenship Networking Event",
+    "description": "Join us for an engaging networking event focused on Global Citizenship and educational excellence.",
+    "startDateTime": "2028-08-16T13:00:00.000Z",
+    "endDateTime": "2028-08-17T21:00:00.000Z",
+    "locationName": "Sherbrooke Convention Center",
+    "address": "121 Main Boulevard",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "organizerOrgId": "org212",
+    "associationId": "assoc14",
+    "tags": [
+      "EdTech",
+      "Social Studies",
+      "Policy & Advocacy"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt23",
+    "title": "Flipped Classroom Networking Event",
+    "description": "Join us for an engaging networking event focused on Flipped Classroom and educational excellence.",
+    "startDateTime": "2026-04-04T13:00:00.000Z",
+    "endDateTime": "2026-04-06T21:00:00.000Z",
+    "locationName": "Longueuil Convention Center",
+    "address": "252 Main Boulevard",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "organizerOrgId": "org112",
+    "associationId": "assoc19",
+    "tags": [
+      "School Finance",
+      "Mathematics",
+      "Accessibility",
+      "Music"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt24",
+    "title": "Behavioral Support Summit",
+    "description": "Join us for an engaging summit focused on Behavioral Support and educational excellence.",
+    "startDateTime": "2027-07-27T13:00:00.000Z",
+    "endDateTime": "2027-07-28T21:00:00.000Z",
+    "locationName": "Chicoutimi Convention Center",
+    "address": "748 Main Boulevard",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org184",
+    "associationId": "assoc12",
+    "tags": [
+      "Equity & Inclusion",
+      "School Safety",
+      "Elementary"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt25",
+    "title": "Social-Emotional Learning Forum",
+    "description": "Join us for an engaging forum focused on Social-Emotional Learning and educational excellence.",
+    "startDateTime": "2028-01-27T14:00:00.000Z",
+    "endDateTime": "2028-01-27T22:00:00.000Z",
+    "locationName": "Saint-Jérôme Convention Center",
+    "address": "391 Main Boulevard",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "organizerOrgId": "org50",
+    "associationId": "assoc28",
+    "tags": [
+      "Gifted Education",
+      "Adult Education",
+      "Equity & Inclusion",
+      "School Finance"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt26",
+    "title": "Post-Secondary Conference",
+    "description": "Join us for an engaging conference focused on Post-Secondary and educational excellence.",
+    "startDateTime": "2027-01-18T14:00:00.000Z",
+    "endDateTime": "2027-01-18T22:00:00.000Z",
+    "locationName": "Laval Convention Center",
+    "address": "799 Main Boulevard",
+    "city": "Laval",
+    "region": "Laval",
+    "organizerOrgId": "org30",
+    "associationId": "assoc13",
+    "tags": [
+      "EdTech",
+      "Bilingual Education",
+      "Collaborative Learning"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt27",
+    "title": "Elementary Training",
+    "description": "Join us for an engaging training focused on Elementary and educational excellence.",
+    "startDateTime": "2026-03-17T13:00:00.000Z",
+    "endDateTime": "2026-03-17T21:00:00.000Z",
+    "locationName": "Saint-Jérôme Convention Center",
+    "address": "639 Main Boulevard",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "organizerOrgId": "org2",
+    "associationId": "assoc9",
+    "tags": [
+      "STEM",
+      "Post-Secondary"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt28",
+    "title": "Behavioral Support Workshop",
+    "description": "Join us for an engaging workshop focused on Behavioral Support and educational excellence.",
+    "startDateTime": "2026-05-14T13:00:00.000Z",
+    "endDateTime": "2026-05-14T21:00:00.000Z",
+    "locationName": "Longueuil Convention Center",
+    "address": "576 Main Boulevard",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "organizerOrgId": "org41",
+    "associationId": "assoc17",
+    "tags": [
+      "Social Studies",
+      "School Finance",
+      "EdTech"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt29",
+    "title": "Professional Development Training",
+    "description": "Join us for an engaging training focused on Professional Development and educational excellence.",
+    "startDateTime": "2027-03-05T14:00:00.000Z",
+    "endDateTime": "2027-03-06T22:00:00.000Z",
+    "locationName": "Gatineau Convention Center",
+    "address": "250 Main Boulevard",
+    "city": "Gatineau",
+    "region": "Outaouais",
+    "organizerOrgId": "org90",
+    "associationId": null,
+    "tags": [
+      "Blended Learning",
+      "Early Childhood",
+      "Collaborative Learning"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt30",
+    "title": "Vocational Training Seminar",
+    "description": "Join us for an engaging seminar focused on Vocational Training and educational excellence.",
+    "startDateTime": "2028-08-07T13:00:00.000Z",
+    "endDateTime": "2028-08-07T21:00:00.000Z",
+    "locationName": "Longueuil Convention Center",
+    "address": "495 Main Boulevard",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "organizerOrgId": "org221",
     "associationId": "assoc7",
     "tags": [
       "Flipped Classroom",
-      "Indigenous Education"
+      "Indigenous Education",
+      "Digital Literacy",
+      "Global Citizenship"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt31",
+    "title": "Physical Education Forum",
+    "description": "Join us for an engaging forum focused on Physical Education and educational excellence.",
+    "startDateTime": "2027-04-22T13:00:00.000Z",
+    "endDateTime": "2027-04-22T21:00:00.000Z",
+    "locationName": "Québec Convention Center",
+    "address": "127 Main Boulevard",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "organizerOrgId": "org135",
+    "associationId": "assoc2",
+    "tags": [
+      "Literacy",
+      "Community Engagement",
+      "Experiential Learning",
+      "French Language"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt32",
+    "title": "LMS Integration Training",
+    "description": "Join us for an engaging training focused on LMS Integration and educational excellence.",
+    "startDateTime": "2028-02-21T14:00:00.000Z",
+    "endDateTime": "2028-02-21T22:00:00.000Z",
+    "locationName": "Québec Convention Center",
+    "address": "981 Main Boulevard",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "organizerOrgId": "org65",
+    "associationId": "assoc23",
+    "tags": [
+      "Blended Learning",
+      "Mental Health",
+      "School Safety",
+      "Social Studies"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt33",
+    "title": "LMS Integration Networking Event",
+    "description": "Join us for an engaging networking event focused on LMS Integration and educational excellence.",
+    "startDateTime": "2027-01-19T14:00:00.000Z",
+    "endDateTime": "2027-01-20T22:00:00.000Z",
+    "locationName": "Laval Convention Center",
+    "address": "850 Main Boulevard",
+    "city": "Laval",
+    "region": "Laval",
+    "organizerOrgId": "org237",
+    "associationId": null,
+    "tags": [
+      "Experiential Learning",
+      "Secondary",
+      "Environmental Education"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt34",
+    "title": "Assessment & Evaluation Seminar",
+    "description": "Join us for an engaging seminar focused on Assessment & Evaluation and educational excellence.",
+    "startDateTime": "2027-04-14T13:00:00.000Z",
+    "endDateTime": "2027-04-16T21:00:00.000Z",
+    "locationName": "Chicoutimi Convention Center",
+    "address": "468 Main Boulevard",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org14",
+    "associationId": null,
+    "tags": [
+      "Bilingual Education",
+      "Music",
+      "Adult Education"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt35",
+    "title": "Inquiry-Based Learning Seminar",
+    "description": "Join us for an engaging seminar focused on Inquiry-Based Learning and educational excellence.",
+    "startDateTime": "2026-07-13T13:00:00.000Z",
+    "endDateTime": "2026-07-15T21:00:00.000Z",
+    "locationName": "Montréal Convention Center",
+    "address": "175 Main Boulevard",
+    "city": "Montréal",
+    "region": "Montréal",
+    "organizerOrgId": "org66",
+    "associationId": null,
+    "tags": [
+      "English Language",
+      "Physical Education"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt36",
+    "title": "Collaborative Learning Training",
+    "description": "Join us for an engaging training focused on Collaborative Learning and educational excellence.",
+    "startDateTime": "2026-10-17T13:00:00.000Z",
+    "endDateTime": "2026-10-18T21:00:00.000Z",
+    "locationName": "Saguenay Convention Center",
+    "address": "775 Main Boulevard",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org116",
+    "associationId": "assoc5",
+    "tags": [
+      "Community Engagement"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt37",
+    "title": "Professional Development Conference",
+    "description": "Join us for an engaging conference focused on Professional Development and educational excellence.",
+    "startDateTime": "2026-11-06T14:00:00.000Z",
+    "endDateTime": "2026-11-08T22:00:00.000Z",
+    "locationName": "Trois-Rivières Convention Center",
+    "address": "342 Main Boulevard",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "organizerOrgId": "org80",
+    "associationId": null,
+    "tags": [
+      "Community Engagement",
+      "English Language"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt38",
+    "title": "Digital Literacy Seminar",
+    "description": "Join us for an engaging seminar focused on Digital Literacy and educational excellence.",
+    "startDateTime": "2028-04-23T13:00:00.000Z",
+    "endDateTime": "2028-04-23T21:00:00.000Z",
+    "locationName": "Laval Convention Center",
+    "address": "616 Main Boulevard",
+    "city": "Laval",
+    "region": "Laval",
+    "organizerOrgId": "org202",
+    "associationId": "assoc6",
+    "tags": [
+      "Project-Based Learning",
+      "STEM",
+      "Digital Literacy",
+      "Assessment & Evaluation"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt39",
+    "title": "Social-Emotional Learning Symposium",
+    "description": "Join us for an engaging symposium focused on Social-Emotional Learning and educational excellence.",
+    "startDateTime": "2027-09-01T13:00:00.000Z",
+    "endDateTime": "2027-09-01T21:00:00.000Z",
+    "locationName": "Lévis Convention Center",
+    "address": "163 Main Boulevard",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "organizerOrgId": "org140",
+    "associationId": null,
+    "tags": [
+      "Early Childhood",
+      "History"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt40",
+    "title": "Physical Education Symposium",
+    "description": "Join us for an engaging symposium focused on Physical Education and educational excellence.",
+    "startDateTime": "2028-10-01T13:00:00.000Z",
+    "endDateTime": "2028-10-03T21:00:00.000Z",
+    "locationName": "Saint-Jérôme Convention Center",
+    "address": "678 Main Boulevard",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "organizerOrgId": "org97",
+    "associationId": null,
+    "tags": [
+      "Community Engagement",
+      "French Language",
+      "English Language"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt41",
+    "title": "Elementary Conference",
+    "description": "Join us for an engaging conference focused on Elementary and educational excellence.",
+    "startDateTime": "2026-10-04T13:00:00.000Z",
+    "endDateTime": "2026-10-06T21:00:00.000Z",
+    "locationName": "Saint-Jérôme Convention Center",
+    "address": "294 Main Boulevard",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "organizerOrgId": "org216",
+    "associationId": null,
+    "tags": [
+      "ESL/ELL",
+      "Science"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt42",
+    "title": "Differentiated Instruction Seminar",
+    "description": "Join us for an engaging seminar focused on Differentiated Instruction and educational excellence.",
+    "startDateTime": "2026-02-05T14:00:00.000Z",
+    "endDateTime": "2026-02-07T22:00:00.000Z",
+    "locationName": "Sherbrooke Convention Center",
+    "address": "932 Main Boulevard",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "organizerOrgId": "org42",
+    "associationId": "assoc14",
+    "tags": [
+      "Post-Secondary",
+      "French Language",
+      "STEM"
     ],
     "registrationEnabled": true
   },
   {
     "id": "evt43",
-    "title": "Rural Education Forum",
-    "description": "Join us for an engaging forum focused on Rural Education and educational excellence.",
-    "startDateTime": "2025-10-01T13:00:00.000Z",
-    "endDateTime": "2025-10-02T21:00:00.000Z",
-    "locationName": "Québec Convention Center",
-    "address": "228 Main Boulevard",
-    "city": "Québec",
-    "region": "Capitale-Nationale",
-    "organizerOrgId": "org175",
-    "associationId": "assoc1",
+    "title": "Indigenous Education Summit",
+    "description": "Join us for an engaging summit focused on Indigenous Education and educational excellence.",
+    "startDateTime": "2028-02-28T14:00:00.000Z",
+    "endDateTime": "2028-02-29T22:00:00.000Z",
+    "locationName": "Sherbrooke Convention Center",
+    "address": "277 Main Boulevard",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "organizerOrgId": "org205",
+    "associationId": null,
     "tags": [
-      "Flipped Classroom",
-      "Behavioral Support",
-      "Accessibility",
-      "Indigenous Education"
+      "Mathematics",
+      "Blended Learning",
+      "Inquiry-Based Learning",
+      "School Safety"
     ],
-    "registrationEnabled": true
+    "registrationEnabled": false
   },
   {
     "id": "evt44",
-    "title": "Collaborative Learning Forum",
-    "description": "Join us for an engaging forum focused on Collaborative Learning and educational excellence.",
-    "startDateTime": "2025-10-11T13:00:00.000Z",
-    "endDateTime": "2025-10-12T21:00:00.000Z",
-    "locationName": "Québec Convention Center",
-    "address": "997 Main Boulevard",
-    "city": "Québec",
-    "region": "Capitale-Nationale",
-    "organizerOrgId": "org201",
-    "associationId": "assoc12",
+    "title": "Policy & Advocacy Workshop",
+    "description": "Join us for an engaging workshop focused on Policy & Advocacy and educational excellence.",
+    "startDateTime": "2028-08-14T13:00:00.000Z",
+    "endDateTime": "2028-08-15T21:00:00.000Z",
+    "locationName": "Sherbrooke Convention Center",
+    "address": "645 Main Boulevard",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "organizerOrgId": "org33",
+    "associationId": null,
     "tags": [
-      "Digital Literacy",
-      "Rural Education",
-      "Community Engagement"
+      "Global Citizenship",
+      "Project-Based Learning",
+      "Flipped Classroom"
     ],
     "registrationEnabled": true
   },
@@ -841,1572 +833,170 @@
     "id": "evt45",
     "title": "Experiential Learning Forum",
     "description": "Join us for an engaging forum focused on Experiential Learning and educational excellence.",
-    "startDateTime": "2025-03-12T13:00:00.000Z",
-    "endDateTime": "2025-03-13T21:00:00.000Z",
-    "locationName": "Laval Convention Center",
-    "address": "976 Main Boulevard",
-    "city": "Laval",
-    "region": "Laval",
-    "organizerOrgId": "org140",
-    "associationId": null,
-    "tags": [
-      "Music",
-      "LMS Integration",
-      "French Language"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt46",
-    "title": "Early Childhood Workshop",
-    "description": "Join us for an engaging workshop focused on Early Childhood and educational excellence.",
-    "startDateTime": "2025-09-07T13:00:00.000Z",
-    "endDateTime": "2025-09-09T21:00:00.000Z",
-    "locationName": "Gatineau Convention Center",
-    "address": "945 Main Boulevard",
-    "city": "Gatineau",
-    "region": "Outaouais",
-    "organizerOrgId": "org273",
-    "associationId": null,
-    "tags": [
-      "Inquiry-Based Learning",
-      "School Safety"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt47",
-    "title": "Inquiry-Based Learning Conference",
-    "description": "Join us for an engaging conference focused on Inquiry-Based Learning and educational excellence.",
-    "startDateTime": "2025-07-26T13:00:00.000Z",
-    "endDateTime": "2025-07-27T21:00:00.000Z",
-    "locationName": "Chicoutimi Convention Center",
-    "address": "943 Main Boulevard",
-    "city": "Chicoutimi",
-    "region": "Saguenay–Lac-Saint-Jean",
-    "organizerOrgId": "org137",
-    "associationId": "assoc7",
-    "tags": [
-      "Secondary",
-      "STEM",
-      "Indigenous Education"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt48",
-    "title": "AI in Education Workshop",
-    "description": "Join us for an engaging workshop focused on AI in Education and educational excellence.",
-    "startDateTime": "2025-11-11T14:00:00.000Z",
-    "endDateTime": "2025-11-13T22:00:00.000Z",
-    "locationName": "Montréal Convention Center",
-    "address": "852 Main Boulevard",
-    "city": "Montréal",
-    "region": "Montréal",
-    "organizerOrgId": "org204",
-    "associationId": "assoc12",
-    "tags": [
-      "School Finance",
-      "Equity & Inclusion"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt49",
-    "title": "Gifted Education Summit",
-    "description": "Join us for an engaging summit focused on Gifted Education and educational excellence.",
-    "startDateTime": "2025-09-07T13:00:00.000Z",
-    "endDateTime": "2025-09-09T21:00:00.000Z",
-    "locationName": "Lévis Convention Center",
-    "address": "666 Main Boulevard",
-    "city": "Lévis",
-    "region": "Chaudière-Appalaches",
-    "organizerOrgId": "org189",
-    "associationId": null,
-    "tags": [
-      "STEM",
-      "Mathematics",
-      "Adult Education",
-      "EdTech"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt50",
-    "title": "Experiential Learning Symposium",
-    "description": "Join us for an engaging symposium focused on Experiential Learning and educational excellence.",
-    "startDateTime": "2025-10-21T13:00:00.000Z",
-    "endDateTime": "2025-10-22T21:00:00.000Z",
+    "startDateTime": "2026-01-10T14:00:00.000Z",
+    "endDateTime": "2026-01-10T22:00:00.000Z",
     "locationName": "Québec Convention Center",
-    "address": "380 Main Boulevard",
+    "address": "944 Main Boulevard",
     "city": "Québec",
     "region": "Capitale-Nationale",
-    "organizerOrgId": "org230",
-    "associationId": null,
-    "tags": [
-      "Arts",
-      "Policy & Advocacy"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt51",
-    "title": "Early Childhood Seminar",
-    "description": "Join us for an engaging seminar focused on Early Childhood and educational excellence.",
-    "startDateTime": "2025-09-27T13:00:00.000Z",
-    "endDateTime": "2025-09-27T21:00:00.000Z",
-    "locationName": "Laval Convention Center",
-    "address": "280 Main Boulevard",
-    "city": "Laval",
-    "region": "Laval",
-    "organizerOrgId": "org27",
-    "associationId": "assoc11",
-    "tags": [
-      "Differentiated Instruction",
-      "Equity & Inclusion",
-      "Environmental Education"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt52",
-    "title": "Accessibility Workshop",
-    "description": "Join us for an engaging workshop focused on Accessibility and educational excellence.",
-    "startDateTime": "2025-08-07T13:00:00.000Z",
-    "endDateTime": "2025-08-08T21:00:00.000Z",
-    "locationName": "Montréal Convention Center",
-    "address": "628 Main Boulevard",
-    "city": "Montréal",
-    "region": "Montréal",
-    "organizerOrgId": "org154",
-    "associationId": "assoc1",
-    "tags": [
-      "Science",
-      "Differentiated Instruction",
-      "Secondary"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt53",
-    "title": "Physical Education Networking Event",
-    "description": "Join us for an engaging networking event focused on Physical Education and educational excellence.",
-    "startDateTime": "2025-04-21T13:00:00.000Z",
-    "endDateTime": "2025-04-22T21:00:00.000Z",
-    "locationName": "Laval Convention Center",
-    "address": "154 Main Boulevard",
-    "city": "Laval",
-    "region": "Laval",
-    "organizerOrgId": "org136",
-    "associationId": "assoc7",
-    "tags": [
-      "Game-Based Learning",
-      "Adult Education",
-      "LMS Integration",
-      "Mental Health"
-    ],
-    "registrationEnabled": false
-  },
-  {
-    "id": "evt54",
-    "title": "Post-Secondary Conference",
-    "description": "Join us for an engaging conference focused on Post-Secondary and educational excellence.",
-    "startDateTime": "2025-11-16T14:00:00.000Z",
-    "endDateTime": "2025-11-18T22:00:00.000Z",
-    "locationName": "Chicoutimi Convention Center",
-    "address": "267 Main Boulevard",
-    "city": "Chicoutimi",
-    "region": "Saguenay–Lac-Saint-Jean",
-    "organizerOrgId": "org101",
-    "associationId": null,
-    "tags": [
-      "Rural Education",
-      "Digital Literacy",
-      "Bilingual Education"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt55",
-    "title": "Vocational Training Summit",
-    "description": "Join us for an engaging summit focused on Vocational Training and educational excellence.",
-    "startDateTime": "2025-11-08T14:00:00.000Z",
-    "endDateTime": "2025-11-09T22:00:00.000Z",
-    "locationName": "Chicoutimi Convention Center",
-    "address": "609 Main Boulevard",
-    "city": "Chicoutimi",
-    "region": "Saguenay–Lac-Saint-Jean",
-    "organizerOrgId": "org73",
-    "associationId": null,
-    "tags": [
-      "Adult Education",
-      "Vocational Training",
-      "Professional Development",
-      "Blended Learning"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt56",
-    "title": "Adult Education Conference",
-    "description": "Join us for an engaging conference focused on Adult Education and educational excellence.",
-    "startDateTime": "2025-05-20T13:00:00.000Z",
-    "endDateTime": "2025-05-22T21:00:00.000Z",
-    "locationName": "Rimouski Convention Center",
-    "address": "915 Main Boulevard",
-    "city": "Rimouski",
-    "region": "Bas-Saint-Laurent",
-    "organizerOrgId": "org79",
-    "associationId": null,
-    "tags": [
-      "Early Childhood",
-      "STEM",
-      "Indigenous Education"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt57",
-    "title": "English Language Symposium",
-    "description": "Join us for an engaging symposium focused on English Language and educational excellence.",
-    "startDateTime": "2025-03-01T14:00:00.000Z",
-    "endDateTime": "2025-03-02T22:00:00.000Z",
-    "locationName": "Montréal Convention Center",
-    "address": "913 Main Boulevard",
-    "city": "Montréal",
-    "region": "Montréal",
-    "organizerOrgId": "org114",
-    "associationId": null,
-    "tags": [
-      "Leadership",
-      "EdTech"
-    ],
-    "registrationEnabled": false
-  },
-  {
-    "id": "evt58",
-    "title": "Environmental Education Summit",
-    "description": "Join us for an engaging summit focused on Environmental Education and educational excellence.",
-    "startDateTime": "2025-06-22T13:00:00.000Z",
-    "endDateTime": "2025-06-24T21:00:00.000Z",
-    "locationName": "Chicoutimi Convention Center",
-    "address": "756 Main Boulevard",
-    "city": "Chicoutimi",
-    "region": "Saguenay–Lac-Saint-Jean",
-    "organizerOrgId": "org273",
-    "associationId": "assoc15",
-    "tags": [
-      "Indigenous Education",
-      "Special Education"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt59",
-    "title": "Music Seminar",
-    "description": "Join us for an engaging seminar focused on Music and educational excellence.",
-    "startDateTime": "2025-12-23T14:00:00.000Z",
-    "endDateTime": "2025-12-24T22:00:00.000Z",
-    "locationName": "Montréal Convention Center",
-    "address": "143 Main Boulevard",
-    "city": "Montréal",
-    "region": "Montréal",
-    "organizerOrgId": "org202",
-    "associationId": null,
-    "tags": [
-      "Leadership",
-      "Behavioral Support",
-      "Post-Secondary"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt60",
-    "title": "Professional Development Seminar",
-    "description": "Join us for an engaging seminar focused on Professional Development and educational excellence.",
-    "startDateTime": "2025-02-21T14:00:00.000Z",
-    "endDateTime": "2025-02-21T22:00:00.000Z",
-    "locationName": "Longueuil Convention Center",
-    "address": "150 Main Boulevard",
-    "city": "Longueuil",
-    "region": "Montérégie",
-    "organizerOrgId": "org70",
-    "associationId": "assoc3",
-    "tags": [
-      "Equity & Inclusion",
-      "Leadership"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt61",
-    "title": "Differentiated Instruction Workshop",
-    "description": "Join us for an engaging workshop focused on Differentiated Instruction and educational excellence.",
-    "startDateTime": "2025-02-12T14:00:00.000Z",
-    "endDateTime": "2025-02-14T22:00:00.000Z",
-    "locationName": "Gatineau Convention Center",
-    "address": "721 Main Boulevard",
-    "city": "Gatineau",
-    "region": "Outaouais",
-    "organizerOrgId": "org232",
-    "associationId": "assoc16",
-    "tags": [
-      "Project-Based Learning",
-      "Accessibility",
-      "Social Studies",
-      "Policy & Advocacy"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt62",
-    "title": "Mathematics Symposium",
-    "description": "Join us for an engaging symposium focused on Mathematics and educational excellence.",
-    "startDateTime": "2025-10-24T13:00:00.000Z",
-    "endDateTime": "2025-10-25T21:00:00.000Z",
-    "locationName": "Saguenay Convention Center",
-    "address": "617 Main Boulevard",
-    "city": "Saguenay",
-    "region": "Saguenay–Lac-Saint-Jean",
-    "organizerOrgId": "org65",
-    "associationId": null,
-    "tags": [
-      "Environmental Education",
-      "Vocational Training"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt63",
-    "title": "Assessment & Evaluation Networking Event",
-    "description": "Join us for an engaging networking event focused on Assessment & Evaluation and educational excellence.",
-    "startDateTime": "2025-10-01T13:00:00.000Z",
-    "endDateTime": "2025-10-01T21:00:00.000Z",
-    "locationName": "Québec Convention Center",
-    "address": "979 Main Boulevard",
-    "city": "Québec",
-    "region": "Capitale-Nationale",
-    "organizerOrgId": "org132",
-    "associationId": null,
-    "tags": [
-      "LMS Integration",
-      "Flipped Classroom"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt64",
-    "title": "Curriculum Development Symposium",
-    "description": "Join us for an engaging symposium focused on Curriculum Development and educational excellence.",
-    "startDateTime": "2025-07-03T13:00:00.000Z",
-    "endDateTime": "2025-07-03T21:00:00.000Z",
-    "locationName": "Laval Convention Center",
-    "address": "358 Main Boulevard",
-    "city": "Laval",
-    "region": "Laval",
-    "organizerOrgId": "org53",
-    "associationId": "assoc4",
-    "tags": [
-      "Accessibility",
-      "Digital Literacy",
-      "History"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt65",
-    "title": "Differentiated Instruction Symposium",
-    "description": "Join us for an engaging symposium focused on Differentiated Instruction and educational excellence.",
-    "startDateTime": "2025-09-11T13:00:00.000Z",
-    "endDateTime": "2025-09-12T21:00:00.000Z",
-    "locationName": "Saguenay Convention Center",
-    "address": "156 Main Boulevard",
-    "city": "Saguenay",
-    "region": "Saguenay–Lac-Saint-Jean",
-    "organizerOrgId": "org292",
-    "associationId": null,
-    "tags": [
-      "Social Studies",
-      "Secondary",
-      "Assessment & Evaluation"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt66",
-    "title": "Social-Emotional Learning Training",
-    "description": "Join us for an engaging training focused on Social-Emotional Learning and educational excellence.",
-    "startDateTime": "2025-06-05T13:00:00.000Z",
-    "endDateTime": "2025-06-05T21:00:00.000Z",
-    "locationName": "Laval Convention Center",
-    "address": "476 Main Boulevard",
-    "city": "Laval",
-    "region": "Laval",
-    "organizerOrgId": "org87",
-    "associationId": null,
-    "tags": [
-      "Professional Development",
-      "STEM",
-      "Project-Based Learning",
-      "LMS Integration"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt67",
-    "title": "Game-Based Learning Workshop",
-    "description": "Join us for an engaging workshop focused on Game-Based Learning and educational excellence.",
-    "startDateTime": "2025-06-26T13:00:00.000Z",
-    "endDateTime": "2025-06-26T21:00:00.000Z",
-    "locationName": "Laval Convention Center",
-    "address": "793 Main Boulevard",
-    "city": "Laval",
-    "region": "Laval",
-    "organizerOrgId": "org71",
-    "associationId": "assoc1",
-    "tags": [
-      "Arts",
-      "Music"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt68",
-    "title": "LMS Integration Forum",
-    "description": "Join us for an engaging forum focused on LMS Integration and educational excellence.",
-    "startDateTime": "2025-07-21T13:00:00.000Z",
-    "endDateTime": "2025-07-22T21:00:00.000Z",
-    "locationName": "Trois-Rivières Convention Center",
-    "address": "360 Main Boulevard",
-    "city": "Trois-Rivières",
-    "region": "Mauricie",
-    "organizerOrgId": "org28",
-    "associationId": "assoc16",
-    "tags": [
-      "Secondary",
-      "Early Childhood",
-      "School Safety"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt69",
-    "title": "School Safety Training",
-    "description": "Join us for an engaging training focused on School Safety and educational excellence.",
-    "startDateTime": "2025-01-13T14:00:00.000Z",
-    "endDateTime": "2025-01-15T22:00:00.000Z",
-    "locationName": "Chicoutimi Convention Center",
-    "address": "523 Main Boulevard",
-    "city": "Chicoutimi",
-    "region": "Saguenay–Lac-Saint-Jean",
-    "organizerOrgId": "org113",
-    "associationId": "assoc3",
-    "tags": [
-      "Policy & Advocacy",
-      "LMS Integration",
-      "Blended Learning",
-      "Bilingual Education"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt70",
-    "title": "Bilingual Education Workshop",
-    "description": "Join us for an engaging workshop focused on Bilingual Education and educational excellence.",
-    "startDateTime": "2025-06-02T13:00:00.000Z",
-    "endDateTime": "2025-06-02T21:00:00.000Z",
-    "locationName": "Lévis Convention Center",
-    "address": "920 Main Boulevard",
-    "city": "Lévis",
-    "region": "Chaudière-Appalaches",
-    "organizerOrgId": "org279",
-    "associationId": null,
-    "tags": [
-      "Science",
-      "Game-Based Learning"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt71",
-    "title": "Bilingual Education Conference",
-    "description": "Join us for an engaging conference focused on Bilingual Education and educational excellence.",
-    "startDateTime": "2025-07-01T13:00:00.000Z",
-    "endDateTime": "2025-07-01T21:00:00.000Z",
-    "locationName": "Québec Convention Center",
-    "address": "358 Main Boulevard",
-    "city": "Québec",
-    "region": "Capitale-Nationale",
-    "organizerOrgId": "org37",
-    "associationId": "assoc2",
-    "tags": [
-      "Bilingual Education",
-      "Social Studies",
-      "Environmental Education"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt72",
-    "title": "Bilingual Education Summit",
-    "description": "Join us for an engaging summit focused on Bilingual Education and educational excellence.",
-    "startDateTime": "2025-09-03T13:00:00.000Z",
-    "endDateTime": "2025-09-03T21:00:00.000Z",
-    "locationName": "Longueuil Convention Center",
-    "address": "670 Main Boulevard",
-    "city": "Longueuil",
-    "region": "Montérégie",
-    "organizerOrgId": "org157",
-    "associationId": null,
-    "tags": [
-      "History",
-      "EdTech",
-      "Inquiry-Based Learning",
-      "Vocational Training"
-    ],
-    "registrationEnabled": false
-  },
-  {
-    "id": "evt73",
-    "title": "Digital Literacy Symposium",
-    "description": "Join us for an engaging symposium focused on Digital Literacy and educational excellence.",
-    "startDateTime": "2025-10-03T13:00:00.000Z",
-    "endDateTime": "2025-10-05T21:00:00.000Z",
-    "locationName": "Laval Convention Center",
-    "address": "440 Main Boulevard",
-    "city": "Laval",
-    "region": "Laval",
-    "organizerOrgId": "org73",
-    "associationId": "assoc3",
-    "tags": [
-      "Digital Literacy",
-      "Accessibility"
-    ],
-    "registrationEnabled": false
-  },
-  {
-    "id": "evt74",
-    "title": "Bilingual Education Networking Event",
-    "description": "Join us for an engaging networking event focused on Bilingual Education and educational excellence.",
-    "startDateTime": "2025-02-28T14:00:00.000Z",
-    "endDateTime": "2025-03-01T22:00:00.000Z",
-    "locationName": "Laval Convention Center",
-    "address": "609 Main Boulevard",
-    "city": "Laval",
-    "region": "Laval",
-    "organizerOrgId": "org205",
-    "associationId": null,
-    "tags": [
-      "Early Childhood",
-      "Arts",
-      "Experiential Learning",
-      "Bilingual Education"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt75",
-    "title": "EdTech Workshop",
-    "description": "Join us for an engaging workshop focused on EdTech and educational excellence.",
-    "startDateTime": "2025-04-28T13:00:00.000Z",
-    "endDateTime": "2025-04-30T21:00:00.000Z",
-    "locationName": "Saguenay Convention Center",
-    "address": "689 Main Boulevard",
-    "city": "Saguenay",
-    "region": "Saguenay–Lac-Saint-Jean",
-    "organizerOrgId": "org245",
-    "associationId": null,
-    "tags": [
-      "Community Engagement",
-      "Professional Development"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt76",
-    "title": "History Forum",
-    "description": "Join us for an engaging forum focused on History and educational excellence.",
-    "startDateTime": "2025-02-16T14:00:00.000Z",
-    "endDateTime": "2025-02-16T22:00:00.000Z",
-    "locationName": "Rimouski Convention Center",
-    "address": "722 Main Boulevard",
-    "city": "Rimouski",
-    "region": "Bas-Saint-Laurent",
-    "organizerOrgId": "org269",
-    "associationId": "assoc15",
+    "organizerOrgId": "org125",
+    "associationId": "assoc14",
     "tags": [
       "Mathematics",
-      "Early Childhood",
-      "Gifted Education",
-      "Flipped Classroom"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt77",
-    "title": "Secondary Summit",
-    "description": "Join us for an engaging summit focused on Secondary and educational excellence.",
-    "startDateTime": "2025-09-05T13:00:00.000Z",
-    "endDateTime": "2025-09-05T21:00:00.000Z",
-    "locationName": "Saguenay Convention Center",
-    "address": "854 Main Boulevard",
-    "city": "Saguenay",
-    "region": "Saguenay–Lac-Saint-Jean",
-    "organizerOrgId": "org139",
-    "associationId": null,
-    "tags": [
-      "Behavioral Support",
-      "Social Studies"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt78",
-    "title": "Community Engagement Workshop",
-    "description": "Join us for an engaging workshop focused on Community Engagement and educational excellence.",
-    "startDateTime": "2025-09-15T13:00:00.000Z",
-    "endDateTime": "2025-09-15T21:00:00.000Z",
-    "locationName": "Rimouski Convention Center",
-    "address": "564 Main Boulevard",
-    "city": "Rimouski",
-    "region": "Bas-Saint-Laurent",
-    "organizerOrgId": "org106",
-    "associationId": "assoc1",
-    "tags": [
-      "Arts",
-      "Professional Development"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt79",
-    "title": "Vocational Training Networking Event",
-    "description": "Join us for an engaging networking event focused on Vocational Training and educational excellence.",
-    "startDateTime": "2025-11-06T14:00:00.000Z",
-    "endDateTime": "2025-11-07T22:00:00.000Z",
-    "locationName": "Saguenay Convention Center",
-    "address": "678 Main Boulevard",
-    "city": "Saguenay",
-    "region": "Saguenay–Lac-Saint-Jean",
-    "organizerOrgId": "org227",
-    "associationId": "assoc7",
-    "tags": [
-      "Special Education",
-      "School Safety",
-      "Game-Based Learning"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt80",
-    "title": "Secondary Forum",
-    "description": "Join us for an engaging forum focused on Secondary and educational excellence.",
-    "startDateTime": "2025-11-22T14:00:00.000Z",
-    "endDateTime": "2025-11-22T22:00:00.000Z",
-    "locationName": "Longueuil Convention Center",
-    "address": "157 Main Boulevard",
-    "city": "Longueuil",
-    "region": "Montérégie",
-    "organizerOrgId": "org65",
-    "associationId": null,
-    "tags": [
-      "Collaborative Learning",
-      "Coding & Robotics",
-      "Social-Emotional Learning"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt81",
-    "title": "EdTech Symposium",
-    "description": "Join us for an engaging symposium focused on EdTech and educational excellence.",
-    "startDateTime": "2025-12-12T14:00:00.000Z",
-    "endDateTime": "2025-12-14T22:00:00.000Z",
-    "locationName": "Québec Convention Center",
-    "address": "596 Main Boulevard",
-    "city": "Québec",
-    "region": "Capitale-Nationale",
-    "organizerOrgId": "org95",
-    "associationId": null,
-    "tags": [
-      "Community Engagement",
-      "Project-Based Learning",
-      "Global Citizenship",
-      "Elementary"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt82",
-    "title": "Game-Based Learning Training",
-    "description": "Join us for an engaging training focused on Game-Based Learning and educational excellence.",
-    "startDateTime": "2025-03-01T14:00:00.000Z",
-    "endDateTime": "2025-03-02T22:00:00.000Z",
-    "locationName": "Saint-Jérôme Convention Center",
-    "address": "225 Main Boulevard",
-    "city": "Saint-Jérôme",
-    "region": "Laurentides",
-    "organizerOrgId": "org147",
-    "associationId": null,
-    "tags": [
-      "Coding & Robotics",
-      "Gifted Education"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt83",
-    "title": "Project-Based Learning Conference",
-    "description": "Join us for an engaging conference focused on Project-Based Learning and educational excellence.",
-    "startDateTime": "2025-10-26T13:00:00.000Z",
-    "endDateTime": "2025-10-28T21:00:00.000Z",
-    "locationName": "Saint-Jérôme Convention Center",
-    "address": "120 Main Boulevard",
-    "city": "Saint-Jérôme",
-    "region": "Laurentides",
-    "organizerOrgId": "org293",
-    "associationId": null,
-    "tags": [
-      "Vocational Training",
-      "Elementary"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt84",
-    "title": "Secondary Workshop",
-    "description": "Join us for an engaging workshop focused on Secondary and educational excellence.",
-    "startDateTime": "2025-11-08T14:00:00.000Z",
-    "endDateTime": "2025-11-08T22:00:00.000Z",
-    "locationName": "Trois-Rivières Convention Center",
-    "address": "900 Main Boulevard",
-    "city": "Trois-Rivières",
-    "region": "Mauricie",
-    "organizerOrgId": "org124",
-    "associationId": "assoc19",
-    "tags": [
-      "Collaborative Learning",
-      "Rural Education",
-      "Equity & Inclusion"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt85",
-    "title": "Early Childhood Networking Event",
-    "description": "Join us for an engaging networking event focused on Early Childhood and educational excellence.",
-    "startDateTime": "2025-08-09T13:00:00.000Z",
-    "endDateTime": "2025-08-10T21:00:00.000Z",
-    "locationName": "Québec Convention Center",
-    "address": "177 Main Boulevard",
-    "city": "Québec",
-    "region": "Capitale-Nationale",
-    "organizerOrgId": "org23",
-    "associationId": null,
-    "tags": [
-      "Global Citizenship",
-      "Adult Education",
-      "ESL/ELL"
-    ],
-    "registrationEnabled": false
-  },
-  {
-    "id": "evt86",
-    "title": "Game-Based Learning Training",
-    "description": "Join us for an engaging training focused on Game-Based Learning and educational excellence.",
-    "startDateTime": "2025-12-09T14:00:00.000Z",
-    "endDateTime": "2025-12-10T22:00:00.000Z",
-    "locationName": "Montréal Convention Center",
-    "address": "571 Main Boulevard",
-    "city": "Montréal",
-    "region": "Montréal",
-    "organizerOrgId": "org32",
-    "associationId": null,
-    "tags": [
-      "Professional Development",
-      "Behavioral Support"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt87",
-    "title": "Professional Development Symposium",
-    "description": "Join us for an engaging symposium focused on Professional Development and educational excellence.",
-    "startDateTime": "2025-12-14T14:00:00.000Z",
-    "endDateTime": "2025-12-15T22:00:00.000Z",
-    "locationName": "Saguenay Convention Center",
-    "address": "742 Main Boulevard",
-    "city": "Saguenay",
-    "region": "Saguenay–Lac-Saint-Jean",
-    "organizerOrgId": "org4",
-    "associationId": null,
-    "tags": [
-      "Bilingual Education",
-      "Rural Education"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt88",
-    "title": "School Finance Conference",
-    "description": "Join us for an engaging conference focused on School Finance and educational excellence.",
-    "startDateTime": "2025-07-24T13:00:00.000Z",
-    "endDateTime": "2025-07-26T21:00:00.000Z",
-    "locationName": "Rimouski Convention Center",
-    "address": "887 Main Boulevard",
-    "city": "Rimouski",
-    "region": "Bas-Saint-Laurent",
-    "organizerOrgId": "org60",
-    "associationId": "assoc10",
-    "tags": [
-      "Physical Education",
-      "AI in Education"
-    ],
-    "registrationEnabled": false
-  },
-  {
-    "id": "evt89",
-    "title": "Arts Summit",
-    "description": "Join us for an engaging summit focused on Arts and educational excellence.",
-    "startDateTime": "2025-10-05T13:00:00.000Z",
-    "endDateTime": "2025-10-07T21:00:00.000Z",
-    "locationName": "Longueuil Convention Center",
-    "address": "653 Main Boulevard",
-    "city": "Longueuil",
-    "region": "Montérégie",
-    "organizerOrgId": "org152",
-    "associationId": "assoc13",
-    "tags": [
-      "Early Childhood",
-      "Special Education"
-    ],
-    "registrationEnabled": false
-  },
-  {
-    "id": "evt90",
-    "title": "Policy & Advocacy Networking Event",
-    "description": "Join us for an engaging networking event focused on Policy & Advocacy and educational excellence.",
-    "startDateTime": "2025-06-11T13:00:00.000Z",
-    "endDateTime": "2025-06-11T21:00:00.000Z",
-    "locationName": "Laval Convention Center",
-    "address": "791 Main Boulevard",
-    "city": "Laval",
-    "region": "Laval",
-    "organizerOrgId": "org299",
-    "associationId": "assoc10",
-    "tags": [
-      "Bilingual Education",
-      "Music",
-      "Early Childhood"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt91",
-    "title": "Music Seminar",
-    "description": "Join us for an engaging seminar focused on Music and educational excellence.",
-    "startDateTime": "2025-02-17T14:00:00.000Z",
-    "endDateTime": "2025-02-19T22:00:00.000Z",
-    "locationName": "Saint-Jérôme Convention Center",
-    "address": "926 Main Boulevard",
-    "city": "Saint-Jérôme",
-    "region": "Laurentides",
-    "organizerOrgId": "org151",
-    "associationId": "assoc8",
-    "tags": [
-      "EdTech",
-      "Indigenous Education",
-      "Social Studies"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt92",
-    "title": "Music Seminar",
-    "description": "Join us for an engaging seminar focused on Music and educational excellence.",
-    "startDateTime": "2025-02-15T14:00:00.000Z",
-    "endDateTime": "2025-02-17T22:00:00.000Z",
-    "locationName": "Sherbrooke Convention Center",
-    "address": "235 Main Boulevard",
-    "city": "Sherbrooke",
-    "region": "Estrie",
-    "organizerOrgId": "org10",
-    "associationId": "assoc13",
-    "tags": [
-      "Coding & Robotics",
-      "Leadership",
-      "Rural Education"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt93",
-    "title": "Secondary Networking Event",
-    "description": "Join us for an engaging networking event focused on Secondary and educational excellence.",
-    "startDateTime": "2025-05-08T13:00:00.000Z",
-    "endDateTime": "2025-05-10T21:00:00.000Z",
-    "locationName": "Montréal Convention Center",
-    "address": "591 Main Boulevard",
-    "city": "Montréal",
-    "region": "Montréal",
-    "organizerOrgId": "org208",
-    "associationId": "assoc5",
-    "tags": [
-      "Literacy",
-      "Mental Health",
-      "Experiential Learning"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt94",
-    "title": "Equity & Inclusion Seminar",
-    "description": "Join us for an engaging seminar focused on Equity & Inclusion and educational excellence.",
-    "startDateTime": "2025-02-25T14:00:00.000Z",
-    "endDateTime": "2025-02-25T22:00:00.000Z",
-    "locationName": "Lévis Convention Center",
-    "address": "695 Main Boulevard",
-    "city": "Lévis",
-    "region": "Chaudière-Appalaches",
-    "organizerOrgId": "org159",
-    "associationId": "assoc7",
-    "tags": [
-      "Post-Secondary"
-    ],
-    "registrationEnabled": false
-  },
-  {
-    "id": "evt95",
-    "title": "Assessment & Evaluation Forum",
-    "description": "Join us for an engaging forum focused on Assessment & Evaluation and educational excellence.",
-    "startDateTime": "2025-01-08T14:00:00.000Z",
-    "endDateTime": "2025-01-10T22:00:00.000Z",
-    "locationName": "Saguenay Convention Center",
-    "address": "767 Main Boulevard",
-    "city": "Saguenay",
-    "region": "Saguenay–Lac-Saint-Jean",
-    "organizerOrgId": "org131",
-    "associationId": "assoc11",
-    "tags": [
-      "Arts",
-      "Digital Literacy",
-      "Game-Based Learning"
-    ],
-    "registrationEnabled": false
-  },
-  {
-    "id": "evt96",
-    "title": "Indigenous Education Seminar",
-    "description": "Join us for an engaging seminar focused on Indigenous Education and educational excellence.",
-    "startDateTime": "2025-03-24T13:00:00.000Z",
-    "endDateTime": "2025-03-25T21:00:00.000Z",
-    "locationName": "Québec Convention Center",
-    "address": "911 Main Boulevard",
-    "city": "Québec",
-    "region": "Capitale-Nationale",
-    "organizerOrgId": "org124",
-    "associationId": null,
-    "tags": [
-      "STEM",
-      "Game-Based Learning"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt97",
-    "title": "Mental Health Summit",
-    "description": "Join us for an engaging summit focused on Mental Health and educational excellence.",
-    "startDateTime": "2025-01-27T14:00:00.000Z",
-    "endDateTime": "2025-01-29T22:00:00.000Z",
-    "locationName": "Chicoutimi Convention Center",
-    "address": "919 Main Boulevard",
-    "city": "Chicoutimi",
-    "region": "Saguenay–Lac-Saint-Jean",
-    "organizerOrgId": "org45",
-    "associationId": null,
-    "tags": [
-      "Special Education",
-      "Gifted Education"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt98",
-    "title": "English Language Forum",
-    "description": "Join us for an engaging forum focused on English Language and educational excellence.",
-    "startDateTime": "2025-05-14T13:00:00.000Z",
-    "endDateTime": "2025-05-15T21:00:00.000Z",
-    "locationName": "Rimouski Convention Center",
-    "address": "924 Main Boulevard",
-    "city": "Rimouski",
-    "region": "Bas-Saint-Laurent",
-    "organizerOrgId": "org135",
-    "associationId": "assoc11",
-    "tags": [
-      "Rural Education",
       "Flipped Classroom",
-      "Professional Development"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt99",
-    "title": "ESL/ELL Seminar",
-    "description": "Join us for an engaging seminar focused on ESL/ELL and educational excellence.",
-    "startDateTime": "2025-11-14T14:00:00.000Z",
-    "endDateTime": "2025-11-14T22:00:00.000Z",
-    "locationName": "Chicoutimi Convention Center",
-    "address": "724 Main Boulevard",
-    "city": "Chicoutimi",
-    "region": "Saguenay–Lac-Saint-Jean",
-    "organizerOrgId": "org277",
-    "associationId": null,
-    "tags": [
-      "Professional Development",
-      "School Finance"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt100",
-    "title": "EdTech Conference",
-    "description": "Join us for an engaging conference focused on EdTech and educational excellence.",
-    "startDateTime": "2025-11-06T14:00:00.000Z",
-    "endDateTime": "2025-11-06T22:00:00.000Z",
-    "locationName": "Trois-Rivières Convention Center",
-    "address": "397 Main Boulevard",
-    "city": "Trois-Rivières",
-    "region": "Mauricie",
-    "organizerOrgId": "org301",
-    "associationId": null,
-    "tags": [
-      "Arts"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt101",
-    "title": "Environmental Education Forum",
-    "description": "Join us for an engaging forum focused on Environmental Education and educational excellence.",
-    "startDateTime": "2025-12-03T14:00:00.000Z",
-    "endDateTime": "2025-12-05T22:00:00.000Z",
-    "locationName": "Saint-Jérôme Convention Center",
-    "address": "798 Main Boulevard",
-    "city": "Saint-Jérôme",
-    "region": "Laurentides",
-    "organizerOrgId": "org215",
-    "associationId": null,
-    "tags": [
-      "School Finance",
-      "Gifted Education"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt102",
-    "title": "Digital Literacy Conference",
-    "description": "Join us for an engaging conference focused on Digital Literacy and educational excellence.",
-    "startDateTime": "2025-01-26T14:00:00.000Z",
-    "endDateTime": "2025-01-27T22:00:00.000Z",
-    "locationName": "Trois-Rivières Convention Center",
-    "address": "601 Main Boulevard",
-    "city": "Trois-Rivières",
-    "region": "Mauricie",
-    "organizerOrgId": "org27",
-    "associationId": null,
-    "tags": [
-      "Blended Learning",
-      "Early Childhood"
-    ],
-    "registrationEnabled": false
-  },
-  {
-    "id": "evt103",
-    "title": "Equity & Inclusion Seminar",
-    "description": "Join us for an engaging seminar focused on Equity & Inclusion and educational excellence.",
-    "startDateTime": "2025-10-01T13:00:00.000Z",
-    "endDateTime": "2025-10-03T21:00:00.000Z",
-    "locationName": "Trois-Rivières Convention Center",
-    "address": "525 Main Boulevard",
-    "city": "Trois-Rivières",
-    "region": "Mauricie",
-    "organizerOrgId": "org172",
-    "associationId": "assoc8",
-    "tags": [
-      "Mathematics",
-      "Environmental Education"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt104",
-    "title": "Adult Education Summit",
-    "description": "Join us for an engaging summit focused on Adult Education and educational excellence.",
-    "startDateTime": "2025-08-14T13:00:00.000Z",
-    "endDateTime": "2025-08-14T21:00:00.000Z",
-    "locationName": "Chicoutimi Convention Center",
-    "address": "715 Main Boulevard",
-    "city": "Chicoutimi",
-    "region": "Saguenay–Lac-Saint-Jean",
-    "organizerOrgId": "org34",
-    "associationId": "assoc4",
-    "tags": [
-      "Equity & Inclusion",
-      "EdTech"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt105",
-    "title": "Post-Secondary Workshop",
-    "description": "Join us for an engaging workshop focused on Post-Secondary and educational excellence.",
-    "startDateTime": "2025-03-28T13:00:00.000Z",
-    "endDateTime": "2025-03-28T21:00:00.000Z",
-    "locationName": "Laval Convention Center",
-    "address": "623 Main Boulevard",
-    "city": "Laval",
-    "region": "Laval",
-    "organizerOrgId": "org92",
-    "associationId": null,
-    "tags": [
-      "Digital Literacy",
-      "Vocational Training"
-    ],
-    "registrationEnabled": false
-  },
-  {
-    "id": "evt106",
-    "title": "Environmental Education Workshop",
-    "description": "Join us for an engaging workshop focused on Environmental Education and educational excellence.",
-    "startDateTime": "2025-11-04T14:00:00.000Z",
-    "endDateTime": "2025-11-05T22:00:00.000Z",
-    "locationName": "Saint-Jérôme Convention Center",
-    "address": "504 Main Boulevard",
-    "city": "Saint-Jérôme",
-    "region": "Laurentides",
-    "organizerOrgId": "org82",
-    "associationId": "assoc2",
-    "tags": [
-      "Coding & Robotics",
-      "LMS Integration",
-      "Elementary"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt107",
-    "title": "Game-Based Learning Summit",
-    "description": "Join us for an engaging summit focused on Game-Based Learning and educational excellence.",
-    "startDateTime": "2025-01-25T14:00:00.000Z",
-    "endDateTime": "2025-01-27T22:00:00.000Z",
-    "locationName": "Saguenay Convention Center",
-    "address": "608 Main Boulevard",
-    "city": "Saguenay",
-    "region": "Saguenay–Lac-Saint-Jean",
-    "organizerOrgId": "org279",
-    "associationId": "assoc6",
-    "tags": [
-      "Gifted Education",
-      "Adult Education",
-      "Mathematics"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt108",
-    "title": "Professional Development Summit",
-    "description": "Join us for an engaging summit focused on Professional Development and educational excellence.",
-    "startDateTime": "2025-08-21T13:00:00.000Z",
-    "endDateTime": "2025-08-21T21:00:00.000Z",
-    "locationName": "Trois-Rivières Convention Center",
-    "address": "122 Main Boulevard",
-    "city": "Trois-Rivières",
-    "region": "Mauricie",
-    "organizerOrgId": "org255",
-    "associationId": null,
-    "tags": [
-      "Literacy",
-      "ESL/ELL",
-      "Leadership"
-    ],
-    "registrationEnabled": false
-  },
-  {
-    "id": "evt109",
-    "title": "ESL/ELL Summit",
-    "description": "Join us for an engaging summit focused on ESL/ELL and educational excellence.",
-    "startDateTime": "2025-06-06T13:00:00.000Z",
-    "endDateTime": "2025-06-08T21:00:00.000Z",
-    "locationName": "Saguenay Convention Center",
-    "address": "567 Main Boulevard",
-    "city": "Saguenay",
-    "region": "Saguenay–Lac-Saint-Jean",
-    "organizerOrgId": "org191",
-    "associationId": null,
-    "tags": [
-      "Coding & Robotics",
-      "Literacy",
-      "ESL/ELL",
-      "Equity & Inclusion"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt110",
-    "title": "Behavioral Support Seminar",
-    "description": "Join us for an engaging seminar focused on Behavioral Support and educational excellence.",
-    "startDateTime": "2025-08-26T13:00:00.000Z",
-    "endDateTime": "2025-08-27T21:00:00.000Z",
-    "locationName": "Sherbrooke Convention Center",
-    "address": "701 Main Boulevard",
-    "city": "Sherbrooke",
-    "region": "Estrie",
-    "organizerOrgId": "org14",
-    "associationId": "assoc13",
-    "tags": [
-      "Special Education",
-      "Leadership"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt111",
-    "title": "Inquiry-Based Learning Workshop",
-    "description": "Join us for an engaging workshop focused on Inquiry-Based Learning and educational excellence.",
-    "startDateTime": "2025-07-02T13:00:00.000Z",
-    "endDateTime": "2025-07-04T21:00:00.000Z",
-    "locationName": "Rimouski Convention Center",
-    "address": "196 Main Boulevard",
-    "city": "Rimouski",
-    "region": "Bas-Saint-Laurent",
-    "organizerOrgId": "org45",
-    "associationId": "assoc2",
-    "tags": [
-      "Game-Based Learning",
-      "Experiential Learning",
-      "Equity & Inclusion"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt112",
-    "title": "Vocational Training Workshop",
-    "description": "Join us for an engaging workshop focused on Vocational Training and educational excellence.",
-    "startDateTime": "2025-05-10T13:00:00.000Z",
-    "endDateTime": "2025-05-12T21:00:00.000Z",
-    "locationName": "Québec Convention Center",
-    "address": "444 Main Boulevard",
-    "city": "Québec",
-    "region": "Capitale-Nationale",
-    "organizerOrgId": "org261",
-    "associationId": null,
-    "tags": [
-      "Differentiated Instruction",
-      "Environmental Education",
-      "French Language"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt113",
-    "title": "Elementary Summit",
-    "description": "Join us for an engaging summit focused on Elementary and educational excellence.",
-    "startDateTime": "2025-05-04T13:00:00.000Z",
-    "endDateTime": "2025-05-05T21:00:00.000Z",
-    "locationName": "Rimouski Convention Center",
-    "address": "824 Main Boulevard",
-    "city": "Rimouski",
-    "region": "Bas-Saint-Laurent",
-    "organizerOrgId": "org239",
-    "associationId": "assoc20",
-    "tags": [
-      "LMS Integration",
-      "Early Childhood"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt114",
-    "title": "Social Studies Workshop",
-    "description": "Join us for an engaging workshop focused on Social Studies and educational excellence.",
-    "startDateTime": "2025-10-01T13:00:00.000Z",
-    "endDateTime": "2025-10-02T21:00:00.000Z",
-    "locationName": "Québec Convention Center",
-    "address": "521 Main Boulevard",
-    "city": "Québec",
-    "region": "Capitale-Nationale",
-    "organizerOrgId": "org299",
-    "associationId": "assoc12",
-    "tags": [
-      "Early Childhood",
-      "Vocational Training",
-      "Differentiated Instruction",
-      "Inquiry-Based Learning"
-    ],
-    "registrationEnabled": false
-  },
-  {
-    "id": "evt115",
-    "title": "Physical Education Conference",
-    "description": "Join us for an engaging conference focused on Physical Education and educational excellence.",
-    "startDateTime": "2025-04-27T13:00:00.000Z",
-    "endDateTime": "2025-04-29T21:00:00.000Z",
-    "locationName": "Sherbrooke Convention Center",
-    "address": "903 Main Boulevard",
-    "city": "Sherbrooke",
-    "region": "Estrie",
-    "organizerOrgId": "org69",
-    "associationId": "assoc13",
-    "tags": [
-      "History",
-      "Environmental Education",
-      "Global Citizenship",
+      "Secondary",
       "English Language"
     ],
     "registrationEnabled": true
   },
   {
-    "id": "evt116",
-    "title": "History Summit",
-    "description": "Join us for an engaging summit focused on History and educational excellence.",
-    "startDateTime": "2025-02-04T14:00:00.000Z",
-    "endDateTime": "2025-02-05T22:00:00.000Z",
-    "locationName": "Laval Convention Center",
-    "address": "125 Main Boulevard",
-    "city": "Laval",
-    "region": "Laval",
-    "organizerOrgId": "org98",
-    "associationId": "assoc3",
+    "id": "evt46",
+    "title": "History Symposium",
+    "description": "Join us for an engaging symposium focused on History and educational excellence.",
+    "startDateTime": "2027-02-16T14:00:00.000Z",
+    "endDateTime": "2027-02-17T22:00:00.000Z",
+    "locationName": "Chicoutimi Convention Center",
+    "address": "418 Main Boulevard",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org239",
+    "associationId": "assoc27",
     "tags": [
-      "Coding & Robotics",
-      "Leadership",
-      "Social-Emotional Learning",
-      "Early Childhood"
+      "Adult Education",
+      "Policy & Advocacy",
+      "LMS Integration",
+      "Accessibility"
     ],
     "registrationEnabled": true
   },
   {
-    "id": "evt117",
-    "title": "Elementary Symposium",
-    "description": "Join us for an engaging symposium focused on Elementary and educational excellence.",
-    "startDateTime": "2025-08-26T13:00:00.000Z",
-    "endDateTime": "2025-08-26T21:00:00.000Z",
-    "locationName": "Gatineau Convention Center",
-    "address": "454 Main Boulevard",
-    "city": "Gatineau",
-    "region": "Outaouais",
-    "organizerOrgId": "org145",
+    "id": "evt47",
+    "title": "Indigenous Education Symposium",
+    "description": "Join us for an engaging symposium focused on Indigenous Education and educational excellence.",
+    "startDateTime": "2026-04-23T13:00:00.000Z",
+    "endDateTime": "2026-04-25T21:00:00.000Z",
+    "locationName": "Chicoutimi Convention Center",
+    "address": "337 Main Boulevard",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org178",
+    "associationId": "assoc21",
+    "tags": [
+      "Science",
+      "Secondary",
+      "Literacy",
+      "School Safety"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt48",
+    "title": "Assessment & Evaluation Summit",
+    "description": "Join us for an engaging summit focused on Assessment & Evaluation and educational excellence.",
+    "startDateTime": "2028-10-01T13:00:00.000Z",
+    "endDateTime": "2028-10-02T21:00:00.000Z",
+    "locationName": "Montréal Convention Center",
+    "address": "523 Main Boulevard",
+    "city": "Montréal",
+    "region": "Montréal",
+    "organizerOrgId": "org149",
     "associationId": null,
     "tags": [
-      "Leadership",
-      "Science",
-      "Social-Emotional Learning",
-      "Elementary"
+      "Game-Based Learning",
+      "Music"
     ],
     "registrationEnabled": true
   },
   {
-    "id": "evt118",
-    "title": "Differentiated Instruction Forum",
-    "description": "Join us for an engaging forum focused on Differentiated Instruction and educational excellence.",
-    "startDateTime": "2025-04-03T13:00:00.000Z",
-    "endDateTime": "2025-04-04T21:00:00.000Z",
-    "locationName": "Lévis Convention Center",
-    "address": "205 Main Boulevard",
-    "city": "Lévis",
-    "region": "Chaudière-Appalaches",
-    "organizerOrgId": "org98",
-    "associationId": "assoc1",
-    "tags": [
-      "Curriculum Development",
-      "Music",
-      "Rural Education"
-    ],
-    "registrationEnabled": false
-  },
-  {
-    "id": "evt119",
-    "title": "Flipped Classroom Conference",
-    "description": "Join us for an engaging conference focused on Flipped Classroom and educational excellence.",
-    "startDateTime": "2025-03-21T13:00:00.000Z",
-    "endDateTime": "2025-03-23T21:00:00.000Z",
-    "locationName": "Lévis Convention Center",
-    "address": "355 Main Boulevard",
-    "city": "Lévis",
-    "region": "Chaudière-Appalaches",
-    "organizerOrgId": "org67",
-    "associationId": "assoc17",
-    "tags": [
-      "Mathematics",
-      "Vocational Training",
-      "Social-Emotional Learning"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt120",
-    "title": "Rural Education Seminar",
-    "description": "Join us for an engaging seminar focused on Rural Education and educational excellence.",
-    "startDateTime": "2025-10-25T13:00:00.000Z",
-    "endDateTime": "2025-10-27T21:00:00.000Z",
-    "locationName": "Sherbrooke Convention Center",
-    "address": "977 Main Boulevard",
-    "city": "Sherbrooke",
-    "region": "Estrie",
-    "organizerOrgId": "org78",
-    "associationId": "assoc14",
-    "tags": [
-      "Elementary",
-      "EdTech",
-      "LMS Integration"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt121",
-    "title": "Adult Education Seminar",
-    "description": "Join us for an engaging seminar focused on Adult Education and educational excellence.",
-    "startDateTime": "2025-03-17T13:00:00.000Z",
-    "endDateTime": "2025-03-18T21:00:00.000Z",
+    "id": "evt49",
+    "title": "Global Citizenship Forum",
+    "description": "Join us for an engaging forum focused on Global Citizenship and educational excellence.",
+    "startDateTime": "2026-12-01T14:00:00.000Z",
+    "endDateTime": "2026-12-01T22:00:00.000Z",
     "locationName": "Saint-Jérôme Convention Center",
-    "address": "347 Main Boulevard",
+    "address": "113 Main Boulevard",
     "city": "Saint-Jérôme",
     "region": "Laurentides",
-    "organizerOrgId": "org156",
-    "associationId": "assoc15",
+    "organizerOrgId": "org96",
+    "associationId": "assoc14",
     "tags": [
-      "Accessibility",
-      "Post-Secondary",
-      "Adult Education"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt122",
-    "title": "Policy & Advocacy Seminar",
-    "description": "Join us for an engaging seminar focused on Policy & Advocacy and educational excellence.",
-    "startDateTime": "2025-08-14T13:00:00.000Z",
-    "endDateTime": "2025-08-14T21:00:00.000Z",
-    "locationName": "Québec Convention Center",
-    "address": "340 Main Boulevard",
-    "city": "Québec",
-    "region": "Capitale-Nationale",
-    "organizerOrgId": "org21",
-    "associationId": null,
-    "tags": [
-      "Coding & Robotics",
-      "Professional Development",
-      "AI in Education",
-      "Elementary"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt123",
-    "title": "School Finance Workshop",
-    "description": "Join us for an engaging workshop focused on School Finance and educational excellence.",
-    "startDateTime": "2025-09-20T13:00:00.000Z",
-    "endDateTime": "2025-09-21T21:00:00.000Z",
-    "locationName": "Gatineau Convention Center",
-    "address": "203 Main Boulevard",
-    "city": "Gatineau",
-    "region": "Outaouais",
-    "organizerOrgId": "org5",
-    "associationId": null,
-    "tags": [
+      "Assessment & Evaluation",
       "School Finance",
-      "STEM"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt124",
-    "title": "Experiential Learning Conference",
-    "description": "Join us for an engaging conference focused on Experiential Learning and educational excellence.",
-    "startDateTime": "2025-01-19T14:00:00.000Z",
-    "endDateTime": "2025-01-20T22:00:00.000Z",
-    "locationName": "Québec Convention Center",
-    "address": "182 Main Boulevard",
-    "city": "Québec",
-    "region": "Capitale-Nationale",
-    "organizerOrgId": "org264",
-    "associationId": null,
-    "tags": [
-      "Global Citizenship",
-      "Differentiated Instruction",
-      "Arts",
       "Project-Based Learning"
     ],
     "registrationEnabled": true
   },
   {
-    "id": "evt125",
-    "title": "Literacy Symposium",
-    "description": "Join us for an engaging symposium focused on Literacy and educational excellence.",
-    "startDateTime": "2025-03-17T13:00:00.000Z",
-    "endDateTime": "2025-03-18T21:00:00.000Z",
+    "id": "evt50",
+    "title": "Game-Based Learning Symposium",
+    "description": "Join us for an engaging symposium focused on Game-Based Learning and educational excellence.",
+    "startDateTime": "2027-04-28T13:00:00.000Z",
+    "endDateTime": "2027-04-28T21:00:00.000Z",
+    "locationName": "Saint-Jérôme Convention Center",
+    "address": "447 Main Boulevard",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "organizerOrgId": "org12",
+    "associationId": null,
+    "tags": [
+      "LMS Integration",
+      "Social-Emotional Learning"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt51",
+    "title": "Special Education Symposium",
+    "description": "Join us for an engaging symposium focused on Special Education and educational excellence.",
+    "startDateTime": "2026-11-02T14:00:00.000Z",
+    "endDateTime": "2026-11-02T22:00:00.000Z",
+    "locationName": "Lévis Convention Center",
+    "address": "978 Main Boulevard",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "organizerOrgId": "org207",
+    "associationId": null,
+    "tags": [
+      "Community Engagement",
+      "Equity & Inclusion",
+      "Vocational Training"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt52",
+    "title": "Post-Secondary Conference",
+    "description": "Join us for an engaging conference focused on Post-Secondary and educational excellence.",
+    "startDateTime": "2026-01-06T14:00:00.000Z",
+    "endDateTime": "2026-01-08T22:00:00.000Z",
+    "locationName": "Longueuil Convention Center",
+    "address": "281 Main Boulevard",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "organizerOrgId": "org223",
+    "associationId": "assoc25",
+    "tags": [
+      "Physical Education",
+      "Social-Emotional Learning",
+      "Assessment & Evaluation",
+      "Experiential Learning"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt53",
+    "title": "Leadership Training",
+    "description": "Join us for an engaging training focused on Leadership and educational excellence.",
+    "startDateTime": "2028-05-10T13:00:00.000Z",
+    "endDateTime": "2028-05-12T21:00:00.000Z",
     "locationName": "Laval Convention Center",
-    "address": "479 Main Boulevard",
+    "address": "422 Main Boulevard",
     "city": "Laval",
     "region": "Laval",
-    "organizerOrgId": "org96",
-    "associationId": "assoc8",
-    "tags": [
-      "Global Citizenship",
-      "Social Studies"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt126",
-    "title": "English Language Training",
-    "description": "Join us for an engaging training focused on English Language and educational excellence.",
-    "startDateTime": "2025-01-15T14:00:00.000Z",
-    "endDateTime": "2025-01-15T22:00:00.000Z",
-    "locationName": "Montréal Convention Center",
-    "address": "823 Main Boulevard",
-    "city": "Montréal",
-    "region": "Montréal",
-    "organizerOrgId": "org162",
+    "organizerOrgId": "org241",
     "associationId": null,
     "tags": [
-      "Accessibility",
-      "Post-Secondary"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt127",
-    "title": "STEM Summit",
-    "description": "Join us for an engaging summit focused on STEM and educational excellence.",
-    "startDateTime": "2025-10-10T13:00:00.000Z",
-    "endDateTime": "2025-10-11T21:00:00.000Z",
-    "locationName": "Lévis Convention Center",
-    "address": "782 Main Boulevard",
-    "city": "Lévis",
-    "region": "Chaudière-Appalaches",
-    "organizerOrgId": "org252",
-    "associationId": "assoc3",
-    "tags": [
-      "Collaborative Learning",
-      "School Finance",
-      "Leadership"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt128",
-    "title": "EdTech Workshop",
-    "description": "Join us for an engaging workshop focused on EdTech and educational excellence.",
-    "startDateTime": "2025-02-24T14:00:00.000Z",
-    "endDateTime": "2025-02-24T22:00:00.000Z",
-    "locationName": "Lévis Convention Center",
-    "address": "809 Main Boulevard",
-    "city": "Lévis",
-    "region": "Chaudière-Appalaches",
-    "organizerOrgId": "org162",
-    "associationId": null,
-    "tags": [
+      "Special Education",
       "Blended Learning",
       "Accessibility",
       "Differentiated Instruction"
@@ -2414,190 +1004,2011 @@
     "registrationEnabled": true
   },
   {
-    "id": "evt129",
-    "title": "Assessment & Evaluation Seminar",
-    "description": "Join us for an engaging seminar focused on Assessment & Evaluation and educational excellence.",
-    "startDateTime": "2025-08-15T13:00:00.000Z",
-    "endDateTime": "2025-08-17T21:00:00.000Z",
-    "locationName": "Québec Convention Center",
-    "address": "935 Main Boulevard",
-    "city": "Québec",
-    "region": "Capitale-Nationale",
-    "organizerOrgId": "org215",
-    "associationId": null,
+    "id": "evt54",
+    "title": "Behavioral Support Summit",
+    "description": "Join us for an engaging summit focused on Behavioral Support and educational excellence.",
+    "startDateTime": "2028-09-23T13:00:00.000Z",
+    "endDateTime": "2028-09-24T21:00:00.000Z",
+    "locationName": "Sherbrooke Convention Center",
+    "address": "782 Main Boulevard",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "organizerOrgId": "org25",
+    "associationId": "assoc12",
     "tags": [
-      "Game-Based Learning",
+      "Professional Development",
+      "Bilingual Education"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt55",
+    "title": "Digital Literacy Networking Event",
+    "description": "Join us for an engaging networking event focused on Digital Literacy and educational excellence.",
+    "startDateTime": "2028-07-15T13:00:00.000Z",
+    "endDateTime": "2028-07-17T21:00:00.000Z",
+    "locationName": "Saguenay Convention Center",
+    "address": "815 Main Boulevard",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org203",
+    "associationId": "assoc14",
+    "tags": [
+      "Science",
+      "Social Studies",
       "AI in Education"
     ],
     "registrationEnabled": true
   },
   {
-    "id": "evt130",
-    "title": "Social Studies Summit",
-    "description": "Join us for an engaging summit focused on Social Studies and educational excellence.",
-    "startDateTime": "2025-06-18T13:00:00.000Z",
-    "endDateTime": "2025-06-19T21:00:00.000Z",
-    "locationName": "Lévis Convention Center",
-    "address": "273 Main Boulevard",
-    "city": "Lévis",
-    "region": "Chaudière-Appalaches",
-    "organizerOrgId": "org305",
-    "associationId": "assoc18",
+    "id": "evt56",
+    "title": "Adult Education Training",
+    "description": "Join us for an engaging training focused on Adult Education and educational excellence.",
+    "startDateTime": "2028-01-04T14:00:00.000Z",
+    "endDateTime": "2028-01-04T22:00:00.000Z",
+    "locationName": "Trois-Rivières Convention Center",
+    "address": "145 Main Boulevard",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "organizerOrgId": "org94",
+    "associationId": "assoc26",
     "tags": [
-      "Science",
-      "Game-Based Learning",
-      "LMS Integration"
+      "Social Studies",
+      "French Language",
+      "Game-Based Learning"
     ],
     "registrationEnabled": true
   },
   {
-    "id": "evt131",
-    "title": "Global Citizenship Forum",
-    "description": "Join us for an engaging forum focused on Global Citizenship and educational excellence.",
-    "startDateTime": "2025-04-09T13:00:00.000Z",
-    "endDateTime": "2025-04-09T21:00:00.000Z",
-    "locationName": "Rimouski Convention Center",
-    "address": "508 Main Boulevard",
-    "city": "Rimouski",
-    "region": "Bas-Saint-Laurent",
-    "organizerOrgId": "org88",
-    "associationId": "assoc5",
-    "tags": [
-      "Assessment & Evaluation",
-      "Gifted Education",
-      "School Finance"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt132",
-    "title": "Differentiated Instruction Seminar",
-    "description": "Join us for an engaging seminar focused on Differentiated Instruction and educational excellence.",
-    "startDateTime": "2025-04-20T13:00:00.000Z",
-    "endDateTime": "2025-04-20T21:00:00.000Z",
+    "id": "evt57",
+    "title": "Post-Secondary Training",
+    "description": "Join us for an engaging training focused on Post-Secondary and educational excellence.",
+    "startDateTime": "2028-08-02T13:00:00.000Z",
+    "endDateTime": "2028-08-04T21:00:00.000Z",
     "locationName": "Saint-Jérôme Convention Center",
-    "address": "310 Main Boulevard",
+    "address": "925 Main Boulevard",
     "city": "Saint-Jérôme",
     "region": "Laurentides",
-    "organizerOrgId": "org185",
-    "associationId": "assoc18",
+    "organizerOrgId": "org25",
+    "associationId": "assoc9",
     "tags": [
-      "Post-Secondary",
-      "Professional Development"
+      "Digital Literacy",
+      "Accessibility"
     ],
     "registrationEnabled": true
   },
   {
-    "id": "evt133",
-    "title": "Policy & Advocacy Seminar",
-    "description": "Join us for an engaging seminar focused on Policy & Advocacy and educational excellence.",
-    "startDateTime": "2025-12-17T14:00:00.000Z",
-    "endDateTime": "2025-12-19T22:00:00.000Z",
-    "locationName": "Saguenay Convention Center",
-    "address": "211 Main Boulevard",
-    "city": "Saguenay",
-    "region": "Saguenay–Lac-Saint-Jean",
-    "organizerOrgId": "org269",
+    "id": "evt58",
+    "title": "Elementary Symposium",
+    "description": "Join us for an engaging symposium focused on Elementary and educational excellence.",
+    "startDateTime": "2026-05-04T13:00:00.000Z",
+    "endDateTime": "2026-05-06T21:00:00.000Z",
+    "locationName": "Trois-Rivières Convention Center",
+    "address": "202 Main Boulevard",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "organizerOrgId": "org196",
     "associationId": null,
     "tags": [
       "Equity & Inclusion",
-      "Post-Secondary",
-      "School Safety",
-      "Collaborative Learning"
+      "Indigenous Education",
+      "French Language"
     ],
     "registrationEnabled": true
   },
   {
-    "id": "evt134",
-    "title": "Global Citizenship Networking Event",
-    "description": "Join us for an engaging networking event focused on Global Citizenship and educational excellence.",
-    "startDateTime": "2025-09-15T13:00:00.000Z",
-    "endDateTime": "2025-09-16T21:00:00.000Z",
-    "locationName": "Saint-Jérôme Convention Center",
-    "address": "152 Main Boulevard",
-    "city": "Saint-Jérôme",
-    "region": "Laurentides",
-    "organizerOrgId": "org289",
-    "associationId": "assoc16",
+    "id": "evt59",
+    "title": "Gifted Education Summit",
+    "description": "Join us for an engaging summit focused on Gifted Education and educational excellence.",
+    "startDateTime": "2027-05-19T13:00:00.000Z",
+    "endDateTime": "2027-05-21T21:00:00.000Z",
+    "locationName": "Longueuil Convention Center",
+    "address": "752 Main Boulevard",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "organizerOrgId": "org203",
+    "associationId": null,
     "tags": [
-      "Gifted Education",
-      "Game-Based Learning",
-      "Early Childhood"
-    ],
-    "registrationEnabled": true
-  },
-  {
-    "id": "evt135",
-    "title": "School Finance Networking Event",
-    "description": "Join us for an engaging networking event focused on School Finance and educational excellence.",
-    "startDateTime": "2025-10-28T13:00:00.000Z",
-    "endDateTime": "2025-10-29T21:00:00.000Z",
-    "locationName": "Québec Convention Center",
-    "address": "383 Main Boulevard",
-    "city": "Québec",
-    "region": "Capitale-Nationale",
-    "organizerOrgId": "org165",
-    "associationId": "assoc11",
-    "tags": [
-      "STEM",
-      "Adult Education"
+      "Curriculum Development",
+      "Indigenous Education",
+      "Game-Based Learning"
     ],
     "registrationEnabled": false
   },
   {
-    "id": "evt136",
-    "title": "Project-Based Learning Forum",
-    "description": "Join us for an engaging forum focused on Project-Based Learning and educational excellence.",
-    "startDateTime": "2025-01-20T14:00:00.000Z",
-    "endDateTime": "2025-01-20T22:00:00.000Z",
+    "id": "evt60",
+    "title": "Differentiated Instruction Seminar",
+    "description": "Join us for an engaging seminar focused on Differentiated Instruction and educational excellence.",
+    "startDateTime": "2028-05-12T13:00:00.000Z",
+    "endDateTime": "2028-05-14T21:00:00.000Z",
+    "locationName": "Trois-Rivières Convention Center",
+    "address": "600 Main Boulevard",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "organizerOrgId": "org69",
+    "associationId": "assoc24",
+    "tags": [
+      "LMS Integration",
+      "AI in Education",
+      "Adult Education"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt61",
+    "title": "STEM Summit",
+    "description": "Join us for an engaging summit focused on STEM and educational excellence.",
+    "startDateTime": "2026-10-14T13:00:00.000Z",
+    "endDateTime": "2026-10-15T21:00:00.000Z",
     "locationName": "Gatineau Convention Center",
-    "address": "457 Main Boulevard",
+    "address": "390 Main Boulevard",
     "city": "Gatineau",
     "region": "Outaouais",
-    "organizerOrgId": "org175",
-    "associationId": "assoc1",
+    "organizerOrgId": "org225",
+    "associationId": "assoc28",
     "tags": [
-      "Arts",
+      "Experiential Learning",
+      "ESL/ELL",
+      "STEM"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt62",
+    "title": "Equity & Inclusion Workshop",
+    "description": "Join us for an engaging workshop focused on Equity & Inclusion and educational excellence.",
+    "startDateTime": "2027-08-21T13:00:00.000Z",
+    "endDateTime": "2027-08-22T21:00:00.000Z",
+    "locationName": "Laval Convention Center",
+    "address": "743 Main Boulevard",
+    "city": "Laval",
+    "region": "Laval",
+    "organizerOrgId": "org28",
+    "associationId": null,
+    "tags": [
+      "Professional Development",
+      "Equity & Inclusion",
+      "Adult Education"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt63",
+    "title": "Science Symposium",
+    "description": "Join us for an engaging symposium focused on Science and educational excellence.",
+    "startDateTime": "2026-12-09T14:00:00.000Z",
+    "endDateTime": "2026-12-11T22:00:00.000Z",
+    "locationName": "Chicoutimi Convention Center",
+    "address": "771 Main Boulevard",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org166",
+    "associationId": null,
+    "tags": [
+      "Literacy",
+      "Bilingual Education"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt64",
+    "title": "Global Citizenship Workshop",
+    "description": "Join us for an engaging workshop focused on Global Citizenship and educational excellence.",
+    "startDateTime": "2028-01-27T14:00:00.000Z",
+    "endDateTime": "2028-01-29T22:00:00.000Z",
+    "locationName": "Laval Convention Center",
+    "address": "921 Main Boulevard",
+    "city": "Laval",
+    "region": "Laval",
+    "organizerOrgId": "org96",
+    "associationId": null,
+    "tags": [
+      "Adult Education",
+      "School Safety"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt65",
+    "title": "Mathematics Symposium",
+    "description": "Join us for an engaging symposium focused on Mathematics and educational excellence.",
+    "startDateTime": "2028-03-20T13:00:00.000Z",
+    "endDateTime": "2028-03-22T21:00:00.000Z",
+    "locationName": "Saint-Jérôme Convention Center",
+    "address": "783 Main Boulevard",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "organizerOrgId": "org45",
+    "associationId": null,
+    "tags": [
+      "Post-Secondary",
+      "Coding & Robotics",
+      "AI in Education"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt66",
+    "title": "Blended Learning Summit",
+    "description": "Join us for an engaging summit focused on Blended Learning and educational excellence.",
+    "startDateTime": "2028-07-26T13:00:00.000Z",
+    "endDateTime": "2028-07-28T21:00:00.000Z",
+    "locationName": "Saguenay Convention Center",
+    "address": "292 Main Boulevard",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org13",
+    "associationId": null,
+    "tags": [
+      "Indigenous Education",
+      "Inquiry-Based Learning"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt67",
+    "title": "Policy & Advocacy Symposium",
+    "description": "Join us for an engaging symposium focused on Policy & Advocacy and educational excellence.",
+    "startDateTime": "2027-03-25T13:00:00.000Z",
+    "endDateTime": "2027-03-25T21:00:00.000Z",
+    "locationName": "Québec Convention Center",
+    "address": "577 Main Boulevard",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "organizerOrgId": "org62",
+    "associationId": "assoc24",
+    "tags": [
+      "Curriculum Development",
+      "Secondary",
+      "History"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt68",
+    "title": "Physical Education Symposium",
+    "description": "Join us for an engaging symposium focused on Physical Education and educational excellence.",
+    "startDateTime": "2027-03-19T13:00:00.000Z",
+    "endDateTime": "2027-03-21T21:00:00.000Z",
+    "locationName": "Saint-Jérôme Convention Center",
+    "address": "659 Main Boulevard",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "organizerOrgId": "org244",
+    "associationId": null,
+    "tags": [
+      "STEM",
+      "Elementary",
+      "Secondary"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt69",
+    "title": "Flipped Classroom Forum",
+    "description": "Join us for an engaging forum focused on Flipped Classroom and educational excellence.",
+    "startDateTime": "2027-04-24T13:00:00.000Z",
+    "endDateTime": "2027-04-24T21:00:00.000Z",
+    "locationName": "Sherbrooke Convention Center",
+    "address": "607 Main Boulevard",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "organizerOrgId": "org41",
+    "associationId": "assoc26",
+    "tags": [
+      "Differentiated Instruction",
+      "Policy & Advocacy",
+      "Community Engagement"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt70",
+    "title": "Arts Forum",
+    "description": "Join us for an engaging forum focused on Arts and educational excellence.",
+    "startDateTime": "2028-03-20T13:00:00.000Z",
+    "endDateTime": "2028-03-21T21:00:00.000Z",
+    "locationName": "Saguenay Convention Center",
+    "address": "734 Main Boulevard",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org140",
+    "associationId": "assoc15",
+    "tags": [
+      "Science",
+      "Curriculum Development",
+      "Digital Literacy",
       "Elementary"
     ],
     "registrationEnabled": true
   },
   {
-    "id": "evt137",
-    "title": "Professional Development Symposium",
-    "description": "Join us for an engaging symposium focused on Professional Development and educational excellence.",
-    "startDateTime": "2025-06-20T13:00:00.000Z",
-    "endDateTime": "2025-06-21T21:00:00.000Z",
+    "id": "evt71",
+    "title": "EdTech Summit",
+    "description": "Join us for an engaging summit focused on EdTech and educational excellence.",
+    "startDateTime": "2028-11-06T14:00:00.000Z",
+    "endDateTime": "2028-11-08T22:00:00.000Z",
+    "locationName": "Saint-Jérôme Convention Center",
+    "address": "772 Main Boulevard",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "organizerOrgId": "org169",
+    "associationId": "assoc18",
+    "tags": [
+      "Differentiated Instruction",
+      "Coding & Robotics",
+      "Policy & Advocacy",
+      "Accessibility"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt72",
+    "title": "Professional Development Networking Event",
+    "description": "Join us for an engaging networking event focused on Professional Development and educational excellence.",
+    "startDateTime": "2028-04-20T13:00:00.000Z",
+    "endDateTime": "2028-04-21T21:00:00.000Z",
     "locationName": "Montréal Convention Center",
-    "address": "552 Main Boulevard",
+    "address": "594 Main Boulevard",
     "city": "Montréal",
     "region": "Montréal",
-    "organizerOrgId": "org225",
+    "organizerOrgId": "org108",
+    "associationId": "assoc7",
+    "tags": [
+      "Assessment & Evaluation",
+      "Music"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt73",
+    "title": "Curriculum Development Symposium",
+    "description": "Join us for an engaging symposium focused on Curriculum Development and educational excellence.",
+    "startDateTime": "2027-06-12T13:00:00.000Z",
+    "endDateTime": "2027-06-14T21:00:00.000Z",
+    "locationName": "Chicoutimi Convention Center",
+    "address": "964 Main Boulevard",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org116",
+    "associationId": "assoc21",
+    "tags": [
+      "Accessibility",
+      "LMS Integration"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt74",
+    "title": "Leadership Summit",
+    "description": "Join us for an engaging summit focused on Leadership and educational excellence.",
+    "startDateTime": "2028-11-08T14:00:00.000Z",
+    "endDateTime": "2028-11-09T22:00:00.000Z",
+    "locationName": "Saguenay Convention Center",
+    "address": "248 Main Boulevard",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org201",
     "associationId": null,
     "tags": [
       "Social Studies",
+      "Behavioral Support"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt75",
+    "title": "STEM Training",
+    "description": "Join us for an engaging training focused on STEM and educational excellence.",
+    "startDateTime": "2028-02-24T14:00:00.000Z",
+    "endDateTime": "2028-02-25T22:00:00.000Z",
+    "locationName": "Lévis Convention Center",
+    "address": "568 Main Boulevard",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "organizerOrgId": "org72",
+    "associationId": "assoc17",
+    "tags": [
+      "Post-Secondary",
+      "Early Childhood"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt76",
+    "title": "Vocational Training Symposium",
+    "description": "Join us for an engaging symposium focused on Vocational Training and educational excellence.",
+    "startDateTime": "2027-07-08T13:00:00.000Z",
+    "endDateTime": "2027-07-10T21:00:00.000Z",
+    "locationName": "Chicoutimi Convention Center",
+    "address": "712 Main Boulevard",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org230",
+    "associationId": "assoc11",
+    "tags": [
+      "Post-Secondary",
+      "Literacy",
+      "Behavioral Support"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt77",
+    "title": "Mental Health Symposium",
+    "description": "Join us for an engaging symposium focused on Mental Health and educational excellence.",
+    "startDateTime": "2028-07-12T13:00:00.000Z",
+    "endDateTime": "2028-07-12T21:00:00.000Z",
+    "locationName": "Saguenay Convention Center",
+    "address": "424 Main Boulevard",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org116",
+    "associationId": "assoc27",
+    "tags": [
+      "Global Citizenship",
+      "Special Education"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt78",
+    "title": "Special Education Training",
+    "description": "Join us for an engaging training focused on Special Education and educational excellence.",
+    "startDateTime": "2028-08-26T13:00:00.000Z",
+    "endDateTime": "2028-08-27T21:00:00.000Z",
+    "locationName": "Sherbrooke Convention Center",
+    "address": "159 Main Boulevard",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "organizerOrgId": "org213",
+    "associationId": null,
+    "tags": [
+      "Game-Based Learning",
+      "Experiential Learning",
+      "Social Studies"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt79",
+    "title": "Adult Education Workshop",
+    "description": "Join us for an engaging workshop focused on Adult Education and educational excellence.",
+    "startDateTime": "2028-07-09T13:00:00.000Z",
+    "endDateTime": "2028-07-11T21:00:00.000Z",
+    "locationName": "Saguenay Convention Center",
+    "address": "892 Main Boulevard",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org239",
+    "associationId": null,
+    "tags": [
+      "Music",
+      "Elementary",
+      "Bilingual Education"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt80",
+    "title": "Policy & Advocacy Networking Event",
+    "description": "Join us for an engaging networking event focused on Policy & Advocacy and educational excellence.",
+    "startDateTime": "2028-10-25T13:00:00.000Z",
+    "endDateTime": "2028-10-27T21:00:00.000Z",
+    "locationName": "Montréal Convention Center",
+    "address": "600 Main Boulevard",
+    "city": "Montréal",
+    "region": "Montréal",
+    "organizerOrgId": "org215",
+    "associationId": null,
+    "tags": [
+      "Indigenous Education",
+      "Project-Based Learning",
+      "Early Childhood"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt81",
+    "title": "Indigenous Education Workshop",
+    "description": "Join us for an engaging workshop focused on Indigenous Education and educational excellence.",
+    "startDateTime": "2027-09-27T13:00:00.000Z",
+    "endDateTime": "2027-09-28T21:00:00.000Z",
+    "locationName": "Saguenay Convention Center",
+    "address": "683 Main Boulevard",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org74",
+    "associationId": null,
+    "tags": [
+      "Global Citizenship",
+      "Professional Development",
+      "Science"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt82",
+    "title": "Arts Summit",
+    "description": "Join us for an engaging summit focused on Arts and educational excellence.",
+    "startDateTime": "2028-10-25T13:00:00.000Z",
+    "endDateTime": "2028-10-25T21:00:00.000Z",
+    "locationName": "Longueuil Convention Center",
+    "address": "521 Main Boulevard",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "organizerOrgId": "org119",
+    "associationId": null,
+    "tags": [
+      "Accessibility",
+      "Adult Education",
+      "Post-Secondary",
+      "Environmental Education"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt83",
+    "title": "French Language Workshop",
+    "description": "Join us for an engaging workshop focused on French Language and educational excellence.",
+    "startDateTime": "2027-09-06T13:00:00.000Z",
+    "endDateTime": "2027-09-07T21:00:00.000Z",
+    "locationName": "Rimouski Convention Center",
+    "address": "469 Main Boulevard",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "organizerOrgId": "org224",
+    "associationId": null,
+    "tags": [
+      "Music",
+      "Indigenous Education"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt84",
+    "title": "Post-Secondary Workshop",
+    "description": "Join us for an engaging workshop focused on Post-Secondary and educational excellence.",
+    "startDateTime": "2027-06-21T13:00:00.000Z",
+    "endDateTime": "2027-06-21T21:00:00.000Z",
+    "locationName": "Laval Convention Center",
+    "address": "628 Main Boulevard",
+    "city": "Laval",
+    "region": "Laval",
+    "organizerOrgId": "org121",
+    "associationId": "assoc9",
+    "tags": [
+      "Experiential Learning",
+      "Gifted Education",
+      "Social Studies"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt85",
+    "title": "EdTech Workshop",
+    "description": "Join us for an engaging workshop focused on EdTech and educational excellence.",
+    "startDateTime": "2027-06-25T13:00:00.000Z",
+    "endDateTime": "2027-06-25T21:00:00.000Z",
+    "locationName": "Sherbrooke Convention Center",
+    "address": "762 Main Boulevard",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "organizerOrgId": "org158",
+    "associationId": "assoc15",
+    "tags": [
+      "Policy & Advocacy",
+      "Gifted Education",
+      "LMS Integration"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt86",
+    "title": "Environmental Education Training",
+    "description": "Join us for an engaging training focused on Environmental Education and educational excellence.",
+    "startDateTime": "2027-05-08T13:00:00.000Z",
+    "endDateTime": "2027-05-08T21:00:00.000Z",
+    "locationName": "Rimouski Convention Center",
+    "address": "492 Main Boulevard",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "organizerOrgId": "org247",
+    "associationId": "assoc10",
+    "tags": [
+      "Social Studies",
+      "Curriculum Development"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt87",
+    "title": "EdTech Networking Event",
+    "description": "Join us for an engaging networking event focused on EdTech and educational excellence.",
+    "startDateTime": "2028-01-22T14:00:00.000Z",
+    "endDateTime": "2028-01-23T22:00:00.000Z",
+    "locationName": "Chicoutimi Convention Center",
+    "address": "750 Main Boulevard",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org206",
+    "associationId": null,
+    "tags": [
+      "Accessibility",
+      "STEM"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt88",
+    "title": "Game-Based Learning Conference",
+    "description": "Join us for an engaging conference focused on Game-Based Learning and educational excellence.",
+    "startDateTime": "2027-11-28T14:00:00.000Z",
+    "endDateTime": "2027-11-28T22:00:00.000Z",
+    "locationName": "Gatineau Convention Center",
+    "address": "904 Main Boulevard",
+    "city": "Gatineau",
+    "region": "Outaouais",
+    "organizerOrgId": "org213",
+    "associationId": "assoc8",
+    "tags": [
+      "Mental Health",
+      "STEM",
+      "Flipped Classroom",
+      "Policy & Advocacy"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt89",
+    "title": "Professional Development Symposium",
+    "description": "Join us for an engaging symposium focused on Professional Development and educational excellence.",
+    "startDateTime": "2028-05-09T13:00:00.000Z",
+    "endDateTime": "2028-05-09T21:00:00.000Z",
+    "locationName": "Laval Convention Center",
+    "address": "804 Main Boulevard",
+    "city": "Laval",
+    "region": "Laval",
+    "organizerOrgId": "org18",
+    "associationId": "assoc27",
+    "tags": [
+      "Post-Secondary",
+      "Differentiated Instruction",
+      "Blended Learning"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt90",
+    "title": "Professional Development Forum",
+    "description": "Join us for an engaging forum focused on Professional Development and educational excellence.",
+    "startDateTime": "2028-11-25T14:00:00.000Z",
+    "endDateTime": "2028-11-27T22:00:00.000Z",
+    "locationName": "Saint-Jérôme Convention Center",
+    "address": "653 Main Boulevard",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "organizerOrgId": "org69",
+    "associationId": "assoc22",
+    "tags": [
+      "Curriculum Development",
+      "Assessment & Evaluation",
+      "School Finance",
+      "LMS Integration"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt91",
+    "title": "Literacy Symposium",
+    "description": "Join us for an engaging symposium focused on Literacy and educational excellence.",
+    "startDateTime": "2028-09-16T13:00:00.000Z",
+    "endDateTime": "2028-09-17T21:00:00.000Z",
+    "locationName": "Trois-Rivières Convention Center",
+    "address": "785 Main Boulevard",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "organizerOrgId": "org228",
+    "associationId": "assoc14",
+    "tags": [
+      "Social-Emotional Learning",
+      "Equity & Inclusion",
+      "Special Education"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt92",
+    "title": "Leadership Networking Event",
+    "description": "Join us for an engaging networking event focused on Leadership and educational excellence.",
+    "startDateTime": "2028-08-12T13:00:00.000Z",
+    "endDateTime": "2028-08-14T21:00:00.000Z",
+    "locationName": "Lévis Convention Center",
+    "address": "139 Main Boulevard",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "organizerOrgId": "org72",
+    "associationId": "assoc6",
+    "tags": [
+      "Blended Learning",
+      "Project-Based Learning"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt93",
+    "title": "Rural Education Workshop",
+    "description": "Join us for an engaging workshop focused on Rural Education and educational excellence.",
+    "startDateTime": "2028-09-15T13:00:00.000Z",
+    "endDateTime": "2028-09-15T21:00:00.000Z",
+    "locationName": "Rimouski Convention Center",
+    "address": "691 Main Boulevard",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "organizerOrgId": "org94",
+    "associationId": null,
+    "tags": [
+      "History",
+      "AI in Education",
+      "Collaborative Learning"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt94",
+    "title": "STEM Summit",
+    "description": "Join us for an engaging summit focused on STEM and educational excellence.",
+    "startDateTime": "2028-02-14T14:00:00.000Z",
+    "endDateTime": "2028-02-16T22:00:00.000Z",
+    "locationName": "Montréal Convention Center",
+    "address": "716 Main Boulevard",
+    "city": "Montréal",
+    "region": "Montréal",
+    "organizerOrgId": "org207",
+    "associationId": null,
+    "tags": [
+      "Gifted Education",
+      "Secondary",
+      "Policy & Advocacy"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt95",
+    "title": "Flipped Classroom Symposium",
+    "description": "Join us for an engaging symposium focused on Flipped Classroom and educational excellence.",
+    "startDateTime": "2027-03-17T13:00:00.000Z",
+    "endDateTime": "2027-03-17T21:00:00.000Z",
+    "locationName": "Saguenay Convention Center",
+    "address": "166 Main Boulevard",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org179",
+    "associationId": null,
+    "tags": [
+      "Elementary",
+      "Early Childhood"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt96",
+    "title": "Bilingual Education Networking Event",
+    "description": "Join us for an engaging networking event focused on Bilingual Education and educational excellence.",
+    "startDateTime": "2026-12-01T14:00:00.000Z",
+    "endDateTime": "2026-12-02T22:00:00.000Z",
+    "locationName": "Chicoutimi Convention Center",
+    "address": "385 Main Boulevard",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org155",
+    "associationId": null,
+    "tags": [
+      "Post-Secondary",
+      "Literacy",
+      "Digital Literacy",
+      "French Language"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt97",
+    "title": "Adult Education Forum",
+    "description": "Join us for an engaging forum focused on Adult Education and educational excellence.",
+    "startDateTime": "2027-09-15T13:00:00.000Z",
+    "endDateTime": "2027-09-15T21:00:00.000Z",
+    "locationName": "Montréal Convention Center",
+    "address": "271 Main Boulevard",
+    "city": "Montréal",
+    "region": "Montréal",
+    "organizerOrgId": "org36",
+    "associationId": null,
+    "tags": [
+      "Vocational Training",
+      "School Finance"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt98",
+    "title": "History Conference",
+    "description": "Join us for an engaging conference focused on History and educational excellence.",
+    "startDateTime": "2026-04-15T13:00:00.000Z",
+    "endDateTime": "2026-04-15T21:00:00.000Z",
+    "locationName": "Rimouski Convention Center",
+    "address": "461 Main Boulevard",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "organizerOrgId": "org12",
+    "associationId": "assoc11",
+    "tags": [
+      "Equity & Inclusion",
+      "Post-Secondary",
+      "STEM",
+      "Behavioral Support"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt99",
+    "title": "Professional Development Networking Event",
+    "description": "Join us for an engaging networking event focused on Professional Development and educational excellence.",
+    "startDateTime": "2028-12-07T14:00:00.000Z",
+    "endDateTime": "2028-12-07T22:00:00.000Z",
+    "locationName": "Longueuil Convention Center",
+    "address": "960 Main Boulevard",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "organizerOrgId": "org44",
+    "associationId": null,
+    "tags": [
+      "Adult Education",
+      "Collaborative Learning"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt100",
+    "title": "Arts Conference",
+    "description": "Join us for an engaging conference focused on Arts and educational excellence.",
+    "startDateTime": "2027-01-09T14:00:00.000Z",
+    "endDateTime": "2027-01-09T22:00:00.000Z",
+    "locationName": "Montréal Convention Center",
+    "address": "298 Main Boulevard",
+    "city": "Montréal",
+    "region": "Montréal",
+    "organizerOrgId": "org176",
+    "associationId": "assoc6",
+    "tags": [
+      "Post-Secondary",
+      "Mathematics"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt101",
+    "title": "Bilingual Education Workshop",
+    "description": "Join us for an engaging workshop focused on Bilingual Education and educational excellence.",
+    "startDateTime": "2026-08-05T13:00:00.000Z",
+    "endDateTime": "2026-08-07T21:00:00.000Z",
+    "locationName": "Laval Convention Center",
+    "address": "976 Main Boulevard",
+    "city": "Laval",
+    "region": "Laval",
+    "organizerOrgId": "org250",
+    "associationId": "assoc17",
+    "tags": [
+      "Vocational Training",
+      "Coding & Robotics",
+      "Special Education",
+      "Accessibility"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt102",
+    "title": "Physical Education Workshop",
+    "description": "Join us for an engaging workshop focused on Physical Education and educational excellence.",
+    "startDateTime": "2028-11-01T13:00:00.000Z",
+    "endDateTime": "2028-11-01T21:00:00.000Z",
+    "locationName": "Saint-Jérôme Convention Center",
+    "address": "318 Main Boulevard",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "organizerOrgId": "org64",
+    "associationId": "assoc10",
+    "tags": [
+      "Adult Education",
+      "Leadership",
+      "Coding & Robotics",
+      "School Finance"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt103",
+    "title": "Physical Education Training",
+    "description": "Join us for an engaging training focused on Physical Education and educational excellence.",
+    "startDateTime": "2028-06-23T13:00:00.000Z",
+    "endDateTime": "2028-06-24T21:00:00.000Z",
+    "locationName": "Gatineau Convention Center",
+    "address": "888 Main Boulevard",
+    "city": "Gatineau",
+    "region": "Outaouais",
+    "organizerOrgId": "org187",
+    "associationId": null,
+    "tags": [
       "Physical Education",
+      "Leadership"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt104",
+    "title": "Post-Secondary Seminar",
+    "description": "Join us for an engaging seminar focused on Post-Secondary and educational excellence.",
+    "startDateTime": "2027-02-05T14:00:00.000Z",
+    "endDateTime": "2027-02-05T22:00:00.000Z",
+    "locationName": "Rimouski Convention Center",
+    "address": "757 Main Boulevard",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "organizerOrgId": "org100",
+    "associationId": "assoc9",
+    "tags": [
+      "Policy & Advocacy",
+      "School Finance"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt105",
+    "title": "Vocational Training Workshop",
+    "description": "Join us for an engaging workshop focused on Vocational Training and educational excellence.",
+    "startDateTime": "2026-03-01T14:00:00.000Z",
+    "endDateTime": "2026-03-03T22:00:00.000Z",
+    "locationName": "Saint-Jérôme Convention Center",
+    "address": "399 Main Boulevard",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "organizerOrgId": "org49",
+    "associationId": "assoc10",
+    "tags": [
+      "Global Citizenship",
+      "Policy & Advocacy"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt106",
+    "title": "Differentiated Instruction Summit",
+    "description": "Join us for an engaging summit focused on Differentiated Instruction and educational excellence.",
+    "startDateTime": "2028-10-14T13:00:00.000Z",
+    "endDateTime": "2028-10-16T21:00:00.000Z",
+    "locationName": "Saguenay Convention Center",
+    "address": "262 Main Boulevard",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org194",
+    "associationId": "assoc13",
+    "tags": [
+      "Inquiry-Based Learning",
+      "Early Childhood",
+      "Elementary",
+      "Assessment & Evaluation"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt107",
+    "title": "Literacy Conference",
+    "description": "Join us for an engaging conference focused on Literacy and educational excellence.",
+    "startDateTime": "2028-08-19T13:00:00.000Z",
+    "endDateTime": "2028-08-20T21:00:00.000Z",
+    "locationName": "Gatineau Convention Center",
+    "address": "792 Main Boulevard",
+    "city": "Gatineau",
+    "region": "Outaouais",
+    "organizerOrgId": "org168",
+    "associationId": null,
+    "tags": [
+      "Indigenous Education",
+      "Experiential Learning"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt108",
+    "title": "Physical Education Seminar",
+    "description": "Join us for an engaging seminar focused on Physical Education and educational excellence.",
+    "startDateTime": "2027-08-16T13:00:00.000Z",
+    "endDateTime": "2027-08-18T21:00:00.000Z",
+    "locationName": "Trois-Rivières Convention Center",
+    "address": "511 Main Boulevard",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "organizerOrgId": "org146",
+    "associationId": null,
+    "tags": [
+      "English Language"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt109",
+    "title": "Game-Based Learning Workshop",
+    "description": "Join us for an engaging workshop focused on Game-Based Learning and educational excellence.",
+    "startDateTime": "2027-01-11T14:00:00.000Z",
+    "endDateTime": "2027-01-13T22:00:00.000Z",
+    "locationName": "Sherbrooke Convention Center",
+    "address": "538 Main Boulevard",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "organizerOrgId": "org247",
+    "associationId": "assoc25",
+    "tags": [
+      "Special Education",
+      "Vocational Training",
+      "Indigenous Education"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt110",
+    "title": "ESL/ELL Workshop",
+    "description": "Join us for an engaging workshop focused on ESL/ELL and educational excellence.",
+    "startDateTime": "2026-05-03T13:00:00.000Z",
+    "endDateTime": "2026-05-04T21:00:00.000Z",
+    "locationName": "Sherbrooke Convention Center",
+    "address": "332 Main Boulevard",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "organizerOrgId": "org189",
+    "associationId": null,
+    "tags": [
+      "Community Engagement",
+      "Post-Secondary",
+      "Special Education"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt111",
+    "title": "Professional Development Summit",
+    "description": "Join us for an engaging summit focused on Professional Development and educational excellence.",
+    "startDateTime": "2027-11-09T14:00:00.000Z",
+    "endDateTime": "2027-11-11T22:00:00.000Z",
+    "locationName": "Laval Convention Center",
+    "address": "435 Main Boulevard",
+    "city": "Laval",
+    "region": "Laval",
+    "organizerOrgId": "org199",
+    "associationId": "assoc19",
+    "tags": [
+      "Social Studies",
+      "Physical Education",
+      "Early Childhood",
+      "French Language"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt112",
+    "title": "Environmental Education Workshop",
+    "description": "Join us for an engaging workshop focused on Environmental Education and educational excellence.",
+    "startDateTime": "2028-01-26T14:00:00.000Z",
+    "endDateTime": "2028-01-27T22:00:00.000Z",
+    "locationName": "Rimouski Convention Center",
+    "address": "364 Main Boulevard",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "organizerOrgId": "org134",
+    "associationId": null,
+    "tags": [
+      "Special Education",
+      "Differentiated Instruction"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt113",
+    "title": "Special Education Summit",
+    "description": "Join us for an engaging summit focused on Special Education and educational excellence.",
+    "startDateTime": "2028-10-22T13:00:00.000Z",
+    "endDateTime": "2028-10-22T21:00:00.000Z",
+    "locationName": "Laval Convention Center",
+    "address": "474 Main Boulevard",
+    "city": "Laval",
+    "region": "Laval",
+    "organizerOrgId": "org146",
+    "associationId": null,
+    "tags": [
+      "School Safety",
+      "Collaborative Learning",
+      "English Language"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt114",
+    "title": "Arts Seminar",
+    "description": "Join us for an engaging seminar focused on Arts and educational excellence.",
+    "startDateTime": "2026-08-21T13:00:00.000Z",
+    "endDateTime": "2026-08-21T21:00:00.000Z",
+    "locationName": "Lévis Convention Center",
+    "address": "520 Main Boulevard",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "organizerOrgId": "org24",
+    "associationId": "assoc26",
+    "tags": [
+      "Mathematics",
+      "AI in Education",
+      "Curriculum Development",
+      "Project-Based Learning"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt115",
+    "title": "Blended Learning Forum",
+    "description": "Join us for an engaging forum focused on Blended Learning and educational excellence.",
+    "startDateTime": "2027-12-23T14:00:00.000Z",
+    "endDateTime": "2027-12-24T22:00:00.000Z",
+    "locationName": "Québec Convention Center",
+    "address": "532 Main Boulevard",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "organizerOrgId": "org77",
+    "associationId": "assoc24",
+    "tags": [
+      "Collaborative Learning",
+      "LMS Integration",
+      "STEM"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt116",
+    "title": "Curriculum Development Symposium",
+    "description": "Join us for an engaging symposium focused on Curriculum Development and educational excellence.",
+    "startDateTime": "2028-02-26T14:00:00.000Z",
+    "endDateTime": "2028-02-26T22:00:00.000Z",
+    "locationName": "Trois-Rivières Convention Center",
+    "address": "824 Main Boulevard",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "organizerOrgId": "org122",
+    "associationId": "assoc23",
+    "tags": [
+      "Community Engagement",
+      "EdTech",
+      "Flipped Classroom",
+      "Curriculum Development"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt117",
+    "title": "School Finance Symposium",
+    "description": "Join us for an engaging symposium focused on School Finance and educational excellence.",
+    "startDateTime": "2026-06-24T13:00:00.000Z",
+    "endDateTime": "2026-06-26T21:00:00.000Z",
+    "locationName": "Saguenay Convention Center",
+    "address": "133 Main Boulevard",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org90",
+    "associationId": null,
+    "tags": [
+      "French Language",
+      "Game-Based Learning",
+      "Rural Education"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt118",
+    "title": "Coding & Robotics Training",
+    "description": "Join us for an engaging training focused on Coding & Robotics and educational excellence.",
+    "startDateTime": "2027-04-16T13:00:00.000Z",
+    "endDateTime": "2027-04-16T21:00:00.000Z",
+    "locationName": "Saint-Jérôme Convention Center",
+    "address": "965 Main Boulevard",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "organizerOrgId": "org83",
+    "associationId": "assoc15",
+    "tags": [
+      "School Finance",
+      "Project-Based Learning",
+      "Coding & Robotics",
+      "Collaborative Learning"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt119",
+    "title": "Secondary Training",
+    "description": "Join us for an engaging training focused on Secondary and educational excellence.",
+    "startDateTime": "2028-02-25T14:00:00.000Z",
+    "endDateTime": "2028-02-26T22:00:00.000Z",
+    "locationName": "Saint-Jérôme Convention Center",
+    "address": "642 Main Boulevard",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "organizerOrgId": "org123",
+    "associationId": "assoc17",
+    "tags": [
+      "Rural Education",
+      "Gifted Education",
+      "History",
       "ESL/ELL"
     ],
     "registrationEnabled": true
   },
   {
-    "id": "evt138",
-    "title": "Curriculum Development Networking Event",
-    "description": "Join us for an engaging networking event focused on Curriculum Development and educational excellence.",
-    "startDateTime": "2025-09-07T13:00:00.000Z",
-    "endDateTime": "2025-09-08T21:00:00.000Z",
-    "locationName": "Lévis Convention Center",
-    "address": "458 Main Boulevard",
-    "city": "Lévis",
-    "region": "Chaudière-Appalaches",
-    "organizerOrgId": "org61",
+    "id": "evt120",
+    "title": "Leadership Workshop",
+    "description": "Join us for an engaging workshop focused on Leadership and educational excellence.",
+    "startDateTime": "2026-05-25T13:00:00.000Z",
+    "endDateTime": "2026-05-26T21:00:00.000Z",
+    "locationName": "Rimouski Convention Center",
+    "address": "605 Main Boulevard",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "organizerOrgId": "org82",
+    "associationId": "assoc13",
+    "tags": [
+      "Community Engagement",
+      "STEM",
+      "French Language"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt121",
+    "title": "Assessment & Evaluation Conference",
+    "description": "Join us for an engaging conference focused on Assessment & Evaluation and educational excellence.",
+    "startDateTime": "2028-02-21T14:00:00.000Z",
+    "endDateTime": "2028-02-22T22:00:00.000Z",
+    "locationName": "Saguenay Convention Center",
+    "address": "844 Main Boulevard",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org79",
+    "associationId": "assoc19",
+    "tags": [
+      "Social-Emotional Learning",
+      "School Safety",
+      "Inquiry-Based Learning",
+      "Science"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt122",
+    "title": "Coding & Robotics Forum",
+    "description": "Join us for an engaging forum focused on Coding & Robotics and educational excellence.",
+    "startDateTime": "2028-04-24T13:00:00.000Z",
+    "endDateTime": "2028-04-26T21:00:00.000Z",
+    "locationName": "Longueuil Convention Center",
+    "address": "143 Main Boulevard",
+    "city": "Longueuil",
+    "region": "Montérégie",
+    "organizerOrgId": "org241",
+    "associationId": "assoc12",
+    "tags": [
+      "History",
+      "Flipped Classroom"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt123",
+    "title": "Digital Literacy Workshop",
+    "description": "Join us for an engaging workshop focused on Digital Literacy and educational excellence.",
+    "startDateTime": "2027-02-03T14:00:00.000Z",
+    "endDateTime": "2027-02-03T22:00:00.000Z",
+    "locationName": "Rimouski Convention Center",
+    "address": "611 Main Boulevard",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "organizerOrgId": "org95",
+    "associationId": "assoc1",
+    "tags": [
+      "ESL/ELL",
+      "Coding & Robotics",
+      "Secondary",
+      "Assessment & Evaluation"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt124",
+    "title": "Project-Based Learning Networking Event",
+    "description": "Join us for an engaging networking event focused on Project-Based Learning and educational excellence.",
+    "startDateTime": "2027-05-24T13:00:00.000Z",
+    "endDateTime": "2027-05-26T21:00:00.000Z",
+    "locationName": "Rimouski Convention Center",
+    "address": "279 Main Boulevard",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "organizerOrgId": "org193",
     "associationId": null,
     "tags": [
-      "Equity & Inclusion",
-      "Social-Emotional Learning",
+      "Science",
+      "Mathematics",
+      "Policy & Advocacy",
+      "Indigenous Education"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt125",
+    "title": "Coding & Robotics Networking Event",
+    "description": "Join us for an engaging networking event focused on Coding & Robotics and educational excellence.",
+    "startDateTime": "2028-12-01T14:00:00.000Z",
+    "endDateTime": "2028-12-02T22:00:00.000Z",
+    "locationName": "Rimouski Convention Center",
+    "address": "311 Main Boulevard",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "organizerOrgId": "org207",
+    "associationId": null,
+    "tags": [
+      "French Language",
+      "Arts",
+      "Literacy"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt126",
+    "title": "ESL/ELL Seminar",
+    "description": "Join us for an engaging seminar focused on ESL/ELL and educational excellence.",
+    "startDateTime": "2027-06-14T13:00:00.000Z",
+    "endDateTime": "2027-06-15T21:00:00.000Z",
+    "locationName": "Québec Convention Center",
+    "address": "517 Main Boulevard",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "organizerOrgId": "org70",
+    "associationId": null,
+    "tags": [
+      "Inquiry-Based Learning",
+      "Coding & Robotics",
+      "ESL/ELL"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt127",
+    "title": "Social Studies Conference",
+    "description": "Join us for an engaging conference focused on Social Studies and educational excellence.",
+    "startDateTime": "2027-03-05T14:00:00.000Z",
+    "endDateTime": "2027-03-06T22:00:00.000Z",
+    "locationName": "Saint-Jérôme Convention Center",
+    "address": "512 Main Boulevard",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "organizerOrgId": "org158",
+    "associationId": "assoc6",
+    "tags": [
+      "French Language",
+      "Project-Based Learning",
+      "Bilingual Education",
+      "Policy & Advocacy"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt128",
+    "title": "Global Citizenship Conference",
+    "description": "Join us for an engaging conference focused on Global Citizenship and educational excellence.",
+    "startDateTime": "2027-04-22T13:00:00.000Z",
+    "endDateTime": "2027-04-22T21:00:00.000Z",
+    "locationName": "Québec Convention Center",
+    "address": "932 Main Boulevard",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "organizerOrgId": "org201",
+    "associationId": "assoc26",
+    "tags": [
+      "Adult Education",
+      "Vocational Training",
+      "Game-Based Learning"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt129",
+    "title": "AI in Education Symposium",
+    "description": "Join us for an engaging symposium focused on AI in Education and educational excellence.",
+    "startDateTime": "2026-09-04T13:00:00.000Z",
+    "endDateTime": "2026-09-06T21:00:00.000Z",
+    "locationName": "Lévis Convention Center",
+    "address": "476 Main Boulevard",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "organizerOrgId": "org251",
+    "associationId": "assoc1",
+    "tags": [
+      "Science",
+      "Equity & Inclusion"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt130",
+    "title": "Collaborative Learning Forum",
+    "description": "Join us for an engaging forum focused on Collaborative Learning and educational excellence.",
+    "startDateTime": "2027-02-28T14:00:00.000Z",
+    "endDateTime": "2027-03-02T22:00:00.000Z",
+    "locationName": "Montréal Convention Center",
+    "address": "848 Main Boulevard",
+    "city": "Montréal",
+    "region": "Montréal",
+    "organizerOrgId": "org193",
+    "associationId": "assoc11",
+    "tags": [
+      "Professional Development",
+      "Vocational Training",
+      "Assessment & Evaluation",
+      "Social-Emotional Learning"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt131",
+    "title": "Physical Education Conference",
+    "description": "Join us for an engaging conference focused on Physical Education and educational excellence.",
+    "startDateTime": "2027-02-03T14:00:00.000Z",
+    "endDateTime": "2027-02-05T22:00:00.000Z",
+    "locationName": "Québec Convention Center",
+    "address": "858 Main Boulevard",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "organizerOrgId": "org195",
+    "associationId": "assoc20",
+    "tags": [
+      "School Safety",
+      "Accessibility",
+      "Gifted Education",
+      "Rural Education"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt132",
+    "title": "Physical Education Seminar",
+    "description": "Join us for an engaging seminar focused on Physical Education and educational excellence.",
+    "startDateTime": "2028-06-28T13:00:00.000Z",
+    "endDateTime": "2028-06-29T21:00:00.000Z",
+    "locationName": "Saint-Jérôme Convention Center",
+    "address": "148 Main Boulevard",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "organizerOrgId": "org21",
+    "associationId": null,
+    "tags": [
+      "Rural Education",
+      "School Finance",
+      "Coding & Robotics",
+      "AI in Education"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt133",
+    "title": "Gifted Education Conference",
+    "description": "Join us for an engaging conference focused on Gifted Education and educational excellence.",
+    "startDateTime": "2028-04-20T13:00:00.000Z",
+    "endDateTime": "2028-04-22T21:00:00.000Z",
+    "locationName": "Saguenay Convention Center",
+    "address": "100 Main Boulevard",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org107",
+    "associationId": null,
+    "tags": [
+      "Special Education",
+      "Social Studies",
+      "Post-Secondary",
+      "Blended Learning"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt134",
+    "title": "Coding & Robotics Forum",
+    "description": "Join us for an engaging forum focused on Coding & Robotics and educational excellence.",
+    "startDateTime": "2028-04-28T13:00:00.000Z",
+    "endDateTime": "2028-04-30T21:00:00.000Z",
+    "locationName": "Laval Convention Center",
+    "address": "604 Main Boulevard",
+    "city": "Laval",
+    "region": "Laval",
+    "organizerOrgId": "org53",
+    "associationId": "assoc13",
+    "tags": [
+      "English Language",
+      "Environmental Education",
+      "Professional Development"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt135",
+    "title": "Early Childhood Forum",
+    "description": "Join us for an engaging forum focused on Early Childhood and educational excellence.",
+    "startDateTime": "2028-05-07T13:00:00.000Z",
+    "endDateTime": "2028-05-09T21:00:00.000Z",
+    "locationName": "Saint-Jérôme Convention Center",
+    "address": "528 Main Boulevard",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "organizerOrgId": "org121",
+    "associationId": null,
+    "tags": [
+      "Professional Development",
+      "Accessibility",
+      "Digital Literacy"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt136",
+    "title": "English Language Conference",
+    "description": "Join us for an engaging conference focused on English Language and educational excellence.",
+    "startDateTime": "2027-03-11T14:00:00.000Z",
+    "endDateTime": "2027-03-11T22:00:00.000Z",
+    "locationName": "Saguenay Convention Center",
+    "address": "206 Main Boulevard",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org238",
+    "associationId": null,
+    "tags": [
+      "Arts",
+      "ESL/ELL"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt137",
+    "title": "Collaborative Learning Conference",
+    "description": "Join us for an engaging conference focused on Collaborative Learning and educational excellence.",
+    "startDateTime": "2026-04-23T13:00:00.000Z",
+    "endDateTime": "2026-04-25T21:00:00.000Z",
+    "locationName": "Saguenay Convention Center",
+    "address": "138 Main Boulevard",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org125",
+    "associationId": null,
+    "tags": [
+      "AI in Education",
+      "Collaborative Learning",
+      "Adult Education"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt138",
+    "title": "Professional Development Symposium",
+    "description": "Join us for an engaging symposium focused on Professional Development and educational excellence.",
+    "startDateTime": "2027-04-16T13:00:00.000Z",
+    "endDateTime": "2027-04-17T21:00:00.000Z",
+    "locationName": "Québec Convention Center",
+    "address": "886 Main Boulevard",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "organizerOrgId": "org134",
+    "associationId": "assoc21",
+    "tags": [
+      "Literacy",
+      "Accessibility",
+      "French Language"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt139",
+    "title": "Early Childhood Networking Event",
+    "description": "Join us for an engaging networking event focused on Early Childhood and educational excellence.",
+    "startDateTime": "2026-09-21T13:00:00.000Z",
+    "endDateTime": "2026-09-23T21:00:00.000Z",
+    "locationName": "Saint-Jérôme Convention Center",
+    "address": "552 Main Boulevard",
+    "city": "Saint-Jérôme",
+    "region": "Laurentides",
+    "organizerOrgId": "org36",
+    "associationId": null,
+    "tags": [
+      "School Finance",
+      "Vocational Training",
+      "Policy & Advocacy"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt140",
+    "title": "Accessibility Networking Event",
+    "description": "Join us for an engaging networking event focused on Accessibility and educational excellence.",
+    "startDateTime": "2027-04-04T13:00:00.000Z",
+    "endDateTime": "2027-04-06T21:00:00.000Z",
+    "locationName": "Trois-Rivières Convention Center",
+    "address": "185 Main Boulevard",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "organizerOrgId": "org193",
+    "associationId": null,
+    "tags": [
+      "Assessment & Evaluation",
+      "School Safety",
+      "Curriculum Development",
+      "Project-Based Learning"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt141",
+    "title": "Leadership Symposium",
+    "description": "Join us for an engaging symposium focused on Leadership and educational excellence.",
+    "startDateTime": "2028-10-06T13:00:00.000Z",
+    "endDateTime": "2028-10-08T21:00:00.000Z",
+    "locationName": "Saguenay Convention Center",
+    "address": "693 Main Boulevard",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org56",
+    "associationId": "assoc14",
+    "tags": [
+      "Differentiated Instruction",
+      "Gifted Education"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt142",
+    "title": "Social Studies Seminar",
+    "description": "Join us for an engaging seminar focused on Social Studies and educational excellence.",
+    "startDateTime": "2028-02-10T14:00:00.000Z",
+    "endDateTime": "2028-02-12T22:00:00.000Z",
+    "locationName": "Rimouski Convention Center",
+    "address": "331 Main Boulevard",
+    "city": "Rimouski",
+    "region": "Bas-Saint-Laurent",
+    "organizerOrgId": "org222",
+    "associationId": "assoc6",
+    "tags": [
+      "Differentiated Instruction",
+      "Blended Learning",
+      "EdTech"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt143",
+    "title": "Blended Learning Summit",
+    "description": "Join us for an engaging summit focused on Blended Learning and educational excellence.",
+    "startDateTime": "2026-11-20T14:00:00.000Z",
+    "endDateTime": "2026-11-22T22:00:00.000Z",
+    "locationName": "Gatineau Convention Center",
+    "address": "585 Main Boulevard",
+    "city": "Gatineau",
+    "region": "Outaouais",
+    "organizerOrgId": "org190",
+    "associationId": "assoc9",
+    "tags": [
+      "LMS Integration",
+      "Literacy",
+      "Post-Secondary",
+      "Blended Learning"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt144",
+    "title": "French Language Workshop",
+    "description": "Join us for an engaging workshop focused on French Language and educational excellence.",
+    "startDateTime": "2026-08-24T13:00:00.000Z",
+    "endDateTime": "2026-08-24T21:00:00.000Z",
+    "locationName": "Sherbrooke Convention Center",
+    "address": "306 Main Boulevard",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "organizerOrgId": "org78",
+    "associationId": "assoc26",
+    "tags": [
+      "Rural Education",
+      "Mathematics"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt145",
+    "title": "Assessment & Evaluation Seminar",
+    "description": "Join us for an engaging seminar focused on Assessment & Evaluation and educational excellence.",
+    "startDateTime": "2027-10-19T13:00:00.000Z",
+    "endDateTime": "2027-10-19T21:00:00.000Z",
+    "locationName": "Trois-Rivières Convention Center",
+    "address": "276 Main Boulevard",
+    "city": "Trois-Rivières",
+    "region": "Mauricie",
+    "organizerOrgId": "org232",
+    "associationId": "assoc14",
+    "tags": [
+      "Environmental Education",
+      "Policy & Advocacy",
+      "Accessibility"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt146",
+    "title": "Flipped Classroom Workshop",
+    "description": "Join us for an engaging workshop focused on Flipped Classroom and educational excellence.",
+    "startDateTime": "2027-05-01T13:00:00.000Z",
+    "endDateTime": "2027-05-02T21:00:00.000Z",
+    "locationName": "Laval Convention Center",
+    "address": "716 Main Boulevard",
+    "city": "Laval",
+    "region": "Laval",
+    "organizerOrgId": "org178",
+    "associationId": null,
+    "tags": [
+      "Leadership",
+      "English Language"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt147",
+    "title": "Indigenous Education Forum",
+    "description": "Join us for an engaging forum focused on Indigenous Education and educational excellence.",
+    "startDateTime": "2028-08-13T13:00:00.000Z",
+    "endDateTime": "2028-08-14T21:00:00.000Z",
+    "locationName": "Gatineau Convention Center",
+    "address": "409 Main Boulevard",
+    "city": "Gatineau",
+    "region": "Outaouais",
+    "organizerOrgId": "org72",
+    "associationId": null,
+    "tags": [
+      "Inquiry-Based Learning",
+      "French Language",
+      "Elementary",
+      "Leadership"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt148",
+    "title": "Social Studies Training",
+    "description": "Join us for an engaging training focused on Social Studies and educational excellence.",
+    "startDateTime": "2028-01-19T14:00:00.000Z",
+    "endDateTime": "2028-01-21T22:00:00.000Z",
+    "locationName": "Laval Convention Center",
+    "address": "960 Main Boulevard",
+    "city": "Laval",
+    "region": "Laval",
+    "organizerOrgId": "org34",
+    "associationId": null,
+    "tags": [
+      "Elementary",
+      "Blended Learning",
+      "Game-Based Learning"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt149",
+    "title": "Rural Education Workshop",
+    "description": "Join us for an engaging workshop focused on Rural Education and educational excellence.",
+    "startDateTime": "2026-04-03T13:00:00.000Z",
+    "endDateTime": "2026-04-05T21:00:00.000Z",
+    "locationName": "Québec Convention Center",
+    "address": "134 Main Boulevard",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "organizerOrgId": "org236",
+    "associationId": null,
+    "tags": [
+      "Coding & Robotics",
+      "Social Studies",
+      "Physical Education"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt150",
+    "title": "Leadership Training",
+    "description": "Join us for an engaging training focused on Leadership and educational excellence.",
+    "startDateTime": "2026-05-10T13:00:00.000Z",
+    "endDateTime": "2026-05-12T21:00:00.000Z",
+    "locationName": "Chicoutimi Convention Center",
+    "address": "705 Main Boulevard",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org141",
+    "associationId": "assoc12",
+    "tags": [
+      "Digital Literacy",
+      "Social Studies"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt151",
+    "title": "French Language Conference",
+    "description": "Join us for an engaging conference focused on French Language and educational excellence.",
+    "startDateTime": "2028-01-18T14:00:00.000Z",
+    "endDateTime": "2028-01-19T22:00:00.000Z",
+    "locationName": "Chicoutimi Convention Center",
+    "address": "606 Main Boulevard",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org25",
+    "associationId": null,
+    "tags": [
+      "Mathematics",
+      "Adult Education",
+      "History",
+      "Community Engagement"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt152",
+    "title": "French Language Training",
+    "description": "Join us for an engaging training focused on French Language and educational excellence.",
+    "startDateTime": "2028-11-05T14:00:00.000Z",
+    "endDateTime": "2028-11-05T22:00:00.000Z",
+    "locationName": "Saguenay Convention Center",
+    "address": "295 Main Boulevard",
+    "city": "Saguenay",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org76",
+    "associationId": null,
+    "tags": [
       "Early Childhood",
-      "STEM"
+      "Assessment & Evaluation",
+      "Global Citizenship"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt153",
+    "title": "Professional Development Symposium",
+    "description": "Join us for an engaging symposium focused on Professional Development and educational excellence.",
+    "startDateTime": "2026-05-03T13:00:00.000Z",
+    "endDateTime": "2026-05-03T21:00:00.000Z",
+    "locationName": "Gatineau Convention Center",
+    "address": "831 Main Boulevard",
+    "city": "Gatineau",
+    "region": "Outaouais",
+    "organizerOrgId": "org245",
+    "associationId": "assoc5",
+    "tags": [
+      "EdTech",
+      "School Safety"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt154",
+    "title": "Gifted Education Symposium",
+    "description": "Join us for an engaging symposium focused on Gifted Education and educational excellence.",
+    "startDateTime": "2028-08-07T13:00:00.000Z",
+    "endDateTime": "2028-08-09T21:00:00.000Z",
+    "locationName": "Montréal Convention Center",
+    "address": "491 Main Boulevard",
+    "city": "Montréal",
+    "region": "Montréal",
+    "organizerOrgId": "org67",
+    "associationId": "assoc18",
+    "tags": [
+      "Blended Learning"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt155",
+    "title": "Secondary Networking Event",
+    "description": "Join us for an engaging networking event focused on Secondary and educational excellence.",
+    "startDateTime": "2027-12-26T14:00:00.000Z",
+    "endDateTime": "2027-12-28T22:00:00.000Z",
+    "locationName": "Montréal Convention Center",
+    "address": "688 Main Boulevard",
+    "city": "Montréal",
+    "region": "Montréal",
+    "organizerOrgId": "org72",
+    "associationId": "assoc22",
+    "tags": [
+      "Rural Education",
+      "Collaborative Learning",
+      "Science",
+      "Digital Literacy"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt156",
+    "title": "Experiential Learning Summit",
+    "description": "Join us for an engaging summit focused on Experiential Learning and educational excellence.",
+    "startDateTime": "2026-07-05T13:00:00.000Z",
+    "endDateTime": "2026-07-06T21:00:00.000Z",
+    "locationName": "Lévis Convention Center",
+    "address": "293 Main Boulevard",
+    "city": "Lévis",
+    "region": "Chaudière-Appalaches",
+    "organizerOrgId": "org166",
+    "associationId": "assoc24",
+    "tags": [
+      "Flipped Classroom",
+      "Music",
+      "Post-Secondary",
+      "Rural Education"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt157",
+    "title": "Digital Literacy Symposium",
+    "description": "Join us for an engaging symposium focused on Digital Literacy and educational excellence.",
+    "startDateTime": "2028-12-18T14:00:00.000Z",
+    "endDateTime": "2028-12-18T22:00:00.000Z",
+    "locationName": "Québec Convention Center",
+    "address": "193 Main Boulevard",
+    "city": "Québec",
+    "region": "Capitale-Nationale",
+    "organizerOrgId": "org123",
+    "associationId": null,
+    "tags": [
+      "Physical Education",
+      "Social-Emotional Learning"
+    ],
+    "registrationEnabled": true
+  },
+  {
+    "id": "evt158",
+    "title": "Early Childhood Summit",
+    "description": "Join us for an engaging summit focused on Early Childhood and educational excellence.",
+    "startDateTime": "2026-07-19T13:00:00.000Z",
+    "endDateTime": "2026-07-19T21:00:00.000Z",
+    "locationName": "Chicoutimi Convention Center",
+    "address": "300 Main Boulevard",
+    "city": "Chicoutimi",
+    "region": "Saguenay–Lac-Saint-Jean",
+    "organizerOrgId": "org226",
+    "associationId": "assoc6",
+    "tags": [
+      "Game-Based Learning",
+      "Indigenous Education",
+      "Rural Education",
+      "EdTech"
+    ],
+    "registrationEnabled": false
+  },
+  {
+    "id": "evt159",
+    "title": "Flipped Classroom Forum",
+    "description": "Join us for an engaging forum focused on Flipped Classroom and educational excellence.",
+    "startDateTime": "2026-11-25T14:00:00.000Z",
+    "endDateTime": "2026-11-27T22:00:00.000Z",
+    "locationName": "Sherbrooke Convention Center",
+    "address": "383 Main Boulevard",
+    "city": "Sherbrooke",
+    "region": "Estrie",
+    "organizerOrgId": "org173",
+    "associationId": "assoc16",
+    "tags": [
+      "Policy & Advocacy",
+      "Equity & Inclusion",
+      "Flipped Classroom",
+      "Behavioral Support"
     ],
     "registrationEnabled": true
   }
