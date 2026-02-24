@@ -81,54 +81,48 @@ const Events = () => {
 
             <Box
                 sx={{
-                    mb: 3,
-                    borderRadius: 1, // Consistent sizing
+                    p: 1.5,
+                    mb: 4,
+                    borderRadius: 1,
                     bgcolor: 'background.paper',
                     border: '1px solid',
-                    borderColor: 'divider',
-                    display: 'flex',
-                    alignItems: 'center',
-                    overflow: 'hidden'
+                    borderColor: 'divider'
                 }}
             >
-                <InputBase
-                    sx={{ flex: 1, fontSize: '0.95rem', pl: 2, pr: 1, py: 1.25 }}
-                    placeholder="Search events..."
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    startAdornment={
-                        <InputAdornment position="start">
-                            <SearchIcon color="primary" sx={{ opacity: 0.5, fontSize: 20 }} />
-                        </InputAdornment>
-                    }
-                    endAdornment={
-                        searchQuery ? (
-                            <InputAdornment position="end">
-                                <IconButton size="small" onClick={() => setSearchQuery('')} edge="end">
-                                    <ClearIcon fontSize="small" />
-                                </IconButton>
-                            </InputAdornment>
-                        ) : null
-                    }
-                />
-                <Box sx={{ width: 1, height: 32, bgcolor: 'divider' }} />
-                <FormControl size="small" variant="standard" sx={{ minWidth: 160, px: 2 }}>
-                    <Select
-                        value={cityFilter}
-                        displayEmpty
-                        onChange={(e) => setCityFilter(e.target.value)}
-                        disableUnderline
-                        sx={{
-                            fontWeight: 600,
-                            color: cityFilter === 'all' ? 'text.secondary' : 'primary.main',
-                            fontSize: '0.9rem',
-                            '& .MuiSelect-select': { py: 1.25, px: 0 }
+                <Stack direction={{ xs: 'column', md: 'row' }} spacing={2} alignItems="center">
+                    <TextField
+                        fullWidth
+                        placeholder="Search events..."
+                        value={searchQuery}
+                        onChange={e => setSearchQuery(e.target.value)}
+                        InputProps={{
+                            startAdornment: <InputAdornment position="start"><SearchIcon color="primary" sx={{ opacity: 0.5, fontSize: 20 }} /></InputAdornment>,
+                            endAdornment: searchQuery ? (
+                                <InputAdornment position="end">
+                                    <IconButton size="small" onClick={() => setSearchQuery('')}>
+                                        <ClearIcon fontSize="small" />
+                                    </IconButton>
+                                </InputAdornment>
+                            ) : null,
+                            disableUnderline: true
                         }}
-                    >
-                        <MenuItem value="all">All Cities</MenuItem>
-                        {cities.map(city => <MenuItem key={city} value={city}>{city}</MenuItem>)}
-                    </Select>
-                </FormControl>
+                        variant="standard"
+                        sx={{ flex: 1 }}
+                    />
+                    <FormControl size="small" variant="standard" sx={{ minWidth: 160 }}>
+                        <InputLabel>City</InputLabel>
+                        <Select
+                            value={cityFilter}
+                            label="City"
+                            onChange={(e) => setCityFilter(e.target.value)}
+                            disableUnderline
+                            sx={{ fontWeight: 600, color: 'primary.main' }}
+                        >
+                            <MenuItem value="all">All Cities</MenuItem>
+                            {cities.map(city => <MenuItem key={city} value={city}>{city}</MenuItem>)}
+                        </Select>
+                    </FormControl>
+                </Stack>
             </Box>
 
             {(searchQuery || cityFilter !== 'all') && (
