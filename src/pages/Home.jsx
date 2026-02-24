@@ -25,12 +25,14 @@ import PeopleIcon from '@mui/icons-material/People';
 import EventIcon from '@mui/icons-material/Event';
 import FolderIcon from '@mui/icons-material/Folder';
 
-const StatCard = ({ icon, value, label, color }) => (
-    <Paper sx={{ p: 2.5, textAlign: 'center', height: '100%', borderRadius: 1 }}>
-        <Box sx={{ color: `${color}.main`, mb: 1 }}>{icon}</Box>
-        <Typography variant="h4" fontWeight="bold" color="text.primary">{value}</Typography>
-        <Typography variant="body2" color="text.secondary">{label}</Typography>
-    </Paper>
+const StatCard = ({ icon, value, label, color, to }) => (
+    <Card elevation={1} sx={{ height: '100%', borderRadius: 1 }}>
+        <CardActionArea component={RouterLink} to={to} sx={{ height: '100%', p: 2.5, textAlign: 'center' }}>
+            <Box sx={{ color: `${color}.main`, mb: 1 }}>{icon}</Box>
+            <Typography variant="h4" fontWeight="bold" color="text.primary">{value}</Typography>
+            <Typography variant="body2" color="text.secondary">{label}</Typography>
+        </CardActionArea>
+    </Card>
 );
 
 const Home = () => {
@@ -85,16 +87,16 @@ const Home = () => {
                     {/* Stats */}
                     <Grid container spacing={2} sx={{ mb: 4 }}>
                         <Grid size={{ xs: 6, md: 3 }}>
-                            <StatCard icon={<PeopleIcon fontSize="large" />} value={users?.length?.toLocaleString() || 0} label="Educators" color="primary" />
+                            <StatCard icon={<PeopleIcon fontSize="large" />} value={users?.length?.toLocaleString() || 0} label="Educators" color="primary" to="/network" />
                         </Grid>
                         <Grid size={{ xs: 6, md: 3 }}>
-                            <StatCard icon={<BusinessIcon fontSize="large" />} value={organizations?.length || 0} label="Organizations" color="secondary" />
+                            <StatCard icon={<BusinessIcon fontSize="large" />} value={organizations?.length || 0} label="Organizations" color="secondary" to="/network" />
                         </Grid>
                         <Grid size={{ xs: 6, md: 3 }}>
-                            <StatCard icon={<EventIcon fontSize="large" />} value={events?.length || 0} label="Events" color="success" />
+                            <StatCard icon={<EventIcon fontSize="large" />} value={events?.length || 0} label="Events" color="success" to="/events" />
                         </Grid>
                         <Grid size={{ xs: 6, md: 3 }}>
-                            <StatCard icon={<FolderIcon fontSize="large" />} value={resources?.length || 0} label="Resources" color="warning" />
+                            <StatCard icon={<FolderIcon fontSize="large" />} value={resources?.length || 0} label="Resources" color="warning" to="/resources" />
                         </Grid>
                     </Grid>
 
