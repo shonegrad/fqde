@@ -81,7 +81,6 @@ const Events = () => {
 
             <Box
                 sx={{
-                    p: 1, // Compact padding
                     mb: 3,
                     borderRadius: 1, // Consistent sizing
                     bgcolor: 'background.paper',
@@ -89,23 +88,31 @@ const Events = () => {
                     borderColor: 'divider',
                     display: 'flex',
                     alignItems: 'center',
-                    gap: 2
+                    overflow: 'hidden'
                 }}
             >
-                <SearchIcon color="primary" sx={{ opacity: 0.5, fontSize: 20, ml: 1, mr: 1 }} />
                 <InputBase
-                    sx={{ flex: 1, fontSize: '0.95rem' }}
+                    sx={{ flex: 1, fontSize: '0.95rem', pl: 2, pr: 1, py: 1.25 }}
                     placeholder="Search events..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
+                    startAdornment={
+                        <InputAdornment position="start">
+                            <SearchIcon color="primary" sx={{ opacity: 0.5, fontSize: 20 }} />
+                        </InputAdornment>
+                    }
+                    endAdornment={
+                        searchQuery ? (
+                            <InputAdornment position="end">
+                                <IconButton size="small" onClick={() => setSearchQuery('')} edge="end">
+                                    <ClearIcon fontSize="small" />
+                                </IconButton>
+                            </InputAdornment>
+                        ) : null
+                    }
                 />
-                {searchQuery && (
-                    <IconButton size="small" onClick={() => setSearchQuery('')} sx={{ mr: 1 }}>
-                        <ClearIcon fontSize="small" />
-                    </IconButton>
-                )}
-                <Box sx={{ width: 1, height: 24, bgcolor: 'divider', mx: 1 }} />
-                <FormControl size="small" variant="standard" sx={{ minWidth: 150, mr: 1 }}>
+                <Box sx={{ width: 1, height: 32, bgcolor: 'divider' }} />
+                <FormControl size="small" variant="standard" sx={{ minWidth: 160, px: 2 }}>
                     <Select
                         value={cityFilter}
                         displayEmpty
@@ -115,7 +122,7 @@ const Events = () => {
                             fontWeight: 600,
                             color: cityFilter === 'all' ? 'text.secondary' : 'primary.main',
                             fontSize: '0.9rem',
-                            '& .MuiSelect-select': { py: 0.5 }
+                            '& .MuiSelect-select': { py: 1.25, px: 0 }
                         }}
                     >
                         <MenuItem value="all">All Cities</MenuItem>
