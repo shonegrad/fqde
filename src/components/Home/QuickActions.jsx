@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardContent, Typography, List, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
+import { Card, CardContent, Typography, Grid, Button } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import UploadIcon from '@mui/icons-material/Upload';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
@@ -31,17 +31,35 @@ const QuickActions = () => {
     actions.push({ label: 'Invite Member', icon: <AddIcon /> });
 
     return (
-        <Card variant="outlined">
+        <Card variant="outlined" sx={{ borderRadius: 1 }}>
             <CardContent>
                 <Typography variant="h6" gutterBottom color="primary">Quick Actions</Typography>
-                <List disablePadding>
+                <Grid container spacing={1}>
                     {actions.map((action, idx) => (
-                        <ListItemButton key={idx} sx={{ borderRadius: 1, mb: 0.5 }}>
-                            <ListItemIcon sx={{ minWidth: 36 }}>{action.icon}</ListItemIcon>
-                            <ListItemText primary={action.label} primaryTypographyProps={{ variant: 'body2', fontWeight: 500 }} />
-                        </ListItemButton>
+                        <Grid size={{ xs: 12, sm: 6 }} key={idx}>
+                            <Button
+                                variant="outlined"
+                                color="inherit"
+                                fullWidth
+                                startIcon={action.icon}
+                                sx={{
+                                    justifyContent: 'flex-start',
+                                    textAlign: 'left',
+                                    textTransform: 'none',
+                                    py: 1,
+                                    borderColor: 'divider',
+                                    boxShadow: 'none',
+                                    '&:hover': {
+                                        borderColor: 'primary.main',
+                                        bgcolor: 'action.hover'
+                                    }
+                                }}
+                            >
+                                {action.label}
+                            </Button>
+                        </Grid>
                     ))}
-                </List>
+                </Grid>
             </CardContent>
         </Card>
     );

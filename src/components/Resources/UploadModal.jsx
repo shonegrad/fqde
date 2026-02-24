@@ -102,7 +102,7 @@ const UploadModal = ({ onClose }) => {
                             sx={{
                                 border: '2px dashed',
                                 borderColor: 'divider',
-                                borderRadius: 2,
+                                borderRadius: 1,
                                 p: 4,
                                 textAlign: 'center',
                                 cursor: 'pointer',

@@ -127,7 +127,7 @@ const getTheme = (mode = 'dark') => {
             },
         },
         shape: {
-            borderRadius: 12,
+            borderRadius: 4,
         },
         shadows: isDark ? [
             'none',
@@ -178,7 +178,7 @@ const getTheme = (mode = 'dark') => {
                 },
                 styleOverrides: {
                     root: {
-                        borderRadius: 8,
+                        borderRadius: 4,
                         padding: '8px 20px',
                         textTransform: 'none',
                         fontWeight: 600,
@@ -199,17 +199,17 @@ const getTheme = (mode = 'dark') => {
                 styleOverrides: {
                     root: {
                         backgroundImage: 'none',
-                        backgroundColor: isDark ? 'rgba(30, 41, 59, 0.7)' : 'rgba(241, 245, 249, 0.7)',
+                        backgroundColor: isDark ? 'rgba(30, 41, 59, 0.7)' : 'rgba(255, 255, 255, 0.8)',
                         backdropFilter: 'blur(12px)',
-                        border: isDark ? '1px solid rgba(255, 255, 255, 0.08)' : '1px solid rgba(255, 255, 255, 0.5)',
-                        borderRadius: 12,
+                        border: isDark ? '1px solid rgba(255, 255, 255, 0.08)' : '1px solid rgba(15, 23, 42, 0.15)',
+                        borderRadius: 4,
                         transition: 'transform 0.2s ease-in-out, box-shadow 0.25s ease-in-out, background-color 0.2s',
                         '&:hover': {
                             transform: 'translateY(-2px)',
                             boxShadow: isDark
                                 ? '0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3)'
                                 : '0 10px 15px -3px rgba(15, 23, 42, 0.1), 0 4px 6px -2px rgba(15, 23, 42, 0.05)',
-                            backgroundColor: isDark ? 'rgba(30, 41, 59, 0.85)' : 'rgba(241, 245, 249, 0.85)',
+                            backgroundColor: isDark ? 'rgba(30, 41, 59, 0.85)' : 'rgba(255, 255, 255, 0.95)',
                         },
                     },
                 },
@@ -240,7 +240,7 @@ const getTheme = (mode = 'dark') => {
             MuiChip: {
                 styleOverrides: {
                     root: {
-                        borderRadius: 6,
+                        borderRadius: 4,
                         fontWeight: 500,
                     },
                     outlined: {
@@ -249,8 +249,11 @@ const getTheme = (mode = 'dark') => {
                         color: isDark ? '#cbd5e1' : '#334155',
                     },
                     filled: {
-                        backgroundColor: isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(15, 23, 42, 0.06)',
+                        backgroundColor: isDark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(15, 23, 42, 0.12)',
                         color: isDark ? '#f8fafc' : '#0f172a',
+                        '&:hover': {
+                            backgroundColor: isDark ? 'rgba(255, 255, 255, 0.15)' : 'rgba(15, 23, 42, 0.18)',
+                        }
                     },
                 },
             },

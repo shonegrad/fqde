@@ -21,6 +21,8 @@ import {
 import SearchIcon from '@mui/icons-material/Search';
 import UploadIcon from '@mui/icons-material/Upload';
 import FilterListIcon from '@mui/icons-material/FilterList';
+import ClearIcon from '@mui/icons-material/Clear';
+import IconButton from '@mui/material/IconButton';
 
 const Resources = () => {
     const { resources, currentUser, dataLoading } = useApp();
@@ -83,7 +85,7 @@ const Resources = () => {
                 sx={{
                     p: 1.5,
                     mb: 4,
-                    borderRadius: 3,
+                    borderRadius: 1,
                     bgcolor: 'background.paper',
                     border: '1px solid',
                     borderColor: 'divider'
@@ -97,6 +99,13 @@ const Resources = () => {
                         onChange={e => setSearchTerm(e.target.value)}
                         InputProps={{
                             startAdornment: <InputAdornment position="start"><SearchIcon color="primary" sx={{ opacity: 0.5, fontSize: 20 }} /></InputAdornment>,
+                            endAdornment: searchTerm ? (
+                                <InputAdornment position="end">
+                                    <IconButton size="small" onClick={() => setSearchTerm('')}>
+                                        <ClearIcon fontSize="small" />
+                                    </IconButton>
+                                </InputAdornment>
+                            ) : null,
                             disableUnderline: true
                         }}
                         variant="standard"

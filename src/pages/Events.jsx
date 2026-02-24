@@ -13,9 +13,12 @@ import {
     Select,
     MenuItem,
     Stack,
-    Chip
+    Chip,
+    InputBase,
+    IconButton
 } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
+import ClearIcon from '@mui/icons-material/Clear';
 
 const Events = () => {
     const { events, dataLoading } = useApp();
@@ -80,7 +83,7 @@ const Events = () => {
                 sx={{
                     p: 1, // Compact padding
                     mb: 3,
-                    borderRadius: 3, // Consistent sizing
+                    borderRadius: 1, // Consistent sizing
                     bgcolor: 'background.paper',
                     border: '1px solid',
                     borderColor: 'divider',
@@ -89,24 +92,19 @@ const Events = () => {
                     gap: 2
                 }}
             >
-                <TextField
-                    fullWidth
+                <SearchIcon color="primary" sx={{ opacity: 0.5, fontSize: 20, ml: 1, mr: 1 }} />
+                <InputBase
+                    sx={{ flex: 1, fontSize: '0.95rem' }}
                     placeholder="Search events..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    InputProps={{
-                        startAdornment: <InputAdornment position="start"><SearchIcon color="primary" sx={{ opacity: 0.5, fontSize: 20 }} /></InputAdornment>,
-                        disableUnderline: true,
-                        sx: { fontSize: '0.95rem' }
-                    }}
-                    variant="standard"
-                    sx={{
-                        flexGrow: 1,
-                        px: 1,
-                        py: 0.5
-                    }}
                 />
-                <Box sx={{ width: 1, height: 24, bgcolor: 'divider' }} />
+                {searchQuery && (
+                    <IconButton size="small" onClick={() => setSearchQuery('')} sx={{ mr: 1 }}>
+                        <ClearIcon fontSize="small" />
+                    </IconButton>
+                )}
+                <Box sx={{ width: 1, height: 24, bgcolor: 'divider', mx: 1 }} />
                 <FormControl size="small" variant="standard" sx={{ minWidth: 150, mr: 1 }}>
                     <Select
                         value={cityFilter}

@@ -6,4 +6,8 @@ export default defineConfig({
   plugins: [react()],
   // Set base to repo name for GitHub Pages user/org site with subpath
   base: '/fqde/',
+  server: {
+    port: 5173,
+    strictPort: true,
+  },
 })

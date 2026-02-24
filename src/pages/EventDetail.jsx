@@ -74,8 +74,8 @@ const EventDetail = () => {
                 Back to Events
             </Button>
 
-            <Paper variant="outlined" sx={{ p: { xs: 3, md: 4 }, mb: 4, borderRadius: 2 }}>
-                <Stack direction={{ xs: 'column', md: 'row' }} spacing={4} divider={<Divider orientation="vertical" flexItem sx={{ display: { xs: 'none', md: 'block' } }} />} >
+            <Paper variant="outlined" sx={{ p: { xs: 3, md: 4 }, mb: 4, borderRadius: 1 }}>
+                <Stack direction={{ xs: 'column', md: 'row' }} spacing={4} alignItems="flex-start" divider={<Divider orientation="vertical" flexItem sx={{ display: { xs: 'none', md: 'block' } }} />} >
                     <Box sx={{ flex: 1 }}>
                         <Chip label={event.type || event.tags?.[0] || 'Event'} size="small" sx={{ mb: 2, bgcolor: 'secondary.light', color: 'secondary.contrastText' }} />
                         <Typography variant="h3" component="h1" gutterBottom sx={{ fontWeight: 700 }}>
@@ -84,9 +84,18 @@ const EventDetail = () => {
                         <Typography variant="body1" color="text.secondary" sx={{ maxWidth: 'sm' }}>
                             {event.description}
                         </Typography>
+
+                        {eventSessions.length > 0 && (
+                            <Box sx={{ mt: 6 }}>
+                                <Typography variant="h5" component="h2" gutterBottom sx={{ fontWeight: 600 }}>
+                                    Schedule ({eventSessions.length} sessions)
+                                </Typography>
+                                <TimelineView sessions={eventSessions} eventId={eventId} />
+                            </Box>
+                        )}
                     </Box>
 
-                    <Stack spacing={2} minWidth={250}>
+                    <Stack spacing={2} minWidth={250} sx={{ position: 'sticky', top: 24 }}>
                         <Stack direction="row" spacing={1} alignItems="center" color="text.secondary">
                             <CalendarTodayIcon color="primary" />
                             <Typography variant="subtitle1" fontWeight={500}>
@@ -107,17 +116,6 @@ const EventDetail = () => {
                         )}
                     </Stack>
                 </Stack>
-
-                {eventSessions.length > 0 && (
-                    <>
-                        <Divider sx={{ my: 4 }} />
-
-                        <Typography variant="h5" component="h2" gutterBottom sx={{ fontWeight: 600 }}>
-                            Schedule ({eventSessions.length} sessions)
-                        </Typography>
-                        <TimelineView sessions={eventSessions} eventId={eventId} />
-                    </>
-                )}
             </Paper>
         </Container>
     );

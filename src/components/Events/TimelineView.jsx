@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { useApp } from '../../context/AppContext';
 import {
     Box,
@@ -58,7 +58,7 @@ const trackIcons = {
 const getTrackColor = (track) => trackColors[track] || { main: '#64748b', gradient: 'linear-gradient(135deg, #64748b 0%, #94a3b8 100%)' };
 const getTrackIcon = (track) => trackIcons[track] || SchoolIcon;
 
-const TimelineView = ({ sessions = [], eventId }) => {
+const TimelineView = ({ sessions = [] }) => {
     const theme = useTheme();
     const { mySchedule, addToSchedule, removeFromSchedule } = useApp();
     const [viewMode, setViewMode] = useState('master');
@@ -94,7 +94,7 @@ const TimelineView = ({ sessions = [], eventId }) => {
     }, [sortedSessions]);
 
     // Initialize expanded days
-    useMemo(() => {
+    useEffect(() => {
         const initial = {};
         Object.keys(sessionsByDay).forEach((day, idx) => {
             initial[day] = idx === 0; // First day expanded by default
@@ -102,6 +102,7 @@ const TimelineView = ({ sessions = [], eventId }) => {
         if (Object.keys(expandedDays).length === 0) {
             setExpandedDays(initial);
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [sessionsByDay]);
 
     const handleViewChange = (event, newView) => {
@@ -137,7 +138,7 @@ const TimelineView = ({ sessions = [], eventId }) => {
                 <Paper
                     elevation={0}
                     sx={{
-                        borderRadius: 3,
+                        borderRadius: 1,
                         background: alpha(theme.palette.primary.main, 0.05),
                         backdropFilter: 'blur(10px)',
                         border: `1px solid ${alpha(theme.palette.primary.main, 0.1)}`,
@@ -153,7 +154,7 @@ const TimelineView = ({ sessions = [], eventId }) => {
                         sx={{
                             '& .MuiToggleButton-root': {
                                 border: 'none',
-                                borderRadius: 2,
+                                borderRadius: 1,
                                 px: 3,
                                 py: 1,
                                 textTransform: 'none',
@@ -211,7 +212,7 @@ const TimelineView = ({ sessions = [], eventId }) => {
                     py: 8,
                     px: 4,
                     background: `linear-gradient(135deg, ${alpha(theme.palette.primary.main, 0.03)} 0%, ${alpha(theme.palette.secondary.main, 0.03)} 100%)`,
-                    borderRadius: 4,
+                    borderRadius: 1,
                     border: `2px dashed ${alpha(theme.palette.primary.main, 0.2)}`,
                 }}>
                     <PersonIcon sx={{ fontSize: 64, color: 'text.disabled', mb: 2 }} />
@@ -226,12 +227,12 @@ const TimelineView = ({ sessions = [], eventId }) => {
                 </Box>
             ) : (
                 <Stack spacing={3}>
-                    {Object.entries(sessionsByDay).map(([day, daySessions], dayIndex) => (
+                    {Object.entries(sessionsByDay).map(([day, daySessions]) => (
                         <Paper
                             key={day}
                             elevation={0}
                             sx={{
-                                borderRadius: 3,
+                                borderRadius: 1,
                                 overflow: 'hidden',
                                 border: `1px solid ${alpha(theme.palette.divider, 0.1)}`,
                                 background: alpha(theme.palette.background.paper, 0.8),
@@ -259,7 +260,7 @@ const TimelineView = ({ sessions = [], eventId }) => {
                                     <Box sx={{
                                         width: 40,
                                         height: 40,
-                                        borderRadius: 1.5, // 12px
+                                        borderRadius: 1, // 4px
                                         background: theme.palette.primary.main,
                                         display: 'flex',
                                         alignItems: 'center',
@@ -342,7 +343,7 @@ const TimelineView = ({ sessions = [], eventId }) => {
                                                         elevation={0}
                                                         sx={{
                                                             p: 2,
-                                                            borderRadius: 2, // 16px -> 12px/16px consistency (using theme shape usually, here explicit 2 = 16px, lets keep 2 for cards)
+                                                            borderRadius: 1,
                                                             border: `1px solid ${isScheduled ? trackColor.main : alpha(theme.palette.divider, 0.08)}`,
                                                             background: isScheduled
                                                                 ? alpha(trackColor.main, 0.04)

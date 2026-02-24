@@ -11,21 +11,27 @@
 Before doing anything else, complete this checklist:
 
 - [ ] **1. Verify repo + remote**
+
   ```bash
   git status
   git remote -v
   ```
+
 - [ ] **2. Check if app is already running** (ports/processes)
+
   ```bash
   lsof -i :5173
   ```
+
 - [ ] **3. Reuse existing browser tab** if available
 - [ ] **4. Confirm current version** (local file + UI display match)
 - [ ] **5. Make changes**
 - [ ] **6. Validate** (build/smoke test before commit)
+
   ```bash
   npm run build
   ```
+
 - [ ] **7. Commit + push + deploy** (when requested, follow Section H)
 - [ ] **8. Verify live version matches** (check deployed URL + version display)
 
@@ -36,14 +42,15 @@ Before doing anything else, complete this checklist:
 | Field | Value |
 |-------|-------|
 | **Project Name** | connecting-educators |
-| **Primary Repo** | https://github.com/shonegrad/fqde.git |
+| **Primary Repo** | <https://github.com/shonegrad/fqde.git> |
 | **Default Branch** | master |
 | **Deployment Method** | GitHub Pages via `gh-pages` branch (using `gh-pages` npm package) |
-| **Live URL** | https://shonegrad.github.io/fqde/ |
-| **Local Dev URL** | http://localhost:5173/fqde/ |
+| **Live URL** | <https://shonegrad.github.io/fqde/> |
+| **Local Dev URL** | <http://localhost:5173/fqde/> |
 | **Version Source** | `package.json` → `version` field + `.version` file |
 
 ### Placeholders for Reuse
+
 ```
 Project Name:       <PROJECT_NAME>
 Primary Repo:       <GITHUB_REPO_URL>
@@ -60,6 +67,7 @@ Local Dev URL:      <http://localhost:PORT>
 Every session, follow these steps **in order**:
 
 ### 1. Verify Repository & Remote
+
 ```bash
 # Check current branch and status
 git status
@@ -70,6 +78,7 @@ git remote -v
 ```
 
 ### 2. Check if App is Already Running
+
 ```bash
 # Check if dev server is running on expected port
 lsof -i :5173
@@ -79,20 +88,24 @@ lsof -i :5173
 ```
 
 ### 3. Reuse Existing Browser Tab
+
 - Check if a browser tab is already open to the app URL
 - **Reuse it** — do not open a new tab
 - Reload if necessary
 
 ### 4. Confirm Current Version
+
 - Check `.version` or `package.json` version field
 - Verify the UI displays the same version
 - If mismatch, investigate before proceeding
 
 ### 5. Make Changes
+
 - Implement the requested feature/fix
 - Follow coding standards
 
 ### 6. Validate Before Commit
+
 ```bash
 # Run build to ensure no errors
 npm run build
@@ -102,9 +115,11 @@ npm run build
 ```
 
 ### 7. Commit + Push + Deploy
+
 - See **Section H** for the full workflow
 
 ### 8. Verify Live Version Matches
+
 - Visit the live URL
 - Confirm the displayed version matches your commit
 
@@ -116,25 +131,31 @@ npm run build
 > Do not skip these. They must be true before any work begins.
 
 ### Git from Day One
+
 - This repo **must** use git version control from the start
 - All code changes must be committed with meaningful messages
 
 ### GitHub Connection
+
 - GitHub must be connected using existing credentials/config
 - Verify with:
+
   ```bash
   git remote -v
   # Should show: origin  https://github.com/<USER>/<REPO>.git
   ```
 
 ### Origin Remote Verification
+
 - Before pushing, always verify origin is correct
 - If origin is wrong:
+
   ```bash
   git remote set-url origin https://github.com/<USER>/<REPO>.git
   ```
 
 ### GitHub Pages Configuration
+
 - **Method Used**: `gh-pages` branch (via `gh-pages` npm package)
 - Alternative methods (document which is used):
   - `gh-pages` branch ← **CURRENT**
@@ -150,7 +171,9 @@ npm run build
 > **NEVER start a duplicate dev server instance.**
 
 ### The Rule
+
 Before starting any dev server:
+
 1. Check whether the app is already running
 2. Identify which port it's using
 3. If a running instance exists, **reuse it** — do NOT start a second instance
@@ -159,6 +182,7 @@ Before starting any dev server:
 ### Commands for macOS/Linux
 
 #### List All Listening Ports
+
 ```bash
 # Using lsof (macOS/Linux)
 lsof -i -P -n | grep LISTEN
@@ -171,6 +195,7 @@ netstat -tulnp
 ```
 
 #### Find a Specific Port
+
 ```bash
 # Check if port 5173 is in use
 lsof -i :5173
@@ -180,6 +205,7 @@ lsof -i :5173-5180
 ```
 
 #### Stop a Process Safely
+
 ```bash
 # Get the PID from lsof output, then:
 kill <PID>
@@ -192,12 +218,14 @@ lsof -ti :5173 | xargs kill
 ```
 
 #### Quick One-Liner: Check Before Starting
+
 ```bash
 # If port is free, this returns nothing; if busy, shows process
 lsof -i :5173 || echo "Port 5173 is free"
 ```
 
 ### Expected Dev Server Ports
+
 | Service | Primary Port | Fallback Ports |
 |---------|--------------|----------------|
 | Vite Dev Server | 5173 | 5174, 5175, ... |
@@ -211,18 +239,22 @@ lsof -i :5173 || echo "Port 5173 is free"
 > **NEVER spam browser tabs with duplicate app instances.**
 
 ### The Rule
+
 When opening the app in a browser:
+
 1. **Check** if there is already an open tab for the app
 2. **Reuse** the existing tab whenever possible
 3. **Reload** the tab if content is stale
 
-### Only Open a New Tab If:
+### Only Open a New Tab If
+
 - Wrong environment (e.g., need production but have localhost open)
 - Wrong URL/route that cannot be navigated to
 - Stale session that cannot be refreshed (authentication issues)
 - Explicitly debugging multiple instances
 
 ### Implementation for Agents
+
 ```
 Before opening browser:
 1. List open tabs
@@ -236,27 +268,33 @@ Before opening browser:
 ## Section F: Versioning System (Single Source of Truth)
 
 ### The Rule
+
 - Use **SemVer**: `MAJOR.MINOR.PATCH`
 - Maintain a **single source of truth** for version
 
 ### Version Source of Truth
+
 | File | Purpose |
 |------|---------|
 | `package.json` → `version` | Primary source, used by npm and build tools |
 | `.version` | Backup/alternate source for scripts |
 
 ### Version Must Be Displayed in UI
+
 - **Location**: Footer, Settings page, or About section
 - **Requirement**: The displayed version **must match** the source file
 
 ### Version Sync Requirements
+
 The version must match across:
+
 - [ ] Local `package.json` (or `.version`)
 - [ ] Git commit/tag (`vX.Y.Z`)
 - [ ] GitHub repository
 - [ ] GitHub Pages live site (UI display)
 
 ### How to Update Version
+
 ```bash
 # Option 1: Edit package.json manually
 # Change "version": "X.Y.Z"
@@ -268,6 +306,7 @@ npm version major  # 0.1.0 → 1.0.0
 ```
 
 ### How the UI Reads Version (No Hardcoding!)
+
 ```javascript
 // ❌ BAD - Hardcoded
 const version = "0.1.0";
@@ -283,12 +322,15 @@ const version = import.meta.env.VITE_APP_VERSION;
 ## Section G: Validation Rules (Never Deploy Broken Builds)
 
 ### The Rule
+
 Before committing for deployment or running any commit+push+deploy workflow:
+
 1. **Run validation** (build or smoke test)
 2. If validation **fails**, block commit/deploy and fix first
 3. Never push code that doesn't build
 
 ### Validation Command
+
 ```bash
 # For this project:
 npm run build
@@ -298,12 +340,14 @@ npm run build
 ```
 
 ### Validation Checklist
+
 - [ ] `npm run build` completes without errors
 - [ ] No TypeScript/ESLint errors (if applicable)
 - [ ] App loads in browser without console errors
 - [ ] Core functionality works (quick smoke test)
 
 ### If Validation Fails
+
 1. **STOP** — do not commit or deploy
 2. Read error messages carefully
 3. Fix the issue
@@ -320,6 +364,7 @@ npm run build
 ### The Workflow
 
 #### Step 1: Update Version (if warranted)
+
 ```bash
 # Determine version bump type:
 # - patch: bug fixes, minor changes
@@ -334,12 +379,14 @@ npm version patch --no-git-tag-version
 ```
 
 #### Step 2: Validate (Build/Smoke Test)
+
 ```bash
 npm run build
 # Must complete without errors
 ```
 
 #### Step 3: Git Status Sanity Check
+
 ```bash
 git status
 # Review changed files
@@ -347,17 +394,20 @@ git status
 ```
 
 #### Step 4: Commit with Meaningful Message
+
 ```bash
 git add .
 git commit -m "feat: description of changes (vX.Y.Z)"
 ```
 
 #### Step 5: Push to GitHub
+
 ```bash
 git push origin master
 ```
 
 #### Step 6: Deploy to GitHub Pages
+
 ```bash
 npm run deploy
 # or
@@ -365,8 +415,9 @@ npm run deploy
 ```
 
 #### Step 7: Verify Live Site
+
 1. Wait 1-2 minutes for GitHub Pages to update
-2. Visit live URL: https://shonegrad.github.io/fqde/
+2. Visit live URL: <https://shonegrad.github.io/fqde/>
 3. Confirm:
    - [ ] Site loads correctly
    - [ ] Version displayed matches intended version
@@ -375,6 +426,7 @@ npm run deploy
 ### Blocking Rules
 
 #### Dirty Tree Protection
+
 ```bash
 # If working tree is dirty and request is "deploy":
 git status
@@ -387,12 +439,15 @@ git commit -m "message"
 ```
 
 #### Deploy Failure Handling
+
 - If deployment fails, capture error output
 - Record under **Section J: Troubleshooting**
 - Fix the issue before retrying
 
 ### Quick Deploy Script
+
 For this project, use:
+
 ```bash
 npm run deploy
 # This runs: ./scripts/deploy.sh
@@ -403,6 +458,7 @@ npm run deploy
 ## Section I: Smart Additions
 
 ### Release Tags on Version Changes
+
 ```bash
 # After updating version and committing:
 git tag v0.1.0
@@ -414,9 +470,11 @@ git push origin v0.1.0
 ```
 
 ### CHANGELOG.md Maintenance
+
 - Keep a lightweight `CHANGELOG.md`
 - Add one short entry per version bump
 - Format:
+
   ```markdown
   ## [0.1.0] - 2024-12-14
   - Added: Feature X
@@ -425,7 +483,9 @@ git push origin v0.1.0
   ```
 
 ### Single Deploy Script/Command
+
 Prefer a single command for deployment:
+
 ```bash
 # Recommended
 npm run deploy
@@ -435,7 +495,9 @@ npm run deploy
 ```
 
 ### Dirty Tree Protection After Deploy
+
 After deployment completes:
+
 ```bash
 git status
 # Must show: "nothing to commit, working tree clean"
@@ -444,12 +506,14 @@ git status
 ```
 
 ### Post-Deploy Verification Checklist
-- [ ] Live URL loads: https://shonegrad.github.io/fqde/
+
+- [ ] Live URL loads: <https://shonegrad.github.io/fqde/>
 - [ ] No console errors in browser
 - [ ] Version displayed matches intended version
 - [ ] Key features work correctly
 
 ### Documentation Updates
+>
 > [!TIP]
 > Before commit+push, ensure documentation is updated comprehensively.
 
@@ -502,6 +566,7 @@ git status
 ## Appendix: Command Reference
 
 ### Git Commands
+
 ```bash
 git status                    # Check working tree status
 git remote -v                 # Verify remote URLs
@@ -513,6 +578,7 @@ git push --tags               # Push all tags
 ```
 
 ### Port/Process Commands
+
 ```bash
 lsof -i :5173                 # Check if port 5173 is in use
 lsof -i -P -n | grep LISTEN   # List all listening ports
@@ -521,6 +587,7 @@ kill -9 <PID>                 # Force stop process
 ```
 
 ### npm Commands
+
 ```bash
 npm run dev                   # Start dev server
 npm run build                 # Build for production
@@ -539,4 +606,4 @@ This development rules template is designed to be reusable across projects.
 Replace all `<PLACEHOLDER>` values in Section A with project-specific details.
 
 **Template Version**: 1.0.0
-**Last Updated**: 2024-12-14
+**Last Updated**: 2025-12-24

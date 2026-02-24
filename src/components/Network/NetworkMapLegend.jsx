@@ -28,7 +28,7 @@ const NetworkMapLegend = ({ expanded = true, onToggle }) => {
                 zIndex: 10,
                 bgcolor: 'rgba(255, 255, 255, 0.95)',
                 backdropFilter: 'blur(8px)',
-                borderRadius: '12px',
+                borderRadius: 1,
                 boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
                 border: '1px solid rgba(0,0,0,0.08)',
                 minWidth: 180,

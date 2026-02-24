@@ -7,7 +7,7 @@ const OrganizationCard = ({ org, onClick }) => {
     const logoPath = org.logoPath ? `/fqde${org.logoPath}` : org.logo;
 
     return (
-        <Card onClick={() => onClick({ ...org, group: 'org' })} sx={{ height: '100%', cursor: 'pointer' }}>
+        <Card onClick={() => onClick({ ...org, group: 'org' })} sx={{ height: '100%', cursor: 'pointer', borderRadius: 1 }}>
             <CardContent>
                 <Stack direction="row" spacing={2} alignItems="center" sx={{ mb: 2 }}>
                     {logoPath ? (

@@ -24,7 +24,7 @@ import EventIcon from '@mui/icons-material/Event';
 import FolderIcon from '@mui/icons-material/Folder';
 
 const StatCard = ({ icon, value, label, color }) => (
-    <Paper sx={{ p: 2.5, textAlign: 'center', height: '100%' }}>
+    <Paper sx={{ p: 2.5, textAlign: 'center', height: '100%', borderRadius: 1 }}>
         <Box sx={{ color: `${color}.main`, mb: 1 }}>{icon}</Box>
         <Typography variant="h4" fontWeight="bold" color="text.primary">{value}</Typography>
         <Typography variant="body2" color="text.secondary">{label}</Typography>
@@ -96,7 +96,7 @@ const Home = () => {
                     </Grid>
 
                     {/* Upcoming Events */}
-                    <Card elevation={2} sx={{ mb: 3 }}>
+                    <Card elevation={2} sx={{ mb: 3, borderRadius: 1 }}>
                         <CardContent>
                             <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{ mb: 2 }}>
                                 <Typography variant="h6">Upcoming Events</Typography>
@@ -124,7 +124,7 @@ const Home = () => {
                     </Card>
 
                     {/* Recent Resources */}
-                    <Card elevation={2}>
+                    <Card elevation={2} sx={{ borderRadius: 1 }}>
                         <CardContent>
                             <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{ mb: 2 }}>
                                 <Typography variant="h6">Recent Resources</Typography>
@@ -155,7 +155,7 @@ const Home = () => {
                         <QuickActions />
 
                         {currentUser && (
-                            <Card elevation={2}>
+                            <Card elevation={2} sx={{ borderRadius: 1 }}>
                                 <CardContent>
                                     <Stack direction="row" spacing={2} alignItems="center" sx={{ mb: 2 }}>
                                         <Avatar

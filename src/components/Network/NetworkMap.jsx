@@ -117,7 +117,7 @@ const NetworkMap = ({
             .sum(d => d.type === 'org' ? (d.memberCount || 1) + 5 : 0)
             .sort((a, b) => b.value - a.value);
 
-        d3.pack().size([radius * 2, radius * 2]).padding(d => d.depth === 0 ? 20 : d.depth === 1 ? 10 : 3)(root);
+        d3.pack().size([radius * 2, radius * 2]).padding(d => d.depth === 0 ? 30 : d.depth === 1 ? 15 : 6)(root);
 
         const nodes = g.selectAll('g.node').data(root.descendants(), d => d.data.id || d.data.name);
         nodes.exit().transition().duration(400).style('opacity', 0).remove();
@@ -160,7 +160,7 @@ const NetworkMap = ({
                 const n = d.data.name;
                 return n.length > 14 ? n.slice(0, 12) + '…' : n;
             });
-    }, [hierarchyData, colorScale, onNodeClick]);
+    }, [hierarchyData, colorScale, onNodeClick, theme]);
 
     // Render Treemap view
     const renderTreemapView = useCallback((g, width, height) => {
@@ -245,11 +245,11 @@ const NetworkMap = ({
     const legendItems = useMemo(() => hierarchyData.groupNames.slice(0, 5).map(name => ({ name, color: colorScale(name) })), [hierarchyData.groupNames, colorScale]);
 
     return (
-        <Box ref={containerRef} sx={{ position: 'relative', height: '100%', minHeight: 300, bgcolor: 'transparent', borderRadius: 2, overflow: 'hidden' }}>
+        <Box ref={containerRef} sx={{ position: 'relative', height: '100%', minHeight: 300, bgcolor: 'transparent', borderRadius: 1, overflow: 'hidden' }}>
             <svg ref={svgRef} width={dimensions.width} height={dimensions.height} style={{ display: 'block', background: 'transparent' }} />
 
             {/* Zoom Controls */}
-            <Box sx={{ position: 'absolute', top: 12, right: 12, zIndex: 10, bgcolor: alpha(theme.palette.background.paper, 0.8), backdropFilter: 'blur(6px)', borderRadius: '10px', p: 0.5, boxShadow: theme.shadows[2], border: `1px solid ${theme.palette.divider}` }}>
+            <Box sx={{ position: 'absolute', top: 12, right: 12, zIndex: 10, bgcolor: alpha(theme.palette.background.paper, 0.8), backdropFilter: 'blur(6px)', borderRadius: 1, p: 0.5, boxShadow: theme.shadows[2], border: `1px solid ${theme.palette.divider}` }}>
                 <Stack direction="row" spacing={0.25}>
                     <Tooltip title="Zoom In"><IconButton size="small" onClick={handleZoomIn}><ZoomInIcon sx={{ fontSize: 18 }} /></IconButton></Tooltip>
                     <Tooltip title="Zoom Out"><IconButton size="small" onClick={handleZoomOut}><ZoomOutIcon sx={{ fontSize: 18 }} /></IconButton></Tooltip>
@@ -258,7 +258,7 @@ const NetworkMap = ({
             </Box>
 
             {/* Legend */}
-            <Box sx={{ position: 'absolute', bottom: 12, left: 12, zIndex: 10, bgcolor: alpha(theme.palette.background.paper, 0.8), backdropFilter: 'blur(6px)', borderRadius: '10px', p: 1, boxShadow: theme.shadows[2], border: `1px solid ${theme.palette.divider}`, maxWidth: 150 }}>
+            <Box sx={{ position: 'absolute', bottom: 12, left: 12, zIndex: 10, bgcolor: alpha(theme.palette.background.paper, 0.8), backdropFilter: 'blur(6px)', borderRadius: 1, p: 1, boxShadow: theme.shadows[2], border: `1px solid ${theme.palette.divider}`, maxWidth: 150 }}>
                 <Typography variant="caption" fontWeight={600} color="text.secondary" sx={{ fontSize: '0.6rem', textTransform: 'uppercase' }}>
                     {groupBy === 'tags' ? 'Tags' : groupBy === 'region' ? 'Regions' : groupBy === 'type' ? 'Types' : 'Associations'}
                 </Typography>
@@ -275,7 +275,7 @@ const NetworkMap = ({
 
             {/* Hover Tooltip */}
             {hoveredNode && (
-                <Box sx={{ position: 'absolute', top: 12, left: '50%', transform: 'translateX(-50%)', bgcolor: alpha(theme.palette.background.paper, 0.95), backdropFilter: 'blur(8px)', borderRadius: '10px', px: 2, py: 1, boxShadow: theme.shadows[4], border: `1px solid ${theme.palette.divider}`, zIndex: 30, textAlign: 'center', maxWidth: 260 }}>
+                <Box sx={{ position: 'absolute', top: 12, left: '50%', transform: 'translateX(-50%)', bgcolor: alpha(theme.palette.background.paper, 0.95), backdropFilter: 'blur(8px)', borderRadius: 1, px: 2, py: 1, boxShadow: theme.shadows[4], border: `1px solid ${theme.palette.divider}`, zIndex: 30, textAlign: 'center', maxWidth: 260 }}>
                     <Typography variant="subtitle2" fontWeight={700} sx={{ fontSize: '0.85rem' }}>{hoveredNode.name}</Typography>
                     {hoveredNode.type === 'org' && (
                         <>

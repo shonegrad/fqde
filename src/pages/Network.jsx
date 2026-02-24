@@ -126,7 +126,7 @@ const Network = () => {
                     sx={{
                         px: 1.5,
                         py: 0.5,
-                        borderRadius: '10px',
+                        borderRadius: 1,
                         bgcolor: 'background.paper',
                         border: '1px solid',
                         borderColor: 'divider',
@@ -160,7 +160,7 @@ const Network = () => {
                     px: 2,
                     py: 0.75,
                     mb: 1.5,
-                    borderRadius: '12px',
+                    borderRadius: 1,
                     bgcolor: 'background.paper',
                     border: '1px solid',
                     borderColor: 'divider',
@@ -180,7 +180,7 @@ const Network = () => {
                         sx={{
                             '& .MuiToggleButton-root': {
                                 border: 'none',
-                                borderRadius: '8px !important',
+                                borderRadius: '4px !important',
                                 px: 1,
                                 py: 0.25,
                                 fontSize: '0.7rem',
@@ -214,7 +214,7 @@ const Network = () => {
                             sx={{
                                 '& .MuiToggleButton-root': {
                                     border: 'none',
-                                    borderRadius: '8px !important',
+                                    borderRadius: '4px !important',
                                     px: 1,
                                     py: 0.25,
                                     fontSize: '0.7rem',
@@ -254,7 +254,7 @@ const Network = () => {
 
             {/* Visualization Canvas */}
             <Box sx={{ flexGrow: 1, minHeight: 0 }}>
-                <Paper elevation={0} sx={{ height: '100%', borderRadius: 3, overflow: 'hidden', border: '1px solid', borderColor: 'divider', bgcolor: 'background.paper' }}>
+                <Paper elevation={0} sx={{ height: '100%', borderRadius: 1, overflow: 'hidden', border: '1px solid', borderColor: 'divider', bgcolor: 'background.paper' }}>
                     {viewType === 'directory' ? (
                         <DirectoryView
                             organizations={filteredOrganizations}
@@ -278,7 +278,7 @@ const Network = () => {
             </Box>
 
             {selectedNode && <OrgProfileModal node={selectedNode} onClose={() => setSelectedNode(null)} />}
-        </Container>
+        </Container >
     );
 };
 
